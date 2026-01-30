@@ -345,6 +345,220 @@ async function pushObsidianToClickUp(api: ClickUpAPI, state: SyncState) {
   }
 }
 
+// Categorize inbox task and suggest project
+function categorizeInboxTask(taskName: string, taskDescription: string): { category: string; suggestedProject: string; reasoning: string } {
+  const text = `${taskName} ${taskDescription || ''}`.toLowerCase();
+  
+  // Nomads-related keywords
+  const nomadsKeywords = ['nomads', 'hostel', 'bangkok', 'ao nang', 'phuket', 'chiang mai', 'guest', 'booking', 'mews', 'reception', 'check-in', 'check-out'];
+  const marketingKeywords = ['marketing', 'ads', 'facebook', 'instagram', 'tiktok', 'google ads', 'campaign', 'newsletter', 'social media', 'seo', 'content'];
+  const accountingKeywords = ['accounting', 'finance', 'budget', 'cashflow', 'invoice', 'tax', 'revenue', 'expense', 'payroll'];
+  const operationsKeywords = ['ops', 'operations', 'staff', 'hiring', 'training', 'schedule', 'inventory', 'maintenance', 'cleaning'];
+  const developmentKeywords = ['code', 'website', 'booking engine', 'app', 'integration', 'api', 'development', 'clawd', 'automation'];
+  const designKeywords = ['design', 'logo', 'branding', 'sign', 'poster', 'flyer', 'website design', 'ui', 'ux'];
+  const legalKeywords = ['legal', 'contract', 'license', 'permit', 'visa', 'work permit', 'regulation', 'compliance'];
+  
+  // Check for matches
+  if (nomadsKeywords.some(k => text.includes(k))) {
+    if (marketingKeywords.some(k => text.includes(k))) {
+      return { category: 'Nomads', suggestedProject: 'Nomads-Marketing', reasoning: 'Marketing-related task for Nomads' };
+    }
+    if (accountingKeywords.some(k => text.includes(k))) {
+      return { category: 'Nomads', suggestedProject: 'Nomads-Accounting', reasoning: 'Finance/accounting task for Nomads' };
+    }
+    if (developmentKeywords.some(k => text.includes(k))) {
+      return { category: 'Nomads', suggestedProject: 'Nomads-Automation', reasoning: 'Development/tech task for Nomads' };
+    }
+    if (designKeywords.some(k => text.includes(k))) {
+      return { category: 'Nomads', suggestedProject: 'Nomads-Design', reasoning: 'Design task for Nomads' };
+    }
+    if (legalKeywords.some(k => text.includes(k))) {
+      return { category: 'Nomads', suggestedProject: 'Nomads-Legal', reasoning: 'Legal/compliance task for Nomads' };
+    }
+    if (operationsKeywords.some(k => text.includes(k))) {
+      return { category: 'Nomads', suggestedProject: 'Nomads-Operations', reasoning: 'Operations task for Nomads' };
+    }
+    return { category: 'Nomads', suggestedProject: 'Nomads-General', reasoning: 'General Nomads task' };
+  }
+  
+  // Personal keywords
+  const healthKeywords = ['health', 'gym', 'fitness', 'workout', 'exercise', 'diet', 'doctor', 'appointment'];
+  const travelKeywords = ['travel', 'flight', 'hotel', 'booking', 'trip', 'vacation', 'visa'];
+  const learningKeywords = ['learn', 'course', 'book', 'read', 'study', 'tutorial', 'skill'];
+  
+  if (healthKeywords.some(k => text.includes(k))) {
+    return { category: 'Personal', suggestedProject: 'Personal-Health', reasoning: 'Health & fitness task' };
+  }
+  if (travelKeywords.some(k => text.includes(k))) {
+    return { category: 'Personal', suggestedProject: 'Personal-Travel', reasoning: 'Travel-related task' };
+  }
+  if (learningKeywords.some(k => text.includes(k))) {
+    return { category: 'Personal', suggestedProject: 'Personal-Learning', reasoning: 'Learning/development task' };
+  }
+  
+  // Work/Client keywords
+  const clientKeywords = ['client', 'consulting', 'freelance', 'contract', 'proposal'];
+  if (clientKeywords.some(k => text.includes(k))) {
+    return { category: 'Work', suggestedProject: 'Work-Clients', reasoning: 'Client work task' };
+  }
+  
+  // Default - unclear
+  return { category: 'Unclear', suggestedProject: 'Needs-Clarification', reasoning: 'Unable to categorize - needs clarification' };
+}
+
+// Handle inbox list specially - organize tasks into suggested projects
+async function handleInboxList(
+  folder: any,
+  list: any,
+  api: ClickUpAPI,
+  state: SyncState,
+  dryRun: boolean
+): Promise<void> {
+  const folderName = sanitizeName(folder.name);
+  const isMainInbox = folder.name.toLowerCase() === 'personal' && list.name.toLowerCase() === 'inbox';
+  const noteType = isMainInbox ? 'Main Inbox' : `${folder.name} Inbox`;
+  const inboxDir = path.join(OBSIDIAN_VAULT, '00-Inbox');
+  const inboxFile = path.join(inboxDir, `${folderName}-Inbox-Organization.md`);
+  
+  ensureDir(inboxDir);
+  
+  // Fetch tasks from inbox
+  let tasks: any[] = [];
+  try {
+    tasks = await api.getTasks(list.id, { include_closed: false });
+  } catch (e) {
+    console.warn(`⚠️  Could not fetch inbox tasks: ${e}`);
+    return;
+  }
+  
+  if (tasks.length === 0) {
+    console.log(`  ✅ Inbox is empty`);
+    return;
+  }
+  
+  console.log(`  📥 Inbox has ${tasks.length} tasks to organize`);
+  
+  // Categorize all tasks
+  const categorized: Record<string, any[]> = {};
+  const needsClarification: any[] = [];
+  
+  for (const task of tasks) {
+    const categorization = categorizeInboxTask(task.name, task.description);
+    
+    if (categorization.category === 'Unclear') {
+      needsClarification.push({ task, categorization });
+    } else {
+      if (!categorized[categorization.suggestedProject]) {
+        categorized[categorization.suggestedProject] = [];
+      }
+      categorized[categorization.suggestedProject].push({ task, categorization });
+    }
+  }
+  
+  // Build organization note content
+  let content = `# ${noteType} Organization\n\n`;
+  content += `**Folder:** [[${folderName}]]  \n`;
+  content += `**ClickUp List:** [View in ClickUp](https://app.clickup.com/${list.id})  \n`;
+  content += `**Total Tasks:** ${tasks.length}  \n`;
+  content += `**Generated:** ${new Date().toISOString().split('T')[0]}  \n\n`;
+  
+  content += `> **Action Required:** Review tasks below and move to appropriate projects in ClickUp.\n\n`;
+  
+  // Organized tasks by suggested project
+  if (Object.keys(categorized).length > 0) {
+    content += `## Suggested Organization\n\n`;
+    
+    for (const [projectName, items] of Object.entries(categorized)) {
+      content += `### ${projectName} (${items.length} tasks)\n\n`;
+      content += `**Area:** [[${folderName}]]  \n`;
+      content += `**Reasoning:** ${items[0].categorization.reasoning}\n\n`;
+      
+      for (const { task, categorization } of items) {
+        const dueDate = task.due_date 
+          ? new Date(parseInt(task.due_date)).toISOString().split('T')[0]
+          : 'No due date';
+        content += `- [ ] **${task.name}**  \n`;
+        content += `  - Due: ${dueDate} | ClickUp ID: \`${task.id}\`  \n`;
+        if (task.description) {
+          content += `  - *${task.description.substring(0, 100)}${task.description.length > 100 ? '...' : ''}*  \n`;
+        }
+        content += `  - [Move to ${projectName}](https://app.clickup.com/t/${task.id})  \n\n`;
+      }
+    }
+  }
+  
+  // Tasks needing clarification
+  if (needsClarification.length > 0) {
+    content += `## ⚠️ Needs Clarification (${needsClarification.length} tasks)\n\n`;
+    content += `These tasks couldn't be automatically categorized. Please review and either:\n`;
+    content += `- Add more descriptive keywords to the task name\n`;
+    content += `- Move manually to the appropriate project\n`;
+    content += `- Ask for clarification\n\n`;
+    
+    for (const { task } of needsClarification) {
+      const dueDate = task.due_date 
+        ? new Date(parseInt(task.due_date)).toISOString().split('T')[0]
+        : 'No due date';
+      content += `- [ ] **${task.name}**  \n`;
+      content += `  - Due: ${dueDate} | ClickUp ID: \`${task.id}\`  \n`;
+      if (task.description) {
+        content += `  - *${task.description.substring(0, 100)}${task.description.length > 100 ? '...' : ''}*  \n`;
+      }
+      content += `  - [View in ClickUp](https://app.clickup.com/t/${task.id})  \n\n`;
+    }
+  }
+  
+  // Action items
+  content += `## Next Steps\n\n`;
+  content += `- [ ] Review organized tasks above\n`;
+  content += `- [ ] Move tasks to appropriate projects in ClickUp\n`;
+  content += `- [ ] Clarify any unclear tasks\n`;
+  content += `- [ ] Archive this note when inbox is empty\n\n`;
+  
+  content += `---\n*This note is auto-generated. Tasks are categorized based on keywords. Review before moving.*\n`;
+  
+  if (!dryRun) {
+    fs.writeFileSync(inboxFile, content);
+    console.log(`  📝 Created inbox organization note: ${inboxFile}`);
+  } else {
+    console.log(`  [DRY RUN] Would create inbox organization note`);
+  }
+  
+  // Also create/update the inbox project file
+  const inboxProjectName = `${folderName}-Inbox`;
+  const inboxProjectDir = path.join(PROJECTS_DIR, inboxProjectName);
+  const inboxProjectFile = path.join(inboxProjectDir, `${inboxProjectName}.md`);
+  
+  if (!dryRun) {
+    ensureDir(inboxProjectDir);
+    
+    let projectContent = `# ${list.name} (Inbox)\n\n`;
+    projectContent += `**Area:** [[${folderName}]]\n`;
+    projectContent += `**Type:** Inbox — Tasks here need to be organized into projects\n`;
+    projectContent += `**ClickUp List:** [View in ClickUp](https://app.clickup.com/${list.id})\n`;
+    projectContent += `**Sync ID:** #clickup-list-${list.id}\n\n`;
+    projectContent += `## How to Use This Inbox\n\n`;
+    projectContent += `1. **Capture** tasks here when you're unsure of the project\n`;
+    projectContent += `2. **Review** the organization note: [[${folderName}-Inbox-Organization]]\n`;
+    projectContent += `3. **Move** tasks to appropriate projects based on context\n`;
+    projectContent += `4. **Ask** for clarification if the context is unclear\n\n`;
+    projectContent += `## Current Tasks (${tasks.length})\n\n`;
+    
+    for (const task of tasks) {
+      const dueDate = task.due_date 
+        ? new Date(parseInt(task.due_date)).toISOString().split('T')[0]
+        : '';
+      const dueStr = dueDate ? ` — Due: ${dueDate}` : '';
+      projectContent += `- [ ] ${task.name}${dueStr} #clickup-task-${task.id}\n`;
+    }
+    
+    projectContent += `\n## Notes\n\n_Inbox processing notes..._\n`;
+    
+    fs.writeFileSync(inboxProjectFile, projectContent);
+    console.log(`  📁 Updated inbox project: ${inboxProjectName}`);
+  }
+}
+
 // Main sync function
 async function sync(dryRun = false, areaFilter?: string) {
   console.log('🔄 ClickUp ↔ Obsidian Sync\n');
@@ -396,6 +610,17 @@ async function sync(dryRun = false, areaFilter?: string) {
       
       // Sync lists (projects) in this folder
       for (const list of folder.lists || []) {
+        // Check if this is an inbox list
+        if (list.name.toLowerCase() === 'inbox') {
+          console.log(`  📥 Processing inbox: ${folder.name}/${list.name}`);
+          if (!dryRun) {
+            await handleInboxList(folder, list, api, state, dryRun);
+          } else {
+            console.log(`  [DRY RUN] Would process inbox with organization`);
+          }
+          continue;
+        }
+        
         if (!dryRun) {
           await syncProject(folder, list, api, state);
         } else {
