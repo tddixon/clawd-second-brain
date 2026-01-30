@@ -196,6 +196,96 @@ curl "https://api.clickup.com/api/v2/team/{team_id}/task?include_closed=true&sub
   -H "Authorization: {api_key}"
 ```
 
+## Docs API (v3)
+
+ClickUp Docs use the **v3 API** at `https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs`.
+
+### Search for Docs
+
+```bash
+GET /api/v3/workspaces/{workspace_id}/docs
+```
+
+### Create a Doc
+
+```bash
+POST /api/v3/workspaces/{workspace_id}/docs
+
+# Create doc in a folder (type 5 = folder)
+curl -X POST "https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs" \
+  -H "Authorization: {api_key}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "My Document",
+    "parent": {"id": "{folder_id}", "type": 5}
+  }'
+
+# Parent types: 5 = folder, 7 = workspace
+# Response: {"id": "doc_id", "name": "...", "parent": {...}, ...}
+```
+
+### Fetch a Doc
+
+```bash
+GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}
+```
+
+### Fetch PageListing for a Doc
+
+```bash
+GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages
+# Returns array of page objects with id, name, content, order_index
+```
+
+### Fetch Pages belonging to a Doc
+
+```bash
+GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages
+```
+
+### Create a Page
+
+```bash
+POST /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages
+
+curl -X POST "https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages" \
+  -H "Authorization: {api_key}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Page Title",
+    "content": "Markdown content here"
+  }'
+
+# Response: {"id": "page_id", "doc_id": "...", "name": "...", "content": "...", ...}
+```
+
+### Get Page
+
+```bash
+GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages/{page_id}
+```
+
+### Edit a Page
+
+```bash
+PUT /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages/{page_id}
+
+curl -X PUT "https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages/{page_id}" \
+  -H "Authorization: {api_key}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Updated Title",
+    "content": "Updated markdown content"
+  }'
+```
+
+### Important Notes
+
+- **Auto-created page:** Creating a doc auto-creates an "Untitled" first page. Its name may not visually update in the UI even after editing via API.
+- **Content format:** Supports markdown in the `content` field.
+- **No delete endpoint:** Pages and docs cannot be deleted via API — must use the UI.
+- **Parent types:** Use `"type": 5` for folders, `"type": 7` for workspace-level docs.
+
 ## Reference Documentation
 
 For detailed API documentation, query patterns, and troubleshooting:
