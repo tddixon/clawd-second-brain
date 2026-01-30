@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-01-30T18:00:00Z",
+  "session_id": "cron-life-fact-extraction",
+  "facts_extracted": {
+    "people": {
+      "trevor": 4
+    },
+    "companies": {
+      "clickup": 5
+    },
+    "projects": {
+      "nomads-ops-center": 2,
+      "klaviyo-mews-integration": 2,
+      "nomads-tour-website": 2,
+      "nomads-pos-mews-sync": 2
+    }
+  },
+  "total_facts": 17,
+  "summary": "Extracted facts about Trevor's ClickUp workspace setup, dashboard creation, API limitations for Docs/Dashboards, and Project Summary Document content for 4 projects"
+}
