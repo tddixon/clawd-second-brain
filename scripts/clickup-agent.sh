@@ -18,7 +18,8 @@ show_help() {
 🦎 Clawd ClickUp Agent
 
 Commands:
-  --run-now       Run agent once immediately
+  --run-now       Run agent once immediately (sync + execute tasks)
+  --sync-only     Only sync ClickUp folders/lists to Obsidian
   --start         Start agent daemon (continuous polling)
   --stop          Stop agent daemon
   --status        Show current status and recent activity
@@ -35,8 +36,9 @@ Environment Variables:
   CLAWD_TREVOR_USER_ID     Trevor's user ID
 
 Examples:
-  ./clickup-agent.sh --run-now          # Process tasks now
-  ./clickup-agent.sh --dry-run          # Preview what would happen
+  ./clickup-agent.sh --run-now          # Full run: sync + execute tasks
+  ./clickup-agent.sh --sync-only        # Sync folders→areas, lists→projects
+  ./clickup-agent.sh --dry-run          # Preview all changes
   ./clickup-agent.sh --status           # Check agent status
   ./clickup-agent.sh --setup            # First-time setup
 EOF
@@ -100,12 +102,32 @@ setup_cron() {
     fi
     
     # Add to crontab (every 5 minutes)
+    # This runs both structure sync + task execution
     (crontab -l 2>/dev/null; echo "*/5 * * * * cd /home/desktop/clawd && ./scripts/clickup-agent.sh --run-now >> logs/clickup-agent-cron.log 2>&1") | crontab -
     
     echo "✅ Added to crontab (runs every 5 minutes)"
     echo ""
+    echo "What runs every 5 minutes:"
+    echo "  1. Syncs ClickUp folders→Obsidian areas"
+    echo "  2. Syncs ClickUp lists→Obsidian projects"
+    echo "  3. Executes tasks assigned to Clawd"
+    echo "  4. Assists Trevor with his tasks"
+    echo ""
     echo "Current crontab:"
     crontab -l | grep clickup-agent
+}
+
+# Sync only (structure only, no task execution)
+sync_only() {
+    echo "🔄 Syncing ClickUp structure to Obsidian..."
+    echo "Timestamp: $(date)"
+    echo ""
+    
+    cd "$SCRIPT_DIR/.."
+    npx ts-node scripts/clickup-agent.ts --sync-only 2>&1 | tee -a "$LOG_FILE"
+    
+    echo ""
+    echo "✅ Sync complete!"
 }
 
 # Parse arguments
@@ -113,6 +135,9 @@ case "${1:-}" in
     --run-now)
         shift
         run_now "$@"
+        ;;
+    --sync-only)
+        sync_only
         ;;
     --dry-run)
         dry_run

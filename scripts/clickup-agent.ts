@@ -258,9 +258,103 @@ async function assistTrevorTask(
   return { comment, attachments };
 }
 
+// Sync ClickUp structure to Obsidian (folders → areas, lists → projects)
+async function syncStructureToObsidian(api: ClickUpAPI, dryRun: boolean) {
+  log('INFO', 'Syncing ClickUp structure to Obsidian...');
+  
+  const OBSIDIAN_VAULT = '/home/desktop/obsidian-second-brain';
+  const AREAS_DIR = `${OBSIDIAN_VAULT}/03-Areas`;
+  const PROJECTS_DIR = `${OBSIDIAN_VAULT}/02-Projects`;
+  
+  // Ensure directories exist
+  [AREAS_DIR, PROJECTS_DIR].forEach(dir => {
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  });
+  
+  const spaces = await api.getSpaces();
+  let areasCreated = 0;
+  let projectsCreated = 0;
+  
+  for (const space of spaces) {
+    // Get folders (become Areas)
+    const folders = await api.getFolders(space.id);
+    
+    for (const folder of folders) {
+      const areaName = folder.name.replace(/[^a-zA-Z0-9\s-]/g, '').replace(/\s+/g, '-');
+      const areaDir = `${AREAS_DIR}/${areaName}`;
+      const areaFile = `${areaDir}/${areaName}.md`;
+      
+      if (!fs.existsSync(areaFile)) {
+        if (dryRun) {
+          log('INFO', `[DRY RUN] Would create Area: ${areaName}`);
+          areasCreated++;
+        } else {
+          // Create area directory and file
+          fs.mkdirSync(areaDir, { recursive: true });
+          
+          let content = `# ${folder.name}\n\n`;
+          content += `**Type:** Area\n`;
+          content += `**ClickUp Folder:** [View in ClickUp](https://app.clickup.com/${folder.id})\n`;
+          content += `**Sync ID:** #clickup-folder-${folder.id}\n\n`;
+          content += `## Projects\n\n`;
+          
+          if (folder.lists && folder.lists.length > 0) {
+            for (const list of folder.lists) {
+              const projectName = `${areaName}-${list.name.replace(/[^a-zA-Z0-9\s-]/g, '').replace(/\s+/g, '-')}`;
+              content += `- [[${projectName}]] — ${list.task_count || 0} tasks\n`;
+            }
+          } else {
+            content += `_No projects yet. Create a list in ClickUp to add a project._\n`;
+          }
+          
+          content += `\n## Notes\n\n_Area overview and notes..._\n`;
+          
+          fs.writeFileSync(areaFile, content);
+          log('INFO', `Created Area: ${areaName}`);
+          areasCreated++;
+        }
+      }
+      
+      // Get lists in folder (become Projects)
+      for (const list of folder.lists || []) {
+        const projectName = `${areaName}-${list.name.replace(/[^a-zA-Z0-9\s-]/g, '').replace(/\s+/g, '-')}`;
+        const projectDir = `${PROJECTS_DIR}/${projectName}`;
+        const projectFile = `${projectDir}/${projectName}.md`;
+        
+        if (!fs.existsSync(projectFile)) {
+          if (dryRun) {
+            log('INFO', `[DRY RUN] Would create Project: ${projectName}`);
+            projectsCreated++;
+          } else {
+            // Create project directory and file
+            fs.mkdirSync(projectDir, { recursive: true });
+            
+            let content = `# ${list.name}\n\n`;
+            content += `**Area:** [[${areaName}]]\n`;
+            content += `**Status:** Active\n`;
+            content += `**ClickUp List:** [View in ClickUp](https://app.clickup.com/${list.id})\n`;
+            content += `**Sync ID:** #clickup-list-${list.id}\n\n`;
+            content += `## Tasks\n\n`;
+            content += `### Open\n\n_No tasks synced yet. Run sync to populate._\n\n`;
+            content += `### Recently Completed\n\n_None yet._\n\n`;
+            content += `## Notes\n\n_Project notes and documentation..._\n`;
+            
+            fs.writeFileSync(projectFile, content);
+            log('INFO', `Created Project: ${projectName}`);
+            projectsCreated++;
+          }
+        }
+      }
+    }
+  }
+  
+  log('INFO', `Structure sync complete: ${areasCreated} areas, ${projectsCreated} projects`);
+  return { areasCreated, projectsCreated };
+}
+
 // Main agent loop
-async function runAgent(dryRun: boolean = false, once: boolean = false) {
-  log('INFO', `Agent starting (dryRun: ${dryRun}, once: ${once})`);
+async function runAgent(dryRun: boolean = false, once: boolean = false, syncStructure: boolean = true) {
+  log('INFO', `Agent starting (dryRun: ${dryRun}, once: ${once}, syncStructure: ${syncStructure})`);
   
   // Load credentials
   const token = process.env.CLICKUP_API_TOKEN || process.env.CLAWD_CLICKUP_TOKEN;
@@ -283,6 +377,15 @@ async function runAgent(dryRun: boolean = false, once: boolean = false) {
   
   const api = new ClickUpAPI(token, teamId);
   const state = loadState();
+  
+  // Step 1: Sync structure (folders → areas, lists → projects)
+  if (syncStructure) {
+    try {
+      await syncStructureToObsidian(api, dryRun);
+    } catch (e) {
+      log('ERROR', `Structure sync failed: ${e}`);
+    }
+  }
   
   try {
     // Get all spaces
@@ -426,6 +529,8 @@ const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const once = args.includes('--once') || args.includes('--run-now');
 const verbose = args.includes('--verbose');
+const syncOnly = args.includes('--sync-only');
+const noSync = args.includes('--no-sync');
 
 if (verbose) {
   process.env.VERBOSE = 'true';
@@ -456,6 +561,8 @@ Options:
   --dry-run       Show what would be done without making changes
   --once          Run once and exit (don't loop)
   --status        Show current agent status
+  --sync-only     Only sync structure (folders→areas, lists→projects), skip task execution
+  --no-sync       Skip structure sync, only execute tasks
   --verbose       Show detailed output
   --help          Show this help
 
@@ -464,12 +571,36 @@ Environment:
   CLICKUP_TEAM_ID         ClickUp team ID
   CLAWD_CLICKUP_USER_ID   Clawd's user ID
   CLAWD_TREVOR_USER_ID    Trevor's user ID
+
+Examples:
+  clickup-agent.ts --run-now           # Full run: sync structure + execute tasks
+  clickup-agent.ts --sync-only         # Only sync folders/lists to Obsidian
+  clickup-agent.ts --no-sync --run-now # Only execute tasks, skip structure sync
+  clickup-agent.ts --dry-run           # Preview all changes
 `);
   process.exit(0);
 }
 
 // Run
-runAgent(dryRun, once).catch(err => {
-  log('ERROR', `Fatal error: ${err}`);
-  process.exit(1);
-});
+if (syncOnly) {
+  // Just sync structure, no task execution
+  const token = process.env.CLICKUP_API_TOKEN || process.env.CLAWD_CLICKUP_TOKEN;
+  const teamId = process.env.CLICKUP_TEAM_ID;
+  if (!token || !teamId) {
+    console.error('Missing CLICKUP_API_TOKEN or CLICKUP_TEAM_ID');
+    process.exit(1);
+  }
+  const api = new ClickUpAPI(token, teamId);
+  syncStructureToObsidian(api, dryRun).then(() => {
+    console.log('✅ Structure sync complete');
+    process.exit(0);
+  }).catch(err => {
+    console.error('Error:', err);
+    process.exit(1);
+  });
+} else {
+  runAgent(dryRun, once, !noSync).catch(err => {
+    log('ERROR', `Fatal error: ${err}`);
+    process.exit(1);
+  });
+}
