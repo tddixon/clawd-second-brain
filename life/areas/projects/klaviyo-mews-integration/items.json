@@ -46,5 +46,23 @@
     "fact": "Using tmux for remote Claude Code session control (2026-01-29)",
     "timestamp": "2026-01-29",
     "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-009",
+    "fact": "ClickUp project (List) created in Nomads space (2026-01-30 16:51 UTC), List ID: 901710408192",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-010",
+    "fact": "GitHub repo: https://github.com/tddixon/klaviyo-mews-integration",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-011",
+    "fact": "Initial task created in ClickUp: Setup Klaviyo lifecycle events (12 event triggers configured)",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
   }
 ]

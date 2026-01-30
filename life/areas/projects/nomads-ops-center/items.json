@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nomads-ops-center-001",
+    "fact": "ClickUp project (List) created in Nomads space (2026-01-30 16:51 UTC), List ID: 901710408191",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-002",
+    "fact": "GitHub repo: https://github.com/tddixon/nomads-ops-center",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-003",
+    "fact": "Initial task created in ClickUp: Review PR #8 - MEWS Connector API",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-004",
+    "fact": "Purpose: Command center dashboard for Nomads operations",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  }
+]

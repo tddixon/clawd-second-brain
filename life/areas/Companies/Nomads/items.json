@@ -55,6 +55,30 @@
       "content": "Nomads Inbox has 71 tasks requiring organization - auto-categorization feature added to sync script",
       "timestamp": "2026-01-30T16:00:00Z",
       "source": "clickup_discovery"
+    },
+    {
+      "id": "nomads-8",
+      "entity": "Nomads",
+      "type": "project_created",
+      "content": "Created 4 ClickUp projects (lists) in Nomads space: Ops Center (901710408191), Klaviyo Integration (901710408192), Tour Website (901710408193), POS-MEWS Sync (901710408195)",
+      "timestamp": "2026-01-30T17:04:00Z",
+      "source": "clickup_creation"
+    },
+    {
+      "id": "nomads-9",
+      "entity": "Nomads",
+      "type": "decision",
+      "content": "Organize development projects into ClickUp lists for better tracking and task management",
+      "timestamp": "2026-01-30T17:00:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-10",
+      "entity": "Nomads",
+      "type": "integration",
+      "content": "Time tracking integration created: bidirectional sync between ClickUp and Obsidian for tracking task time in both platforms",
+      "timestamp": "2026-01-30T16:30:00Z",
+      "source": "development"
     }
   ]
 }

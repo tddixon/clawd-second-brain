@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "clickup-task-1",
+      "entity": "clickup-agent",
+      "type": "bug_fix",
+      "content": "Fixed ClickUp agent import error: Added .js extension to clickup-api import and compiled TypeScript to JavaScript",
+      "timestamp": "2026-01-30T16:40:00Z",
+      "source": "conversation",
+      "status": "completed"
+    },
+    {
+      "id": "clickup-task-2",
+      "entity": "clickup-task",
+      "type": "completed",
+      "content": "Task completed: Create ClickUp projects for Nomads development work - Created 4 lists in Nomads space (Ops Center, Klaviyo Integration, Tour Website, POS-MEWS Sync)",
+      "timestamp": "2026-01-30T17:04:00Z",
+      "source": "clickup",
+      "status": "completed"
+    },
+    {
+      "id": "time-tracking-1",
+      "entity": "time-tracking",
+      "type": "feature",
+      "content": "Time tracking integration created: bidirectional sync between ClickUp and Obsidian using time-tracking.js with MCP integration",
+      "timestamp": "2026-01-30T16:30:00Z",
+      "source": "development",
+      "status": "active"
+    },
+    {
+      "id": "clickup-agent-standalone-1",
+      "entity": "clawd-agent",
+      "type": "creation",
+      "content": "Created standalone ClickUp agent (clawd-agent-standalone.js) for executing tasks without TypeScript dependencies",
+      "timestamp": "2026-01-30T16:40:00Z",
+      "source": "development",
+      "status": "active"
+    }
+  ]
+}

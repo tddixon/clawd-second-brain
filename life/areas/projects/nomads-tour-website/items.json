@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tour-website-001",
+    "fact": "ClickUp project (List) created in Nomads space (2026-01-30 16:51 UTC), List ID: 901710408193",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tour-website-002",
+    "fact": "GitHub repo: https://github.com/tddixon/nomads-asia-tour-convex",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tour-website-003",
+    "fact": "Initial task created in ClickUp: Review PR #32 - Native MEWS Booking",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tour-website-004",
+    "fact": "Purpose: Booking engine & guest portal for tour operations",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  }
+]

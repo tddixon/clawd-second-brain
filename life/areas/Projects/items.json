@@ -89,6 +89,87 @@
       "timestamp": "2026-01-29T15:19:00Z",
       "source": "conversation",
       "status": "completed"
+    },
+    {
+      "id": "nomads-ops-center-1",
+      "entity": "nomads-ops-center",
+      "type": "repository",
+      "content": "GitHub repo: https://github.com/tddixon/nomads-ops-center - Command center dashboard for Nomads operations",
+      "timestamp": "2026-01-30T17:00:00Z",
+      "source": "conversation",
+      "status": "active"
+    },
+    {
+      "id": "klaviyo-mews-integration-1",
+      "entity": "klaviyo-mews-integration",
+      "type": "repository",
+      "content": "GitHub repo: https://github.com/tddixon/klaviyo-mews-integration - MEWS to Klaviyo lifecycle email automation",
+      "timestamp": "2026-01-30T17:00:00Z",
+      "source": "conversation",
+      "status": "active"
+    },
+    {
+      "id": "nomads-asia-tour-convex-1",
+      "entity": "nomads-asia-tour-convex",
+      "type": "repository",
+      "content": "GitHub repo: https://github.com/tddixon/nomads-asia-tour-convex - Tour booking website with native MEWS booking",
+      "timestamp": "2026-01-30T17:00:00Z",
+      "source": "conversation",
+      "status": "active"
+    },
+    {
+      "id": "ops-center-clickup-1",
+      "entity": "ops-center",
+      "type": "clickup_project",
+      "content": "ClickUp list created (ID: 901710408191) for Ops Center development work",
+      "timestamp": "2026-01-30T17:04:00Z",
+      "source": "clickup_creation",
+      "status": "active"
+    },
+    {
+      "id": "klaviyo-integration-clickup-1",
+      "entity": "klaviyo-integration",
+      "type": "clickup_project",
+      "content": "ClickUp list created (ID: 901710408192) for Klaviyo Integration development work",
+      "timestamp": "2026-01-30T17:04:00Z",
+      "source": "clickup_creation",
+      "status": "active"
+    },
+    {
+      "id": "tour-website-clickup-1",
+      "entity": "tour-website",
+      "type": "clickup_project",
+      "content": "ClickUp list created (ID: 901710408193) for Tour Website development work",
+      "timestamp": "2026-01-30T17:04:00Z",
+      "source": "clickup_creation",
+      "status": "active"
+    },
+    {
+      "id": "pos-mews-sync-clickup-1",
+      "entity": "pos-mews-sync",
+      "type": "clickup_project",
+      "content": "ClickUp list created (ID: 901710408195) for POS-MEWS Sync development work",
+      "timestamp": "2026-01-30T17:04:00Z",
+      "source": "clickup_creation",
+      "status": "active"
+    },
+    {
+      "id": "mews-connector-pr-1",
+      "entity": "nomads-ops-center",
+      "type": "pull_request",
+      "content": "PR #8 pending review: MEWS Connector API implementation",
+      "timestamp": "2026-01-30T17:00:00Z",
+      "source": "conversation",
+      "status": "pending_review"
+    },
+    {
+      "id": "native-booking-pr-1",
+      "entity": "nomads-asia-tour-convex",
+      "type": "pull_request",
+      "content": "PR #32 pending review: Native MEWS Booking implementation",
+      "timestamp": "2026-01-30T17:00:00Z",
+      "source": "conversation",
+      "status": "pending_review"
     }
   ]
 }

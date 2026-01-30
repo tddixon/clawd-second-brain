@@ -132,5 +132,23 @@
     "fact": "Phase 2 in progress: Consolidating mewsWebhook.ts into mewsConnector.ts with both webhook and API polling working simultaneously (2026-01-30)",
     "timestamp": "2026-01-30T13:50:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-023",
+    "fact": "ClickUp project structure organized (2026-01-30 16:51 UTC): 4 main development projects created as ClickUp Lists in Nomads space",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-024",
+    "fact": "ClickUp projects with List IDs: Ops Center (901710408191), Klaviyo Integration (901710408192), Tour Website (901710408193), POS-MEWS Sync (901710408195)",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-025",
+    "fact": "GitHub repos linked to ClickUp projects (2026-01-30): All main projects have repo links in task descriptions",
+    "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
   }
 ]
