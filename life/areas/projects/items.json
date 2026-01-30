@@ -79,6 +79,46 @@
       "date": "2026-01-30T14:39:00Z",
       "source": "clawdbot",
       "supersedes": []
+    },
+    {
+      "id": "clickup-obsidian-sync-1",
+      "entity": "clickup-obsidian-sync",
+      "fact_type": "request",
+      "title": "ClickUp-Obsidian Sync Requested",
+      "description": "Trevor requested mapping and syncing existing ClickUp items to Obsidian with 1:1 alignment. Wants intelligent merging if projects already exist in Obsidian.",
+      "date": "2026-01-30T15:33:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clickup-obsidian-sync-2",
+      "entity": "clickup-obsidian-sync",
+      "fact_type": "blocker",
+      "title": "ClickUp API Token Not Configured",
+      "description": "Sync blocked due to missing ClickUp API token. Trevor needs to generate token from https://app.clickup.com/settings/apps and configure CLICKUP_API_KEY environment variable.",
+      "date": "2026-01-30T15:38:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clickup-obsidian-sync-3",
+      "entity": "clickup-obsidian-sync",
+      "fact_type": "planning",
+      "title": "Clawd User Creation in ClickUp",
+      "description": "Trevor asked about creating @clawd user in ClickUp for task assignment. Users must be created in ClickUp interface (https://app.clickup.com/settings/members) with email and Member role, then agent needs User ID configuration.",
+      "date": "2026-01-30T15:48:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clickup-obsidian-sync-4",
+      "entity": "clickup-obsidian-sync",
+      "fact_type": "decision",
+      "title": "Hybrid Integration Strategy",
+      "description": "Decision made: Use BOTH custom agent (for main workflow - task execution, structure sync, 2-way Obsidian sync) and official ClickUp MCP (for advanced features like time tracking, chat, docs). Custom agent optimized for Trevor's workflow.",
+      "date": "2026-01-30T15:50:00Z",
+      "source": "clawdbot",
+      "supersedes": []
     }
   ]
 }

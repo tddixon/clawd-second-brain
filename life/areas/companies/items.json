@@ -139,6 +139,36 @@
       "date": "2026-01-30T13:42:00Z",
       "source": "clawdbot",
       "supersedes": []
+    },
+    {
+      "id": "clickup-1",
+      "entity": "ClickUp",
+      "fact_type": "integration_request",
+      "title": "ClickUp-Obsidian Sync Requested",
+      "description": "Trevor requested mapping and syncing existing ClickUp items to Obsidian with 1:1 alignment. ClickUp is Trevor's project management platform. Integration will sync folders→areas, lists→projects, with intelligent merging.",
+      "date": "2026-01-30T15:33:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clickup-2",
+      "entity": "ClickUp",
+      "fact_type": "planning",
+      "title": "Clawd User in ClickUp Planned",
+      "description": "Trevor asked about creating @clawd user in ClickUp for task assignment. User creation requires ClickUp interface (https://app.clickup.com/settings/members) with email and Member role. Once created, agent needs User ID for configuration.",
+      "date": "2026-01-30T15:48:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clickup-3",
+      "entity": "ClickUp",
+      "fact_type": "decision",
+      "title": "Hybrid Integration Strategy",
+      "description": "Decision made: Use BOTH custom agent and official ClickUp MCP. Custom agent handles main workflow (task execution, structure sync, 2-way Obsidian sync). Official MCP provides 32+ tools for advanced features (docs, chat, time tracking) with OAuth authentication.",
+      "date": "2026-01-30T15:50:00Z",
+      "source": "clawdbot",
+      "supersedes": []
     }
   ]
 }

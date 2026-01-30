@@ -1,0 +1,68 @@
+[
+  {
+    "id": "clickup-001",
+    "fact": "Project management platform used by Trevor for task and project management",
+    "timestamp": "2026-01-30T15:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-002",
+    "fact": "Integration with Clawdbot in progress for automated task execution",
+    "timestamp": "2026-01-30T15:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-003",
+    "fact": "2-way sync planned with Obsidian Second Brain (ClickUp folders→Obsidian Areas, ClickUp lists→Obsidian Projects, tasks sync)",
+    "timestamp": "2026-01-30T15:33:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-004",
+    "fact": "Official MCP integration available with 32+ tools for docs, chat, time tracking (OAuth-based)",
+    "timestamp": "2026-01-30T15:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-005",
+    "fact": "Custom agent built for Clawdbot with task execution, structure sync, and Obsidian 2-way sync",
+    "timestamp": "2026-01-30T15:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-006",
+    "fact": "Decision: Use hybrid approach - custom agent for main workflow + MCP for advanced features",
+    "timestamp": "2026-01-30T15:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-007",
+    "fact": "Trevor provided ClickUp API key: pk_43553717_MMA0TFNM7U8DL876ZKFEVLFWPBYZHWYC",
+    "timestamp": "2026-01-30T15:49:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-008",
+    "fact": "ClickUp Team ID: 25694066",
+    "timestamp": "2026-01-30T15:49:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-009",
+    "fact": "Trevor's ClickUp User ID: 43553717",
+    "timestamp": "2026-01-30T15:49:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-010",
+    "fact": "ClickUp workspace structure discovered: Personal space (Inbox, Notes folder), Nomads space (Inbox 71 tasks, Marketing 15, Nomads Bangkok 11, etc.), Bamboo space (Bamboo General 17 tasks)",
+    "timestamp": "2026-01-30T16:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-011",
+    "fact": "Inbox organization feature added to sync script - auto-categorizes tasks based on keywords (Nomads, marketing, accounting, operations, development, design, legal, personal)",
+    "timestamp": "2026-01-30T15:55:00Z",
+    "status": "active"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "clickup-obsidian-sync-001",
+    "fact": "Trevor requested mapping and syncing existing ClickUp items to Obsidian",
+    "timestamp": "2026-01-30T15:33:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-obsidian-sync-002",
+    "fact": "Trevor wants 1:1 alignment between ClickUp and Obsidian with intelligent merging of existing projects",
+    "timestamp": "2026-01-30T15:33:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-obsidian-sync-003",
+    "fact": "Trevor provided ClickUp API key, unblocking sync progress",
+    "timestamp": "2026-01-30T15:49:00Z",
+    "status": "active",
+    "supersedes": "clickup-obsidian-sync-004"
+  },
+  {
+    "id": "clickup-obsidian-sync-004",
+    "fact": "Trevor asked about creating @clawd user in ClickUp for task assignment",
+    "timestamp": "2026-01-30T15:48:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-obsidian-sync-005",
+    "fact": "Decision made: Use BOTH custom agent (main workflow) and MCP (advanced features like time tracking, docs, chat)",
+    "timestamp": "2026-01-30T15:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-obsidian-sync-006",
+    "fact": "Custom agent handles: task execution, structure sync (folders→areas), 2-way Obsidian sync, auto-classification, sub-agent spawning",
+    "timestamp": "2026-01-30T15:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-obsidian-sync-007",
+    "fact": "ClickUp workspace structure discovered: Personal (Inbox 1 task, Notes), Nomads (Inbox 71 tasks, Marketing 15, Nomads Bangkok 11, Nomads Asia Website 6, Graphic Design 3, Accounting 2, Ops Dashboard 0), Bamboo (Bamboo General 17 tasks, Inbox 0)",
+    "timestamp": "2026-01-30T16:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-obsidian-sync-008",
+    "fact": "Inbox organization feature added - auto-categorizes inbox tasks by keywords (Nomads: hostel/marketing/accounting/ops/dev/design/legal, Personal: health/travel/learning, Work: client work)",
+    "timestamp": "2026-01-30T15:55:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-obsidian-sync-009",
+    "fact": "Sync script committed: feat(clickup) Add inbox organization for ClickUp inbox lists",
+    "timestamp": "2026-01-30T15:47:00Z",
+    "status": "active"
+  }
+]
