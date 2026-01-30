@@ -22,5 +22,11 @@
     "fact": "Purpose: Booking engine & guest portal for tour operations",
     "timestamp": "2026-01-30T16:51:00Z",
     "status": "active"
+  },
+  {
+    "id": "tour-website-005",
+    "fact": "Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview (Tour booking with native MEWS experience), Goal (improve conversion via seamless booking), Completed Work (Next.js 15 + Convex, native MEWS booking PR #32, room listings with pricing, mobile interface), Pending Work (review PR #32, test with production data, A/B test, payment processing), References (Mad Monkey UX reference), and Future Enhancement ideas (photo galleries, dynamic pricing, package deals, guest reviews)",
+    "timestamp": "2026-01-30T17:58:00Z",
+    "status": "active"
   }
 ]

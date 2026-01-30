@@ -22,5 +22,17 @@
     "fact": "Purpose: Command center dashboard for Nomads operations",
     "timestamp": "2026-01-30T16:51:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-005",
+    "fact": "Trevor created ClickUp dashboard with AI Executive Summary widget showing 0 unassigned, 1 in progress, 1 completed tasks (2026-01-30 17:56 UTC)",
+    "timestamp": "2026-01-30T17:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-006",
+    "fact": "Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview, Goal, Completed Work (Next.js 15 + Convex, MEWS Connector API PR #8), Pending Work (PR review, deploy, monitoring, documentation), References, and Future Enhancement ideas",
+    "timestamp": "2026-01-30T17:58:00Z",
+    "status": "active"
   }
 ]

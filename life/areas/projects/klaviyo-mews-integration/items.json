@@ -64,5 +64,11 @@
     "fact": "Initial task created in ClickUp: Setup Klaviyo lifecycle events (12 event triggers configured)",
     "timestamp": "2026-01-30T16:51:00Z",
     "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-012",
+    "fact": "Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview (MEWS to Klaviyo lifecycle email automation), Goal (automate guest communication), Completed Work (12 lifecycle events, predictive analytics, webhook handlers), Pending Work (test triggers, design templates, A/B testing, deploy), References, and Future Enhancement ideas (VIP automation, win-back campaigns, review requests)",
+    "timestamp": "2026-01-30T17:58:00Z",
+    "status": "active"
   }
 ]

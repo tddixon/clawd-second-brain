@@ -88,5 +88,35 @@
     "fact": "Time tracking sync requested - need to integrate ClickUp time tracking with Obsidian TaskNotes for bidirectional time logging",
     "timestamp": "2026-01-30T16:32:00Z",
     "status": "active"
+  },
+  {
+    "id": "clickup-016",
+    "fact": "Trevor's ClickUp workspace name: 'Trevor Dixon's Workspace' (2026-01-30)",
+    "timestamp": "2026-01-30T17:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-017",
+    "fact": "Docs feature available - Docs can be created at folder level (same level as Lists) for project documentation (2026-01-30)",
+    "timestamp": "2026-01-30T17:53:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-018",
+    "fact": "Docs cannot be created via REST API - only available through ClickUp UI or MCP (not REST API) (2026-01-30 17:53 UTC)",
+    "timestamp": "2026-01-30T17:53:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-019",
+    "fact": "Dashboards feature available - Can show AI Executive Summary widget, task metrics (unassigned/in progress/completed), workload status bar, and charts by assignee (2026-01-30)",
+    "timestamp": "2026-01-30T17:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-020",
+    "fact": "Dashboards cannot be created via REST API - only available through ClickUp UI (not REST API) (2026-01-30 17:58 UTC)",
+    "timestamp": "2026-01-30T17:58:00Z",
+    "status": "active"
   }
 ]

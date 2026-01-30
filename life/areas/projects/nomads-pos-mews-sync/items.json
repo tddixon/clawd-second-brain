@@ -94,5 +94,11 @@
     "fact": "Purpose: Poster POS to MEWS Sync for bar operations",
     "timestamp": "2026-01-30T16:51:00Z",
     "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-013",
+    "fact": "Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview (Poster POS to MEWS outlet sync for unified financial reporting), Goal (eliminate manual data entry), Completed Work (API framework, accounting category mapping, revenue sync logic, error handling), Pending Work (create GitHub repo, test with real POS data, configure mappings, set up daily sync), References (Poster API docs, MEWS API docs), and Future Enhancement ideas (real-time sync, revenue forecasting, inventory management, staff commission tracking)",
+    "timestamp": "2026-01-30T17:58:00Z",
+    "status": "active"
   }
 ]
