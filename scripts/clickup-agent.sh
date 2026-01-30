@@ -27,6 +27,7 @@ Commands:
   --setup         Run initial setup wizard
   --setup-cron    Add to crontab for automatic execution
   --logs          Show recent logs
+  --skills        Show installed ClickUp skills
   --help          Show this help
 
 Environment Variables:
@@ -41,6 +42,15 @@ Examples:
   ./clickup-agent.sh --dry-run          # Preview all changes
   ./clickup-agent.sh --status           # Check agent status
   ./clickup-agent.sh --setup            # First-time setup
+  ./clickup-agent.sh --skills           # Show installed skills
+
+Installed Skills:
+  clickup              REST API skill
+  clickup-mcp          Official ClickUp MCP (OAuth)
+
+Documentation:
+  Resources/ClickUp-Clawd-Agent.md
+  Resources/ClickUp-Obsidian-Sync.md
 EOF
 }
 
@@ -89,6 +99,25 @@ show_logs() {
 # Setup wizard
 run_setup() {
     "$SCRIPT_DIR/clickup-agent-setup.sh"
+}
+
+# Show skill info
+show_skills() {
+    echo "📚 ClickUp Skills Installed"
+    echo "=========================="
+    echo ""
+    echo "1. clickup (REST API)"
+    echo "   Location: /home/desktop/clawd/skills/clickup/"
+    echo "   Use for: Direct API calls, querying, task management"
+    echo ""
+    echo "2. clickup-mcp (Official MCP)"
+    echo "   Location: /home/desktop/clawd/skills/clickup-mcp/"
+    echo "   Use for: Advanced features (docs, chat, time tracking)"
+    echo "   Requires: OAuth via Claude Code"
+    echo ""
+    echo "Documentation:"
+    echo "  - Agent: Resources/ClickUp-Clawd-Agent.md"
+    echo "  - Sync: Resources/ClickUp-Obsidian-Sync.md"
 }
 
 # Setup cron
@@ -150,6 +179,9 @@ case "${1:-}" in
         ;;
     --setup)
         run_setup
+        ;;
+    --skills)
+        show_skills
         ;;
     --setup-cron)
         setup_cron

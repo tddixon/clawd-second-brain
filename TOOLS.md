@@ -11,7 +11,10 @@ Skills define *how* tools work. This file is for *your* specifics — the stuff 
 
 ### Task & Project Management
 - **Todoist** — Personal task management
-- **ClickUp** — Project management (team/business?)
+- **ClickUp** — Project management (team/business)
+  - **REST API Skill:** `/home/desktop/clawd/skills/clickup/` — Direct API calls
+  - **MCP Skill:** `/home/desktop/clawd/skills/clickup-mcp/` — Official MCP integration
+  - **Agent System:** `/home/desktop/clawd/scripts/clickup-agent.ts` — Automated task execution
 
 ### Communication & Calendar
 - **Gmail** — Email
@@ -130,6 +133,118 @@ curl -X POST "http://127.0.0.1:8090/api/tasks/{path}/time/start"
 - **Conversations** → Claude Sonnet (main session)
 
 **Always route appropriately to minimize costs while maintaining quality.**
+
+---
+
+---
+
+## ClickUp Integration
+
+**Installed Skills:**
+1. **clickup** — REST API skill (direct API calls)
+2. **clickup-mcp** — Official ClickUp MCP (OAuth-based)
+
+### Configuration
+
+Add to `~/.bashrc` or `~/.clawdsync/clickup-agent-config`:
+```bash
+# REST API (for scripts/agent)
+export CLICKUP_API_KEY="pk_your_token_here"
+export CLICKUP_TEAM_ID="your_team_id"
+export CLAWD_CLICKUP_USER_ID="clawd_user_id"
+export CLAWD_TREVOR_USER_ID="trevor_user_id"
+
+# MCP OAuth (optional, for advanced features)
+export CLICKUP_TOKEN="eyJhbGciOiJkaXIi..."  # From Claude Code OAuth
+```
+
+### Getting Credentials
+
+**API Token:**
+1. Go to https://app.clickup.com/settings/apps
+2. Click "Generate" under API Token
+3. Copy the token
+
+**Team ID:**
+```bash
+cd /home/desktop/clawd
+./scripts/clickup-agent.sh --setup
+# Or manually:
+curl -H "Authorization: pk_your_token" https://api.clickup.com/api/v2/team
+```
+
+**User IDs:**
+```bash
+# Get all team members
+curl -H "Authorization: pk_your_token" https://api.clickup.com/api/v2/team/{team_id}
+```
+
+### MCP Setup (Optional - Advanced Features)
+
+For 32+ tools including docs, chat, time tracking:
+
+**Via Claude Code (Recommended):**
+```bash
+# In Claude Code
+claude mcp add clickup --transport http https://mcp.clickup.com/mcp
+# Then run: /mcp
+# Complete OAuth in browser
+
+# Extract token for mcporter
+jq -r '.mcpOAuth | to_entries | .[] | select(.key | startswith("clickup")) | .value.accessToken' ~/.claude/.credentials.json
+```
+
+**Then add to environment:**
+```bash
+export CLICKUP_TOKEN="extracted_token"
+```
+
+### Usage
+
+**REST API (Most Common):**
+```bash
+# Query tasks
+./scripts/clickup-query.sh tasks
+
+# Get task counts
+./scripts/clickup-query.sh task-count
+
+# Agent automation
+./scripts/clickup-agent.sh --run-now
+```
+
+**MCP (Advanced):**
+```bash
+# Search everything
+mcporter call 'clickup.clickup_search(keywords: "marketing")'
+
+# Create task
+mcporter call 'clickup.clickup_create_task(name: "New Task", list_id: "...")'
+
+# Start timer
+mcporter call 'clickup.clickup_start_time_tracking(task_id: "...")'
+```
+
+### Automation (Agent)
+
+The ClickUp agent runs automatically:
+```bash
+# Every 5 minutes via cron
+*/5 * * * * ./scripts/clickup-agent.sh --run-now
+
+# What it does:
+# 1. Syncs new folders → Obsidian Areas
+# 2. Syncs new lists → Obsidian Projects
+# 3. Executes tasks assigned to Clawd
+# 4. Assists Trevor with his tasks
+```
+
+### Documentation
+
+- **Agent System:** `Resources/ClickUp-Clawd-Agent.md`
+- **2-Way Sync:** `Resources/ClickUp-Obsidian-Sync.md`
+- **REST API Skill:** `/home/desktop/clawd/skills/clickup/SKILL.md`
+- **MCP Skill:** `/home/desktop/clawd/skills/clickup-mcp/SKILL.md`
 
 ---
 

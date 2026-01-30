@@ -60,6 +60,14 @@
     "skillcraft": {
       "version": "0.9.1",
       "installedAt": 1769532059552
+    },
+    "clickup-mcp": {
+      "version": "1.0.0",
+      "installedAt": 1769786108892
+    },
+    "clickup": {
+      "version": "1.0.0",
+      "installedAt": 1769786116236
     }
   }
 }

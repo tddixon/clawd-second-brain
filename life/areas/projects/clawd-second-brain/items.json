@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "clawd-second-brain-1",
+      "entity": "clawd-second-brain",
+      "fact_type": "project_creation",
+      "title": "GitHub Repository Created",
+      "description": "Created GitHub repository 'calwd-second-brain' (https://github.com/tddixon/calwd-second-brain) to back up Clawd configuration and skills. Contains AGENTS.md, SOUL.md, IDENTITY.md, USER.md, skills/ directory with 30+ installed skills, memory/ session logs, and docs/ documentation.",
+      "date": "2026-01-30T14:39:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

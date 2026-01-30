@@ -136,5 +136,11 @@
     "fact": "Asked about GitHub Personal Access Token setup to allow Clawd to commit without exposing email (2026-01-30)",
     "timestamp": "2026-01-30T13:55:00Z",
     "status": "active"
+  },
+  {
+    "id": "trevor-024",
+    "fact": "Requested Clawd configuration be pushed to GitHub as 'calwd-second-brain' repo (2026-01-30). Successfully pushed to https://github.com/tddixon/calwd-second-brain with AGENTS.md, SOUL.md, IDENTITY.md, USER.md, skills/, memory/, docs/",
+    "timestamp": "2026-01-30T14:39:00Z",
+    "status": "active"
   }
 ]
