@@ -1,0 +1,169 @@
+[2026-01-30T16:36:37.245Z] [INFO] Executing task: Please create projects for each project you have started development work on - these all relate to Nomads (ID: 86dzhm8y6)
+[2026-01-30T16:36:37.591Z] [INFO] Handling project creation task
+[2026-01-30T16:36:46.807Z] [INFO] Task execution complete
+[2026-01-30T16:41:20.223Z] [INFO] Agent starting (dryRun: false, once: true, syncStructure: true)
+[2026-01-30T16:41:20.223Z] [INFO] Syncing ClickUp structure to Obsidian...
+[2026-01-30T16:41:21.471Z] [INFO] Created Area: Current
+[2026-01-30T16:41:21.471Z] [INFO] Created Area: Archived
+[2026-01-30T16:41:21.471Z] [INFO] Created Project: Archived-List
+[2026-01-30T16:41:21.471Z] [INFO] Structure sync complete: 2 areas, 1 projects
+[2026-01-30T16:41:21.680Z] [INFO] Found 3 spaces
+[2026-01-30T16:41:22.582Z] [INFO] Space "Bamboo": 17 total tasks
+[2026-01-30T16:41:22.583Z] [INFO] Found 0 tasks for Clawd, 16 tasks for Trevor
+[2026-01-30T16:41:22.583Z] [INFO] Assisting Trevor with: Add Descend to Bamboo Website
+[2026-01-30T16:41:22.584Z] [INFO] Assisting Trevor with: Update Bamboo Ads for Edmund
+[2026-01-30T16:41:22.584Z] [INFO] Assisting Trevor with: Update Text on Bamboo Site for New Years
+[2026-01-30T16:41:22.584Z] [INFO] Assisting Trevor with: Update Text on Bamboo Site for New Years (write)
+[2026-01-30T16:41:22.902Z] [INFO] Added assistance comment to: 86dz0kjzh
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Update Bamboo Ads Links
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Deliver menus 
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Design Instagram Frame that tammy showd
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Order Banners and Flyers from goog print
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Bamboo Webiste
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Change Logo on Beach Fit Flyers
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Fitness Table Talker
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: SUP Rental Sign
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Fitness Flyer
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Brunch Menu
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Fourth Of July Flyer
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Yoga Flyer
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Check Facebook Ads Performance
+[2026-01-30T16:41:22.902Z] [INFO] Assisting Trevor with: Check Facebook Ads Performance (analyze)
+[2026-01-30T16:41:23.238Z] [INFO] Added assistance comment to: 86dwyk019
+[2026-01-30T16:41:23.952Z] [INFO] Space "Clawd": 1 total tasks
+[2026-01-30T16:41:23.952Z] [INFO] Found 1 tasks for Clawd, 0 tasks for Trevor
+[2026-01-30T16:41:23.952Z] [INFO] Processing task: Please create projects for each project you have started development work on - these all relate to Nomads (86dzhm8y6)
+[2026-01-30T16:41:24.272Z] [INFO] Classified as: code (auto: false)
+[2026-01-30T16:41:24.273Z] [INFO] Code task: Please create projects for each project you have started development work on - these all relate to Nomads
+[2026-01-30T16:41:24.850Z] [INFO] Commented results on task: 86dzhm8y6
+[2026-01-30T16:41:25.452Z] [INFO] Updated status to: in progress
+[2026-01-30T16:41:28.911Z] [INFO] Space "Nomads": 108 total tasks
+[2026-01-30T16:41:28.911Z] [INFO] Found 0 tasks for Clawd, 106 tasks for Trevor
+[2026-01-30T16:41:28.911Z] [INFO] Assisting Trevor with: Review Alkiyes Food Reports
+[2026-01-30T16:41:28.911Z] [INFO] Assisting Trevor with: Review Alkiyes Food Reports (analyze)
+[2026-01-30T16:41:29.279Z] [INFO] Added assistance comment to: 86dzcueqr
+[2026-01-30T16:41:29.279Z] [INFO] Assisting Trevor with: Review Hostel Tax Reports Due
+[2026-01-30T16:41:29.279Z] [INFO] Assisting Trevor with: Review Hostel Tax Reports Due (analyze)
+[2026-01-30T16:41:29.639Z] [INFO] Added assistance comment to: 86dzcu7x7
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Test task
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Follow Up with Bangkok Alibaba 
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Push Tracking Updates for Nomads
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Publish Jan newsletter report
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Send Christmas Photos to Unsocials
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Linkinbio
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Follow up on TikTok Ads 
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Set up Privacy Policy and Cookie Consent 
+[2026-01-30T16:41:29.639Z] [INFO] Assisting Trevor with: Schedule meeting call with Steve Vaille
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Redo Event and Tour Facebook Ads
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Redesign Tour Posters
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Edit Pool Party Video
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Pool Party TV Video & Banners / Flags
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Redo Tour Flags
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Tour Photo Flag
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Stainless steel hood 
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Follow up in lighting and shower hesters 
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Confirm air con and shower hrsters 
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Ask Tammy to Ask Sound Guy in Krabi to Quote Bangkok and propose flying him up
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Get MEWS KYC Papers
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Schedule More Lighting and Sound Quotes for Bangkok 
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Confirm Signage and Room Numbers that's are supplied vs what we need to do
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Write Rose to Confirm Doors
+[2026-01-30T16:41:29.640Z] [INFO] Assisting Trevor with: Write Rose to Confirm Doors (write)
+[2026-01-30T16:41:29.937Z] [INFO] Added assistance comment to: 86dyfekxj
+[2026-01-30T16:41:29.938Z] [INFO] Assisting Trevor with: Confirm Doors and Goki
+[2026-01-30T16:41:29.938Z] [INFO] Assisting Trevor with: Find Lighting and Sound Supplier
+[2026-01-30T16:41:29.938Z] [INFO] Assisting Trevor with: Find Lighting and Sound Supplier (research)
+[2026-01-30T16:41:30.262Z] [INFO] Added assistance comment to: 86dy5kznf
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Finalize China Orders
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Update Google Tag Manager Purchase Tag
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Fix Admin Dashboard Functions & Improve Nomads Asia Site
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Add Analytics and Tracking 
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Clean Up Codebase
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Finalize Homepage 
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Redesign Hostel Page
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: St Patricks Day Shirts
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: put pool party on tv and do banners 
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Pool Party Banners and Poster
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Web meeting with Edmund
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Tweak Emails Tracking and Analytics
+[2026-01-30T16:41:30.262Z] [INFO] Assisting Trevor with: Tweak Emails Tracking and Analytics (write)
+[2026-01-30T16:41:30.592Z] [INFO] Added assistance comment to: 86dz4090a
+[2026-01-30T16:41:30.592Z] [INFO] Assisting Trevor with: Web Report
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: KB Space Meeting
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Exec Meeting
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Order Koh Tao Sign
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Commission
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Buy Supplier for Wifi Upgrade @NomadsAoNang
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Follow Up with Hangout Invoice 
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Follow Up with Rose 
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Have Maintenance properly install wire the access points in c2
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Install Wifi Access point in 102 and 105
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Install Wifi access point in C2
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Send Unsocials Website booking report 
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Refund Girls Booking For Jungle tour
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Follow Up On Sign
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Create New Year’s Eve poster for TVs
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Update tour times and pickup location on Nomads Asia website
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Find safe key and plan contingency if not found
+[2026-01-30T16:41:30.593Z] [INFO] Assisting Trevor with: Find safe key and plan contingency if not found (research)
+[2026-01-30T16:41:30.926Z] [INFO] Added assistance comment to: 86dz0hj2a
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Figure Out How To Open the Safe
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Fix Mews Payment Imports into Cash Shift Dashboard
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Fix Mews Payment Imports into Cash Shift Dashboard (data)
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Train Nut on Cash Shifts
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Order more lights for C1
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Christmas Poster
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Follow Up With Darling For Bangkok a delivery and Krabi order 
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Investor Report Preparation
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Nomads Inventory Values
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Drink and Snack Menu
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Send TJ Photos Of Events and Tours
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Design Thanksgiving Pub Crawl Shirts
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Redesign Pub Crawl Design for Shirts with logos
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Christmas pub crawl shirts
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Commission
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Update Reception Goki Poster
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Write out POS idea for Royden
+[2026-01-30T16:41:30.927Z] [INFO] Assisting Trevor with: Write out POS idea for Royden (write)
+[2026-01-30T16:41:31.412Z] [INFO] Added assistance comment to: 86dy9epe8
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Take ADR out of DFR
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Commission Calculation
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Create Turn Aircon Off Signs in the Office
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Send Wristbands Data to Poster & Follow Up
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Send Wristbands Data to Poster & Follow Up (data)
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Train Nat & Tammy on Guardforce Deposits
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Finalize Noamds Site
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Setup and Implement Compelling Tour Emails
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Meet Edmund at 8am
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Nomads Asia QR code 
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Nomads Asia QR code 
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Google Tag Manager and Analytics
+[2026-01-30T16:41:31.412Z] [INFO] Assisting Trevor with: Google Tag Manager 
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Finish Site
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Tell Marie we are going to he stopping 
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Sign Social Media Contract 
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Order new Pub crawl Tickets 
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Re Order Housekeeping Cards for Hostels
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Social Media Call
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Envelopes and Deposit in Guardforce
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Withdraw and give out petty cash 
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Document Petty Cash Process 
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Make Hostelworld Bookings
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Accounting Audit Resolution with Steve
+[2026-01-30T16:41:31.413Z] [INFO] Assisting Trevor with: Accounting Audit Resolution with Steve (analyze)
+[2026-01-30T16:41:31.747Z] [INFO] Added assistance comment to: 86dx658dk
+[2026-01-30T16:41:31.747Z] [INFO] Assisting Trevor with: Set Up POS printers for All Hostels
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Calculate Payback
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: 2026 Budget
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Nomads Head Office Accounting Call
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Nomads Thailand Call
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Change Out Bar POS for New One
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Train Staff for 12Go
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Launch 12Go Posters
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Order New Numbers for Beds for all Properties
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Finance Call - Jun 11
+[2026-01-30T16:41:31.748Z] [INFO] Assisting Trevor with: Start Website for Tours
+[2026-01-30T16:41:31.748Z] [INFO] Agent run complete
+[2026-01-30T16:42:01.703Z] [INFO] Executing task: Please create projects for each project you have started development work on - these all relate to Nomads (ID: 86dzhm8y6)
+[2026-01-30T16:42:02.224Z] [INFO] Handling project creation task
+[2026-01-30T16:42:05.818Z] [INFO] Task execution complete

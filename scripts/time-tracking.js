@@ -303,6 +303,142 @@ async function syncTimeEntries(clickupId) {
   }
 }
 
+// Parse time entries from Obsidian task file
+function parseObsidianTimeEntries(content) {
+  const entries = [];
+  
+  // Match table rows: | Date | Duration | Description |
+  const tableRegex = /\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|/g;
+  let match;
+  
+  while ((match = tableRegex.exec(content)) !== null) {
+    // Skip header separator row
+    if (match[1].includes('--')) continue;
+    
+    const date = match[1];
+    const durationStr = match[2].trim();
+    const description = match[3].trim();
+    
+    // Parse duration (e.g., "1h 30m" or "45m" or "2h")
+    let minutes = 0;
+    const hourMatch = durationStr.match(/(\d+)h/);
+    const minMatch = durationStr.match(/(\d+)m/);
+    
+    if (hourMatch) minutes += parseInt(hourMatch[1]) * 60;
+    if (minMatch) minutes += parseInt(minMatch[1]);
+    if (!hourMatch && !minMatch) {
+      // Try parsing as plain number (assume minutes)
+      const numMatch = durationStr.match(/(\d+)/);
+      if (numMatch) minutes = parseInt(numMatch[1]);
+    }
+    
+    if (minutes > 0) {
+      entries.push({ date, duration: minutes, description });
+    }
+  }
+  
+  return entries;
+}
+
+// Sync time from Obsidian to ClickUp (bidirectional)
+async function syncObsidianToClickUp(taskFile) {
+  if (!fs.existsSync(taskFile)) {
+    console.error(`❌ Task file not found: ${taskFile}`);
+    return false;
+  }
+  
+  const content = fs.readFileSync(taskFile, 'utf-8');
+  
+  // Get ClickUp ID from frontmatter
+  const clickupIdMatch = content.match(/clickup_id:\s*(\d+)/);
+  if (!clickupIdMatch) {
+    console.error('❌ No clickup_id found in task file');
+    return false;
+  }
+  
+  const clickupId = clickupIdMatch[1];
+  
+  // Parse time entries from Obsidian
+  const obsidianEntries = parseObsidianTimeEntries(content);
+  
+  if (obsidianEntries.length === 0) {
+    console.log('ℹ️  No time entries found in Obsidian');
+    return true;
+  }
+  
+  console.log(`📝 Found ${obsidianEntries.length} time entries in Obsidian`);
+  
+  // Get existing ClickUp time entries
+  let clickupEntries = [];
+  try {
+    const result = execSync(
+      `mcporter call 'clickup.clickup_get_task_time_entries(task_id: "${clickupId}")'`,
+      { encoding: 'utf-8', timeout: 10000 }
+    );
+    const data = JSON.parse(result);
+    clickupEntries = data.data || [];
+  } catch (e) {
+    console.warn('⚠️  Could not fetch ClickUp time entries:', e.message);
+  }
+  
+  // Add missing entries to ClickUp
+  let added = 0;
+  for (const entry of obsidianEntries) {
+    // Check if similar entry already exists in ClickUp (same date + similar duration)
+    const exists = clickupEntries.some(ce => {
+      const ceDate = new Date(ce.start).toISOString().split('T')[0];
+      const ceDuration = Math.round(ce.duration / 60000);
+      return ceDate === entry.date && Math.abs(ceDuration - entry.duration) < 5;
+    });
+    
+    if (!exists) {
+      try {
+        const startTime = new Date(entry.date);
+        const startIso = startTime.toISOString();
+        
+        execSync(
+          `mcporter call 'clickup.clickup_add_time_entry(task_id: "${clickupId}", start: "${startIso}", duration: "${entry.duration}m", description: "${entry.description}")'`,
+          { encoding: 'utf-8', timeout: 10000 }
+        );
+        added++;
+        console.log(`  ✅ Added: ${entry.date} - ${formatDuration(entry.duration)} - ${entry.description}`);
+      } catch (e) {
+        console.error(`  ❌ Failed to add entry: ${e.message}`);
+      }
+    }
+  }
+  
+  console.log(`✅ Synced ${added} new time entries to ClickUp`);
+  return true;
+}
+
+// Sync all task files (cron-friendly)
+async function syncAllTaskFiles() {
+  console.log('🔄 Syncing time from all Obsidian task files to ClickUp...\n');
+  
+  const files = fs.readdirSync(TASKS_DIR).filter(f => f.endsWith('.md'));
+  let synced = 0;
+  let errors = 0;
+  
+  for (const file of files) {
+    const taskFile = path.join(TASKS_DIR, file);
+    const content = fs.readFileSync(taskFile, 'utf-8');
+    
+    // Only sync files with time tracking section and clickup_id
+    if (content.includes('## Time Tracking') && content.includes('clickup_id:')) {
+      try {
+        await syncObsidianToClickUp(taskFile);
+        synced++;
+      } catch (e) {
+        console.error(`❌ Error syncing ${file}:`, e.message);
+        errors++;
+      }
+    }
+  }
+  
+  console.log(`\n✅ Sync complete: ${synced} files synced, ${errors} errors`);
+}
+
 // CLI
 const args = process.argv.slice(2);
 const command = args[0];

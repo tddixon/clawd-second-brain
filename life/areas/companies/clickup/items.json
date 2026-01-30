@@ -64,5 +64,29 @@
     "fact": "Inbox organization feature added to sync script - auto-categorizes tasks based on keywords (Nomads, marketing, accounting, operations, development, design, legal, personal)",
     "timestamp": "2026-01-30T15:55:00Z",
     "status": "active"
+  },
+  {
+    "id": "clickup-012",
+    "fact": "Clawd user created with email: dixbot@proton.me, User ID: 95316630",
+    "timestamp": "2026-01-30T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-013",
+    "fact": "Clawd's API Token configured: pk_95316630_3YCO05JTNW1KH7F6TMZZYV1VYZ3JSWD7",
+    "timestamp": "2026-01-30T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-014",
+    "fact": "Clawd ClickUp integration fully configured - agent can now detect tasks assigned to Clawd user and execute them automatically",
+    "timestamp": "2026-01-30T16:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-015",
+    "fact": "Time tracking sync requested - need to integrate ClickUp time tracking with Obsidian TaskNotes for bidirectional time logging",
+    "timestamp": "2026-01-30T16:32:00Z",
+    "status": "active"
   }
 ]

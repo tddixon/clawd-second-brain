@@ -142,5 +142,11 @@
     "fact": "Requested Clawd configuration be pushed to GitHub as 'calwd-second-brain' repo (2026-01-30). Successfully pushed to https://github.com/tddixon/calwd-second-brain with AGENTS.md, SOUL.md, IDENTITY.md, USER.md, skills/, memory/, docs/",
     "timestamp": "2026-01-30T14:39:00Z",
     "status": "active"
+  },
+  {
+    "id": "trevor-025",
+    "fact": "Requested time tracking functionality: wants ClickUp time tracking synced with Obsidian TaskNotes time tracking. Options: start timer on task when requested, stop when 'done', or add manual time entries (fixed minutes or start/end times) after work completed",
+    "timestamp": "2026-01-30T16:32:00Z",
+    "status": "active"
   }
 ]

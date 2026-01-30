@@ -1,0 +1,38 @@
+[
+  {
+    "id": "clawd-001",
+    "fact": "Name: Clawd - AI co-pilot for Trevor (Nomads Hostels owner)",
+    "timestamp": "2026-01-30",
+    "status": "active"
+  },
+  {
+    "id": "clawd-002",
+    "fact": "ClickUp user created with email: dixbot@proton.me",
+    "timestamp": "2026-01-30T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawd-003",
+    "fact": "ClickUp User ID: 95316630",
+    "timestamp": "2026-01-30T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawd-004",
+    "fact": "ClickUp API Token configured: pk_95316630_3YCO05JTNW1KH7F6TMZZYV1VYZ3JSWD7",
+    "timestamp": "2026-01-30T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawd-005",
+    "fact": "Configuration saved to ~/.clawdsync/clickup-agent-config",
+    "timestamp": "2026-01-30T16:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawd-006",
+    "fact": "Agent script updated to use Clawd's API token for task detection and execution",
+    "timestamp": "2026-01-30T16:30:00Z",
+    "status": "active"
+  }
+]

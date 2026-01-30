@@ -10,7 +10,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { ClickUpAPI } from '../projects/pkm-system/scripts/clickup-api';
+import { ClickUpAPI } from '../projects/pkm-system/scripts/clickup-api.js';
 
 // Configuration
 const LOG_FILE = '/home/desktop/clawd/logs/clickup-agent.log';
