@@ -1,0 +1,52 @@
+[
+  {
+    "id": "obsidian-sync-001",
+    "entity": "Obsidian Sync Investigation",
+    "fact_type": "research",
+    "title": "Trevor Requested Obsidian Sync via Terminal",
+    "description": "Trevor requested opening Obsidian from terminal to trigger Obsidian Sync. Attempted but failed due to GUI display requirements in terminal-only environment.",
+    "date": "2026-01-29T19:00:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-002",
+    "entity": "Obsidian Sync",
+    "fact_type": "technical_constraint",
+    "title": "Obsidian Sync Requires GUI",
+    "description": "Obsidian Sync is a GUI-only feature requiring the desktop app to be running. No official headless sync CLI available for triggering sync without display.",
+    "date": "2026-01-29T19:05:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-003",
+    "entity": "obsidian-cli",
+    "fact_type": "tool_evaluation",
+    "title": "obsidian-cli Evaluated - No Sync Support",
+    "description": "Evaluated Yakitrak's obsidian-cli (GitHub: Yakitrak/obsidian-cli). Supports note operations (create, update, delete, search) but does NOT support sync. Requires Obsidian desktop app running for sync to function.",
+    "date": "2026-01-29T19:19:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-004",
+    "entity": "Obsidian Sync Alternatives",
+    "fact_type": "solution",
+    "title": "Sync Alternatives Identified",
+    "description": "Identified alternatives to Obsidian Sync for headless/terminal sync: (1) Obsidian Git plugin - syncs vault to GitHub, (2) iCloud, Dropbox, or Syncthing - third-party sync for vault folder, (3) Syncthing or Resilio Sync - dedicated sync tools for background file sync.",
+    "date": "2026-01-29T19:19:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-005",
+    "entity": "Obsidian",
+    "fact_type": "usage",
+    "title": "Obsidian Second Brain Setup",
+    "description": "Trevor uses Obsidian as Second Brain with GTD + PARA methodology. Vault path: /home/desktop/obsidian-second-brain. Using Obsidian Sync for cross-device synchronization.",
+    "date": "2026-01-29",
+    "source": "clawdbot",
+    "supersedes": []
+  }
+]

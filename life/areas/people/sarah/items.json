@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sarah-001",
+    "fact": "Former manager at Acme Corp (2024-2025)",
+    "timestamp": "2024-01-01",
+    "status": "superseded",
+    "supersededBy": null
+  },
+  {
+    "id": "sarah-002",
+    "fact": "Difficult manager, micromanages work",
+    "timestamp": "2025-06-15",
+    "status": "superseded",
+    "supersededBy": "sarah-003"
+  },
+  {
+    "id": "sarah-003",
+    "fact": "No longer relevant - left Acme Corp, job change in 2026",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  }
+]

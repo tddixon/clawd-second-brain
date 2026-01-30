@@ -1,0 +1,18 @@
+/gsd:new-project
+
+Build an SEO Employee framework with these commands:
+- seo-analyze <url> - Full SEO audit + 15-20 keyword recommendations
+- content-strategy <input> - Content ideas and topics from keywords/URL  
+- write-article <topic> - Complete 1500-2500 word human-sounding articles
+- full-pipeline <url> - End-to-end: analyze → strategy → write articles
+
+Target: Trevor's hostel chain in Thailand. Automated SEO + content creation.
+
+Reference materials:
+- Marketing skills: /home/desktop/clawd/skills/marketing-skills/references/
+- SEO workflow: /home/desktop/clawd/workflows/seo-research-planning-workflow.md
+- Humanizer: /home/desktop/clawd/skills/humanizer/SKILL.md
+
+Build orchestration on top of existing proven frameworks.
+
+When complete: clawdbot gateway wake --text 'SEO Employee ready' --mode now

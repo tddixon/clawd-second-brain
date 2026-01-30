@@ -1,0 +1,50 @@
+[
+  {
+    "id": "klaviyo-mews-001",
+    "fact": "Project initialized - Replace Zapier with self-hosted Convex integration",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-002",
+    "fact": "Get Shit Done (GSD) framework setup complete - 6 phases planned",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-003",
+    "fact": "Phase 1 completed - Foundation & webhook infrastructure (3 waves)",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-004",
+    "fact": "Phase 2 planned - MEWS API Integration (2 waves, ready to execute)",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-005",
+    "fact": "Running in Claude Code tmux session 'klaviyo-mews'",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-006",
+    "fact": "Tech stack: Convex backend, Next.js dashboard, TypeScript",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-007",
+    "fact": "Purpose: Sync MEWS reservation data to Klaviyo for email flow triggers",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-008",
+    "fact": "Using tmux for remote Claude Code session control (2026-01-29)",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  }
+]

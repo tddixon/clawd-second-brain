@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "skills": {
+    "skills-search": {
+      "version": "1.0.4",
+      "installedAt": 1769425093439
+    },
+    "auto-updater": {
+      "version": "1.0.0",
+      "installedAt": 1769425114255
+    },
+    "thinking-partner": {
+      "version": "1.0.0",
+      "installedAt": 1769425122598
+    },
+    "marketing-skills": {
+      "version": "0.1.2",
+      "installedAt": 1769425128366
+    },
+    "humanizer": {
+      "version": "1.0.0",
+      "installedAt": 1769425129593
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1769425130228
+    },
+    "marketing-mode": {
+      "version": "1.0.0",
+      "installedAt": 1769425203300
+    },
+    "vercel-react-best-practices": {
+      "version": "1.0.0",
+      "installedAt": 1769425466308
+    },
+    "mcporter": {
+      "version": "1.0.0",
+      "installedAt": 1769425742625
+    },
+    "prd": {
+      "version": "2.0.5",
+      "installedAt": 1769425746483
+    },
+    "claude-code-wingman": {
+      "version": "0.2.0",
+      "installedAt": 1769530978704
+    },
+    "claude-team": {
+      "version": "1.5.0",
+      "installedAt": 1769531015622
+    },
+    "clawddocs": {
+      "version": "1.2.2",
+      "installedAt": 1769531611954
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1769531683929
+    },
+    "skillcraft": {
+      "version": "0.9.1",
+      "installedAt": 1769532059552
+    }
+  }
+}

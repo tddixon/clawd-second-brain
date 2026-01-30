@@ -1,0 +1,144 @@
+{
+  "items": [
+    {
+      "id": "nomads-1",
+      "entity": "Nomads",
+      "fact_type": "project_completion",
+      "title": "9 Automation Projects Completed",
+      "description": "Nine automation projects built in a single session to systematically automate Nomads hostel operations. Prioritized: native MEWS booking (PR #32), POS-to-MEWS sync, Klaviyo enhancement, command center, agent swarm, revenue optimizer, guest portal, ops dashboard, review manager.",
+      "date": "2026-01-29",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-2",
+      "entity": "Nomads",
+      "fact_type": "property_data",
+      "title": "Ao Nang Properties Market Position",
+      "description": "Nomads operates 2 properties in Ao Nang Krabi area: Nomads Ao Nang Beach (rank #2, THB 999, 9.6/10 rating) and Base Ao Nang Beachfront (rank #4, THB 999, 9.4/10 rating). Both priced ~60% below market average of THB 2484. Competitive pricing strategy with high ratings.",
+      "date": "2026-01-30",
+      "source": "hostelworld-report",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-3",
+      "entity": "Nomads",
+      "fact_type": "automation_update",
+      "title": "Hostelworld Price Monitor Migrated to Agent Browser",
+      "description": "Hostelworld price monitoring system migrated from broken Puppeteer scraper to Agent Browser with mobile viewport. Puppeteer was returning incorrect prices (THB 999 vs actual THB 1,098) due to anti-bot protection. Agent Browser provides accurate real-time data.",
+      "date": "2026-01-30T06:39:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-4",
+      "entity": "Nomads",
+      "fact_type": "automation_update",
+      "title": "Daily Telegram Price Reports Configured",
+      "description": "Cron job configured to send daily Hostelworld price reports at 8am Thailand time via Telegram. Reports include: Nomads Ao Nang Beach (price, rank, rating), Base Ao Nang Beachfront (price, rank, rating), top 5 competitors, and market insights. Uses Agent Browser CLI for token-efficient scraping.",
+      "date": "2026-01-30T06:52:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "poster-1",
+      "entity": "Poster POS",
+      "fact_type": "terminology_clarification",
+      "title": "Poster POS System Terminology",
+      "description": "Trevor clarified Poster POS structure: Workshops are accounting categories (not physical stations), Spots are POS terminals/locations (also called locations), Categories are menu groupings. This corrected earlier mapping assumptions for MEWS integration.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "poster-2",
+      "entity": "Poster POS",
+      "fact_type": "integration_mapping",
+      "title": "Corrected POS to MEWS Mapping",
+      "description": "Mapping corrected after Trevor's clarification: Poster Spots (locations) → MEWS Outlets, Poster Workshops (accounting categories) → MEWS Accounting Categories. POS-MEWS sync project updated with two distinct mapping sections in dashboard UI.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "obsidian-1",
+      "entity": "Obsidian",
+      "fact_type": "technical_limitation",
+      "title": "No Headless Sync CLI Available",
+      "description": "Investigated headless Obsidian sync options after Trevor requested terminal-based trigger. Found: Obsidian Sync is GUI-only feature, no official headless sync CLI exists. obsidian-cli by Yakitrak supports note operations but not sync. Workarounds: Obsidian Git plugin, Syncthing, Resilio Sync, or iCloud/Dropbox.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "obsidian-2",
+      "entity": "Obsidian",
+      "fact_type": "cli_investigation",
+      "title": "Obsidian CLI Limitation Discovery",
+      "description": "Researched obsidian-cli by Yakitrak (GitHub) for terminal-based Obsidian operations. Tool provides create, edit, delete, search, daily notes, and set-default-vault commands. Does NOT support sync functionality.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "hostelworld-1",
+      "entity": "Hostelworld",
+      "fact_type": "platform",
+      "title": "Hostelworld Platform Data",
+      "description": "Hostel booking and review platform used for competitive benchmarking. Shows hostel rankings, prices, and ratings for destinations worldwide. Ao Nang Krabi market data as of 2026-01-30: 31 hostels, average price THB 2484, price range THB 332-19,990.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "hostelworld-2",
+      "entity": "Hostelworld",
+      "fact_type": "technical_limitation",
+      "title": "Anti-Bot Protection Breaks Puppeteer Scraping",
+      "description": "Hostelworld has anti-bot protection that prevents Puppeteer-based scraping from working correctly. Scrapers would timeout or return stale/incorrect prices. Solution: Use Agent Browser with real Chrome browser and mobile viewport emulation for accurate data.",
+      "date": "2026-01-30T06:39:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "hostelworld-3",
+      "entity": "Hostelworld",
+      "fact_type": "decision",
+      "title": "Selected Agent Browser for Web Scraping",
+      "description": "Decision made to use Agent Browser skill for Hostelworld price scraping instead of Puppeteer. Agent Browser provides real Chrome browser with mobile viewport emulation, bypasses anti-bot protection, and is most token-efficient approach (LLM only used for analysis, not scraping).",
+      "date": "2026-01-30T06:42:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "stock-market-1",
+      "entity": "US Stock Market",
+      "fact_type": "market_event",
+      "title": "Market Decline on January 29, 2026",
+      "description": "Stock market down primarily due to Microsoft earnings disappointing traders and weighing heavily on tech stocks. Fed kept interest rates unchanged (maintaining cautious stance with inflation above 2% target). Gold prices pulled back after hitting fresh record highs. S&P 500 hit 7,000 for first time then pulled back after Fed decision.",
+      "date": "2026-01-29",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "agent-browser-skill-1",
+      "entity": "Agent Browser",
+      "fact_type": "tool_selection",
+      "title": "Selected for Token-Efficient Web Scraping",
+      "description": "Agent Browser skill selected as the most token-friendly web scraping solution for Hostelworld price monitoring. Provides real Chrome browser with mobile viewport, bypasses anti-bot protection, and operates via CLI with 0 LLM tokens for the scraping itself. LLM only involved for analysis and report formatting.",
+      "date": "2026-01-30T06:42:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "mews-1",
+      "entity": "MEWS",
+      "fact_type": "authentication",
+      "title": "Connector API Uses AccessToken Only",
+      "description": "MEWS Connector API authentication for nomads-ops-center uses AccessToken only (not ClientToken + AccessToken as documented). Per Trevor's confirmation on 2026-01-30: integration is installed per property on MEWS side, so single AccessToken identifies both app and property.",
+      "date": "2026-01-30T13:42:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

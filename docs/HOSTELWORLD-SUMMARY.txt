@@ -1,0 +1,63 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏨 HOSTELWORLD KRABI MONITOR - SETUP COMPLETE ✅
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHAT IT DOES:
+Monitors Hostelworld hostel prices in Krabi daily and sends you a report via Telegram with:
+  • Top 5 cheapest hostels
+  • Rankings of "Nomads Ao Nang" & "Base Ao Nang Beachfront"
+  • Price comparisons vs market average
+  • Market statistics (total hostels, avg price, price range)
+
+SCHEDULE:
+  📅 Daily at 9:00 AM Thailand time (2:00 AM UTC)
+  🤖 Model: GLM 4.7 (cost-efficient)
+  📱 Delivery: Telegram to @trevordixon
+  ⏰ Next run: January 28, 2026 at 9:00 AM Thailand time
+
+TEST RUN RESULTS (2026-01-27):
+  ✅ Successfully extracted 30 hostels
+  ✅ Currency: THB (Thai Baht)
+  ✅ Nomads Ao Nang Beach: Rank #26, THB 1,260
+  ✅ Base Ao Nang Beachfront: Rank #23, THB 1,215
+  ✅ Report formatted and ready
+
+FILES CREATED:
+  📄 /home/desktop/clawd/scripts/monitor-hostelworld.sh (main script)
+  📄 /home/desktop/clawd/scripts/extract-hostels-v3.js (data extraction)
+  📄 /home/desktop/clawd/docs/hostelworld-monitor.md (full documentation)
+  📄 /home/desktop/clawd/logs/hostelworld/ (logs and data)
+
+QUICK COMMANDS:
+  # Test manually:
+  ./scripts/monitor-hostelworld.sh
+
+  # View logs:
+  tail -f logs/hostelworld/hostelworld-$(date +%Y-%m-%d).log
+
+  # Check cron status:
+  clawdbot cron list | grep hostelworld
+
+  # View last report:
+  cat logs/hostelworld/message.txt
+
+IMPORTANT - TELEGRAM TARGET:
+  The system is configured to send to @trevordixon
+  
+  If this is NOT your Telegram username, update it:
+  1. Message @userinfobot on Telegram to get your chat ID
+  2. Run: clawdbot cron edit 9ec19c13-ed9d-49ed-a748-ecb5f97f3f95 --to "YOUR_CHAT_ID"
+
+NOTES:
+  • Currently searches "next weekend" (Sat-Sun) for better availability
+  • All prices shown AFTER Hostelworld discounts/promotions
+  • Logs saved daily to /logs/hostelworld/
+  • System runs automatically - no action needed
+
+DOCUMENTATION:
+  📖 Full guide: /home/desktop/clawd/docs/hostelworld-monitor.md
+  📋 Setup summary: /home/desktop/clawd/docs/hostelworld-monitor-SETUP-COMPLETE.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ✅ PRODUCTION READY - First report tomorrow at 9 AM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

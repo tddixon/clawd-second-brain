@@ -1,0 +1,75 @@
+[
+  {
+    "id": "mews-booking-001",
+    "fact": "Project started - Custom MEWS booking engine for Nomads Asia website",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-002",
+    "fact": "Research completed - MEWS API documentation analyzed by subagent",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-003",
+    "fact": "Key finding: Use Booking Engine API (not Connector API) for frontend",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-004",
+    "fact": "No official npm SDK exists - will use direct fetch or generate from OpenAPI spec",
+    "timestamp": "2026-01-28",
+    "status": "superseded",
+    "supersededBy": "mews-booking-007"
+  },
+  {
+    "id": "mews-booking-005",
+    "fact": "Trevor decision: Use Booking Engine API (distributor) as primary, Connector API for supplementary data only",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-006",
+    "fact": "Trevor has dev access tokens for Connector API to set up later",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-007",
+    "fact": "Sub-agent completed build on 2026-01-29",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-008",
+    "fact": "PR #32 created on nomads-asia-tour-convex repo",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-009",
+    "fact": "Features: real-time room availability + pricing, inline room selection, guest details form, mobile booking footer",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-010",
+    "fact": "Uses existing mewsConfigId (no new credentials needed for Booking Engine API)",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-011",
+    "fact": "Reference UX: Mad Monkey Hostels booking flow",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "mews-booking-012",
+    "fact": "Falls back to MEWS widget if native booking fails",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  }
+]

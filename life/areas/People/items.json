@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "trevor-1",
+      "entity": "Trevor",
+      "type": "decision",
+      "content": "Selected AI Dating Assistant as top B2C idea for online money-making project",
+      "timestamp": "2026-01-29T17:24:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-2",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested B2C ideas for earning money online or through coding projects, not limited to hostels",
+      "timestamp": "2026-01-29T17:22:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-3",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested status update on all coding and research projects",
+      "timestamp": "2026-01-29T17:29:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-4",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested daily Hostelworld price reports via Telegram to be sent every morning at 8am Thailand time, including property prices, rankings, ratings, and top 5 competitors",
+      "timestamp": "2026-01-30T06:52:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-5",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested test run of Hostelworld price scraper to verify Agent Browser implementation works correctly",
+      "timestamp": "2026-01-30T07:27:00Z",
+      "source": "conversation"
+    }
+  ]
+}

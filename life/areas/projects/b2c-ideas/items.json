@@ -1,0 +1,112 @@
+[
+  {
+    "id": "b2c-ideas-001",
+    "entity": "B2C Business Ideas",
+    "fact_type": "idea_generation",
+    "title": "Trevor Requested B2C Money-Making Ideas",
+    "description": "Trevor asked for ways to earn more money through online or coding projects, specifically wanting to build something. He emphasized B2C (business-to-consumer) focus, not B2B, and did not want ideas limited to hostels.",
+    "date": "2026-01-29T17:48:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-002",
+    "entity": "AI Dating Assistant",
+    "fact_type": "product_concept",
+    "title": "AI Dating Assistant (\"Rizz AI\") Concept",
+    "description": "Helps people with dating apps - writes opening messages, suggests replies, optimizes profiles, coaches conversation flow. Features: screenshot conversation analysis, profile photo analyzer, conversation coaching, date planning. Monetization: $20-50/month subscription. Recommended as top pick for fastest revenue path due to clear problem, viral potential, low support burden, and quick MVP build time. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:53:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-003",
+    "entity": "Personal AI Chief of Staff",
+    "fact_type": "product_concept",
+    "title": "Personal AI Chief of Staff Concept",
+    "description": "AI that proactively manages personal life - reads emails and drafts responses, schedules meetings by negotiating with calendars, tracks goals and nudges progress, finds time for important tasks, books travel and reservations. Target: people who want an executive assistant but can't afford one. Monetization: $30-100/month subscription. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:53:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-004",
+    "entity": "AI Content Studio for Creators",
+    "fact_type": "product_concept",
+    "title": "AI Content Studio for Creators Concept",
+    "description": "All-in-one AI toolkit for Instagram/TikTok/YouTube creators. Features: video upload with AI caption writing and hashtag suggestions, content calendar with AI-generated trend-based ideas, auto-scheduling across platforms, performance analytics with AI audience insights. Monetization: $29-99/month. Target: creator economy ($250B+ TAM). (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:53:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-005",
+    "entity": "\"Quit Your Job\" Calculator",
+    "fact_type": "product_concept",
+    "title": "Interactive \"Quit Your Job\" Calculator Concept",
+    "description": "Interactive tool showing exactly how much to save, income needed from side projects, and timeline to financial independence. Connects users to remote work opportunities. Target: people wanting to leave corporate jobs. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:53:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-006",
+    "entity": "AI Language Shadowing",
+    "fact_type": "product_concept",
+    "title": "AI Language Shadowing App Concept",
+    "description": "Upload any video (YouTube, Netflix), AI transcribes and lets users shadow-speak with pronunciation feedback. Learn any language from content users actually enjoy. Target: language learners. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:53:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-007",
+    "entity": "Receipt Scanner Tax Optimizer",
+    "fact_type": "product_concept",
+    "title": "Receipt Scanner → Tax Optimizer Concept",
+    "description": "Photo of receipt → AI categorizes expenses, tracks deductible expenses, suggests tax strategies. Target: freelancers, gig workers, small business owners. Monetization: freemium or subscription. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:53:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-008",
+    "entity": "Shared Subscription Manager",
+    "fact_type": "product_concept",
+    "title": "Shared Subscription Manager Concept",
+    "description": "Track all subscriptions, find duplicates, auto-cancel unused ones, split costs with friends/family (Netflix, Spotify, etc.). Monetization: freemium with premium features. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:53:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-009",
+    "entity": "Work From Hostel Platform",
+    "fact_type": "product_concept",
+    "title": "\"Work From Hostel\" Booking Platform Concept",
+    "description": "Booking app specifically for digital nomads - filters for wifi speed, coworking spaces, quiet hours, workstation quality. Features: direct hostel integration, coworking day passes, meeting room bookings. Monetization: booking fees + hostel subscription to be listed + upsell coworking. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:51:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-010",
+    "entity": "Hostel-Only Booking App",
+    "fact_type": "product_concept",
+    "title": "\"Hostel-Only\" Booking App Concept",
+    "description": "Mobile-first booking app exclusively for hostels with UX improvements over Hostelworld. Features: vibe filters, social events visibility, pod quality, location walkability, built-in social (see who's staying, join events, find travel buddies). Monetization: $1-2 booking fee per night. (Superseded by broader B2C requirement - Trevor wants B2C not limited to hostels)",
+    "date": "2026-01-29T17:50:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-010"]
+  },
+  {
+    "id": "b2c-ideas-011",
+    "entity": "B2C Product Direction Update",
+    "fact_type": "decision",
+    "title": "Decision: B2C Should Not Be Limited to Hostels",
+    "description": "Trevor clarified he wants B2C (business-to-consumer) ideas, not B2B (business-to-business). After initial hostel-focused suggestions, Trevor specified B2C ideas should not be limited to just hostels. This expands the scope to broader B2C opportunities like AI tools, productivity apps, dating assistants, and consumer products.",
+    "date": "2026-01-29T17:54:00Z",
+    "source": "clawdbot",
+    "supersedes": ["b2c-ideas-001"]
+  }
+]

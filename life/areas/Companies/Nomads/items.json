@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "nomads-1",
+      "entity": "Nomads",
+      "type": "clarification",
+      "content": "Poster POS structure clarified: Workshop = Accounting Category, Category = Menu Grouping, Spot = POS Terminal/Location",
+      "timestamp": "2026-01-29T17:05:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-2",
+      "entity": "Nomads",
+      "type": "update",
+      "content": "Multiple automation projects completed for hostel operations (booking, POS sync, reviews, ops dashboard, guest portal, revenue optimizer, Klaviyo enhancement, agent swarm, command center)",
+      "timestamp": "2026-01-29T17:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-3",
+      "entity": "Nomads",
+      "type": "market_data",
+      "content": "Nomads Ao Nang Beach ranked #2 on Hostelworld for Krabi market (2026-01-31 search), price THB 999, rating 9.6/10, priced 1485 THB below market average",
+      "timestamp": "2026-01-30T02:00:00Z",
+      "source": "hostelworld_report"
+    },
+    {
+      "id": "nomads-4",
+      "entity": "Nomads",
+      "type": "market_data",
+      "content": "Base Ao Nang Beachfront ranked #4 on Hostelworld for Krabi market (2026-01-31 search), price THB 999, rating 9.4/10, priced 1485 THB below market average",
+      "timestamp": "2026-01-30T02:00:00Z",
+      "source": "hostelworld_report"
+    },
+    {
+      "id": "nomads-5",
+      "entity": "Nomads",
+      "type": "market_data",
+      "content": "Krabi hostel market has 31 total hostels with average price THB 2484 and price range THB 332-19990 (2026-01-30)",
+      "timestamp": "2026-01-30T02:00:00Z",
+      "source": "hostelworld_report"
+    }
+  ]
+}

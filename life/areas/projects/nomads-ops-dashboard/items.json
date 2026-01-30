@@ -1,0 +1,75 @@
+[
+  {
+    "id": "nomads-ops-dashboard-001",
+    "fact": "Project created 2026-01-29 - Operations Dashboard for Nomads Hostels",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-002",
+    "fact": "Features: Real-time property overview, task management, inventory tracking, staff management",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-003",
+    "fact": "UI components created: Button, Input, Label, Badge, Card, DropdownMenu, Tooltip, Separator, Progress",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-004",
+    "fact": "Convex backend with properties, propertyStats, tasks, inventory, staff, alerts tables",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-005",
+    "fact": "Location: /home/desktop/code/nomads-ops-dashboard",
+    "timestamp": "2026-01-29",
+    "status": "superseded",
+    "supersededBy": "nomads-ops-dashboard-006"
+  },
+  {
+    "id": "nomads-ops-dashboard-006",
+    "fact": "Location: /home/desktop/nomads-ops-center (renamed/consolidated 2026-01-30)",
+    "timestamp": "2026-01-30T13:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-007",
+    "fact": "MEWS Connector API integration completed Phase 1 (2026-01-30). Branch: mews-api. PR #8 created.",
+    "timestamp": "2026-01-30T13:40:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-008",
+    "fact": "MEWS Connector API features: polling-based payment collection, 15-minute cron schedule, manual 'Poll MEWS Now' button for debugging, per-hostel credentials, AccessToken-only auth",
+    "timestamp": "2026-01-30T13:40:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-009",
+    "fact": "Code audit completed (2026-01-30) - generated CODE_AUDIT_REPORT.md with 8 critical improvements, 5 consolidation opportunities, 4 error scenarios",
+    "timestamp": "2026-01-30T13:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-010",
+    "fact": "MEWS improvements planned (2026-01-30): N+1 query fixes, duplicate payment race condition fix, transaction isolation, merge webhook + API modules, soft delete standardization",
+    "timestamp": "2026-01-30T13:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-011",
+    "fact": "Phase 2 in progress (2026-01-30): Consolidating mewsWebhook.ts into mewsConnector.ts, ensuring both webhook and API polling work simultaneously with shared deduplication logic",
+    "timestamp": "2026-01-30T13:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-012",
+    "fact": "Git identity decision (2026-01-30): Trevor wants separate git identity for Clawd/subagent commits to distinguish from his own commits",
+    "timestamp": "2026-01-30T13:55:00Z",
+    "status": "active"
+  }
+]

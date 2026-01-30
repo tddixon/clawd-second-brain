@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": "trevor-dixon-1",
+      "entity": "Trevor Dixon",
+      "fact_type": "person_attribute",
+      "title": "Nomads Hostels Owner",
+      "description": "Owner of Nomads hostel chain in Thailand. Role: oversees marketing, coding, development, and systems management. Runs every department solo. Uses Obsidian Second Brain for PKM.",
+      "date": "2026-01-29",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-2",
+      "entity": "Trevor Dixon",
+      "fact_type": "preference",
+      "title": "Terminal-Based Workflow Preference",
+      "description": "Prefers command-line tools and terminal-based workflows. Requested CLI-based Obsidian sync solution to trigger sync without opening GUI application. Investigating headless sync alternatives due to CLI preference.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-3",
+      "entity": "Trevor Dixon",
+      "fact_type": "business_interest",
+      "title": "B2C Consumer Market Interest",
+      "description": "Interested in B2C (business-to-consumer) money-making ideas, not B2B (selling to other businesses). Broadened scope beyond hospitality industry after initial hostel-focused suggestions. Exploring AI dating, personal productivity, creator tools, and other consumer markets.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-4",
+      "entity": "Trevor Dixon",
+      "fact_type": "correction",
+      "title": "B2C vs B2B Scope Clarification",
+      "description": "When presented with B2B (SaaS, agency) ideas, Trevor clarified \"I wasn't b2c\" - wanted B2C ideas (selling directly to consumers, not business-to-business services). Corrected earlier understanding.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-5",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "Online/Coding Money-Making Ideas",
+      "description": "Requested ideas for earning more money through online or coding projects. Generated 7 B2C concepts including AI Dating Assistant, Personal AI Chief of Staff, AI Content Studio for Creators, and other productivity tools.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-7",
+      "entity": "Trevor Dixon",
+      "fact_type": "authentication_decision",
+      "title": "MEWS Authentication: AccessToken Only",
+      "description": "Trevor confirmed MEWS Connector API authentication should use AccessToken only (not ClientToken + AccessToken as documented). Reason: MEWS integration is installed per property on MEWS side, so single AccessToken identifies both application and property. Forwarded to sub-agent to update nomads-ops-center implementation.",
+      "date": "2026-01-30T13:42:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-8",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "Real-Time Web Access for Price Monitoring",
+      "description": "Trevor requested real-time web access with most token-friendly approach for Hostelworld price monitoring. Wanted solution that gives best data while minimizing API/LLM token costs. Resulted in decision to use Agent Browser CLI for scraping with minimal LLM involvement.",
+      "date": "2026-01-30T06:28:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

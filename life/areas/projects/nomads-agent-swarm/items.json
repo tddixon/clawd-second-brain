@@ -1,0 +1,44 @@
+[
+  {
+    "id": "agent-swarm-001",
+    "fact": "Project completed - Agent Swarm Orchestration System",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "agent-swarm-002",
+    "fact": "6 pre-built specialist agents: revenue, guest experience, operations, marketing, reviews, analytics",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "agent-swarm-003",
+    "fact": "Orchestration workflows: Full Moon Party Prep, Morning Routine, New Booking Flow, Guest Check-In, Negative Review Response",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "agent-swarm-004",
+    "fact": "Built with pure TypeScript, no Python dependencies",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "agent-swarm-005",
+    "fact": "Location: /home/desktop/code/nomads-agent-swarm",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "agent-swarm-006",
+    "fact": "Branch: feature/agent-swarm",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "agent-swarm-007",
+    "fact": "Tech stack: Next.js 15, Convex, Kimi K2.5 (OpenAI-compatible), MEWS, Klaviyo, Telegram",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  }
+]

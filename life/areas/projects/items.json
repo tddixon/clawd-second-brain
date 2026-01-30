@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": "hostelworld-price-monitor-4",
+      "entity": "Hostelworld Price Monitor",
+      "fact_type": "test_result",
+      "title": "Agent Browser Test Shows EUR vs Screenshot THB",
+      "description": "Test run of Hostelworld scraping using Agent Browser with mobile viewport showed EUR prices (Nomads €9.52, Base €7.07) while Trevor's screenshot showed THB prices (Nomads THB 1,098, Base THB 999). Possible causes: different dates, room type differences, currency/location-based pricing, or market changes between screenshot and test.",
+      "date": "2026-01-30T06:30:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "hostelworld-price-monitor-5",
+      "entity": "Hostelworld Price Monitor",
+      "fact_type": "correction",
+      "title": "Broken Puppeteer Scraper Killed",
+      "description": "After Trevor confirmed scraper prices were incorrect (showing THB 999 for Nomads when actual was THB 1,098), the broken Puppeteer-based scraper cron job was killed. Replaced with Agent Browser-based solution for accurate real-time price data.",
+      "date": "2026-01-30T07:00:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-ops-center-1",
+      "entity": "nomads-ops-center",
+      "fact_type": "project_update",
+      "title": "MEWS Connector API Integration Completed",
+      "description": "Sub-agent completed MEWS Connector API integration for payment polling on branch mews-api (commit 1e19c2d). New convex/mewsConnector.ts (1,312 lines) replaces webhook dependency with 15-minute cron polling. Supports per-hostel credentials, preserves towel deposit cashier filtering, uses AccessToken-only authentication. Added tables: mewsConnectorSyncLog, mewsApiCallLog. MEWS_CONNECTOR_IMPROVEMENTS.md includes 10 detailed recommendations.",
+      "date": "2026-01-30T13:52:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-ops-center-2",
+      "entity": "nomads-ops-center",
+      "fact_type": "project_update",
+      "title": "MEWS Connector API PR Created",
+      "description": "PR #8 created for MEWS Connector API Integration (Phase 1). Contains 5 commits: refactor, feat, docs. Includes manual 'Poll MEWS Now' button for debugging. Vercel warning about commit author email (not matching Trevor's GitHub account) - non-blocking.",
+      "date": "2026-01-30T13:55:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-ops-center-3",
+      "entity": "nomads-ops-center",
+      "fact_type": "decision",
+      "title": "Separate Git Identity for Clawd",
+      "description": "Trevor requested separate git identity for Clawd/subagent commits to distinguish from his personal commits. Asked about GitHub Personal Access Token setup to allow Clawd to commit without exposing personal email.",
+      "date": "2026-01-30T13:55:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-ops-center-4",
+      "entity": "nomads-ops-center",
+      "fact_type": "code_audit",
+      "title": "Comprehensive Code Audit Completed",
+      "description": "CODE_AUDIT_REPORT.md generated covering shift reports, reconciliation system, Convex code. Found: 8 critical improvements (N+1 queries, duplicate race condition, transaction isolation), 5 consolidation opportunities (merge MEWS modules, unify reports, standardize soft deletes), 4 error scenarios (timezone, float precision, FK constraints, webhook limits). Top priority: Fix N+1 queries (10x perf improvement), add duplicate protection, implement transaction isolation.",
+      "date": "2026-01-30T13:45:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "nomads-ops-center-5",
+      "entity": "nomads-ops-center",
+      "fact_type": "project_update",
+      "title": "Phase 2: Webhook + API Consolidation In Progress",
+      "description": "Phase 2 instructions sent to sub-agent to consolidate mewsWebhook.ts into mewsConnector.ts while keeping BOTH working simultaneously. Goals: Shared deduplication logic, N+1 query fixes, unique constraints, exponential backoff retry, circuit breaker pattern. Will commit to same mews-api branch and update/create PR.",
+      "date": "2026-01-30T13:50:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

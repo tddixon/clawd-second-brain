@@ -1,0 +1,19 @@
+[2026-01-28 02:00:15] Starting Hostelworld monitoring...
+[2026-01-28 02:00:15] Search dates: 2026-01-31 to 2026-02-01
+[2026-01-28 02:00:15] Opening Hostelworld...
+[32m✓[0m [1mHostels in Krabi » Find cheap, unique hostels » Hostelworld[0m
+  [2mhttps://www.hostelworld.com/pwa/s?q=Krabi,%20Thailand&country=Thailand&city=Krabi&type=city&id=1124&from=2026-01-31&to=2026-02-01&guests=1&page=1[0m
+[2026-01-28 02:00:18] Waiting for page load...
+[2026-01-28 02:00:21] Changing currency to THB...
+[32m✓[0m Done
+[32m✓[0m Done
+[2026-01-28 02:00:26] Extracting hostel data...
+[2026-01-28 02:00:26] Data saved to /home/desktop/clawd/logs/hostelworld/extracted-data.json
+[2026-01-28 02:00:26] Closing browser...
+[32m✓[0m Browser closed
+[2026-01-28 02:00:26] Message prepared
+[2026-01-28 02:00:26] Total hostels: 31
+[2026-01-28 02:00:26] Nomads: Rank #4, THB 1260
+[2026-01-28 02:00:26] Base: Rank #2, THB 1215
+[2026-01-28 02:00:26] Message saved to /home/desktop/clawd/logs/hostelworld/message.txt
+[2026-01-28 02:00:26] ✓ Monitoring complete

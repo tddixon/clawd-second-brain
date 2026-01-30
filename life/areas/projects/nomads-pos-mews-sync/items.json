@@ -1,0 +1,86 @@
+[
+  {
+    "id": "pos-mews-sync-001",
+    "fact": "Project started - Poster POS to MEWS Outlet sync for bar sales",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-002",
+    "fact": "Goal: Sync all bar POS sales to MEWS outlets for unified financial reporting",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-003",
+    "fact": "Poster API documentation: https://dev.joinposter.com/en",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-004",
+    "fact": "Key Poster endpoint: transactions.getTransactions",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-005",
+    "fact": "Poster auth format: {account_id}:{access_token}",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-006",
+    "fact": "Sub-agent completed initial build on 2026-01-29",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-007",
+    "fact": "Location: /home/desktop/code/nomads-pos-mews-sync",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-008",
+    "fact": "Branch: feature/poster-mews-sync",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-009",
+    "fact": "Mapping correction applied (2026-01-29): Fixed schema and processor to map Poster Spot (location) to MEWS Outlet, Poster Workshop to MEWS Accounting Category",
+    "timestamp": "2026-01-29T14:55:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-010",
+    "fact": "Dashboard updated (2026-01-29): Two distinct mapping sections - 'Spot → MEWS Outlet' and 'Workshop → MEWS Accounting Category'",
+    "timestamp": "2026-01-29T14:55:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-003-old",
+    "fact": "REMOVED: Initial requirement to map poster workshops (stations) to MEWS outlets",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "superseded",
+    "supersededBy": "pos-mews-sync-009",
+    "supersededReason": "Trevor clarified that Poster Workshops are accounting categories, not stations. Correct mapping is Spot → Outlet, Workshop → Accounting Category."
+  },
+  {
+    "id": "pos-mews-sync-004-old",
+    "fact": "REMOVED: Initial requirement to map poster product categories to MEWS accounting categories",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "superseded",
+    "supersededBy": "pos-mews-sync-009",
+    "supersededReason": "Poster Categories are for internal menu grouping, not MEWS mapping. Workshops map to Accounting Categories."
+  },
+  {
+    "id": "pos-mews-sync-007-old",
+    "fact": "REMOVED: Incorrect mapping assumption - workshop_id maps to MEWS outlet",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "superseded",
+    "supersededBy": "pos-mews-sync-009",
+    "supersededReason": "Trevor clarified that spot_id (location) maps to MEWS outlet, workshop_id maps to accounting category."
+  }
+]

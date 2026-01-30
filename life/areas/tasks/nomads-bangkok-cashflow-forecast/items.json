@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cashflow-forecast-001",
+    "fact": "Task created - Nomads Bangkok cashflow forecast",
+    "timestamp": "2026-01-28T18:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "cashflow-forecast-002",
+    "fact": "Priority set to HIGH - top priority for today",
+    "timestamp": "2026-01-28T18:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "cashflow-forecast-003",
+    "fact": "Due date: 2026-01-28 (today when created)",
+    "timestamp": "2026-01-28T18:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "cashflow-forecast-004",
+    "fact": "Added to daily plan 2026-01-28 as Must-Do #1",
+    "timestamp": "2026-01-28T18:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "cashflow-forecast-005",
+    "fact": "Linked to project: Nomads Bangkok Opening",
+    "timestamp": "2026-01-28T18:56:00Z",
+    "status": "active"
+  },
+  {
+    "id": "cashflow-forecast-006",
+    "fact": "Status: Open (not yet started)",
+    "timestamp": "2026-01-29T13:03:00Z",
+    "status": "active"
+  }
+]

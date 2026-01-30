@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nomads-guest-portal-001",
+    "fact": "Project created 2026-01-29 - Guest Experience Portal for Nomads Hostels",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-guest-portal-002",
+    "fact": "Features: QR code check-in, digital guidebook, service requests, social features",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-guest-portal-003",
+    "fact": "UI components created: Button, Card, Input, Label, Badge, Tabs, Dialog, Checkbox, ScrollArea, Toast",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-guest-portal-004",
+    "fact": "Layout components: mobile nav, page header, guest app layout",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-guest-portal-005",
+    "fact": "Location: /home/desktop/code/nomads-guest-portal",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  }
+]

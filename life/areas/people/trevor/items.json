@@ -1,0 +1,140 @@
+[
+  {
+    "id": "trevor-001",
+    "fact": "Name: Trevor Dixon - Owner of Nomads Hostels (Thailand)",
+    "timestamp": "2024-01-01",
+    "status": "active"
+  },
+  {
+    "id": "trevor-002",
+    "fact": "Location: Thailand",
+    "timestamp": "2024-01-01",
+    "status": "active"
+  },
+  {
+    "id": "trevor-003",
+    "fact": "Role: Works solo across all departments (marketing, coding, systems)",
+    "timestamp": "2024-01-01",
+    "status": "active"
+  },
+  {
+    "id": "trevor-004",
+    "fact": "Researching agent swarms frameworks and Kimi K2/K2.5 model (2026-01-29)",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "trevor-005",
+    "fact": "Interested in cost-optimized AI workflows using sub-agents",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "trevor-006",
+    "fact": "Decision: Use MEWS Booking Engine API as primary, Connector API for supplementary data only",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-007",
+    "fact": "Has dev access tokens for MEWS Connector API to set up later",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-008",
+    "fact": "Poster POS terminology clarification (2026-01-29): Workshop = Accounting category, Category = Menu grouping, Spot = POS terminal/location",
+    "timestamp": "2026-01-29T14:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-009",
+    "fact": "Confirmed corrected POS-MEWS mapping: Poster Spot (location) → MEWS Outlet, Poster Workshop → MEWS Accounting Category (2026-01-29)",
+    "timestamp": "2026-01-29T14:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-010",
+    "fact": "Goal: Unified financial reporting across hostel and bar operations",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-011",
+    "fact": "Requested detailed project summary and plan be added to Obsidian Second Brain (2026-01-29)",
+    "timestamp": "2026-01-29T14:48:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-012",
+    "fact": "Requested ideas for earning more money through online or coding projects (2026-01-29)",
+    "timestamp": "2026-01-29T17:48:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-013",
+    "fact": "Clarified wants B2C (business-to-consumer) ideas, not B2B (2026-01-29)",
+    "timestamp": "2026-01-29T17:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-014",
+    "fact": "Specified B2C ideas should not be limited to just hostels (2026-01-29)",
+    "timestamp": "2026-01-29T17:54:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-015",
+    "fact": "Asked about stock market decline on January 29, 2026",
+    "timestamp": "2026-01-29T16:05:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-016",
+    "fact": "Requested status update on all coding and research work",
+    "timestamp": "2026-01-29T17:29:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-017",
+    "fact": "Requested to open Obsidian from terminal to trigger sync",
+    "timestamp": "2026-01-29T19:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-018",
+    "fact": "Requested to search for and install obsidian-cli if not available",
+    "timestamp": "2026-01-29T19:18:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-019",
+    "fact": "Requested 'Poll MEWS Now' button for debugging MEWS Connector API integration (2026-01-30)",
+    "timestamp": "2026-01-30T13:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-020",
+    "fact": "Requested comprehensive code audit of nomads-ops-center app covering shift reports, reconciliation system, and Convex code (2026-01-30)",
+    "timestamp": "2026-01-30T13:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-021",
+    "fact": "Instructed subagent to commit MEWS Connector API changes to mews-api branch and create PR (2026-01-30)",
+    "timestamp": "2026-01-30T13:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-022",
+    "fact": "Decision: Wants separate git identity for Clawd/subagent commits to distinguish from personal commits (2026-01-30)",
+    "timestamp": "2026-01-30T13:55:00Z",
+    "status": "active"
+  },
+  {
+    "id": "trevor-023",
+    "fact": "Asked about GitHub Personal Access Token setup to allow Clawd to commit without exposing email (2026-01-30)",
+    "timestamp": "2026-01-30T13:55:00Z",
+    "status": "active"
+  }
+]

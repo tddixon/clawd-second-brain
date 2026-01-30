@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nomads-bangkok-001",
+    "fact": "New Nomads location in Bangkok - operational planning phase",
+    "timestamp": "2024-01-01",
+    "status": "active"
+  },
+  {
+    "id": "nomads-bangkok-002",
+    "fact": "Cashflow forecast added as top priority task (due 2026-01-28)",
+    "timestamp": "2026-01-28",
+    "status": "active"
+  },
+  {
+    "id": "nomads-bangkok-003",
+    "fact": "Sign makers research completed - stored in Second Brain",
+    "timestamp": "2026-01-27",
+    "status": "active"
+  },
+  {
+    "id": "nomads-bangkok-004",
+    "fact": "Project files in Second Brain: Projects/Nomads/Nomads-Bangkok-Opening/",
+    "timestamp": "2026-01-27",
+    "status": "active"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nomads-review-manager-001",
+    "fact": "Project created 2026-01-29 - Review Monitoring & Response System for Nomads Hostels",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-review-manager-002",
+    "fact": "Platforms: Booking.com, Hostelworld, Google Reviews, TripAdvisor, Agoda",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-review-manager-003",
+    "fact": "Features: Sentiment analysis, AI response drafts, analytics dashboard, Telegram alerts",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-review-manager-004",
+    "fact": "UI components created: Button, Card, Badge, Avatar, Progress, ScrollArea, Sheet, Dialog",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-review-manager-005",
+    "fact": "Location: /home/desktop/code/nomads-review-manager",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  }
+]

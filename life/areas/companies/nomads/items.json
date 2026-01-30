@@ -1,0 +1,136 @@
+[
+  {
+    "id": "nomads-001",
+    "fact": "Hostel chain in Thailand with 4+ properties",
+    "timestamp": "2024-01-01",
+    "status": "active"
+  },
+  {
+    "id": "nomads-002",
+    "fact": "Owner: Trevor Dixon",
+    "timestamp": "2024-01-01",
+    "status": "active"
+  },
+  {
+    "id": "nomads-003",
+    "fact": "Properties: Ao Nang, Bangkok, Koh Tao, Base Ao Nang",
+    "timestamp": "2024-01-01",
+    "status": "active"
+  },
+  {
+    "id": "nomads-004",
+    "fact": "Current projects: MEWS Booking Engine, Klaviyo-MEWS Integration, Bangkok Cashflow Forecast",
+    "timestamp": "2026-01-29",
+    "status": "superseded",
+    "supersededBy": "nomads-007"
+  },
+  {
+    "id": "nomads-005",
+    "fact": "Tech stack standardized: Next.js 15, Convex, shadcn/ui, TypeScript",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-006",
+    "fact": "Actively deploying 5 parallel AI agents for automation (2026-01-29)",
+    "timestamp": "2026-01-29",
+    "status": "superseded",
+    "supersededBy": "nomads-008"
+  },
+  {
+    "id": "nomads-007",
+    "fact": "Active projects (2026-01-29): MEWS Booking Engine, Poster POS to MEWS Sync, Agent Swarm, Command Center, Revenue Optimizer, Guest Portal, Ops Dashboard, Review Manager, Klaviyo Enhancement",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-008",
+    "fact": "Completed major builds on 2026-01-29: MEWS Booking Engine (PR #32), Poster POS to MEWS Sync, Agent Swarm, Command Center, Revenue Optimizer, Guest Portal, Ops Dashboard, Review Manager, Klaviyo Enhancement",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-009",
+    "fact": "Integrates with MEWS PMS for booking and revenue management",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-010",
+    "fact": "Bar operations use Poster POS for sales tracking",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-011",
+    "fact": "Goal: Unified financial reporting across hostel and bar operations",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-012",
+    "fact": "Poster POS structure clarified (2026-01-29): Workshop = Accounting category, Category = Menu grouping, Spot = POS terminal/location",
+    "timestamp": "2026-01-29T14:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-013",
+    "fact": "POS-MEWS sync mapping: Poster Spot (location) → MEWS Outlet (property), Poster Workshop (accounting category) → MEWS Accounting Category",
+    "timestamp": "2026-01-29T14:55:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-014",
+    "fact": "Automation master plan documented in Obsidian Second Brain (2026-01-29)",
+    "timestamp": "2026-01-29T14:48:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-015",
+    "fact": "Ao Nang Properties Market Position (2026-01-30): Nomads Ao Nang Beach rank #2 (THB 999-1,098, 9.6-9.8★), Base Ao Nang Beachfront rank #3-4 (THB 999, 9.4★). Both priced ~60% below market average of THB 2,484.",
+    "timestamp": "2026-01-30T06:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-016",
+    "fact": "Hostelworld price monitoring migrated from Puppeteer to Agent Browser (2026-01-30). Puppeteer scraper broken due to anti-bot protection returning incorrect prices. Agent Browser uses mobile viewport for accurate real-time data.",
+    "timestamp": "2026-01-30T06:39:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-017",
+    "fact": "Daily Hostelworld price reports configured (2026-01-30). Cron job runs at 8am Thailand time (1am UTC), sends Telegram report with prices, rankings, ratings, and competitor context. No full app/storage needed - simple reports only.",
+    "timestamp": "2026-01-30T06:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-018",
+    "fact": "Ao Nang competitors (2026-01-30): K-Bunk AoNang Center (THB 870, 9.8★), Whoopers Hostel (THB 891, 9.2★), Global Beach Hostel (THB 630, 8.7★). Nomads priced premium vs competitors but maintains high ratings.",
+    "timestamp": "2026-01-30T06:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-019",
+    "fact": "MEWS Connector API integration Phase 1 completed (2026-01-30). Branch: mews-api, PR #8 created. Includes polling-based payment collection, 15-minute cron, manual poll button.",
+    "timestamp": "2026-01-30T13:40:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-020",
+    "fact": "Code audit completed (2026-01-30): Identified 8 critical improvements, 5 consolidation opportunities, 4 error scenarios. CODE_AUDIT_REPORT.md generated.",
+    "timestamp": "2026-01-30T13:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-021",
+    "fact": "Ops Center improvements planned: N+1 query fixes, duplicate payment protection, transaction isolation, webhook + API consolidation, soft delete standardization (2026-01-30)",
+    "timestamp": "2026-01-30T13:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-022",
+    "fact": "Phase 2 in progress: Consolidating mewsWebhook.ts into mewsConnector.ts with both webhook and API polling working simultaneously (2026-01-30)",
+    "timestamp": "2026-01-30T13:50:00Z",
+    "status": "active"
+  }
+]

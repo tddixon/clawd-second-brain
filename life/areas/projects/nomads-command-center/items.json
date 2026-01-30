@@ -1,0 +1,56 @@
+[
+  {
+    "id": "command-center-001",
+    "fact": "Project completed - Command Center / Kanban Dashboard",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "command-center-002",
+    "fact": "Kanban board with 4 columns: Backlog, In Progress, Review, Done",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "command-center-003",
+    "fact": "Agent monitor with real-time status (running/idle/errored)",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "command-center-004",
+    "fact": "Project overview with Git activity feed",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "command-center-005",
+    "fact": "Notifications panel with completion alerts and agent blockers",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "command-center-006",
+    "fact": "Webhook API endpoint for agents to report status: POST /api/webhook/agent-status",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "command-center-007",
+    "fact": "Location: /home/desktop/code/nomads-command-center",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "command-center-008",
+    "fact": "Branch: feature/command-center-dashboard",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "command-center-009",
+    "fact": "Tech stack: Next.js 15, Convex, shadcn/ui, Tailwind CSS 4, @dnd-kit",
+    "timestamp": "2026-01-29T14:30:00Z",
+    "status": "active"
+  }
+]

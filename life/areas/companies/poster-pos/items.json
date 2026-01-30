@@ -1,0 +1,56 @@
+[
+  {
+    "id": "poster-001",
+    "fact": "Cloud-based POS system for cafes, restaurants, and shops",
+    "timestamp": "2026-01-29T14:14:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-002",
+    "fact": "Developer portal: https://dev.joinposter.com/en",
+    "timestamp": "2026-01-29T14:14:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-003",
+    "fact": "Used by Nomads for bar operations and sales tracking",
+    "timestamp": "2026-01-29T14:15:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-004",
+    "fact": "API documentation on GitHub: https://github.com/joinposter/docs",
+    "timestamp": "2026-01-29T14:15:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-005",
+    "fact": "Authentication: Token-based format {account_id}:{access_token}",
+    "timestamp": "2026-01-29T14:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-006",
+    "fact": "Key API endpoint: transactions.getTransactions - returns sales with products, payments, workshops",
+    "timestamp": "2026-01-29T14:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-007",
+    "fact": "Workshop = Accounting category (e.g., Food, Drinks, Merch)",
+    "timestamp": "2026-01-29T14:38:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-008",
+    "fact": "Category = Menu grouping (internal organization, not accounting)",
+    "timestamp": "2026-01-29T14:38:00Z",
+    "status": "active"
+  },
+  {
+    "id": "poster-009",
+    "fact": "Spot = POS terminal/physical device at a location (also called 'location')",
+    "timestamp": "2026-01-29T14:42:00Z",
+    "status": "active"
+  }
+]

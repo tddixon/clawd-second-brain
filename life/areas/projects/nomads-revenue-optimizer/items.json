@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nomads-revenue-optimizer-001",
+    "fact": "Project created 2026-01-29 - Dynamic pricing engine for Nomads Hostels",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-revenue-optimizer-002",
+    "fact": "Tech stack: Next.js, Convex, shadcn/ui, TypeScript",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-revenue-optimizer-003",
+    "fact": "Features: Dynamic pricing based on occupancy, events, demand forecasting",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-revenue-optimizer-004",
+    "fact": "Convex backend schema includes: properties, roomTypes, occupancy, pricingRules, dynamicPrices, demandForecasts",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  },
+  {
+    "id": "nomads-revenue-optimizer-005",
+    "fact": "Location: /home/desktop/code/nomads-revenue-optimizer",
+    "timestamp": "2026-01-29",
+    "status": "active"
+  }
+]
