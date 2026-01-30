@@ -53,6 +53,24 @@
       "fact": "ROI Analysis: Time investment ~15-20 days for full refactoring. Benefits: 70% reduction in maintenance effort, 10x faster sync (incremental + parallel), 90% fewer sync failures, Zero data loss (conflict detection, backups, audit trail). Break-even: ~2 months.",
       "timestamp": "2026-01-30T18:14:00Z",
       "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-010",
+      "fact": "3 sub-agents deployed to fix PKM code issues (2026-01-30 18:43 UTC): fix-clickup-sync-consolidation (merge 3 ClickUp sync scripts), fix-todoist-dedup-and-config (dedup Todoist + centralized .env), fix-time-tracking-and-errors (complete time tracking + standardize error handling)",
+      "timestamp": "2026-01-30T18:43:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-011",
+      "fact": "All 3 PKM fix sub-agents completed successfully within 2 minutes (2026-01-30 18:44 UTC): fix-clickup-sync-consolidation (1m41s, 48.1k tokens), fix-time-tracking-and-errors (1m17s, 46.9k tokens), fix-todoist-dedup-and-config (1m28s, 37.0k tokens)",
+      "timestamp": "2026-01-30T18:44:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-012",
+      "fact": "Context7 skill installed and configured for up-to-date library documentation (2026-01-30 18:35 UTC) - API key configured via mcporter MCP, can search and query library docs for React, Next.js, ClickUp, etc.",
+      "timestamp": "2026-01-30T18:35:00Z",
+      "status": "active"
     }
   ]
 }

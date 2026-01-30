@@ -88,5 +88,11 @@
     "fact": "Project list reorganized in ClickUp (2026-01-30 18:30 UTC). Folder 'Klaviyo Integration' (ID: 90176175709) contains list 'Klaviyo Tasks' (ID: 901710411148) and project summary doc. Previously folderless list deleted and recreated inside folder",
     "timestamp": "2026-01-30T18:30:00Z",
     "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-016",
+    "fact": "Trevor still finishing development on MEWS-Klaviyo sync (2026-01-30 18:53 UTC) - integration plan saved only, not executed to avoid combining with in-progress work",
+    "timestamp": "2026-01-30T18:53:00Z",
+    "status": "active"
   }
 ]

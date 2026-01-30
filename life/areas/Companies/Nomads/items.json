@@ -79,6 +79,30 @@
       "content": "Time tracking integration created: bidirectional sync between ClickUp and Obsidian for tracking task time in both platforms",
       "timestamp": "2026-01-30T16:30:00Z",
       "source": "development"
+    },
+    {
+      "id": "nomads-11",
+      "entity": "Nomads",
+      "type": "reorganization",
+      "content": "ClickUp workspace reorganized (2026-01-30 18:36 UTC): Old folderless lists (Accounting, Marketing, Nomads Bangkok, Nomads Asia Website, Graphic Design) deleted and recreated inside 5 new Project Folders with proper structure",
+      "timestamp": "2026-01-30T18:36:00Z",
+      "source": "clickup_action"
+    },
+    {
+      "id": "nomads-12",
+      "entity": "Nomads",
+      "type": "tasks",
+      "content": "6 daily tasks added to ClickUp for Trevor (2026-01-30 18:43 UTC): 1) Decide on AC & Sound/Lighting Quotes (Nomads Bangkok), 2) Check traffic for delivery (Nomads Bangkok), 3) Review Base 2024 PL (Accounting), 4) Add Mikey B to Mews & Xero (Inbox), 5) Set Charlie to tour Photos (Marketing), 6) Tell Ali about Flight to Bangkok (Inbox)",
+      "timestamp": "2026-01-30T18:43:00Z",
+      "source": "clickup_task"
+    },
+    {
+      "id": "nomads-13",
+      "entity": "Nomads",
+      "type": "structure",
+      "content": "ClickUp workspace final structure after reorganization (2026-01-30 18:47 UTC): Folderless lists (Inbox), Folders: Accounting (90176179139) with Accounting list, Marketing (90176179137) with Marketing list, Nomads Bangkok (90176179135) with Bangkok list, Nomads Asia Website (90176179136) with Website list, Graphic Design (90176179138) with Graphic Design list",
+      "timestamp": "2026-01-30T18:47:00Z",
+      "source": "clickup_verification"
     }
   ]
 }

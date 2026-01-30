@@ -71,6 +71,78 @@
       "content": "Provided ClickUp API key (pk_43553717_MMA0TFNM7U8DL876ZKFEVLFWPBYZHWYC) to enable sync",
       "timestamp": "2026-01-30T15:49:00Z",
       "source": "conversation"
+    },
+    {
+      "id": "trevor-10",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Deployed sub-agents to fix PKM code issues identified in code review (2026-01-30 18:43 UTC)",
+      "timestamp": "2026-01-30T18:43:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-11",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested Claude Code sub-agent to analyze Nomads Ops Center and plan integration of MEWS+Klaviyo+Poster syncs as modular Next.js Route Groups (2026-01-30 18:45 UTC)",
+      "timestamp": "2026-01-30T18:45:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-12",
+      "entity": "Trevor",
+      "type": "decision",
+      "content": "Decided to save Nomads Ops integration plan only for now - still finishing development on MEWS-Klaviyo sync and do not want to combine until it's done (2026-01-30 18:53 UTC)",
+      "timestamp": "2026-01-30T18:53:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-13",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested to add daily summary to PKM daily plan using sub-agent (2026-01-30 18:59 UTC)",
+      "timestamp": "2026-01-30T18:59:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "mikey-b-1",
+      "entity": "Mikey B",
+      "type": "action_item",
+      "content": "Needs to be added to Mews & Xero (task created for Trevor, 2026-01-30 18:43 UTC)",
+      "timestamp": "2026-01-30T18:43:00Z",
+      "source": "clickup_task"
+    },
+    {
+      "id": "charlie-1",
+      "entity": "Charlie",
+      "type": "action_item",
+      "content": "Needs to be set to tour Photos (task created for Trevor, 2026-01-30 18:43 UTC)",
+      "timestamp": "2026-01-30T18:43:00Z",
+      "source": "clickup_task"
+    },
+    {
+      "id": "ali-1",
+      "entity": "Ali",
+      "type": "action_item",
+      "content": "Needs to be told about Flight to Bangkok (task created for Trevor, 2026-01-30 18:43 UTC)",
+      "timestamp": "2026-01-30T18:43:00Z",
+      "source": "clickup_task"
+    },
+    {
+      "id": "clawd-1",
+      "entity": "Clawd",
+      "type": "action",
+      "content": "Deployed 3 sub-agents to fix PKM code issues: fix-clickup-sync-consolidation, fix-todoist-dedup-and-config, fix-time-tracking-and-errors (2026-01-30 18:43 UTC)",
+      "timestamp": "2026-01-30T18:43:00Z",
+      "source": "action"
+    },
+    {
+      "id": "clawd-2",
+      "entity": "Clawd",
+      "type": "action",
+      "content": "Installed Context7 skill for up-to-date library documentation (2026-01-30 18:35 UTC)",
+      "timestamp": "2026-01-30T18:35:00Z",
+      "source": "action"
     }
   ]
 }
