@@ -150,7 +150,71 @@ async function syncProject(
     content += `## Description\n\n${list.content}\n\n`;
   }
   
-  // Tasks section
+  // Create individual task files with YAML frontmatter
+  const TASKS_DIR = path.join(OBSIDIAN_VAULT, '04-Tasks');
+  ensureDir(TASKS_DIR);
+  
+  // Process all tasks - create/update individual task files
+  for (const task of tasks) {
+    const taskFileName = sanitizeName(task.name).substring(0, 50);
+    const taskFilePath = path.join(TASKS_DIR, `${taskFileName}.md`);
+    
+    // Map ClickUp priority to TaskNotes priority
+    let taskPriority = 'normal';
+    if (task.priority) {
+      if (task.priority.priority === 'urgent') taskPriority = 'urgent';
+      else if (task.priority.priority === 'high') taskPriority = 'high';
+      else if (task.priority.priority === 'low') taskPriority = 'low';
+    }
+    
+    // Map ClickUp status
+    const taskStatus = task.status?.type === 'closed' ? 'done' : 'open';
+    
+    // Format dates
+    const dueDate = task.due_date 
+      ? new Date(parseInt(task.due_date)).toISOString().split('T')[0]
+      : '';
+    const createdDate = task.date_created 
+      ? new Date(parseInt(task.date_created)).toISOString()
+      : new Date().toISOString();
+    const updatedDate = task.date_updated 
+      ? new Date(parseInt(task.date_updated)).toISOString()
+      : createdDate;
+    
+    // Build assignees list
+    const assignees = task.assignees?.map((a: any) => a.username).join(', ') || '';
+    
+    // Check if task file already exists
+    let existingContent = '';
+    if (fs.existsSync(taskFilePath)) {
+      existingContent = fs.readFileSync(taskFilePath, 'utf-8');
+      // If file exists and has same clickup_id, update it
+      if (existingContent.includes(`clickup_id: ${task.id}`)) {
+        // Update existing task file
+        const updatedContent = existingContent.replace(
+          /---[\s\S]*?---/,
+          `---\nstatus: ${taskStatus}\ntags:\n  - task\n  - clickup-import\npriority: ${taskPriority}\nprojects: ["[[${projectFolderName}]]"]\ndue: ${dueDate}\ndateCreated: ${createdDate}\ndateModified: ${updatedDate}\nclickup_id: ${task.id}\nclickup_url: ${task.url}\nclickup_status: ${task.status?.status || 'unknown'}\nassignees: ${assignees}\n---`
+        );
+        if (!dryRun) {
+          fs.writeFileSync(taskFilePath, updatedContent);
+        }
+        continue;
+      }
+    }
+    
+    // Create new task file with full YAML frontmatter
+    const taskContent = `---\nstatus: ${taskStatus}\ntags:\n  - task\n  - clickup-import\npriority: ${taskPriority}\nprojects: ["[[${projectFolderName}]]"]\ndue: ${dueDate}\ndateCreated: ${createdDate}\ndateModified: ${updatedDate}\nclickup_id: ${task.id}\nclickup_url: ${task.url}\nclickup_status: ${task.status?.status || 'unknown'}\nassignees: ${assignees}\n---\n\n# ${task.name}\n\n${task.description || ''}\n\n## ClickUp Reference\n- **Task ID:** ${task.id}\n- **URL:** ${task.url}\n- **Status:** ${task.status?.status || 'Unknown'}\n${assignees ? `- **Assignees:** ${assignees}` : ''}\n\n---\n*Imported from ClickUp on ${new Date().toISOString().split('T')[0]}*\n`;
+    
+    if (!dryRun) {
+      fs.writeFileSync(taskFilePath, taskContent);
+      console.log(`  📝 Task file: ${taskFileName}.md`);
+    }
+    
+    // Track task mapping
+    state.mappings.tasks[task.id] = taskFilePath;
+  }
+  
+  // Tasks section in project note (embedded list for quick reference)
   content += `## Tasks\n\n`;
   
   // Open tasks
@@ -158,15 +222,14 @@ async function syncProject(
   if (openTasks.length > 0) {
     content += `### Open (${openTasks.length})\n\n`;
     for (const task of openTasks) {
+      const taskFileName = sanitizeName(task.name).substring(0, 50);
       const dueDate = task.due_date 
         ? new Date(parseInt(task.due_date)).toISOString().split('T')[0]
         : '';
       const dueStr = dueDate ? ` — Due: ${dueDate}` : '';
       const priority = task.priority ? ` [${task.priority.priority}]` : '';
-      content += `- [ ] ${task.name}${dueStr}${priority} #clickup-task-${task.id}\n`;
-      
-      // Track task mapping
-      state.mappings.tasks[task.id] = `${projectFile}:${task.name}`;
+      // Link to individual task file
+      content += `- [ ] [[${taskFileName}]]${dueStr}${priority} #clickup-task-${task.id}\n`;
     }
     content += '\n';
   } else {
@@ -180,7 +243,8 @@ async function syncProject(
     if (recentClosed.length > 0) {
       content += `### Recently Completed (${recentClosed.length})\n\n`;
       for (const task of recentClosed) {
-        content += `- [x] ${task.name} #clickup-task-${task.id}\n`;
+        const taskFileName = sanitizeName(task.name).substring(0, 50);
+        content += `- [x] [[${taskFileName}]] #clickup-task-${task.id}\n`;
       }
       content += '\n';
     }
