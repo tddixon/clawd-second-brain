@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "upstash-1",
+      "entity": "Upstash",
+      "fact_type": "product",
+      "title": "Context7 - Library Documentation API",
+      "description": "Upstash offers Context7 API for fetching up-to-date library documentation. Serves as an alternative to searching web or relying on outdated training data. Provides HTTP MCP endpoint at https://mcp.context7.com/mcp.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

@@ -100,5 +100,23 @@
     "fact": "Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview (Poster POS to MEWS outlet sync for unified financial reporting), Goal (eliminate manual data entry), Completed Work (API framework, accounting category mapping, revenue sync logic, error handling), Pending Work (create GitHub repo, test with real POS data, configure mappings, set up daily sync), References (Poster API docs, MEWS API docs), and Future Enhancement ideas (real-time sync, revenue forecasting, inventory management, staff commission tracking)",
     "timestamp": "2026-01-30T17:58:00Z",
     "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-014",
+    "fact": "Project Summary Doc recreated in ClickUp with create_page: false (2026-01-30 18:10 UTC). Doc ID: rg3vj-6437. Contains 5 pages: Executive Summary, Overview, What We Have Done, What Needs To Be Done, Ideas & Future. No Untitled page issue",
+    "timestamp": "2026-01-30T18:10:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-015",
+    "fact": "Tasks created for Trevor (2026-01-30 18:20 UTC): 'Create GitHub repository for POS-MEWS Sync' (normal priority), 'Test sync with real POS data from all hostels' (normal priority)",
+    "timestamp": "2026-01-30T18:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-016",
+    "fact": "Project list reorganized in ClickUp (2026-01-30 18:30 UTC). Folder 'POS-MEWS Sync' (ID: 90176175712) contains list 'POS-MEWS Tasks' (ID: 901710411155) and project summary doc. Previously folderless list deleted and recreated inside folder",
+    "timestamp": "2026-01-30T18:30:00Z",
+    "status": "active"
   }
 ]

@@ -15,7 +15,7 @@
       "entity": "Hostelworld Price Monitor",
       "fact_type": "correction",
       "title": "Broken Puppeteer Scraper Killed",
-      "description": "After Trevor confirmed scraper prices were incorrect (showing THB 999 for Nomads when actual was THB 1,098), the broken Puppeteer-based scraper cron job was killed. Replaced with Agent Browser-based solution for accurate real-time price data.",
+      "description": "After Trevor confirmed scraper prices were incorrect (showing THB 999 for Nomads when actual was THB 1,098), broken Puppeteer-based scraper cron job was killed. Replaced with Agent Browser-based solution for accurate real-time price data.",
       "date": "2026-01-30T07:00:00Z",
       "source": "clawdbot",
       "supersedes": []
@@ -117,6 +117,46 @@
       "title": "Hybrid Integration Strategy",
       "description": "Decision made: Use BOTH custom agent (for main workflow - task execution, structure sync, 2-way Obsidian sync) and official ClickUp MCP (for advanced features like time tracking, chat, docs). Custom agent optimized for Trevor's workflow.",
       "date": "2026-01-30T15:50:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "context7-skill-1",
+      "entity": "context7-skill",
+      "fact_type": "skill_creation",
+      "title": "Context7 Skill Installed",
+      "description": "Context7 skill created at /home/desktop/clawd/skills/context7/. Provides up-to-date library documentation via Upstash Context7 API. Includes SKILL.md with workflow, quick reference, known library IDs. Python script context7.py uses mcporter MCP backend for search and context queries.",
+      "date": "2026-01-30T18:12:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clawd-pkm-code-review-1",
+      "entity": "clawd-pkm-code-review",
+      "fact_type": "project_completion",
+      "title": "PKM Code Review Completed",
+      "description": "Comprehensive code review of PKM/ClickUp/Obsidian/Todoist integration code completed by sub-agent. Analyzed 20+ files (3,786 LOC). Full report: /home/desktop/clawd/PKM-CODE-REVIEW-REPORT.md. Found 3 competing ClickUp sync implementations, duplicate Todoist scripts, no centralized config, incomplete time tracking. Recommendations: consolidate to single implementation, add .env support, implement SQLite, webhook-based sync.",
+      "date": "2026-01-30T18:14:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clickup-project-docs-1",
+      "entity": "clickup-project-docs",
+      "fact_type": "project_update",
+      "title": "Project Summary Docs Recreated",
+      "description": "4 ClickUp project summary docs recreated with create_page: false to avoid Untitled page issue (2026-01-30 18:10 UTC). Docs: Ops Center (rg3vj-6377), Klaviyo (rg3vj-6397), Tour Website (rg3vj-6417), POS-MEWS Sync (rg3vj-6437). Each contains 5 pages: Executive Summary, Overview, What We Have Done, What Needs To Be Done, Ideas & Future.",
+      "date": "2026-01-30T18:10:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "clickup-reorganization-1",
+      "entity": "clickup-workspace",
+      "fact_type": "reorganization",
+      "title": "Folderless Lists Moved to Project Folders",
+      "description": "All folderless lists in Nomads space reorganized into Project Folders structure (2026-01-30 18:30 UTC). Created folders: Accounting (list 901710415128), Marketing (list 901710415129), Nomads Bangkok (list 901710415130), Nomads Asia Website (list 901710415133), Graphic Design (list 901710415136). Old lists deleted, tasks recreated in new lists. Inbox remains folderless.",
+      "date": "2026-01-30T18:30:00Z",
       "source": "clawdbot",
       "supersedes": []
     }

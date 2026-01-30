@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "id": "clawd-pkm-code-review-001",
+      "fact": "Comprehensive PKM code review completed by sub-agent (2026-01-30 18:14 UTC). Full report: /home/desktop/clawd/PKM-CODE-REVIEW-REPORT.md. Analyzed 20+ files, 3,786 LOC across ClickUp (7 components ~2,300 LOC), Todoist (4 components ~600 LOC), Time tracking (2 components ~550 LOC), Second Brain workflows, and skills documentation.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-002",
+      "fact": "3 competing ClickUp sync implementations identified (HIGH PRIORITY) - sync-clickup-obsidian.ts, sync-clickup-standalone.js, sync-clickup-v2.js. Massive duplication, maintenance nightmare, feature drift. Same sanitizeName() function duplicated 3x.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-003",
+      "fact": "Duplicate Todoist sync scripts identified (HIGH PRIORITY) - sync-todoist-to-obsidian.sh vs .skills/second-brain/scripts/sync-todoist.sh. Nearly identical (257 LOC each) in different locations.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-004",
+      "fact": "No centralized configuration (HIGH PRIORITY) - 16+ hardcoded paths to /home/desktop/obsidian-second-brain. Environment variables inconsistent: CLICKUP_API_TOKEN vs CLICKUP_API_KEY vs CLAWD_CLICKUP_TOKEN. No .env file support in most scripts.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-005",
+      "fact": "Incomplete time tracking (MEDIUM PRIORITY) - calculateTotalTime() returns 0 (stub), functions defined but never called, no aggregation or reporting.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-006",
+      "fact": "Immediate recommendations (This Week): Consolidate 3 ClickUp sync scripts into single implementation with feature flags, Delete duplicate Todoist sync script, Create shared utilities module, Add centralized .env configuration, Standardize error handling with retry logic.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-007",
+      "fact": "Short-term recommendations (This Month): Complete time tracking implementation, Add LLM-based inbox categorization (replace keyword matching), Implement conflict detection for bidirectional sync, Add health monitoring with alerts.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-008",
+      "fact": "Architecture recommendations: Adopt monorepo structure with service layer, Move from JSON state to SQLite, Implement webhook-based sync (replace polling), Add comprehensive test coverage (target 80%+), Create plugin system for extensibility.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    },
+    {
+      "id": "clawd-pkm-code-review-009",
+      "fact": "ROI Analysis: Time investment ~15-20 days for full refactoring. Benefits: 70% reduction in maintenance effort, 10x faster sync (incremental + parallel), 90% fewer sync failures, Zero data loss (conflict detection, backups, audit trail). Break-even: ~2 months.",
+      "timestamp": "2026-01-30T18:14:00Z",
+      "status": "active"
+    }
+  ]
+}

@@ -34,5 +34,29 @@
     "fact": "Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview, Goal, Completed Work (Next.js 15 + Convex, MEWS Connector API PR #8), Pending Work (PR review, deploy, monitoring, documentation), References, and Future Enhancement ideas",
     "timestamp": "2026-01-30T17:58:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-007",
+    "fact": "ClickUp Docs API v3 endpoint usage documented for project documentation (2026-01-30 18:00 UTC). Key endpoints: Create Doc (create_page: false to avoid Untitled page), Create Page, Edit Page, Search Docs, Fetch Doc. Auth: Bearer token in Authorization header",
+    "timestamp": "2026-01-30T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-008",
+    "fact": "Project Summary Doc recreated in ClickUp with create_page: false (2026-01-30 18:10 UTC). Doc ID: rg3vj-6377. Contains 5 pages: Executive Summary, Overview, What We Have Done, What Needs To Be Done, Ideas & Future. No Untitled page issue",
+    "timestamp": "2026-01-30T18:10:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-009",
+    "fact": "Tasks created for Trevor (2026-01-30 18:20 UTC): 'Review and merge PR #8 (MEWS Connector API)' (high priority), 'Deploy Ops Center to production' (normal priority)",
+    "timestamp": "2026-01-30T18:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-010",
+    "fact": "Project list reorganized in ClickUp (2026-01-30 18:30 UTC). Folder 'Ops Center' (ID: 90176175706) contains list 'Ops Center Tasks' (ID: 901710411145) and project summary doc. Previously folderless list deleted and recreated inside folder",
+    "timestamp": "2026-01-30T18:30:00Z",
+    "status": "active"
   }
 ]

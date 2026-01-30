@@ -1,0 +1,10 @@
+# Test files
+tests/
+*.test.js
+
+# Coverage reports
+coverage/
+
+# IDE
+.vscode/
+.idea/

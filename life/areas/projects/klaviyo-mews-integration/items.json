@@ -70,5 +70,23 @@
     "fact": "Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview (MEWS to Klaviyo lifecycle email automation), Goal (automate guest communication), Completed Work (12 lifecycle events, predictive analytics, webhook handlers), Pending Work (test triggers, design templates, A/B testing, deploy), References, and Future Enhancement ideas (VIP automation, win-back campaigns, review requests)",
     "timestamp": "2026-01-30T17:58:00Z",
     "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-013",
+    "fact": "Project Summary Doc recreated in ClickUp with create_page: false (2026-01-30 18:10 UTC). Doc ID: rg3vj-6397. Contains 5 pages: Executive Summary, Overview, What We Have Done, What Needs To Be Done, Ideas & Future. No Untitled page issue",
+    "timestamp": "2026-01-30T18:10:00Z",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-014",
+    "fact": "Tasks created for Trevor (2026-01-30 18:20 UTC): 'Test all 12 lifecycle event triggers' (high priority), 'Design email templates for each trigger' (normal priority)",
+    "timestamp": "2026-01-30T18:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-015",
+    "fact": "Project list reorganized in ClickUp (2026-01-30 18:30 UTC). Folder 'Klaviyo Integration' (ID: 90176175709) contains list 'Klaviyo Tasks' (ID: 901710411148) and project summary doc. Previously folderless list deleted and recreated inside folder",
+    "timestamp": "2026-01-30T18:30:00Z",
+    "status": "active"
   }
 ]

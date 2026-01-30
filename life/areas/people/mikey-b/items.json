@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "mikey-b-1",
+      "entity": "Mikey B",
+      "fact_type": "person",
+      "title": "Nomads Team Member",
+      "description": "Team member at Nomads. Task created 2026-01-30 to add Mikey B to MEWS and Xero systems for access.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

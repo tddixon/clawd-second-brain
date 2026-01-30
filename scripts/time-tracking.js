@@ -17,6 +17,69 @@ const { execSync } = require('child_process');
 const OBSIDIAN_VAULT = '/home/desktop/obsidian-second-brain';
 const TASKS_DIR = path.join(OBSIDIAN_VAULT, '04-Tasks');
 const TIME_LOG_FILE = path.join(OBSIDIAN_VAULT, '.clawdsync', 'time-tracking.json');
+const ERROR_LOG_FILE = '/home/desktop/clawd/logs/time-tracking-errors.log';
+
+// Ensure logs directory exists
+const logsDir = path.dirname(ERROR_LOG_FILE);
+if (!fs.existsSync(logsDir)) {
+  fs.mkdirSync(logsDir, { recursive: true });
+}
+
+// Error logging utility
+function logError(context, error, data = {}) {
+  const timestamp = new Date().toISOString();
+  const logEntry = {
+    timestamp,
+    context,
+    error: error.message || String(error),
+    stack: error.stack,
+    data
+  };
+  
+  const logLine = `[${timestamp}] ${context}: ${error.message || error}\n`;
+  fs.appendFileSync(ERROR_LOG_FILE, logLine);
+  
+  // Also log full details as JSON for debugging
+  const jsonLog = path.join(logsDir, 'time-tracking-errors.jsonl');
+  fs.appendFileSync(jsonLog, JSON.stringify(logEntry) + '\n');
+}
+
+// Retry utility with exponential backoff
+async function retryWithBackoff(fn, maxAttempts = 3, context = 'operation') {
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      if (attempt === maxAttempts) {
+        logError(context, error, { attempts: attempt });
+        throw error;
+      }
+      
+      const backoffMs = Math.pow(2, attempt) * 1000; // 2s, 4s, 8s
+      console.warn(`⚠️  ${context} failed (attempt ${attempt}/${maxAttempts}), retrying in ${backoffMs/1000}s...`);
+      await new Promise(resolve => setTimeout(resolve, backoffMs));
+    }
+  }
+}
+
+// Health check for ClickUp API
+async function healthCheck() {
+  if (!CLICKUP_TOKEN || !TEAM_ID) {
+    throw new Error('Missing CLICKUP credentials (CLAWD_CLICKUP_TOKEN, CLICKUP_TEAM_ID)');
+  }
+  
+  try {
+    // Simple API call to verify connectivity
+    execSync(
+      `curl -s -H "Authorization: ${CLICKUP_TOKEN}" https://api.clickup.com/api/v2/team`,
+      { timeout: 5000 }
+    );
+    return true;
+  } catch (error) {
+    logError('Health check', error);
+    throw new Error('ClickUp API is not accessible');
+  }
+}
 
 // Get ClickUp credentials
 const CLICKUP_TOKEN = process.env.CLAWD_CLICKUP_TOKEN || process.env.CLICKUP_API_KEY;
@@ -24,7 +87,7 @@ const TEAM_ID = process.env.CLICKUP_TEAM_ID;
 
 if (!CLICKUP_TOKEN || !TEAM_ID) {
   console.error('❌ CLAWD_CLICKUP_TOKEN and CLICKUP_TEAM_ID required');
-  process.exit(1);
+  process.exit(2); // Exit code 2 = configuration error
 }
 
 // Ensure time tracking log exists
@@ -116,14 +179,30 @@ function formatDuration(minutes) {
 }
 
 function calculateTotalTime(content) {
-  const regex = /\|\s*\d{4}-\d{2}-\d{2}\s*\|\s*(\d+)h?\s*(\d*)m?/g;
+  const entries = parseObsidianTimeEntries(content);
+  return entries.reduce((total, entry) => total + entry.duration, 0);
+}
+
+// Get total time from local log for a specific task
+function getTaskTotalTime(clickupId) {
+  const log = ensureTimeLog();
   let total = 0;
-  let match;
-  while ((match = regex.exec(content)) !== null) {
-    const hours = parseInt(match[1]) || 0;
-    const mins = parseInt(match[2]) || 0;
-    total += hours * 60 + mins;
+  
+  // Sum history entries
+  for (const entry of log.history) {
+    if (entry.taskId === clickupId) {
+      total += entry.duration;
+    }
   }
+  
+  // Add active timer time
+  if (log.activeTimers[clickupId]) {
+    const start = new Date(log.activeTimers[clickupId].startTime);
+    const now = new Date();
+    const elapsed = Math.round((now - start) / 60000);
+    total += elapsed;
+  }
+  
   return total;
 }
 
@@ -131,59 +210,101 @@ function calculateTotalTime(content) {
 async function startTimer(clickupId, description) {
   console.log(`⏱️  Starting timer for task ${clickupId}...`);
   
-  try {
-    // Use mcporter to start timer
-    const result = execSync(
-      `mcporter call 'clickup.clickup_start_time_tracking(task_id: "${clickupId}", description: "${description || 'Working'}")'`,
-      { encoding: 'utf-8', timeout: 10000 }
-    );
-    
-    const log = ensureTimeLog();
-    log.activeTimers[clickupId] = {
-      startTime: new Date().toISOString(),
-      description: description || 'Working',
-      taskId: clickupId
-    };
-    saveTimeLog(log);
-    
-    console.log('✅ Timer started in ClickUp');
-    return true;
-  } catch (e) {
-    console.error('❌ Failed to start timer:', e.message);
-    return false;
-  }
+  return retryWithBackoff(async () => {
+    try {
+      // Use mcporter to start timer
+      const result = execSync(
+        `mcporter call 'clickup.clickup_start_time_tracking(task_id: "${clickupId}", description: "${description || 'Working'}")'`,
+        { encoding: 'utf-8', timeout: 10000 }
+      );
+      
+      const log = ensureTimeLog();
+      log.activeTimers[clickupId] = {
+        startTime: new Date().toISOString(),
+        description: description || 'Working',
+        taskId: clickupId
+      };
+      saveTimeLog(log);
+      
+      console.log('✅ Timer started in ClickUp');
+      return true;
+    } catch (e) {
+      logError('Start timer', e, { clickupId, description });
+      console.error('❌ Failed to start timer:', e.message);
+      throw e;
+    }
+  }, 3, `Start timer ${clickupId}`).catch(() => false);
 }
 
 // Stop timer using MCP
 async function stopTimer(clickupId) {
   console.log(`⏹️  Stopping timer for task ${clickupId}...`);
   
-  try {
-    // Use mcporter to stop timer
-    const result = execSync(
-      `mcporter call 'clickup.clickup_stop_time_tracking()'`,
-      { encoding: 'utf-8', timeout: 10000 }
-    );
-    
-    const log = ensureTimeLog();
-    const timer = log.activeTimers[clickupId];
-    
-    if (timer) {
-      const start = new Date(timer.startTime);
-      const end = new Date();
-      const duration = Math.round((end - start) / 60000); // minutes
+  return retryWithBackoff(async () => {
+    try {
+      // Use mcporter to stop timer
+      const result = execSync(
+        `mcporter call 'clickup.clickup_stop_time_tracking()'`,
+        { encoding: 'utf-8', timeout: 10000 }
+      );
       
-      // Add to history
-      log.history.push({
-        taskId: clickupId,
-        startTime: timer.startTime,
-        endTime: end.toISOString(),
-        duration: duration,
-        description: timer.description
-      });
+      const log = ensureTimeLog();
+      const timer = log.activeTimers[clickupId];
       
-      delete log.activeTimers[clickupId];
-      saveTimeLog(log);
+      if (timer) {
+        const start = new Date(timer.startTime);
+        const end = new Date();
+        const duration = Math.round((end - start) / 60000); // minutes
+        
+        // Add to history
+        log.history.push({
+          taskId: clickupId,
+          startTime: timer.startTime,
+          endTime: end.toISOString(),
+          duration: duration,
+          description: timer.description
+        });
+        
+        delete log.activeTimers[clickupId];
+        saveTimeLog(log);
+        
+        // Update Obsidian
+        const taskFile = findTaskFile(clickupId);
+        if (taskFile) {
+          updateObsidianTaskTime(taskFile, {
+            date: new Date().toISOString().split('T')[0],
+            duration: duration,
+            description: timer.description
+          });
+          console.log(`✅ Time logged: ${formatDuration(duration)}`);
+        }
+      }
+      
+      console.log('✅ Timer stopped in ClickUp');
+      return true;
+    } catch (e) {
+      logError('Stop timer', e, { clickupId });
+      console.error('❌ Failed to stop timer:', e.message);
+      throw e;
+    }
+  }, 3, `Stop timer ${clickupId}`).catch(() => false);
+}
+
+// Add manual time entry
+async function addManualTime(clickupId, duration, description, startTime, endTime) {
+  console.log(`📝 Adding ${formatDuration(duration)} to task ${clickupId}...`);
+  
+  return retryWithBackoff(async () => {
+    try {
+      // Format for ClickUp (duration in ms)
+      const durationMs = duration * 60 * 1000;
+      const start = startTime || new Date(Date.now() - durationMs).toISOString();
+      
+      // Use mcporter to add time entry
+      const result = execSync(
+        `mcporter call 'clickup.clickup_add_time_entry(task_id: "${clickupId}", start: "${start}", duration: "${duration}m", description: "${description || 'Manual entry'}")'`,
+        { encoding: 'utf-8', timeout: 10000 }
+      );
       
       // Update Obsidian
       const taskFile = findTaskFile(clickupId);
@@ -191,62 +312,29 @@ async function stopTimer(clickupId) {
         updateObsidianTaskTime(taskFile, {
           date: new Date().toISOString().split('T')[0],
           duration: duration,
-          description: timer.description
+          description: description || 'Manual entry'
         });
-        console.log(`✅ Time logged: ${formatDuration(duration)}`);
       }
-    }
-    
-    console.log('✅ Timer stopped in ClickUp');
-    return true;
-  } catch (e) {
-    console.error('❌ Failed to stop timer:', e.message);
-    return false;
-  }
-}
-
-// Add manual time entry
-async function addManualTime(clickupId, duration, description, startTime, endTime) {
-  console.log(`📝 Adding ${formatDuration(duration)} to task ${clickupId}...`);
-  
-  try {
-    // Format for ClickUp (duration in ms)
-    const durationMs = duration * 60 * 1000;
-    const start = startTime || new Date(Date.now() - durationMs).toISOString();
-    
-    // Use mcporter to add time entry
-    const result = execSync(
-      `mcporter call 'clickup.clickup_add_time_entry(task_id: "${clickupId}", start: "${start}", duration: "${duration}m", description: "${description || 'Manual entry'}")'`,
-      { encoding: 'utf-8', timeout: 10000 }
-    );
-    
-    // Update Obsidian
-    const taskFile = findTaskFile(clickupId);
-    if (taskFile) {
-      updateObsidianTaskTime(taskFile, {
-        date: new Date().toISOString().split('T')[0],
+      
+      // Add to history
+      const log = ensureTimeLog();
+      log.history.push({
+        taskId: clickupId,
+        startTime: start,
+        endTime: endTime || new Date().toISOString(),
         duration: duration,
         description: description || 'Manual entry'
       });
+      saveTimeLog(log);
+      
+      console.log(`✅ Added ${formatDuration(duration)} to task`);
+      return true;
+    } catch (e) {
+      logError('Add manual time', e, { clickupId, duration, description });
+      console.error('❌ Failed to add time:', e.message);
+      throw e;
     }
-    
-    // Add to history
-    const log = ensureTimeLog();
-    log.history.push({
-      taskId: clickupId,
-      startTime: start,
-      endTime: endTime || new Date().toISOString(),
-      duration: duration,
-      description: description || 'Manual entry'
-    });
-    saveTimeLog(log);
-    
-    console.log(`✅ Added ${formatDuration(duration)} to task`);
-    return true;
-  } catch (e) {
-    console.error('❌ Failed to add time:', e.message);
-    return false;
-  }
+  }, 3, `Add manual time ${clickupId}`).catch(() => false);
 }
 
 // Check active timers
@@ -439,67 +527,284 @@ async function syncAllTaskFiles() {
   console.log(`\n✅ Sync complete: ${synced} files synced, ${errors} errors`);
 }
 
+// Get daily summary of time tracked
+function getDailySummary(date) {
+  const targetDate = date || new Date().toISOString().split('T')[0];
+  const log = ensureTimeLog();
+  
+  // Filter history entries for the target date
+  const dayEntries = log.history.filter(entry => {
+    const entryDate = new Date(entry.startTime).toISOString().split('T')[0];
+    return entryDate === targetDate;
+  });
+  
+  // Group by task
+  const byTask = {};
+  for (const entry of dayEntries) {
+    if (!byTask[entry.taskId]) {
+      byTask[entry.taskId] = {
+        taskId: entry.taskId,
+        totalMinutes: 0,
+        entries: []
+      };
+    }
+    byTask[entry.taskId].totalMinutes += entry.duration;
+    byTask[entry.taskId].entries.push(entry);
+  }
+  
+  // Calculate total
+  const totalMinutes = dayEntries.reduce((sum, e) => sum + e.duration, 0);
+  
+  return {
+    date: targetDate,
+    totalMinutes,
+    totalFormatted: formatDuration(totalMinutes),
+    tasks: Object.values(byTask),
+    entryCount: dayEntries.length
+  };
+}
+
+// Get weekly summary of time tracked
+function getWeeklySummary(weekStart) {
+  const startDate = weekStart ? new Date(weekStart) : getWeekStart(new Date());
+  const endDate = new Date(startDate);
+  endDate.setDate(endDate.getDate() + 7);
+  
+  const log = ensureTimeLog();
+  
+  // Filter history entries for the week
+  const weekEntries = log.history.filter(entry => {
+    const entryDate = new Date(entry.startTime);
+    return entryDate >= startDate && entryDate < endDate;
+  });
+  
+  // Group by day
+  const byDay = {};
+  for (const entry of weekEntries) {
+    const day = new Date(entry.startTime).toISOString().split('T')[0];
+    if (!byDay[day]) {
+      byDay[day] = {
+        date: day,
+        totalMinutes: 0,
+        entries: []
+      };
+    }
+    byDay[day].totalMinutes += entry.duration;
+    byDay[day].entries.push(entry);
+  }
+  
+  // Group by task
+  const byTask = {};
+  for (const entry of weekEntries) {
+    if (!byTask[entry.taskId]) {
+      byTask[entry.taskId] = {
+        taskId: entry.taskId,
+        totalMinutes: 0,
+        entries: []
+      };
+    }
+    byTask[entry.taskId].totalMinutes += entry.duration;
+    byTask[entry.taskId].entries.push(entry);
+  }
+  
+  const totalMinutes = weekEntries.reduce((sum, e) => sum + e.duration, 0);
+  
+  return {
+    weekStart: startDate.toISOString().split('T')[0],
+    weekEnd: endDate.toISOString().split('T')[0],
+    totalMinutes,
+    totalFormatted: formatDuration(totalMinutes),
+    byDay: Object.values(byDay),
+    byTask: Object.values(byTask),
+    entryCount: weekEntries.length
+  };
+}
+
+// Helper: Get Monday of current week
+function getWeekStart(date) {
+  const d = new Date(date);
+  const day = d.getDay();
+  const diff = d.getDate() - day + (day === 0 ? -6 : 1); // Adjust to Monday
+  return new Date(d.setDate(diff));
+}
+
+// Print daily summary
+function printDailySummary(date) {
+  const summary = getDailySummary(date);
+  
+  console.log(`\n📊 Daily Summary: ${summary.date}`);
+  console.log(`Total Time: ${summary.totalFormatted} (${summary.entryCount} entries)\n`);
+  
+  if (summary.tasks.length === 0) {
+    console.log('No time tracked today.');
+    return;
+  }
+  
+  console.log('By Task:');
+  for (const task of summary.tasks) {
+    console.log(`  ${task.taskId}: ${formatDuration(task.totalMinutes)} (${task.entries.length} entries)`);
+  }
+}
+
+// Print weekly summary
+function printWeeklySummary(weekStart) {
+  const summary = getWeeklySummary(weekStart);
+  
+  console.log(`\n📊 Weekly Summary: ${summary.weekStart} to ${summary.weekEnd}`);
+  console.log(`Total Time: ${summary.totalFormatted} (${summary.entryCount} entries)\n`);
+  
+  if (summary.byDay.length === 0) {
+    console.log('No time tracked this week.');
+    return;
+  }
+  
+  console.log('By Day:');
+  for (const day of summary.byDay) {
+    console.log(`  ${day.date}: ${formatDuration(day.totalMinutes)}`);
+  }
+  
+  console.log('\nBy Task:');
+  for (const task of summary.byTask) {
+    console.log(`  ${task.taskId}: ${formatDuration(task.totalMinutes)}`);
+  }
+}
+
 // CLI
 const args = process.argv.slice(2);
 const command = args[0];
 
 (async () => {
-  switch (command) {
-    case 'start':
-      if (!args[1]) {
-        console.error('Usage: time-tracking.js start <clickup_task_id> [description]');
-        process.exit(1);
+  let exitCode = 0;
+  
+  try {
+    // Run health check for API commands
+    const apiCommands = ['start', 'stop', 'add', 'sync', 'sync-all'];
+    if (apiCommands.includes(command)) {
+      try {
+        await healthCheck();
+      } catch (error) {
+        console.error('❌ Health check failed:', error.message);
+        console.error('💡 Verify your ClickUp API credentials and network connection');
+        process.exit(2);
       }
-      await startTimer(args[1], args[2]);
-      break;
-      
-    case 'stop':
-      if (!args[1]) {
-        // Stop all active timers
-        const log = ensureTimeLog();
-        for (const taskId of Object.keys(log.activeTimers)) {
-          await stopTimer(taskId);
+    }
+    
+    switch (command) {
+      case 'start':
+        if (!args[1]) {
+          console.error('Usage: time-tracking.js start <clickup_task_id> [description]');
+          process.exit(2);
         }
-      } else {
-        await stopTimer(args[1]);
-      }
-      break;
-      
-    case 'add':
-      if (!args[1] || !args[2]) {
-        console.error('Usage: time-tracking.js add <clickup_task_id> <duration_minutes> [description]');
-        process.exit(1);
-      }
-      await addManualTime(args[1], parseInt(args[2]), args[3], args[4], args[5]);
-      break;
-      
-    case 'status':
-      checkActiveTimers();
-      break;
-      
-    case 'sync':
-      if (!args[1]) {
-        console.error('Usage: time-tracking.js sync <clickup_task_id>');
-        process.exit(1);
-      }
-      await syncTimeEntries(args[1]);
-      break;
-      
-    default:
-      console.log(`
+        const startResult = await startTimer(args[1], args[2]);
+        exitCode = startResult ? 0 : 1;
+        break;
+        
+      case 'stop':
+        if (!args[1]) {
+          // Stop all active timers
+          const log = ensureTimeLog();
+          const taskIds = Object.keys(log.activeTimers);
+          if (taskIds.length === 0) {
+            console.log('No active timers to stop');
+            break;
+          }
+          let allSuccess = true;
+          for (const taskId of taskIds) {
+            const result = await stopTimer(taskId);
+            if (!result) allSuccess = false;
+          }
+          exitCode = allSuccess ? 0 : 1;
+        } else {
+          const stopResult = await stopTimer(args[1]);
+          exitCode = stopResult ? 0 : 1;
+        }
+        break;
+        
+      case 'add':
+        if (!args[1] || !args[2]) {
+          console.error('Usage: time-tracking.js add <clickup_task_id> <duration_minutes> [description]');
+          process.exit(2);
+        }
+        const addResult = await addManualTime(args[1], parseInt(args[2]), args[3], args[4], args[5]);
+        exitCode = addResult ? 0 : 1;
+        break;
+        
+      case 'status':
+        checkActiveTimers();
+        break;
+        
+      case 'sync':
+        if (!args[1]) {
+          console.error('Usage: time-tracking.js sync <clickup_task_id>');
+          process.exit(2);
+        }
+        const syncResult = await syncTimeEntries(args[1]);
+        exitCode = syncResult ? 0 : 1;
+        break;
+        
+      case 'sync-all':
+        await syncAllTaskFiles();
+        break;
+        
+      case 'daily-summary':
+        printDailySummary(args[1]); // Optional date argument
+        break;
+        
+      case 'weekly-summary':
+        printWeeklySummary(args[1]); // Optional week start date argument
+        break;
+        
+      case 'total':
+        if (!args[1]) {
+          console.error('Usage: time-tracking.js total <clickup_task_id>');
+          process.exit(2);
+        }
+        const total = getTaskTotalTime(args[1]);
+        console.log(`Total time for task ${args[1]}: ${formatDuration(total)}`);
+        break;
+        
+      case 'health':
+        await healthCheck();
+        console.log('✅ ClickUp API is accessible');
+        break;
+        
+      default:
+        console.log(`
 Time Tracking for ClickUp ↔ Obsidian
 
 Usage:
-  time-tracking.js start <task_id> [description]  Start timer on task
-  time-tracking.js stop [task_id]                  Stop timer (or all)
-  time-tracking.js add <task_id> <minutes> [desc]  Add manual time entry
-  time-tracking.js status                          Show active timers
-  time-tracking.js sync <task_id>                  Sync time from ClickUp
+  time-tracking.js start <task_id> [description]    Start timer on task
+  time-tracking.js stop [task_id]                    Stop timer (or all active)
+  time-tracking.js add <task_id> <minutes> [desc]    Add manual time entry
+  time-tracking.js status                            Show active timers
+  time-tracking.js sync <task_id>                    Sync time from ClickUp to Obsidian
+  time-tracking.js sync-all                          Sync all task files to ClickUp
+  time-tracking.js daily-summary [date]              Show daily time summary (YYYY-MM-DD)
+  time-tracking.js weekly-summary [week-start]       Show weekly time summary
+  time-tracking.js total <task_id>                   Show total time for task
+  time-tracking.js health                            Check ClickUp API connectivity
 
 Examples:
   time-tracking.js start 123456789 "Working on feature"
   time-tracking.js stop 123456789
   time-tracking.js add 123456789 30 "Code review"
+  time-tracking.js daily-summary 2024-01-15
+  time-tracking.js weekly-summary
+  time-tracking.js sync-all
+  time-tracking.js total 123456789
+
+Exit Codes:
+  0 = Success
+  1 = Partial failure (operation attempted but failed)
+  2 = Configuration error or invalid usage
       `);
+    }
+    
+    process.exit(exitCode);
+    
+  } catch (error) {
+    logError('CLI execution', error, { command, args });
+    console.error('❌ Fatal error:', error.message);
+    process.exit(2);
   }
 })();

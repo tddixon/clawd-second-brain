@@ -27,12 +27,63 @@ ensureDir('/home/desktop/clawd/logs');
 ensureDir('/home/desktop/clawd/.clawdsync');
 ensureDir(WORK_DIR);
 
-// Logger
-function log(level: string, message: string) {
+// Logger with error tracking
+function log(level: string, message: string, data?: any) {
   const timestamp = new Date().toISOString();
   const line = `[${timestamp}] [${level}] ${message}\n`;
   fs.appendFileSync(LOG_FILE, line);
   if (process.env.VERBOSE) console.log(line.trim());
+  
+  // Log errors with full details to JSON log
+  if (level === 'ERROR' && data) {
+    const errorLog = '/home/desktop/clawd/logs/clickup-agent-errors.jsonl';
+    const entry = { timestamp, level, message, ...data };
+    fs.appendFileSync(errorLog, JSON.stringify(entry) + '\n');
+  }
+}
+
+// Retry utility with exponential backoff
+async function retryWithBackoff<T>(
+  fn: () => Promise<T>,
+  maxAttempts: number = 3,
+  context: string = 'operation'
+): Promise<T> {
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await fn();
+    } catch (error: any) {
+      if (attempt === maxAttempts) {
+        log('ERROR', `${context} failed after ${maxAttempts} attempts`, {
+          error: error.message,
+          stack: error.stack
+        });
+        throw error;
+      }
+      
+      const backoffMs = Math.pow(2, attempt) * 1000; // 2s, 4s, 8s
+      log('WARN', `${context} failed (attempt ${attempt}/${maxAttempts}), retrying in ${backoffMs/1000}s...`);
+      await new Promise(resolve => setTimeout(resolve, backoffMs));
+    }
+  }
+  throw new Error('Unreachable');
+}
+
+// Health check for ClickUp API
+async function healthCheck(api: ClickUpAPI): Promise<boolean> {
+  try {
+    await retryWithBackoff(async () => {
+      await api.getSpaces();
+    }, 3, 'ClickUp API health check');
+    
+    log('INFO', 'ClickUp API health check passed');
+    return true;
+  } catch (error: any) {
+    log('ERROR', 'ClickUp API health check failed', {
+      error: error.message,
+      stack: error.stack
+    });
+    return false;
+  }
 }
 
 // State management
@@ -364,7 +415,7 @@ async function runAgent(dryRun: boolean = false, once: boolean = false, syncStru
   
   if (!token || !teamId) {
     log('ERROR', 'Missing CLICKUP_API_TOKEN or CLICKUP_TEAM_ID');
-    process.exit(1);
+    process.exit(2);
   }
   
   if (!clawdUserId) {
@@ -378,24 +429,53 @@ async function runAgent(dryRun: boolean = false, once: boolean = false, syncStru
   const api = new ClickUpAPI(token, teamId);
   const state = loadState();
   
+  // Health check before running
+  const healthy = await healthCheck(api);
+  if (!healthy) {
+    log('ERROR', 'ClickUp API health check failed - aborting');
+    process.exit(2);
+  }
+  
+  let hasErrors = false;
+  
   // Step 1: Sync structure (folders → areas, lists → projects)
   if (syncStructure) {
     try {
-      await syncStructureToObsidian(api, dryRun);
-    } catch (e) {
-      log('ERROR', `Structure sync failed: ${e}`);
+      await retryWithBackoff(
+        async () => await syncStructureToObsidian(api, dryRun),
+        3,
+        'Structure sync'
+      );
+    } catch (e: any) {
+      log('ERROR', `Structure sync failed: ${e.message}`, { error: e.stack });
+      hasErrors = true;
     }
   }
   
   try {
     // Get all spaces
-    const spaces = await api.getSpaces();
+    const spaces = await retryWithBackoff(
+      async () => await api.getSpaces(),
+      3,
+      'Get spaces'
+    );
     log('INFO', `Found ${spaces.length} spaces`);
     
     for (const space of spaces) {
       // Get all tasks in space
-      const allTasks = await api.getAllTasksInSpace(space.id);
-      log('INFO', `Space "${space.name}": ${allTasks.length} total tasks`);
+      let allTasks: any[];
+      try {
+        allTasks = await retryWithBackoff(
+          async () => await api.getAllTasksInSpace(space.id),
+          3,
+          `Get tasks in space ${space.name}`
+        );
+        log('INFO', `Space "${space.name}": ${allTasks.length} total tasks`);
+      } catch (e: any) {
+        log('ERROR', `Failed to get tasks for space ${space.name}`, { error: e.message });
+        hasErrors = true;
+        continue;
+      }
       
       // Filter tasks assigned to Clawd
       const clawdTasks = clawdUserId 
@@ -431,16 +511,21 @@ async function runAgent(dryRun: boolean = false, once: boolean = false, syncStru
         // Add "in progress" comment
         if (!dryRun) {
           try {
-            await (api as any).request(`/task/${task.id}/comment`, {
-              method: 'POST',
-              body: JSON.stringify({
-                comment_text: `🤖 Clawd is working on this...`
-              })
-            });
+            await retryWithBackoff(
+              async () => await (api as any).request(`/task/${task.id}/comment`, {
+                method: 'POST',
+                body: JSON.stringify({
+                  comment_text: `🤖 Clawd is working on this...`
+                })
+              }),
+              3,
+              `Add in-progress comment to ${task.id}`
+            );
             state.inProgressTasks.push(task.id);
             saveState(state);
-          } catch (e) {
-            log('WARN', `Could not add in-progress comment: ${e}`);
+          } catch (e: any) {
+            log('WARN', `Could not add in-progress comment: ${e.message}`);
+            hasErrors = true;
           }
         }
         
@@ -519,8 +604,15 @@ async function runAgent(dryRun: boolean = false, once: boolean = false, syncStru
     
     log('INFO', 'Agent run complete');
     
-  } catch (error) {
-    log('ERROR', `Agent error: ${error}`);
+    // Exit with appropriate code
+    if (hasErrors) {
+      log('WARN', 'Agent completed with errors');
+      process.exit(1);
+    }
+    
+  } catch (error: any) {
+    log('ERROR', `Agent error: ${error.message}`, { stack: error.stack });
+    process.exit(2);
   }
 }
 

@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "ali-1",
+      "entity": "Ali",
+      "fact_type": "person",
+      "title": "Personal Contact",
+      "description": "Personal contact. Task created 2026-01-30 to tell Ali about flight to Bangkok.",
+      "date": "2026-01-30",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}
