@@ -198,93 +198,130 @@ curl "https://api.clickup.com/api/v2/team/{team_id}/task?include_closed=true&sub
 
 ## Docs API (v3)
 
-ClickUp Docs use the **v3 API** at `https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs`.
+Base URL: `https://api.clickup.com/api/v3/workspaces/{workspace_id}`
+
+### Parent Types
+
+| Type | Entity |
+|------|--------|
+| 4 | Space |
+| 5 | Folder |
+| 6 | List |
+| 7 | All |
+| 12 | Workspace |
 
 ### Search for Docs
 
 ```bash
-GET /api/v3/workspaces/{workspace_id}/docs
+GET /docs
+
+# Optional query params: id, creator, deleted, archived, parent_id, parent_type, limit, next_cursor
+curl -s "https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs?parent_id={folder_id}&parent_type=5" \
+  -H "Authorization: {api_key}"
 ```
 
 ### Create a Doc
 
 ```bash
-POST /api/v3/workspaces/{workspace_id}/docs
+POST /docs
 
-# Create doc in a folder (type 5 = folder)
 curl -X POST "https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs" \
   -H "Authorization: {api_key}" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "My Document",
-    "parent": {"id": "{folder_id}", "type": 5}
+    "parent": {"id": "{folder_id}", "type": 5},
+    "visibility": "PUBLIC",
+    "create_page": false
   }'
 
-# Parent types: 5 = folder, 7 = workspace
+# Parameters:
+#   name (required): Document name
+#   parent: {id, type} - where to place the doc (see Parent Types)
+#   visibility: "PUBLIC" | "PRIVATE"
+#   create_page: boolean - set false to avoid auto-created "Untitled" page
+#
 # Response: {"id": "doc_id", "name": "...", "parent": {...}, ...}
 ```
 
 ### Fetch a Doc
 
 ```bash
-GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}
+GET /docs/{doc_id}
 ```
 
 ### Fetch PageListing for a Doc
 
 ```bash
-GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages
+GET /docs/{doc_id}/pages
+
 # Returns array of page objects with id, name, content, order_index
-```
-
-### Fetch Pages belonging to a Doc
-
-```bash
-GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages
+# Optional: max_page_depth (-1 for unlimited)
 ```
 
 ### Create a Page
 
 ```bash
-POST /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages
+POST /docs/{doc_id}/pages
 
 curl -X POST "https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages" \
   -H "Authorization: {api_key}" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Page Title",
-    "content": "Markdown content here"
+    "sub_title": "Optional subtitle",
+    "content": "Markdown content here",
+    "parent_page_id": "optional_parent_page_id"
   }'
 
+# Parameters:
+#   name (required): Page title
+#   content: Markdown content (max 2MB)
+#   sub_title: Optional subtitle
+#   parent_page_id: Nest under another page (for hierarchy)
+#
 # Response: {"id": "page_id", "doc_id": "...", "name": "...", "content": "...", ...}
 ```
 
 ### Get Page
 
 ```bash
-GET /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages/{page_id}
+GET /docs/{doc_id}/pages/{page_id}
+
+# Optional: content_format = "text/md" | "text/html"
 ```
 
 ### Edit a Page
 
 ```bash
-PUT /api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages/{page_id}
+PUT /docs/{doc_id}/pages/{page_id}
 
 curl -X PUT "https://api.clickup.com/api/v3/workspaces/{workspace_id}/docs/{doc_id}/pages/{page_id}" \
   -H "Authorization: {api_key}" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Updated Title",
-    "content": "Updated markdown content"
+    "sub_title": "Updated subtitle",
+    "content": "Updated markdown content",
+    "content_edit_mode": "replace"
   }'
+
+# Parameters:
+#   name: Page title
+#   sub_title: Subtitle
+#   content: Page content (max 2MB)
+#   content_format: "text/md" | "text/plain"
+#   content_edit_mode: "replace" (default) | "append" | "prepend"
 ```
 
 ### Important Notes
 
-- **Auto-created page:** Creating a doc auto-creates an "Untitled" first page. Its name may not visually update in the UI even after editing via API.
+- **Avoid "Untitled" page:** Set `"create_page": false` when creating a doc, then create your own first page.
 - **Content format:** Supports markdown in the `content` field.
+- **Content edit modes:** Use `append` or `prepend` to add content without replacing.
+- **Nested pages:** Use `parent_page_id` to create page hierarchy (max recommended depth: 5).
 - **No delete endpoint:** Pages and docs cannot be deleted via API — must use the UI.
-- **Parent types:** Use `"type": 5` for folders, `"type": 7` for workspace-level docs.
+- **Limits:** 2MB per page, 1000 pages per doc, 100 requests/min rate limit.
 
 ## Reference Documentation
 
