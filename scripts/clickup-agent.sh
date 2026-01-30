@@ -12,6 +12,11 @@ if [ -f "$HOME/.clawdsync/clickup-agent-config" ]; then
     source "$HOME/.clawdsync/clickup-agent-config"
 fi
 
+# Use Clawd's token for agent operations if available
+if [ -n "$CLAWD_CLICKUP_TOKEN" ]; then
+    export CLICKUP_API_TOKEN="$CLAWD_CLICKUP_TOKEN"
+fi
+
 # Help
 show_help() {
     cat << EOF
