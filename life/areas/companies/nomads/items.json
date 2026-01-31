@@ -312,5 +312,11 @@
     "fact": "Pivoted to crypto trading bot (2026-01-31 14:48 UTC): Trevor decided to pivot from Polymarket trading bot to crypto trading bot due to geographic restrictions - Polymarket not available in Thailand. Will use Chainlink repos and DEX-based trading approach.",
     "timestamp": "2026-01-31T14:48:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-049",
+    "fact": "MEWS/Poster integration branches pushed to GitHub (2026-01-31 17:50 UTC): All MEWS integration branches (mews-api, sync/poster-mews, sync/mews-klaviyo, sync/full-integration) successfully pushed to nomads-ops-center repository on GitHub. Repository: https://github.com/tddixon/nomads-ops-center",
+    "timestamp": "2026-01-31T17:50:00Z",
+    "status": "active"
   }
 ]

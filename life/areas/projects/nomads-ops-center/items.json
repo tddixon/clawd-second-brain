@@ -119,5 +119,17 @@
     "fact": "ClickUp integration task created (2026-01-31 12:45 UTC): 'Integrate MEWS Poster + Klaviyo into Noho-Ops' (ID: 86dzj3eyd, status: In Progress, priority: Urgent) created in Integration Workflow list. Includes scope, deliverables, assignee details",
     "timestamp": "2026-01-31T12:45:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-021",
+    "fact": "GitHub push completed (2026-01-31 17:48 UTC): Trevor requested pushing the MEWS poster project to GitHub. Committed Phase 2 summary updates and pushed all MEWS/Poster integration branches.",
+    "timestamp": "2026-01-31T17:48:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-022",
+    "fact": "Branches pushed to GitHub (2026-01-31 17:50 UTC): mews-api (with Phase 2 summary), sync/poster-mews, sync/mews-klaviyo, sync/full-integration. All branches now on https://github.com/tddixon/nomads-ops-center",
+    "timestamp": "2026-01-31T17:50:00Z",
+    "status": "active"
   }
 ]

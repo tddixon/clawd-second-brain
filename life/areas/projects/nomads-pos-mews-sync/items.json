@@ -124,5 +124,11 @@
     "fact": "Poster Sync requested for ClickUp and Obsidian sync (2026-01-31 16:56 UTC): Trevor requested adding Poster Sync project (Poster POS → MEWS sync built Jan 30) to both ClickUp tasks and Obsidian PKM. Sub-agent 'clickup-obsidian-sync' spawned to ensure project documentation is properly synced across both systems.",
     "timestamp": "2026-01-31T16:56:00Z",
     "status": "in_progress"
+  },
+  {
+    "id": "pos-mews-sync-018",
+    "fact": "GitHub push completed (2026-01-31 17:50 UTC): sync/poster-mews branch pushed to nomads-ops-center repository on GitHub as part of MEWS/Poster integration branch push. Repository: https://github.com/tddixon/nomads-ops-center",
+    "timestamp": "2026-01-31T17:50:00Z",
+    "status": "active"
   }
 ]
