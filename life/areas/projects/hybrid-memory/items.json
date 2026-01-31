@@ -1,0 +1,44 @@
+[
+  {
+    "id": "hybrid-memory-001",
+    "fact": "Hybrid memory skill installation requested (2026-01-31 17:07 UTC): Trevor requested installing clawdhub hybrid-memory skill and setup. Hybrid memory combines OpenClaw's built-in vector memory with Graphiti temporal knowledge graph for enhanced recall of temporal facts and conversation history.",
+    "timestamp": "2026-01-31T17:07:00Z",
+    "status": "in_progress"
+  },
+  {
+    "id": "hybrid-memory-002",
+    "fact": "Skill installed via clawdhub CLI (2026-01-31 17:07 UTC): Successfully installed hybrid-memory v1.0.1 from clawdhub registry. Skill location: /home/desktop/clawd/skills/hybrid-memory/",
+    "timestamp": "2026-01-31T17:07:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hybrid-memory-003",
+    "fact": "Graphiti scripts downloaded (2026-01-31 17:08 UTC): Downloaded three scripts from openclaw-graphiti-memory repo: graphiti-search.sh (temporal knowledge graph search), graphiti-log.sh (manual fact logging), graphiti-import-files.py (import existing memory files). Scripts installed to /home/desktop/clawd/scripts/.",
+    "timestamp": "2026-01-31T17:08:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hybrid-memory-004",
+    "fact": "Docker compose downloaded (2026-01-31 17:08 UTC): Downloaded docker-compose.yml for Graphiti temporal knowledge graph deployment to ~/services/graphiti/. Contains Neo4j and Graphiti server services.",
+    "timestamp": "2026-01-31T17:08:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hybrid-memory-005",
+    "fact": "AGENTS.md updated with hybrid memory instructions (2026-01-31 17:09 UTC): Added new 'Memory Recall (Hybrid System)' section documenting when to use Graphiti (temporal questions) vs memory_search (document content). Includes decision table with examples.",
+    "timestamp": "2026-01-31T17:09:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hybrid-memory-006",
+    "fact": "HYBRID-MEMORY-SETUP.md created (2026-01-31 17:09 UTC): Comprehensive setup documentation created at /home/desktop/clawd/HYBRID-MEMORY-SETUP.md. Covers installed components, pending Docker deployment, embedding provider configuration (Gemini or OpenAI), and usage instructions.",
+    "timestamp": "2026-01-31T17:09:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hybrid-memory-007",
+    "fact": "Docker deployment blocked by permissions (2026-01-31 17:09 UTC): Unable to start Graphiti stack due to Docker permissions. User not in docker group and elevated permissions not available in current context. Requires manual Docker setup by Trevor.",
+    "timestamp": "2026-01-31T17:09:00Z",
+    "status": "blocked"
+  }
+]

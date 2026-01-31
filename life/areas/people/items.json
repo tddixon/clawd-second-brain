@@ -149,6 +149,16 @@
       "date": "2026-01-31T16:56:00Z",
       "source": "clawdbot",
       "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-17",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "Install Hybrid Memory Skill from ClawdHub",
+      "description": "Requested installation of clawdhub hybrid-memory skill and setup on 2026-01-31 at 17:07 UTC. Hybrid memory combines OpenClaw's built-in vector memory with Graphiti temporal knowledge graph for enhanced recall of temporal facts and conversation history.",
+      "date": "2026-01-31T17:07:00Z",
+      "source": "clawdbot",
+      "supersedes": []
     }
   ]
 }
