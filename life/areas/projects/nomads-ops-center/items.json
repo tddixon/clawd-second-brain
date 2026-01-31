@@ -82,5 +82,42 @@
     "fact": "Integration plan saved only (not executed) - Trevor still finishing development on MEWS-Klaviyo sync and does not want to combine until it's done (2026-01-30 18:53 UTC)",
     "timestamp": "2026-01-30T18:53:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-015",
+    "fact": "Integration discovery requested (2026-01-31 12:37 UTC): Trevor requested sub-agent deep dive to plan integration of MEWS Poster and MEWS Klaviyo into Noho Ops. Requirements: route groups under hostel/[slug]/, sidebar nav additions, unified login, avoid breaking existing features",
+    "timestamp": "2026-01-31T12:37:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-016",
+    "fact": "Integration already complete (2026-01-31 12:48 UTC): Sub-agent analysis revealed all three integration branches already merged at commit 61b5a61. MEWS Poster, MEWS Klaviyo, and full integration are in unified codebase. System production-ready.",
+    "timestamp": "2026-01-31T12:48:00Z",
+    "status": "active",
+    "supersedes": ["nomads-ops-center-014"]
+  },
+  {
+    "id": "nomads-ops-center-017",
+    "fact": "Integration capabilities confirmed (2026-01-31 12:48 UTC): System includes Poster POS integration (shift sync, transactions), MEWS PMS integration (payments, webhooks, uploads), Guardforce integration (deposit matching), encrypted credential storage, role-based access control, comprehensive audit logging",
+    "timestamp": "2026-01-31T12:48:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-018",
+    "fact": "Integration plan document delivered (2026-01-31 12:48 UTC): /home/desktop/clawd/NOHO-OPS-INTEGRATION-PLAN.md (609 lines) created as architecture documentation and future integration guide. Includes executive summary, route structure, sidebar config, security architecture, implementation checklist, risk assessment, testing strategy, rollback plan",
+    "timestamp": "2026-01-31T12:48:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-019",
+    "fact": "ClickUp Noho Ops folder created (2026-01-31 12:45 UTC): New folder 'Noho Ops' added to Clawd Space with 'Integration Workflow' list to track MEWS Poster and Klaviyo integration tasks",
+    "timestamp": "2026-01-31T12:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-center-020",
+    "fact": "ClickUp integration task created (2026-01-31 12:45 UTC): 'Integrate MEWS Poster + Klaviyo into Noho-Ops' (ID: 86dzj3eyd, status: In Progress, priority: Urgent) created in Integration Workflow list. Includes scope, deliverables, assignee details",
+    "timestamp": "2026-01-31T12:45:00Z",
+    "status": "active"
   }
 ]

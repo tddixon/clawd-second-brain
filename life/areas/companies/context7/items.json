@@ -1,46 +1,14 @@
-{
-  "items": [
-    {
-      "id": "context7-1",
-      "entity": "Context7",
-      "fact_type": "company_product",
-      "title": "Upstash Context7 API for Library Documentation",
-      "description": "Context7 is Upstash's documentation API that provides up-to-date library documentation. API endpoint: https://mcp.context7.com/mcp (HTTP MCP). Used for fetching current library APIs beyond training data cutoff. Supports library search and context queries.",
-      "date": "2026-01-30",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "context7-2",
-      "fact_type": "installation",
-      "title": "Context7 Skill Installed in Clawd",
-      "description": "Context7 skill created at /home/desktop/clawd/skills/context7/. Includes SKILL.md with workflow, quick reference, known library IDs (ClickUp: /websites/developer_clickup, Next.js: /vercel/next.js, React: /facebook/react). Python script uses mcporter MCP backend for search and context queries.",
-      "timestamp": "2026-01-30T18:12:00Z",
-      "status": "active"
-    },
-    {
-      "id": "context7-3",
-      "fact_type": "authentication",
-      "title": "API Key Configured",
-      "description": "Context7 API key configured: ctx7sk-adbf30ec-dabe-4a6f-83de-d6e03912b517. Added to mcporter config via --header flag. Also installed in Claude Code via 'claude mcp add' command for direct MCP access.",
-      "timestamp": "2026-01-30T18:14:00Z",
-      "status": "active"
-    },
-    {
-      "id": "context7-4",
-      "fact_type": "integration",
-      "title": "Dual Integration: mcporter and Claude Code MCP",
-      "description": "Context7 integrated via two methods: (1) mcporter CLI for shell access and Clawd skill usage, (2) Official MCP in Claude Code project for direct tool access. Both use same API key.",
-      "timestamp": "2026-01-30T18:15:00Z",
-      "status": "active"
-    },
-    {
-      "id": "context7-5",
-      "fact_type": "limitation",
-      "title": "ClickUp API Reference Not Indexed",
-      "description": "Context7's ClickUp library crawl (/websites/developer_clickup) does not include API Reference pages due to JavaScript rendering. Only general docs available. Specific endpoint documentation (Create Doc, Create Page, Edit Page) sourced from community ClickUp MCP server docs instead.",
-      "timestamp": "2026-01-30T18:18:00Z",
-      "status": "active"
-    }
-  ]
-}
+[
+  {
+    "id": "context7-001",
+    "fact": "Context7 skill installed (2026-01-30 18:45 UTC): Provides up-to-date library documentation via API",
+    "timestamp": "2026-01-30T18:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "context7-002",
+    "fact": "Context7 configured with mcporter MCP (2026-01-30): API key configured, working for React, Next.js, and other library docs",
+    "timestamp": "2026-01-30T18:45:00Z",
+    "status": "active"
+  }
+]

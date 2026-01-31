@@ -1,0 +1,67 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'trading-monitor'
+    cluster: 'selfhosted'
+
+rule_files:
+  - /etc/prometheus/rules/*.yml
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['alertmanager:9093']
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Node metrics (host machine)
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  # Docker container metrics
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+  # PostgreSQL
+  - job_name: 'postgres-exporter'
+    static_configs:
+      - targets: ['postgres-exporter:9187']
+
+  # Redis
+  - job_name: 'redis-exporter'
+    static_configs:
+      - targets: ['redis-exporter:9121']
+
+  # Trading Services
+  - job_name: 'arbitrage-engine'
+    static_configs:
+      - targets: ['arbitrage-engine:8080']
+    metrics_path: /metrics
+
+  - job_name: 'funding-farmer'
+    static_configs:
+      - targets: ['funding-farmer:8080']
+    metrics_path: /metrics
+
+  - job_name: 'whale-tracker'
+    static_configs:
+      - targets: ['whale-tracker:8080']
+    metrics_path: /metrics
+
+  - job_name: 'news-scraper'
+    static_configs:
+      - targets: ['news-scraper:8080']
+    metrics_path: /metrics
+
+  # Uptime Kuma
+  - job_name: 'uptime-kuma'
+    static_configs:
+      - targets: ['uptime-kuma:3001']
+    metrics_path: /metrics

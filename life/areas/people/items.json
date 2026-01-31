@@ -79,6 +79,76 @@
       "date": "2026-01-30T14:39:00Z",
       "source": "clawdbot",
       "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-10",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "tmux Mobile Optimization",
+      "description": "Requested enabling all tmux mobile optimizations on 2026-01-30 at 19:17 UTC. Applied mouse support, prefix key change to Ctrl+a, vim-style navigation, top status bar, and TPM plugins (resurrect, continuum, yank).",
+      "date": "2026-01-30T19:17:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-11",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "tmux Scroll Shortcuts",
+      "description": "Requested mobile shortcut to scroll terminal page up and down to read last messages (2026-01-30 ~19:52 UTC). Added Alt+u/d for half page scroll, Alt+↑/↓ and Shift+↑/↓ for line scroll.",
+      "date": "2026-01-30T19:52:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-12",
+      "entity": "Trevor Dixon",
+      "fact_type": "decision",
+      "title": "Ops Integration Plan - Save Only",
+      "description": "Trevor requested the Nomads Ops integration plan be saved as MD document only, not executed. Reason: Still finishing development on MEWS-Klaviyo sync and does not want to combine until it's done. Plan created at /home/desktop/clawd/NOMADS-OPS-INTEGRATION-PLAN.md on 2026-01-30.",
+      "date": "2026-01-30T18:53:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-13",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "Daily Plan Summary to PKM",
+      "description": "Requested daily plan summary be added to Second Brain PKM via sub-agent on 2026-01-30 at 18:59 UTC. Created /home/desktop/obsidian-second-brain/01-Daily-Notes/2026-01-30.md with session summary.",
+      "date": "2026-01-30T18:59:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-14",
+      "entity": "Trevor Dixon",
+      "fact_type": "decision",
+      "title": "Hostelworld Price Monitoring Rebuild",
+      "description": "Approved Hostelworld price monitoring rebuild on 2026-01-31 at 05:52 UTC. Approved two fixes: (1) Rebuild script with Playwright for real-time JavaScript pricing, (2) Set up daily cron at 6 AM Thailand time with Telegram notifications. Script now at /home/desktop/clawd/scripts/hostelworld-price-monitor.cjs",
+      "date": "2026-01-31T05:52:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-15",
+      "entity": "Trevor Dixon",
+      "fact_type": "market_analysis",
+      "title": "Ao Nang Pricing Strategy Review",
+      "description": "Reviewed Hostelworld price monitoring data on 2026-01-31 at 06:20 UTC. Playwright script captured Aug 1, 2025 snapshot: Nomads avg $31.77 vs competitors avg $25.47 (24.7% premium). Nomads maintains highest ratings (9.4-9.6 Superb) justifying premium positioning. Whoopers Hostel identified as closest competitor with similar pricing ($33.17) and rating (9.2).",
+      "date": "2026-01-31T06:20:00Z",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-16",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "Add Implementation Plans to ClickUp and Obsidian PKM",
+      "description": "Requested adding implementation plans and research to ClickUp and Obsidian PKM on 2026-01-31 at 16:56 UTC. Three projects: Noho Ops (Klaviyo integration - 5-week roadmap at NOHO-OPS-INTEGRATION-PLAN-V2.md), Mews/Kayvio (MEWS + Klaviyo integration), and Poster Sync (Poster POS → MEWS sync functionality built Jan 30). Spawns sub-agent 'clickup-obsidian-sync' to handle the task.",
+      "date": "2026-01-31T16:56:00Z",
+      "source": "clawdbot",
+      "supersedes": []
     }
   ]
 }

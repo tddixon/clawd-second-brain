@@ -1,0 +1,23 @@
+[Unit]
+Description=PolyClaw Autonomous Trading Agent
+After=network.target docker.service
+Wants=docker.service
+
+[Service]
+Type=simple
+User=desktop
+WorkingDirectory=/home/desktop/clawd/services/polyclaw-agent
+EnvironmentFile=/home/desktop/clawd/.env.trading
+ExecStart=/home/desktop/clawd/services/polyclaw-agent/.venv/bin/python -m src
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=polyclaw-agent
+
+# Safety limits
+MemoryMax=512M
+CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target

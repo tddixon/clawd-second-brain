@@ -244,6 +244,31 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## 🧠 Memory Recall (Hybrid System)
+
+We use **two memory systems** — use both!
+
+**For temporal questions** ("when did X happen?", "what did we discuss last Tuesday?", "when did we set up Slack?"):
+```bash
+~/clawd/scripts/graphiti-search.sh "your query" main-agent 10
+```
+
+**For document retrieval** ("what's in GOALS.md?", "find project docs about X"):
+```
+memory_search query="your query"
+```
+
+When answering questions about past context:
+- Check Graphiti for temporal facts first (when did X happen?)
+- Use memory_search for document content (what's in the docs?)
+- If low confidence after both, say you checked but aren't sure
+
+| Question Type | Tool | Example |
+|--------------|------|---------|
+| Document content | `memory_search` | "What's in GOALS.md?" |
+| Temporal facts | Graphiti | "When did we set up Slack?" |
+| Conversations | Graphiti | "What did user say last Tuesday?" |
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.

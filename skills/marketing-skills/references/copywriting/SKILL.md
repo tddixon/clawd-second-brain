@@ -446,6 +446,69 @@ Maintain consistency throughout, but adjust intensity:
 
 ---
 
+## Brand Voice Profiles
+
+### The Adventurists (Adventure/Travel)
+
+Use this voice for: Adventure travel, anti-establishment brands, products celebrating chaos, anything targeting people who hate comfort.
+
+**Core Characteristics:**
+- **Irreverent and cheeky** — Swearing, sarcasm, and self-deprecation
+- **Anti-marketing** — Actively mocks traditional travel and "adventure" as a commercial buzzword
+- **Chaos-worshipping** — Breaking down, getting lost, and suffering are celebrated
+- **British humor** — Dry wit, understatement, absurd comparisons
+- **Sarcastic sincerity** — Say terrible things with complete enthusiasm
+
+**Key Vocabulary:**
+- Vehicles: "rolling cake tin," "rolling turd," "children's toy," "1 donkeypower machine"
+- Adventure: "chaos," "mayhem," "the un-route," "spirit of ignorance"
+- Suffering (positive): "getting stuck," "breaking down," "sat on by an elephant"
+- Mockery: "marketing-shits," "perfect instagram shot," "electric milk frothers"
+
+**Writing Patterns:**
+
+1. **The Setup and Punch:** Set up as terrible, declare brilliant
+   > "Essentially, it's not a very good idea. They're not very fast, they smell, they fall over when you go round corners... But somehow, all this makes them better."
+
+2. **The Absurd Comparison:**
+   > "A day's driving feels like you've been sat on by an elephant"
+
+3. **The Anti-Sell:** Tell people why they shouldn't do it
+   > "There's no set route, no back-up and no way of knowing if you're going to make it. The only certainty is that you will get lost, you will get stuck and you will break down."
+
+4. **Sarcastic Sincerity:**
+   > "If God had made machines, he probably wouldn't have bothered with a Rickshaw. But he would have been wrong."
+
+**Headline Formulas:**
+- "Easily the least sensible thing to do with [timeframe]"
+- "The greatest [thing] on the planet" (said about terrible things)
+- "[Adjective], [adjective], [adjective] velvet glove of [thing] joy"
+- "The mother of all [things]"
+
+**CTA Examples:**
+- "Grab your sweaty hand and shove it inside"
+- "Cast your eyeballs onwards"
+- "Get slapped about the jowls with the gauntlet of adventuring chaos"
+
+**Do's:**
+- Use self-deprecating humor
+- Celebrate failure and breakdowns
+- Mock traditional marketing language
+- Use British spellings (favour, colour)
+- Add parenthetical asides that undermine claims
+- Swear strategically ("We don't give a fuck if...")
+
+**Don'ts:**
+- Use corporate buzzwords (synergy, streamline)
+- Promise comfort or convenience
+- Use exclamation points
+- Write like a traditional travel company
+- Sound American (keep British dryness)
+
+**Full Guide:** `/home/desktop/clawd/BRAND-VOICE-ADVENTURISTS.md`
+
+---
+
 ## Related Skills
 
 - **copy-editing**: For polishing and improving existing copy (use after writing your first draft)

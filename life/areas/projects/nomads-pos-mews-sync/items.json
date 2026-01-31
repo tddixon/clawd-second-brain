@@ -118,5 +118,11 @@
     "fact": "Project list reorganized in ClickUp (2026-01-30 18:30 UTC). Folder 'POS-MEWS Sync' (ID: 90176175712) contains list 'POS-MEWS Tasks' (ID: 901710411155) and project summary doc. Previously folderless list deleted and recreated inside folder",
     "timestamp": "2026-01-30T18:30:00Z",
     "status": "active"
+  },
+  {
+    "id": "pos-mews-sync-017",
+    "fact": "Poster Sync requested for ClickUp and Obsidian sync (2026-01-31 16:56 UTC): Trevor requested adding Poster Sync project (Poster POS → MEWS sync built Jan 30) to both ClickUp tasks and Obsidian PKM. Sub-agent 'clickup-obsidian-sync' spawned to ensure project documentation is properly synced across both systems.",
+    "timestamp": "2026-01-31T16:56:00Z",
+    "status": "in_progress"
   }
 ]

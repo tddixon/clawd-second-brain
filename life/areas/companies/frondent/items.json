@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "frondent-1",
+      "entity": "FrondEnt",
+      "fact_type": "github_org",
+      "title": "Polymarket Tools Developer",
+      "description": "GitHub organization/developer that created PolymarketBTC15mAssistant - a real-time console trading assistant for Polymarket Bitcoin Up/Down 15-minute markets. Repo URL: https://github.com/FrondEnt/PolymarketBTC15mAssistant. Used as reference for PolyClaw Trading System development.",
+      "date": "2026-01-31",
+      "source": "github-research",
+      "supersedes": []
+    }
+  ]
+}

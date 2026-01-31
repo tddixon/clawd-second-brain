@@ -1,0 +1,46 @@
+[
+  {
+    "id": "whoopers-hostel-001",
+    "fact": "Hostel in Ao Nang, Thailand - Whoopers Hostel Ao Nang By The Beach",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "whoopers-hostel-002",
+    "fact": "Hostelworld property id: 334981",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "whoopers-hostel-003",
+    "fact": "Slug: Whoopers-Hostel-Ao-Nang-By-The-Beach",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "whoopers-hostel-004",
+    "fact": "Price (Aug 1, 2025): $33.17/night - closest to Nomads pricing among competitors",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "superseded",
+    "supersededBy": "whoopers-hostel-007"
+  },
+  {
+    "id": "whoopers-hostel-005",
+    "fact": "Rating (Aug 1, 2025): 9.2 Superb (90 reviews)",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "whoopers-hostel-006",
+    "fact": "Competitor to Nomads in Ao Nang market - premium positioning with high rating (9.2), price similar to Nomads Base but lower than Nomads Ao Nang Beach",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "whoopers-hostel-007",
+    "fact": "Hostelworld ranking (2026-01-31 07:25 UTC): #9 of 30 properties in Ao Nang search. Price THB 1,043/night (Aug 1, 2025), Rating 9.2 Superb (90 reviews). Closest competitor to Nomads in both price (similar to Nomads Beach at THB 1,098) and rating.",
+    "timestamp": "2026-01-31T07:25:00Z",
+    "status": "active",
+    "supersedes": ["whoopers-hostel-004"]
+  }
+]

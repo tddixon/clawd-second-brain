@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "id": "crypto-trading-bot-1",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "decision",
+      "content": "Pivoted from Polymarket trading bot to crypto trading bot due to geographic restrictions - Polymarket is not available in Thailand (2026-01-31 14:48 UTC)",
+      "timestamp": "2026-01-31T14:48:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-2",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "milestone",
+      "content": "Comprehensive 14,500+ word plan created at /home/desktop/clawd/CRYPTO-TRADING-THAILAND-PLAN.md covering regulatory compliance, strategies, and technical architecture",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-3",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "strategy",
+      "content": "Primary strategy: Funding Rate Farming (8-15% annual returns) - monitor funding rates across Hyperliquid, Binance TH, and accessible DEXs",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-4",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "strategy",
+      "content": "Secondary strategy: Multi-exchange arbitrage - execute trades when price differential exceeds transaction costs",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-5",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "infrastructure",
+      "content": "Self-hosted infrastructure with VPS in Singapore, PostgreSQL + TimescaleDB + Redis, Grafana + Prometheus monitoring. Operating cost: $95/month (under $100 target)",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-6",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "architecture",
+      "content": "Uses Chainlink price feeds as primary data source with PumpFun-inspired speed optimizations (cached nonces, pre-computed addresses, parallel RPC connections)",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-7",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "exchange_selection",
+      "content": "Primary exchange: Gulf Binance (international standards, deep liquidity). Secondary: Bitkub (largest local volume). Tertiary: Orbix (bank-backed security). DEX access: Hyperliquid, Uniswap V3 via VPN",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-8",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "target",
+      "content": "Target returns: 12-24% annually with maximum drawdown of 5-8%. Starting capital: $1,000 (minimum viable) to $10,000 (optimal allocation)",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "crypto-trading-bot-9",
+      "entity": "Crypto Trading Bot (Thailand)",
+      "type": "preference",
+      "content": "DEX-only approach using wallet + DEXs. No concerns about exchanges or Thailand legal issues - DEX trading is globally accessible (2026-01-31 14:51 UTC)",
+      "timestamp": "2026-01-31T14:51:00Z",
+      "source": "conversation"
+    }
+  ]
+}

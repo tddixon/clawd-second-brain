@@ -1,0 +1,117 @@
+[
+  {
+    "id": "polymarket-trading-agent-001",
+    "fact": "Project initiated (2026-01-31 09:54 UTC): Build autonomous Polymarket trading agent to generate profit and cover server/LLM costs",
+    "timestamp": "2026-01-31T09:54:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-002",
+    "fact": "Research scope defined (2026-01-31 09:54 UTC): 7 comprehensive areas - (1) Polymarket fundamentals (CLOB, fees, settlement), (2) Trading strategies (arbitrage, market making, news-based, sentiment analysis), (3) Alpha sources (whale tracking, news detection, correlations), (4) Technical implementation (API docs, SDKs, wallet integration), (5) Risk management (position sizing, Kelly criterion, drawdown limits), (6) Existing tools & skills (skills.sh, GitHub bots, MCP servers), (7) Competitive landscape (top traders, professional firms)",
+    "timestamp": "2026-01-31T09:54:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-003",
+    "fact": "Research deliverable specified (2026-01-31 09:54 UTC): Comprehensive document at /home/desktop/clawd/RESEARCH-POLYMARKET-TRADING.md with executive summary of viable strategies (ranked by Sharpe ratio), technical architecture, alpha sources, risk management framework, MVP roadmap, capital requirements, and relevant tools/libraries list",
+    "timestamp": "2026-01-31T09:54:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-004",
+    "fact": "Sub-agent deployed (2026-01-31 09:54 UTC): 'polymarket-research' agent launched with Kimi K2 model and high thinking level to conduct comprehensive research",
+    "timestamp": "2026-01-31T09:54:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-005",
+    "fact": "Research scope expanded (2026-01-31 09:59 UTC): Trevor requested expansion beyond Polymarket to include crypto trading and arbitrage strategies",
+    "timestamp": "2026-01-31T09:59:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-006",
+    "fact": "Research completed (2026-01-31 09:58 UTC): Comprehensive 15,000+ line research document delivered at /home/desktop/clawd/RESEARCH-POLYMARKET-TRADING.md",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-007",
+    "fact": "Primary strategy identified: Combinatorial arbitrage (Sharpe 3.5-4.5) - Exploit pricing inefficiencies where YES+NO < $1.00, near risk-free with 0.5-2% returns per trade, 50-200 daily opportunities",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-008",
+    "fact": "Secondary strategy identified: Market making (Sharpe 1.5-2.5) - Provide liquidity with 0.5-2% spreads, maintain balanced YES/NO exposure, quote sizing $100-1,000 initially",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-009",
+    "fact": "Technology stack selected: Python 3.9+, py-clob-client (official SDK), Web3.py, asyncio, Redis, PostgreSQL, with optional Node.js for WebSocket handling",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-010",
+    "fact": "Risk management framework defined: Kelly Criterion for position sizing (25-50% fractional Kelly), daily 5% / weekly 10% / monthly 20% drawdown limits, 20% liquidity buffer, emergency stop procedures",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-011",
+    "fact": "Capital requirements established: Arbitrage $10K minimum, Market making $25K recommended, Multi-strategy $50K+ for optimal performance. Target returns 15-40% annually with proper risk management",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-012",
+    "fact": "MVP roadmap defined: Phase 1 (Weeks 1-4) Foundation - Basic CLOB integration and arbitrage detection; Phase 2 (Weeks 5-8) Strategy - Arbitrage bot with risk controls; Phase 3 (Weeks 9-12) Advanced - Market making capabilities; Phase 4 (Weeks 13-16) Production - Full monitoring and deployment",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-013",
+    "fact": "Alpha sources identified: Polymarket CLOB API (order books, trades), whale tracking (Polywhaler, PolyWatch), social media sentiment (Twitter, Reddit), news APIs (Bloomberg, Reuters), on-chain data (smart contract interactions)",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-014",
+    "fact": "Competitive landscape analyzed: Top traders include @Frosenn (political markets), French Whale Théo ($85M Trump 2024), @Tutaaa91 (arbitrage specialist $58k from $0.02). Suspected institutional participants: Jane Street, Citadel, DRW/Cumberland",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-015",
+    "fact": "Reference resource added (2026-01-31 12:00 UTC): PolymarketBTC15mAssistant GitHub repo (https://github.com/FrondEnt/PolymarketBTC15mAssistant) added to Claude Code Tools project for development reference",
+    "timestamp": "2026-01-31T12:00:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-016",
+    "fact": "Claude Code development session started (2026-01-31 12:05 UTC): tmux session 'polyclaw-dev' launched with --dangerously-skip-permissions flag for automated development",
+    "timestamp": "2026-01-31T12:05:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-017",
+    "fact": "Phase 1 development in progress (2026-01-31 12:15 UTC): Installing PolyClaw dependencies, setting up database and monitoring stack with Docker Compose, creating autonomous agent main loop, implementing paper trading mode",
+    "timestamp": "2026-01-31T12:15:00Z",
+    "status": "superseded"
+  },
+  {
+    "id": "polymarket-trading-agent-018",
+    "fact": "Development paused (2026-01-31 12:38 UTC): Trevor requested to pause Polymarket bot development. tmux session 'polyclaw-dev' stopped. All research, PRD, task tracker, and ClickUp project saved for future resumption",
+    "timestamp": "2026-01-31T12:38:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-019",
+    "fact": "Project pivoted to Crypto Trading Bot (2026-01-31 14:48 UTC): Trevor decided to pivot from Polymarket trading to crypto DEX trading because Polymarket is not available in Thailand. See crypto-trading-bot project for new direction.",
+    "timestamp": "2026-01-31T14:48:00Z",
+    "status": "superseded",
+    "supersededBy": "crypto-trading-bot"
+  }
+]

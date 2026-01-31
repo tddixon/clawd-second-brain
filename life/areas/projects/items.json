@@ -1,164 +1,207 @@
-{
-  "items": [
-    {
-      "id": "hostelworld-price-monitor-4",
-      "entity": "Hostelworld Price Monitor",
-      "fact_type": "test_result",
-      "title": "Agent Browser Test Shows EUR vs Screenshot THB",
-      "description": "Test run of Hostelworld scraping using Agent Browser with mobile viewport showed EUR prices (Nomads €9.52, Base €7.07) while Trevor's screenshot showed THB prices (Nomads THB 1,098, Base THB 999). Possible causes: different dates, room type differences, currency/location-based pricing, or market changes between screenshot and test.",
-      "date": "2026-01-30T06:30:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "hostelworld-price-monitor-5",
-      "entity": "Hostelworld Price Monitor",
-      "fact_type": "correction",
-      "title": "Broken Puppeteer Scraper Killed",
-      "description": "After Trevor confirmed scraper prices were incorrect (showing THB 999 for Nomads when actual was THB 1,098), broken Puppeteer-based scraper cron job was killed. Replaced with Agent Browser-based solution for accurate real-time price data.",
-      "date": "2026-01-30T07:00:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "nomads-ops-center-1",
-      "entity": "nomads-ops-center",
-      "fact_type": "project_update",
-      "title": "MEWS Connector API Integration Completed",
-      "description": "Sub-agent completed MEWS Connector API integration for payment polling on branch mews-api (commit 1e19c2d). New convex/mewsConnector.ts (1,312 lines) replaces webhook dependency with 15-minute cron polling. Supports per-hostel credentials, preserves towel deposit cashier filtering, uses AccessToken-only authentication. Added tables: mewsConnectorSyncLog, mewsApiCallLog. MEWS_CONNECTOR_IMPROVEMENTS.md includes 10 detailed recommendations.",
-      "date": "2026-01-30T13:52:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "nomads-ops-center-2",
-      "entity": "nomads-ops-center",
-      "fact_type": "project_update",
-      "title": "MEWS Connector API PR Created",
-      "description": "PR #8 created for MEWS Connector API Integration (Phase 1). Contains 5 commits: refactor, feat, docs. Includes manual 'Poll MEWS Now' button for debugging. Vercel warning about commit author email (not matching Trevor's GitHub account) - non-blocking.",
-      "date": "2026-01-30T13:55:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "nomads-ops-center-3",
-      "entity": "nomads-ops-center",
-      "fact_type": "decision",
-      "title": "Separate Git Identity for Clawd",
-      "description": "Trevor requested separate git identity for Clawd/subagent commits to distinguish from his personal commits. Asked about GitHub Personal Access Token setup to allow Clawd to commit without exposing personal email.",
-      "date": "2026-01-30T13:55:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "nomads-ops-center-4",
-      "entity": "nomads-ops-center",
-      "fact_type": "code_audit",
-      "title": "Comprehensive Code Audit Completed",
-      "description": "CODE_AUDIT_REPORT.md generated covering shift reports, reconciliation system, Convex code. Found: 8 critical improvements (N+1 queries, duplicate race condition, transaction isolation), 5 consolidation opportunities (merge MEWS modules, unify reports, standardize soft deletes), 4 error scenarios (timezone, float precision, FK constraints, webhook limits). Top priority: Fix N+1 queries (10x perf improvement), add duplicate protection, implement transaction isolation.",
-      "date": "2026-01-30T13:45:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "nomads-ops-center-5",
-      "entity": "nomads-ops-center",
-      "fact_type": "project_update",
-      "title": "Phase 2: Webhook + API Consolidation In Progress",
-      "description": "Phase 2 instructions sent to sub-agent to consolidate mewsWebhook.ts into mewsConnector.ts while keeping BOTH working simultaneously. Goals: Shared deduplication logic, N+1 query fixes, unique constraints, exponential backoff retry, circuit breaker pattern. Will commit to same mews-api branch and update/create PR.",
-      "date": "2026-01-30T13:50:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clawd-second-brain-1",
-      "entity": "clawd-second-brain",
-      "fact_type": "project_creation",
-      "title": "Clawd Configuration GitHub Repository Created",
-      "description": "Created GitHub repository 'calwd-second-brain' (https://github.com/tddixon/calwd-second-brain) at Trevor's request to back up Clawd configuration and skills. Contains AGENTS.md, SOUL.md, IDENTITY.md, USER.md, skills/ directory with 30+ installed skills, memory/ session logs, and docs/ documentation. Initial commit completed with git identity set to Trevor (trevor@nomads.com).",
-      "date": "2026-01-30T14:39:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clickup-obsidian-sync-1",
-      "entity": "clickup-obsidian-sync",
-      "fact_type": "request",
-      "title": "ClickUp-Obsidian Sync Requested",
-      "description": "Trevor requested mapping and syncing existing ClickUp items to Obsidian with 1:1 alignment. Wants intelligent merging if projects already exist in Obsidian.",
-      "date": "2026-01-30T15:33:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clickup-obsidian-sync-2",
-      "entity": "clickup-obsidian-sync",
-      "fact_type": "blocker",
-      "title": "ClickUp API Token Not Configured",
-      "description": "Sync blocked due to missing ClickUp API token. Trevor needs to generate token from https://app.clickup.com/settings/apps and configure CLICKUP_API_KEY environment variable.",
-      "date": "2026-01-30T15:38:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clickup-obsidian-sync-3",
-      "entity": "clickup-obsidian-sync",
-      "fact_type": "planning",
-      "title": "Clawd User Creation in ClickUp",
-      "description": "Trevor asked about creating @clawd user in ClickUp for task assignment. Users must be created in ClickUp interface (https://app.clickup.com/settings/members) with email and Member role, then agent needs User ID configuration.",
-      "date": "2026-01-30T15:48:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clickup-obsidian-sync-4",
-      "entity": "clickup-obsidian-sync",
-      "fact_type": "decision",
-      "title": "Hybrid Integration Strategy",
-      "description": "Decision made: Use BOTH custom agent (for main workflow - task execution, structure sync, 2-way Obsidian sync) and official ClickUp MCP (for advanced features like time tracking, chat, docs). Custom agent optimized for Trevor's workflow.",
-      "date": "2026-01-30T15:50:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "context7-skill-1",
-      "entity": "context7-skill",
-      "fact_type": "skill_creation",
-      "title": "Context7 Skill Installed",
-      "description": "Context7 skill created at /home/desktop/clawd/skills/context7/. Provides up-to-date library documentation via Upstash Context7 API. Includes SKILL.md with workflow, quick reference, known library IDs. Python script context7.py uses mcporter MCP backend for search and context queries.",
-      "date": "2026-01-30T18:12:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clawd-pkm-code-review-1",
-      "entity": "clawd-pkm-code-review",
-      "fact_type": "project_completion",
-      "title": "PKM Code Review Completed",
-      "description": "Comprehensive code review of PKM/ClickUp/Obsidian/Todoist integration code completed by sub-agent. Analyzed 20+ files (3,786 LOC). Full report: /home/desktop/clawd/PKM-CODE-REVIEW-REPORT.md. Found 3 competing ClickUp sync implementations, duplicate Todoist scripts, no centralized config, incomplete time tracking. Recommendations: consolidate to single implementation, add .env support, implement SQLite, webhook-based sync.",
-      "date": "2026-01-30T18:14:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clickup-project-docs-1",
-      "entity": "clickup-project-docs",
-      "fact_type": "project_update",
-      "title": "Project Summary Docs Recreated",
-      "description": "4 ClickUp project summary docs recreated with create_page: false to avoid Untitled page issue (2026-01-30 18:10 UTC). Docs: Ops Center (rg3vj-6377), Klaviyo (rg3vj-6397), Tour Website (rg3vj-6417), POS-MEWS Sync (rg3vj-6437). Each contains 5 pages: Executive Summary, Overview, What We Have Done, What Needs To Be Done, Ideas & Future.",
-      "date": "2026-01-30T18:10:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    },
-    {
-      "id": "clickup-reorganization-1",
-      "entity": "clickup-workspace",
-      "fact_type": "reorganization",
-      "title": "Folderless Lists Moved to Project Folders",
-      "description": "All folderless lists in Nomads space reorganized into Project Folders structure (2026-01-30 18:30 UTC). Created folders: Accounting (list 901710415128), Marketing (list 901710415129), Nomads Bangkok (list 901710415130), Nomads Asia Website (list 901710415133), Graphic Design (list 901710415136). Old lists deleted, tasks recreated in new lists. Inbox remains folderless.",
-      "date": "2026-01-30T18:30:00Z",
-      "source": "clawdbot",
-      "supersedes": []
-    }
-  ]
-}
+[
+  {
+    "id": "hostelworld-monitor-004",
+    "fact": "Price monitoring script updated with search ranking feature (2026-01-31 06:37 UTC): Script now captures Hostelworld search position for all tracked properties",
+    "timestamp": "2026-01-31T06:37:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-005",
+    "fact": "Ranking data captured for Aug 1, 2025 (2026-01-31 06:37 UTC): Base Beachfront #1, Nomads Ao Nang Beach #5, The Hangout #14, iRest #26 out of 30 total listings",
+    "timestamp": "2026-01-31T06:37:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-006",
+    "fact": "Playwright script tested successfully (2026-01-31 06:37 UTC): Captures real-time THB prices, ratings, review counts, and search rankings for 6 properties (2 Nomads + 4 competitors)",
+    "timestamp": "2026-01-31T06:37:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-007",
+    "fact": "Daily cron job configured (2026-01-31 06:39 UTC): Runs at 2am UTC (9am Thailand time) via Clawdbot gateway, saves to data/hostelworld-prices.json and sends Telegram summary to Trevor",
+    "timestamp": "2026-01-31T06:39:00Z",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-integration-001",
+    "fact": "Claude Code session opened for codebase review (2026-01-31 05:44 UTC): tmux session 'klaviyo-mews' launched to review Klaviyo MEWS integration status and pending implementation items",
+    "timestamp": "2026-01-31T05:44:00Z",
+    "status": "active"
+  },
+  {
+    "id": "polymarket-trading-agent-001",
+    "fact": "Project initiated (2026-01-31 09:54 UTC): Build autonomous Polymarket trading agent to generate profit and cover server/LLM costs",
+    "timestamp": "2026-01-31T09:54:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polymarket-trading-agent-006",
+    "fact": "Research completed (2026-01-31 09:58 UTC): Comprehensive 15,000+ line research document delivered identifying combinatorial arbitrage as primary strategy (Sharpe 3.5-4.5) and market making as secondary (Sharpe 1.5-2.5)",
+    "timestamp": "2026-01-31T09:58:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-001",
+    "fact": "Multi-agent research project launched (2026-01-31 10:00 UTC): 10+ parallel research agents covering alpha sources, execution infrastructure, ML trading, alternative markets, backtesting, whale tracking, arbitrage engine, news trading, trading infrastructure, and self-hosted design",
+    "timestamp": "2026-01-31T10:00:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-002",
+    "fact": "Opportunities research completed (2026-01-31 10:17 UTC): Identified live actionable opportunities including APE funding rate arbitrage (104% annualized), Ethena USDe yield (15.2% APY), META earnings options (21.8% potential), and verified whale wallets (76-89% win rates)",
+    "timestamp": "2026-01-31T10:17:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-003",
+    "fact": "Whale tracker design completed (2026-01-31 10:10 UTC): 8-15 second latency from whale trade to execution, ~$2,800/month operating cost (using QuickNode/Nansen), breakeven at 2-3% monthly return, projected $1,500-7,200/month PnL",
+    "timestamp": "2026-01-31T10:10:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-004",
+    "fact": "Arbitrage engine design completed (2026-01-31 10:11 UTC): Sub-second execution with <100ms detection and <500ms execution, Rust+ZeroMQ architecture, supports Polymarket internal arb, cross-exchange, and triangular arbitrage",
+    "timestamp": "2026-01-31T10:11:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-005",
+    "fact": "Execution infrastructure research completed (2026-01-31 10:12 UTC): Sub-100 microsecond tick-to-trade achievable with Rust/C++, AWS placement groups reduce latency 35-37%, 16-week roadmap to sub-100ms production deployment",
+    "timestamp": "2026-01-31T10:12:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-006",
+    "fact": "Self-hosted requirement clarified (2026-01-31 10:38 UTC): User wants system without QuickNode/Nansen dependencies that can be managed and run directly without outside hosting. Target: <$100/month operating costs",
+    "timestamp": "2026-01-31T10:38:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-007",
+    "fact": "Alpha sources research completed (2026-01-31 10:26 UTC): Analyzed Nansen ($1,200-12K/mo), Glassnode ($799-3K/mo), Bloomberg ($24K/year), CryptoQuant ($99-599/mo), and free alternatives like DeFiLlama and The Graph",
+    "timestamp": "2026-01-31T10:26:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-008",
+    "fact": "News trading design completed (2026-01-31 10:27 UTC): <500ms latency from news to trade execution, Kafka+Redis for stream processing, FinBERT/DistilBERT for sentiment analysis, targets political events, Fed announcements, earnings, regulatory news",
+    "timestamp": "2026-01-31T10:27:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-009",
+    "fact": "ML trading research completed (2026-01-31 10:27 UTC): Simple models (Random Forest/XGBoost with 5-7 features) outperform complex deep learning in production. Focus 80% on validation/monitoring, 20% on model development",
+    "timestamp": "2026-01-31T10:27:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-010",
+    "fact": "Trading infrastructure design completed (2026-01-31 10:28 UTC): Enterprise-grade with Kubernetes, TimescaleDB, Redis Cluster, multi-region deployment, 15-minute RTO/5-minute RPO, circuit breakers at 2% daily/5% weekly drawdown",
+    "timestamp": "2026-01-31T10:28:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-011",
+    "fact": "Backtesting & risk research completed (2026-01-31 10:28 UTC): Event-driven backtesting essential, CVaR superior to VaR for tail risk, 4-stage validation pipeline (development, robustness testing, market validation, capital deployment)",
+    "timestamp": "2026-01-31T10:28:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-012",
+    "fact": "Alternative markets research completed (2026-01-31 10:29 UTC): Sports betting arbitrage (1-5% per bet), credit card/bank bonus arbitrage ($500-1,500 per opportunity), Kalshi prediction markets (US-regulated), forex statistical arbitrage (high barriers)",
+    "timestamp": "2026-01-31T10:29:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "trading-system-research-013",
+    "fact": "Self-hosted design in progress (2026-01-31 10:39 UTC): Sub-agent creating lean system using local RPC nodes instead of QuickNode, self-built wallet tracking instead of Nansen, free APIs, Docker Compose deployment, target <$100/month costs",
+    "timestamp": "2026-01-31T10:39:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "adventurists-brand-voice-001",
+    "fact": "Brand voice analysis project initiated for The Adventurists adventure travel company to document writing style for copywriting use (2026-01-31 11:27 UTC)",
+    "timestamp": "2026-01-31T11:27:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "adventurists-brand-voice-002",
+    "fact": "Comprehensive brand voice guide created at /home/desktop/clawd/BRAND-VOICE-ADVENTURISTS.md documenting irreverent British humor, anti-marketing style, chaos-worshipping tone, word bank, writing patterns, and templates (2026-01-31 11:27 UTC)",
+    "timestamp": "2026-01-31T11:27:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "adventurists-brand-voice-003",
+    "fact": "Copywriting skill updated with Brand Voice Profiles section featuring The Adventurists voice characteristics, vocabulary, writing patterns, headline formulas, and do's/don'ts (2026-01-31 11:27 UTC)",
+    "timestamp": "2026-01-31T11:27:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "nomads-social-001",
+    "fact": "Created 5 Instagram post options announcing Nomads Hoscars awards for Thailand and Australia, featuring authentic copy targeting 20-25 year olds without corporate/cringe language (2026-01-31 11:27 UTC)",
+    "timestamp": "2026-01-31T11:27:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "nomads-social-002",
+    "fact": "Created thank you social media posts acknowledging hundreds of thousands of guests in 2025 and celebrating position as most popular hostels (2026-01-31 11:28 UTC)",
+    "timestamp": "2026-01-31T11:28:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "polyclaw-dev-001",
+    "fact": "tmux session 'polyclaw-dev' created for PolyClaw Trading system development using Claude Code (2026-01-31 11:00 UTC). Session used for autonomous implementation with --dangerously-skip-permissions flag to avoid interactive prompts",
+    "timestamp": "2026-01-31T11:00:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polyclaw-dev-002",
+    "fact": "Claude Code session stuck at permission bypass prompt initially (2026-01-31 11:00-11:07 UTC). Required multiple attempts to send Enter key via tmux. Eventually resolved by killing and restarting session with --dangerously-skip-permissions flag",
+    "timestamp": "2026-01-31T11:07:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polyclaw-dev-003",
+    "fact": "Claude Code actively working on PolyClaw Phase 1 (2026-01-31 11:07 UTC): Analyzed project structure, identified gaps (no Docker, skeleton agent script, no Python project setup, missing nginx config). Currently installing Docker and creating Python project structure",
+    "timestamp": "2026-01-31T11:07:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polyclaw-dev-004",
+    "fact": "Claude Code tasks being executed for Phase 1 (2026-01-31 11:07 UTC): Install Docker and Docker Compose (in progress), Create Python project structure with dependencies, Rewrite agent with async loop and DB integration, Slim down docker-compose for Phase 1, Test stack boots and agent runs",
+    "timestamp": "2026-01-31T11:07:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polyclaw-dev-005",
+    "fact": "Claude Code session status (2026-01-31 11:27 UTC): 31% through initialization, actively 'Transmuting' (thinking). Permission bypass confirmed working despite UI still showing prompt - actual commands executing correctly",
+    "timestamp": "2026-01-31T11:27:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polyclaw-dev-006",
+    "fact": "Project documentation references: PRD at /home/desktop/clawd/PRD-POLYCLAW-TRADING.md, task list at /home/desktop/clawd/PROJECT-TASKS.md. Phase 1 goals: Install PolyClaw dependencies, set up database and monitoring stack with Docker Compose, create autonomous agent main loop, implement paper trading mode",
+    "timestamp": "2026-01-31T11:27:00Z",
+    "status": "paused"
+  },
+  {
+    "id": "polyclaw-dev-007",
+    "fact": "Development paused at user request (2026-01-31 12:35 UTC): tmux session 'polyclaw-dev' terminated. All research, PRD, task tracker, and ClickUp project preserved for resumption",
+    "timestamp": "2026-01-31T12:35:00Z",
+    "status": "paused",
+    "supersedes": ["polyclaw-dev-005"]
+  },
+  {
+    "id": "noho-ops-integration-002",
+    "fact": "Integration plan completed with surprise discovery (2026-01-31 12:31 UTC): NOHO-OPS-INTEGRATION-PLAN.md (609 lines) reveals all three integration branches (nomads-ops-sync-full-integration, sync/poster-mews, sync/mews-klaviyo) already merged at commit 61b5a61. System is production-ready with Poster POS, MEWS PMS, Guardforce, encrypted credentials, role-based access, and audit logging",
+    "timestamp": "2026-01-31T12:31:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "clickup-projects-001",
+    "fact": "Noho Ops project structure created in ClickUp (2026-01-31 12:40 UTC): New folder 'Noho Ops' with list 'Integration Workflow' and main task 'Integrate MEWS Poster + Klaviyo into Noho-Ops' added to Clawd Space (90173832949)",
+    "timestamp": "2026-01-31T12:40:00Z",
+    "status": "active"
+  }
+]

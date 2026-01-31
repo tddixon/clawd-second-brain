@@ -105,6 +105,22 @@
       "source": "conversation"
     },
     {
+      "id": "trevor-14",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested to enable all tmux mobile optimization features (2026-01-30 19:17 UTC): mouse support, prefix key change to Ctrl+a, vim-style pane navigation, top status bar, auto-renumber windows, TPM plugins (resurrect, continuum, yank)",
+      "timestamp": "2026-01-30T19:17:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-15",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested mobile scroll shortcuts for terminal to read last messages (2026-01-30 19:52 UTC): Alt+u (half page up), Alt+d (half page down), Alt+↑/↓ (scroll line), Shift+↑/↓ (scroll line)",
+      "timestamp": "2026-01-30T19:52:00Z",
+      "source": "conversation"
+    },
+    {
       "id": "mikey-b-1",
       "entity": "Mikey B",
       "type": "action_item",
@@ -143,6 +159,126 @@
       "content": "Installed Context7 skill for up-to-date library documentation (2026-01-30 18:35 UTC)",
       "timestamp": "2026-01-30T18:35:00Z",
       "source": "action"
+    },
+    {
+      "id": "trevor-16",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested brand voice analysis from The Adventurists websites (adventure travel company) to document for copywriting use (2026-01-31 11:27 UTC)",
+      "timestamp": "2026-01-31T11:27:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-17",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested 5 Instagram post options for Nomads Hoscars award announcement, targeting 20-25 year olds with authentic genuine copy (2026-01-31 11:27 UTC)",
+      "timestamp": "2026-01-31T11:27:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-18",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested thank you social media post thanking hundreds of thousands of guests for making Nomads most popular/top voted hostels (2026-01-31 11:28 UTC)",
+      "timestamp": "2026-01-31T11:28:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-19",
+      "entity": "Trevor",
+      "type": "preference",
+      "content": "Specified social media writing preferences: target 20-25 year old travelers, use authentic language, avoid cringy words like 'fam' (2026-01-31 11:27 UTC)",
+      "timestamp": "2026-01-31T11:27:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-20",
+      "entity": "Trevor",
+      "type": "authorization",
+      "content": "Authorized Clawd agent to manage PolyClaw development tmux session and provide all necessary inputs (2026-01-31 11:02 UTC). Agent instructed to proceed autonomously and refer to research and plans when needed",
+      "timestamp": "2026-01-31T11:02:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-21",
+      "entity": "Trevor",
+      "type": "question",
+      "content": "Asked for tmux session name of PolyClaw dev environment (2026-01-31 11:52 UTC). Answer: 'polyclaw-dev'",
+      "timestamp": "2026-01-31T11:52:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-22",
+      "entity": "Trevor",
+      "type": "decision",
+      "content": "Requested to pause development of PolyClaw Trading (Polymarket bot) project (2026-01-31 12:26 UTC). Tmux session 'polyclaw-dev' was stopped. All research, PRD, task tracker, and ClickUp project saved for future resumption.",
+      "timestamp": "2026-01-31T12:26:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-23",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested sub-agent to review and create plan to integrate Mews Poster and Mews Klaviyo projects into Noho Ops (2026-01-31 12:37 UTC). Requirements: build as different route groups within hostel slug route, add nav route groups to sidebar, single login for all features, deep dive analysis with clear recommendations on what exists to avoid breaking anything.",
+      "timestamp": "2026-01-31T12:37:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-24",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested to add integration task to ClickUp for all related projects and create new list under Noho Ops for tracking integration workflow (2026-01-31 12:40 UTC). Noho Ops folder created with 'Integration Workflow' list.",
+      "timestamp": "2026-01-31T12:40:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-25",
+      "entity": "Trevor",
+      "type": "correction",
+      "content": "Corrected sub-agent analysis - Noho Ops integration has NOT been done. The three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches pointing to the same commit (2026-01-31 14:45 UTC). Previous analysis about branches being merged was incorrect.",
+      "timestamp": "2026-01-31T14:45:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-26",
+      "entity": "Trevor",
+      "type": "request",
+      "content": "Requested integration plan only for Noho Ops, without execution. The actual integration work still needs to be done (2026-01-31 14:47 UTC).",
+      "timestamp": "2026-01-31T14:47:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-27",
+      "entity": "Trevor",
+      "type": "decision",
+      "content": "Pivoted from Polymarket trading bot to crypto trading bot due to geographic restrictions - Polymarket is not available in Thailand (2026-01-31 14:48 UTC). Will use Chainlink repos and DEXs for the new crypto bot approach.",
+      "timestamp": "2026-01-31T14:48:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-28",
+      "entity": "Trevor",
+      "type": "preference",
+      "content": "Clarified crypto trading bot will use wallet + DEXs only. No concerns about exchanges or Thailand legal issues - DEX trading is globally accessible (2026-01-31 14:51 UTC).",
+      "timestamp": "2026-01-31T14:51:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-29",
+      "entity": "Trevor",
+      "type": "correction",
+      "content": "Clarified that Clawd did NOT merge anything to main branch. The Noho Ops integration work has NOT been done. Previous ClickUp status updates claiming completion were incorrect based on faulty sub-agent analysis (2026-01-31 14:52 UTC).",
+      "timestamp": "2026-01-31T14:52:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-30",
+      "entity": "Trevor",
+      "type": "preference",
+      "content": "Prefers written plan only (no code changes or merging) when planning integration work. Reviews plan before any execution begins (2026-01-31 14:47 UTC).",
+      "timestamp": "2026-01-31T14:47:00Z",
+      "source": "conversation"
     }
   ]
 }

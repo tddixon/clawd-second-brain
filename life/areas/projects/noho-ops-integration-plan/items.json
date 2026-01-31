@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "id": "noho-ops-integration-plan-001",
+      "fact": "Subagent launched for deep dive analysis (2026-01-31 12:31 UTC): Analyze Noho-Ops existing structure, MEWS Poster project, and MEWS Klaviyo project to design integration architecture with route groups under hostel/[slug]/, sidebar navigation, and unified login",
+      "timestamp": "2026-01-31T12:31:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "noho-ops-integration-plan-002",
+      "fact": "Incorrect analysis claimed integration was complete (2026-01-31 12:31 UTC): NOHO-OPS-INTEGRATION-PLAN.md claimed all three branches merged at commit 61b5a61. THIS WAS INCORRECT",
+      "timestamp": "2026-01-31T12:31:00Z",
+      "status": "corrected",
+      "supersedes": ["noho-ops-integration-plan-001"]
+    },
+    {
+      "id": "noho-ops-integration-plan-003",
+      "fact": "Correction: Noho Ops integration has NOT been done (2026-01-31 14:45 UTC). Trevor corrected that the three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches pointing to same commit",
+      "timestamp": "2026-01-31T14:45:00Z",
+      "status": "active",
+      "supersedes": ["noho-ops-integration-plan-002"]
+    },
+    {
+      "id": "noho-ops-integration-plan-004",
+      "fact": "Noho Ops main repo analysis updated (2026-01-31 15:30 UTC): Main repo (nomads-ops-center on mews-api branch) already contains all Poster and MEWS functionality. Klaviyo integration does NOT exist yet",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "noho-ops-integration-plan-005",
+      "fact": "Integration Plan V2 created (2026-01-31 15:30 UTC): Comprehensive plan at /home/desktop/clawd/NOHO-OPS-INTEGRATION-PLAN-V2.md with 5-week implementation timeline",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "noho-ops-integration-plan-006",
+      "fact": "5-week implementation plan defined (2026-01-31 15:30 UTC): Week 1 - Restructure routes + Klaviyo schema; Week 2 - Migrate Poster module (no new code); Week 3 - Migrate MEWS module (no new code); Week 4 - BUILD Klaviyo integration (NEW - only actual new feature); Week 5 - Testing & Migration",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "status": "planned"
+    },
+    {
+      "id": "noho-ops-integration-plan-007",
+      "fact": "ClickUp tasks updated (2026-01-31 15:30 UTC): Main task renamed to 'Build Klaviyo Integration + Restructure'. 5 weekly tasks added: Week 1-5 with accurate descriptions reflecting that Poster and MEWS already exist in main repo",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "noho-ops-integration-plan-008",
+      "fact": "Key finding documented (2026-01-31 15:30 UTC): Poster POS sync - ALREADY in main repo (complete). MEWS Payments/Webhook - ALREADY in main repo (complete). Klaviyo - NEEDS TO BE BUILT (missing)",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "status": "documented"
+    },
+    {
+      "id": "noho-ops-integration-plan-009",
+      "fact": "Implementation plan requested for ClickUp and Obsidian sync (2026-01-31 16:56 UTC): Trevor requested adding NOHO-OPS-INTEGRATION-PLAN-V2.md to both ClickUp tasks and Obsidian PKM project files. Sub-agent 'clickup-obsidian-sync' spawned to create proper task hierarchy in ClickUp and project documentation in Obsidian Second Brain.",
+      "timestamp": "2026-01-31T16:56:00Z",
+      "status": "in_progress"
+    }
+  ]
+}

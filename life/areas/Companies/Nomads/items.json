@@ -103,6 +103,62 @@
       "content": "ClickUp workspace final structure after reorganization (2026-01-30 18:47 UTC): Folderless lists (Inbox), Folders: Accounting (90176179139) with Accounting list, Marketing (90176179137) with Marketing list, Nomads Bangkok (90176179135) with Bangkok list, Nomads Asia Website (90176179136) with Website list, Graphic Design (90176179138) with Graphic Design list",
       "timestamp": "2026-01-30T18:47:00Z",
       "source": "clickup_verification"
+    },
+    {
+      "id": "nomads-14",
+      "entity": "Nomads",
+      "type": "planning",
+      "content": "Nomads Ops Integration Plan created (2026-01-30 18:53 UTC): 4-phase roadmap for integrating MEWS+Klaviyo+Poster sync into ops center. Document at /home/desktop/clawd/NOMADS-OPS-INTEGRATION-PLAN.md. 3 isolated worktrees created for parallel development: nomads-ops-sync-mews-klaviyo, nomads-ops-sync-poster-mews, nomads-ops-sync-full-integration. Phases: 1) Infrastructure, 2) MEWS+Klaviyo guest lifecycle sync, 3) Poster+MEWS revenue sync, 4) Full integration testing",
+      "timestamp": "2026-01-30T18:53:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-15",
+      "entity": "Nomads",
+      "type": "decision",
+      "content": "Integration decision (2026-01-30 18:53 UTC): Trevor decided to save Nomads Ops integration plan only, not execute - still finishing development on MEWS-Klaviyo sync and does not want to combine until it's done",
+      "timestamp": "2026-01-30T18:53:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-16",
+      "entity": "Nomads",
+      "type": "achievement",
+      "content": "Won Hoscars awards for best hostels in Thailand and Australia (2026-01-31 11:27 UTC)",
+      "timestamp": "2026-01-31T11:27:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-17",
+      "entity": "Nomads",
+      "type": "metric",
+      "content": "Hosted hundreds of thousands of guests in 2025 (2026-01-31 11:28 UTC)",
+      "timestamp": "2026-01-31T11:28:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-18",
+      "entity": "Nomads",
+      "type": "achievement",
+      "content": "Voted most popular and top voted hostels via Hoscars awards (2026-01-31 11:27 UTC)",
+      "timestamp": "2026-01-31T11:27:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-19",
+      "entity": "Nomads",
+      "type": "audience",
+      "content": "Primary social media target audience: 20-25 year old travelers (2026-01-31 11:27 UTC)",
+      "timestamp": "2026-01-31T11:27:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "nomads-20",
+      "entity": "Nomads",
+      "type": "correction",
+      "content": "Noho Ops integration analysis corrected (2026-01-31 15:30 UTC): Previous analysis was incorrect - Poster and MEWS already exist in main repo, Klaviyo integration missing. Worktrees were isolation environments, not separate repos. New 5-week plan created with focus on building Klaviyo as only new feature.",
+      "timestamp": "2026-01-31T15:30:00Z",
+      "source": "conversation"
     }
   ]
 }

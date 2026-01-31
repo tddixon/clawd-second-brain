@@ -1,0 +1,14 @@
+{
+  "name": "hostelworld-price-monitor",
+  "version": "1.0.0",
+  "description": "Monitor Hostelworld prices for Krabi Ao Nang hostels",
+  "type": "module",
+  "scripts": {
+    "monitor": "node hostelworld-price-monitor.js",
+    "install-browsers": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.41.0"
+  },
+  "devDependencies": {}
+}

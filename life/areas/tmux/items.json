@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tmux-001",
+    "fact": "tmux mobile optimization skill created (2026-01-30 19:06 UTC): /home/desktop/clawd/skills/tmux/SKILL.md",
+    "timestamp": "2026-01-30T19:06:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tmux-002",
+    "fact": "tmux mobile configuration applied (2026-01-30 19:11 UTC): ~/.tmux.conf with mouse support, prefix Ctrl+a, vim navigation, top status bar, TPM plugins",
+    "timestamp": "2026-01-30T19:11:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tmux-003",
+    "fact": "TPM plugins installed (2026-01-30 19:11 UTC): tmux-resurrect, tmux-continuum (auto-save every 15 min), tmux-yank (clipboard integration)",
+    "timestamp": "2026-01-30T19:11:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tmux-004",
+    "fact": "Mobile scroll shortcuts added (2026-01-30 19:52 UTC): Alt+u/d (half page), Alt+↑/↓ (line), Shift+↑/↓ (line)",
+    "timestamp": "2026-01-30T19:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tmux-005",
+    "fact": "New session 'polyclaw-dev' created (2026-01-31 11:00 UTC): Running Claude Code for PolyClaw Trading system development with --dangerously-skip-permissions flag",
+    "timestamp": "2026-01-31T11:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tmux-006",
+    "fact": "Session 'polyclaw-dev' initially stuck at permission bypass prompt (2026-01-31 11:00-11:07 UTC). Required multiple restart attempts and use of --dangerously-skip-permissions flag to resolve",
+    "timestamp": "2026-01-31T11:07:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tmux-007",
+    "fact": "Session 'polyclaw-dev' actively running (2026-01-31 11:07 UTC): Claude Code executing Phase 1 tasks for PolyClaw - installing Docker, creating Python project structure, building autonomous agent loop",
+    "timestamp": "2026-01-31T11:07:00Z",
+    "status": "active"
+  }
+]

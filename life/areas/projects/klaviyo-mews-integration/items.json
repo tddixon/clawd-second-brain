@@ -94,5 +94,17 @@
     "fact": "Trevor still finishing development on MEWS-Klaviyo sync (2026-01-30 18:53 UTC) - integration plan saved only, not executed to avoid combining with in-progress work",
     "timestamp": "2026-01-30T18:53:00Z",
     "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-017",
+    "fact": "Claude Code wingman session opened (2026-01-31 05:44 UTC): Session 'klaviyo-mews' launched via tmux for codebase review. Task: Review current state of codebase and identify what's complete vs pending for guest lifecycle email automation sync. Working directory: /home/desktop/klaviyo-mews-integration",
+    "timestamp": "2026-01-31T05:44:00Z",
+    "status": "active"
+  },
+  {
+    "id": "klaviyo-mews-018",
+    "fact": "MEWS/Klaviyo integration requested for ClickUp and Obsidian sync (2026-01-31 16:56 UTC): Trevor requested adding MEWS/Klaviyo integration project (also referenced as Mews/Kayvio) to both ClickUp tasks and Obsidian PKM. Sub-agent 'clickup-obsidian-sync' spawned to ensure project documentation is properly synced across both systems.",
+    "timestamp": "2026-01-31T16:56:00Z",
+    "status": "in_progress"
   }
 ]

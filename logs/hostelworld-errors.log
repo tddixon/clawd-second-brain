@@ -1,0 +1,18 @@
+[2026-01-31T06:05:24.892Z] Fatal error during scraping:
+page.goto: Timeout 45000ms exceeded.
+Call log:
+  - navigating to "https://www.hostelworld.com/", waiting until "networkidle"
+
+    at scrapeHostelworld (/home/desktop/clawd/scripts/hostelworld-price-monitor.js:179:16)
+    at async main (/home/desktop/clawd/scripts/hostelworld-price-monitor.js:547:21)
+
+[2026-01-31T06:06:53.402Z] Error:
+Error: No target hostels found in search results
+    at scrapeHostelworld (file:///home/desktop/clawd/scripts/hostelworld-price-monitor.js:225:13)
+    at async main (file:///home/desktop/clawd/scripts/hostelworld-price-monitor.js:254:21)
+
+[2026-01-31T06:09:17.880Z] Error:
+Error: No target hostels found in search results
+    at scrapeHostelworld (file:///home/desktop/clawd/scripts/hostelworld-price-monitor.js:230:13)
+    at async main (file:///home/desktop/clawd/scripts/hostelworld-price-monitor.js:262:21)
+

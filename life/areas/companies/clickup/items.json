@@ -1,34 +1,62 @@
-{
-  "items": [
-    {
-      "id": "clickup-001",
-      "fact": "ClickUp Workspace for Nomads (ID: 90171123690) used as primary project management tool. Trevor User ID: 43553717. API key configured for automation.",
-      "timestamp": "2026-01-30T16:51:00Z",
-      "status": "active"
-    },
-    {
-      "id": "clickup-002",
-      "fact": "ClickUp Docs API v3 documentation mastered (2026-01-30 18:00 UTC). Key endpoints: POST /docs (create_page: false prevents Untitled page), POST /docs/{doc_id}/pages (Create Page), PUT /docs/{doc_id}/pages/{page_id} (Edit Page), GET /docs (Search), GET /docs/{doc_id} (Fetch). Content formats: markdown supported.",
-      "timestamp": "2026-01-30T18:00:00Z",
-      "status": "active"
-    },
-    {
-      "id": "clickup-003",
-      "fact": "Project Folders reorganized (2026-01-30 18:30 UTC). All folderless lists moved to Project Folders structure: Accounting folder with list, Marketing folder with list, Nomads Bangkok folder with list, Nomads Asia Website folder with list, Graphic Design folder with list. Inbox remains folderless. Old lists deleted during reorganization.",
-      "timestamp": "2026-01-30T18:30:00Z",
-      "status": "active"
-    },
-    {
-      "id": "clickup-004",
-      "fact": "8 Project tasks created for Trevor (2026-01-30 18:20 UTC). High priority: Review PR #8 (Ops Center), Test event triggers (Klaviyo), Review PR #32 (Tour Website). Normal priority: Deploy Ops Center, Design email templates, Test tour booking, Create POS repo, Test POS sync.",
-      "timestamp": "2026-01-30T18:20:00Z",
-      "status": "active"
-    },
-    {
-      "id": "clickup-005",
-      "fact": "6 daily tasks created for Trevor due 2026-01-30 (2026-01-30 18:14 UTC). Bangkok: Decide on AC & Sound/Lighting Quotes, Check traffic for delivery. Accounting: Review Base 2024 PL and Prepare For Alpo. Marketing: Make sure Charlie is set to tour Photos. Personal: Tell Ali about Flight to Bangkok. General: Add Mikey B to Mews & Xero.",
-      "timestamp": "2026-01-30T18:14:00Z",
-      "status": "active"
-    }
-  ]
-}
+[
+  {
+    "id": "clickup-001",
+    "fact": "Nomads workspace reorganized (2026-01-30 18:45 UTC): Created 5 new Project Folders for folderless lists",
+    "timestamp": "2026-01-30T18:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-002",
+    "fact": "Project Folders created in Nomads space (2026-01-30): Accounting (ID: 90176179128), Marketing (90176179130), Nomads Bangkok (90176179131), Nomads Asia Website (90176179135), Graphic Design (90176179138)",
+    "timestamp": "2026-01-30T18:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-003",
+    "fact": "Lists recreated inside Project Folders (2026-01-30 18:45 UTC): Old folderless lists deleted, new lists created in folders",
+    "timestamp": "2026-01-30T18:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-004",
+    "fact": "Inbox remains as only folderless list (per user preference for easy capture)",
+    "timestamp": "2026-01-30T18:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-005",
+    "fact": "6 daily tasks added to ClickUp (2026-01-30 18:52 UTC): All due today (2026-01-30 23:59 UTC+7)",
+    "timestamp": "2026-01-30T18:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-006",
+    "fact": "Daily tasks for Bangkok (2026-01-30): Decide on AC & Sound/Lighting Quotes, Check traffic for delivery",
+    "timestamp": "2026-01-30T18:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-007",
+    "fact": "Daily tasks for Accounting (2026-01-30): Review Base 2024 PL and Prepare For Alpo",
+    "timestamp": "2026-01-30T18:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-008",
+    "fact": "Daily tasks for Marketing (2026-01-30): Make sure Charlie is set to tour Photos",
+    "timestamp": "2026-01-30T18:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-009",
+    "fact": "Daily tasks for General (2026-01-30): Add Mikey B to Mews & Xero",
+    "timestamp": "2026-01-30T18:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clickup-010",
+    "fact": "Daily tasks for Personal (2026-01-30): Tell Ali about Flight to Bangkok",
+    "timestamp": "2026-01-30T18:52:00Z",
+    "status": "active"
+  }
+]

@@ -68,6 +68,10 @@
     "clickup": {
       "version": "1.0.0",
       "installedAt": 1769786116236
+    },
+    "hybrid-memory": {
+      "version": "1.0.1",
+      "installedAt": 1769880440367
     }
   }
 }

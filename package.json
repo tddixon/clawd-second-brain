@@ -1,0 +1,27 @@
+{
+  "name": "clawd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create-nomads-forecast-task.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tddixon/clawd-second-brain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tddixon/clawd-second-brain/issues"
+  },
+  "homepage": "https://github.com/tddixon/clawd-second-brain#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.58.1"
+  }
+}

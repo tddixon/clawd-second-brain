@@ -1,0 +1,46 @@
+[
+  {
+    "id": "irest-aonang-001",
+    "fact": "Hostel in Ao Nang, Thailand - iRest Ao Nang",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "irest-aonang-002",
+    "fact": "Hostelworld property id: 100461",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "irest-aonang-003",
+    "fact": "Slug: iRest-Ao-Nang-Krabi",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "irest-aonang-004",
+    "fact": "Price (Aug 1, 2025): $24.82/night",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "superseded",
+    "supersededBy": "irest-aonang-007"
+  },
+  {
+    "id": "irest-aonang-005",
+    "fact": "Rating (Aug 1, 2025): 8.2 Fabulous (159 reviews)",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "irest-aonang-006",
+    "fact": "Competitor to Nomads in Ao Nang market",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "irest-aonang-007",
+    "fact": "Hostelworld ranking (2026-01-31 07:25 UTC): #26 of 30 properties in Ao Nang search. Price THB 780/night (Aug 1, 2025), Rating 8.2 Fabulous (159 reviews). Lower ranking position despite mid-range price and decent rating.",
+    "timestamp": "2026-01-31T07:25:00Z",
+    "status": "active",
+    "supersedes": ["irest-aonang-004"]
+  }
+]

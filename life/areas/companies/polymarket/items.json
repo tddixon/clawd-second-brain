@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "polymarket-1",
+      "entity": "Polymarket",
+      "fact_type": "platform_info",
+      "title": "Prediction Market Platform",
+      "description": "Polymarket is a decentralized prediction market platform built on Polygon. Uses hybrid-decentralized Central Limit Order Book (CLOB) with off-chain matching and on-chain settlement. Operates binary markets with YES/NO tokens summing to $1.00. Zero trading fees for most markets, UMA oracle for resolution.",
+      "date": "2026-01-31",
+      "source": "polymarket-research",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-2",
+      "entity": "Polymarket",
+      "fact_type": "api_info",
+      "title": "Official CLOB Client SDK",
+      "description": "Polymarket provides official Python SDK (py-clob-client) for CLOB API integration, plus REST APIs for market data, trades, and order book snapshots. WebSocket feeds available for real-time price updates. EIP-712 signed messages for on-chain settlement.",
+      "date": "2026-01-31",
+      "source": "polymarket-research",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-3",
+      "entity": "Polymarket",
+      "fact_type": "trading_opportunity",
+      "title": "Arbitrage Opportunities",
+      "description": "Primary alpha source: Combinatorial arbitrage (risk-free when YES+NO < $1.00). 50-200 daily opportunities with 0.5-2% profit margins. CLOB model enables tighter spreads and higher liquidity vs traditional AMMs.",
+      "date": "2026-01-31",
+      "source": "polymarket-research",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-4",
+      "entity": "Polymarket",
+      "fact_type": "competitive_landscape",
+      "title": "Market Participants",
+      "description": "Top performers: @Frosenn (political markets), French Whale Théo ($85M profit Trump 2024), @Tutaaa91 (arbitrage $58k from $0.02). Suspected institutional firms: Jane Street, Citadel, DRW/Cumberland for market making.",
+      "date": "2026-01-31",
+      "source": "polymarket-research",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-5",
+      "entity": "Polymarket",
+      "fact_type": "current_opportunity",
+      "title": "Fed Chair Market Arbitrage",
+      "description": "Live opportunity: Fed Chair market showing pricing error at 99¢ total (YES+NO < $1.00), representing 1% risk-free arbitrage. Resolution expected within days. Documented in RESEARCH-OPPORTUNITIES-NOW.md.",
+      "date": "2026-01-31",
+      "source": "opportunities-now-research",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-6",
+      "entity": "Polymarket",
+      "fact_type": "trading_strategy",
+      "title": "Greenland Acquisition Market Opportunity",
+      "description": "High-probability setup: Buy NO at 80¢ (market mispriced - should be 95¢+). Constitutional barriers make Greenland acquisition unlikely. 25% expected return identified in RESEARCH-OPPORTUNITIES-NOW.md.",
+      "date": "2026-01-31",
+      "source": "opportunities-now-research",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-7",
+      "entity": "PolyClaw Trading",
+      "fact_type": "project_status",
+      "title": "Development Paused",
+      "description": "PolyClaw Trading (Polymarket bot) project development paused on 2026-01-31 12:26 UTC per Trevor's request. Tmux session 'polyclaw-dev' was stopped. All research, PRD (/home/desktop/clawd/PRD-POLYCLAW-TRADING.md), task tracker (/home/desktop/clawd/PROJECT-TASKS.md), and ClickUp project saved for future resumption.",
+      "date": "2026-01-31",
+      "source": "conversation",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-8",
+      "entity": "PolyClaw Trading",
+      "fact_type": "project_details",
+      "title": "Project Components",
+      "description": "PolyClaw Trading included comprehensive research, PRD document, task tracker, ClickUp project setup, and active development via Claude Code in tmux session 'polyclaw-dev'. Project aimed to build autonomous trading agent for Polymarket arbitrage opportunities.",
+      "date": "2026-01-31",
+      "source": "conversation",
+      "supersedes": []
+    },
+    {
+      "id": "polymarket-9",
+      "entity": "Polymarket",
+      "fact_type": "restriction",
+      "title": "Geographic Restriction - Thailand",
+      "description": "Polymarket is not available in Thailand. This geographic restriction caused Trevor to pivot from Polymarket trading bot to crypto DEX trading (2026-01-31 14:48 UTC).",
+      "date": "2026-01-31",
+      "source": "conversation",
+      "supersedes": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "hangout-aonang-001",
+    "fact": "Hostel in Ao Nang, Thailand - The Hangout Ao Nang",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hangout-aonang-002",
+    "fact": "Hostelworld property id: 326955",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hangout-aonang-003",
+    "fact": "Slug: The-Hangout-Ao-Nang",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hangout-aonang-004",
+    "fact": "Price (Aug 1, 2025): $19.09/night - lowest among monitored competitors",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "superseded",
+    "supersededBy": "hangout-aonang-007"
+  },
+  {
+    "id": "hangout-aonang-005",
+    "fact": "Rating (Aug 1, 2025): 8.7 Fabulous (244 reviews)",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hangout-aonang-006",
+    "fact": "Competitor to Nomads in Ao Nang market - budget-friendly option with good ratings",
+    "timestamp": "2026-01-31T06:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hangout-aonang-007",
+    "fact": "Hostelworld ranking (2026-01-31 07:25 UTC): #14 of 30 properties in Ao Nang search. Price THB 482/night (Aug 1, 2025), Rating 8.7 Fabulous (244 reviews). Lowest price among monitored competitors with mid-range ranking.",
+    "timestamp": "2026-01-31T07:25:00Z",
+    "status": "active",
+    "supersedes": ["hangout-aonang-004"]
+  }
+]

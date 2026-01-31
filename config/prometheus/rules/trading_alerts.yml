@@ -1,0 +1,130 @@
+groups:
+  - name: trading_alerts
+    rules:
+      # System Alerts
+      - alert: InstanceDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Instance {{ $labels.instance }} down"
+          description: "{{ $labels.instance }} has been down for more than 1 minute."
+
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage on {{ $labels.instance }}"
+          description: "CPU usage is above 80% for more than 5 minutes."
+
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage on {{ $labels.instance }}"
+          description: "Memory usage is above 85% for more than 5 minutes."
+
+      - alert: LowDiskSpace
+        expr: (node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 < 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low disk space on {{ $labels.instance }}"
+          description: "Disk space is below 10% on {{ $labels.mountpoint }}."
+
+      # Database Alerts
+      - alert: PostgreSQLDown
+        expr: pg_up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "PostgreSQL is down"
+          description: "PostgreSQL database is not responding."
+
+      - alert: PostgreSQLHighConnections
+        expr: pg_stat_activity_count > 150
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "PostgreSQL high connection count"
+          description: "PostgreSQL has more than 150 active connections."
+
+      # Trading Service Alerts
+      - alert: TradingServiceDown
+        expr: up{job=~"arbitrage-engine|funding-farmer|whale-tracker|news-scraper"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Trading service {{ $labels.job }} is down"
+          description: "The trading service has been down for more than 2 minutes."
+
+      - alert: HighDailyLoss
+        expr: trading_daily_pnl_usd < -500
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High daily loss detected"
+          description: "Daily P&L is below -$500. Current: ${{ $value }}"
+
+      - alert: WhaleTransactionDetected
+        expr: whale_large_transaction_detected > 0
+        labels:
+          severity: info
+        annotations:
+          summary: "Large whale transaction detected"
+          description: "A whale transaction worth ${{ $value }} has been detected."
+
+      - alert: ArbitrageOpportunity
+        expr: arbitrage_opportunity_profit_percent > 1.0
+        for: 30s
+        labels:
+          severity: info
+        annotations:
+          summary: "High-profit arbitrage opportunity"
+          description: "Arbitrage opportunity with {{ $value }}% profit detected."
+
+      - alert: FundingRateSpike
+        expr: funding_rate_annualized > 50 or funding_rate_annualized < -50
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Extreme funding rate detected"
+          description: "Funding rate is {{ $value }}% annualized."
+
+      - alert: NewsSignalHighConfidence
+        expr: news_signal_confidence > 0.8
+        for: 0s
+        labels:
+          severity: info
+        annotations:
+          summary: "High-confidence news signal"
+          description: "News signal with {{ $value }} confidence detected."
+
+      - alert: RPCHighLatency
+        expr: rpc_request_duration_seconds > 5
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "RPC endpoint latency high"
+          description: "RPC request latency is above 5 seconds."
+
+      - alert: TooManyFailedTrades
+        expr: rate(trading_failed_trades_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High rate of failed trades"
+          description: "More than 10% of trades are failing."

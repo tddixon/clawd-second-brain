@@ -1,0 +1,38 @@
+[
+  {
+    "id": "leisure-hostel-001",
+    "fact": "Hostel in Krabi Town, Thailand - Leisure Hostel",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "active"
+  },
+  {
+    "id": "leisure-hostel-002",
+    "fact": "Hostelworld rank #7 in Ao Nang/Krabi area (2026-01-31)",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "active"
+  },
+  {
+    "id": "leisure-hostel-003",
+    "fact": "Rating: 8.8 Fabulous (447 reviews)",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "active"
+  },
+  {
+    "id": "leisure-hostel-004",
+    "fact": "Price: THB 225/night for Feb 1-2, 2026 - Lowest in area",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "active"
+  },
+  {
+    "id": "leisure-hostel-005",
+    "fact": "Location: Krabi Town - Budget option",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "active"
+  },
+  {
+    "id": "leisure-hostel-006",
+    "fact": "Competitor to Nomads - Budget option at THB 225, significantly below Nomads (THB 350)",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "active"
+  }
+]

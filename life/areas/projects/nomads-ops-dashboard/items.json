@@ -71,5 +71,17 @@
     "fact": "Git identity decision (2026-01-30): Trevor wants separate git identity for Clawd/subagent commits to distinguish from his own commits",
     "timestamp": "2026-01-30T13:55:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-013",
+    "fact": "Integration plan document created (2026-01-30 18:53 UTC): NOMADS-OPS-INTEGRATION-PLAN.md at /home/desktop/clawd/. 4-phase implementation plan for MEWS+Klaviyo+Poster sync into ops center as modular Next.js Route Groups. 3 isolated worktrees created for parallel development: nomads-ops-sync-mews-klaviyo, nomads-ops-sync-poster-mews, nomads-ops-sync-full-integration",
+    "timestamp": "2026-01-30T18:53:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-dashboard-014",
+    "fact": "Integration decision (2026-01-30 18:53 UTC): Trevor decided to save integration plan only, not execute - still finishing development on MEWS-Klaviyo sync and does not want to combine until it's done",
+    "timestamp": "2026-01-30T18:53:00Z",
+    "status": "active"
   }
 ]

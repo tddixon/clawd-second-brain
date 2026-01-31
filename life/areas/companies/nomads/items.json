@@ -89,7 +89,8 @@
     "id": "nomads-015",
     "fact": "Ao Nang Properties Market Position (2026-01-30): Nomads Ao Nang Beach rank #2 (THB 999-1,098, 9.6-9.8★), Base Ao Nang Beachfront rank #3-4 (THB 999, 9.4★). Both priced ~60% below market average of THB 2,484.",
     "timestamp": "2026-01-30T06:35:00Z",
-    "status": "active"
+    "status": "superseded",
+    "supersededBy": "nomads-026"
   },
   {
     "id": "nomads-016",
@@ -107,7 +108,8 @@
     "id": "nomads-018",
     "fact": "Ao Nang competitors (2026-01-30): K-Bunk AoNang Center (THB 870, 9.8★), Whoopers Hostel (THB 891, 9.2★), Global Beach Hostel (THB 630, 8.7★). Nomads priced premium vs competitors but maintains high ratings.",
     "timestamp": "2026-01-30T06:35:00Z",
-    "status": "active"
+    "status": "superseded",
+    "supersededBy": "nomads-028"
   },
   {
     "id": "nomads-019",
@@ -149,6 +151,166 @@
     "id": "nomads-025",
     "fact": "GitHub repos linked to ClickUp projects (2026-01-30): All main projects have repo links in task descriptions",
     "timestamp": "2026-01-30T16:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-026",
+    "fact": "Ao Nang Properties Market Position (2026-01-31): Nomads Ao Nang Beach rank #2 (THB 350, 9.6★, 2,977 reviews), Base Ao Nang Beachfront rank #3 (THB 260, 9.4★, 1,930 reviews). Both priced 60-90% below top competitor Sea Beach (THB 500).",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "superseded",
+    "supersededBy": "nomads-040"
+  },
+  {
+    "id": "nomads-027",
+    "fact": "Nomads Ao Nang Beach property details (2026-01-31): Hostelworld rank #2, Rating 9.6 Superb (2,977 reviews), Price THB 350/night for Feb 1-2, Location 600m from beach, 11.26km from center",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "superseded",
+    "supersededBy": "nomads-041"
+  },
+  {
+    "id": "nomads-028",
+    "fact": "Ao Nang competitors (2026-01-31): Sea Beach Hostel & Club (rank #1, THB 500, 9.4★), K-Bunk AoNang Center (rank #4, THB 441, 9.6★, 2,516 reviews), The Bananas (rank #5, THB 350, 9.8★ - highest rated), Pak-Up Hostel (rank #6, THB 299, 9.2★, 7,311 reviews), Leisure Hostel (rank #7, THB 225, 8.8★)",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "superseded",
+    "supersededBy": "nomads-038"
+  },
+  {
+    "id": "nomads-029",
+    "fact": "Base Ao Nang Beachfront property details (2026-01-31): Hostelworld rank #3, Rating 9.4 Superb (1,930 reviews), Price THB 260/night for Feb 1-2 (cheapest in Nomads portfolio), Direct beachfront, 11.13km from center",
+    "timestamp": "2026-01-31T01:03:00Z",
+    "status": "superseded",
+    "supersededBy": "nomads-042"
+  },
+  {
+    "id": "nomads-030",
+    "fact": "Hostelworld price monitoring discrepancy discovered (2026-01-31 05:45 UTC): Scraper reported THB 350 for Nomads Ao Nang Beach, but actual Hostelworld price confirmed via screenshot as THB 1,125 for Jan 31 → Feb 1, 2026 (775 THB difference, 69% underreporting)",
+    "timestamp": "2026-01-31T05:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-031",
+    "fact": "Hostelworld scraper JavaScript rendering issue identified (2026-01-31 05:44 UTC): Current price monitor fails to capture dynamic JavaScript pricing. Hostelworld loads prices via JavaScript after page load, requiring browser automation that handles rendering (Playwright/Selenium). Browser attempts failed due to unavailable browser profiles.",
+    "timestamp": "2026-01-31T05:44:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-032",
+    "fact": "Price monitoring rebuild decision (2026-01-31 05:52 UTC): Trevor approved both fixes - (1) Rebuild script with Playwright for real-time JavaScript pricing, (2) Set up daily cron at 6 AM Thailand time with Telegram notifications. Script will target today → tomorrow dates for real-time data.",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-033",
+    "fact": "Price monitoring sub-agents deployed (2026-01-31 05:52 UTC): 'fix-hostelworld-monitor' to rebuild script with Playwright headless browser, 'setup-hostelworld-cron' to configure daily 6 AM Thailand schedule with Telegram alerts. Both running with 5-minute timeout.",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-034",
+    "fact": "Klaviyo MEWS integration codebase review session launched (2026-01-31 05:44 UTC): Claude Code wingman session 'klaviyo-mews' opened via tmux. Task: Review current state and identify what's complete vs pending for guest lifecycle email automation sync. Path: /home/desktop/klaviyo-mews-integration",
+    "timestamp": "2026-01-31T05:44:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-035",
+    "fact": "Ao Nang Properties Market Position (2026-01-31): Nomads Ao Nang Beach rank #2 (THB 1,125 actual price for Jan 31-Feb 1, 2026, 9.6★, 2,977 reviews), Base Ao Nang Beachfront rank #3 (price TBD, 9.4★, 1,930 reviews). Pricing strategy competitive with high ratings. Previous price data of THB 350 was incorrect due to scraper error.",
+    "timestamp": "2026-01-31T05:45:00Z",
+    "status": "superseded",
+    "supersededBy": "nomads-040"
+  },
+  {
+    "id": "nomads-036",
+    "fact": "Hostelworld property IDs confirmed (2026-01-31 06:15 UTC): Nomads Ao Nang Beach (property id 316736, slug 'Nomads-Ao-Nang-Beach'), Base Ao Nang Beachfront (property id 322541, slug 'Base-Ao-Nang-Beachfront-by-Nomads')",
+    "timestamp": "2026-01-31T06:15:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-037",
+    "fact": "Playwright price monitor script created (2026-01-31 06:20 UTC): /home/desktop/clawd/scripts/hostelworld-price-monitor.cjs working with full JavaScript rendering. Script handles direct property page scraping for accurate pricing.",
+    "timestamp": "2026-01-31T06:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-038",
+    "fact": "Updated Ao Nang competitor set (2026-01-31 06:20 UTC): Balcony Party Hostel (id 272802, $24.82, 7.9★, 1,127 reviews), The Hangout Ao Nang (id 326955, $19.09, 8.7★, 244 reviews), iRest Ao Nang (id 100461, $24.82, 8.2★, 159 reviews), Whoopers Hostel (id 334981, $33.17, 9.2★, 90 reviews)",
+    "timestamp": "2026-01-31T06:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-039",
+    "fact": "Market price analysis updated (Aug 1, 2025 snapshot): Nomads properties avg $31.77/night vs competitors avg $25.47/night. Nomads priced 24.7% above market average with highest ratings (9.4-9.6 Superb). Whoopers is closest competitor in both price ($33.17) and rating (9.2★).",
+    "timestamp": "2026-01-31T06:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-040",
+    "fact": "Ao Nang Properties Market Position (2026-01-31 06:55 UTC): Base Ao Nang Beachfront rank #1 of 30 listings (฿899, 9.4★, 1,930 reviews) - top position in Krabi/Ao Nang search results. Nomads Ao Nang Beach rank #5 of 30 listings (฿1,098, 9.6★, 2,977 reviews). Both Nomads properties in top 5 (17% of top spots). Prices in THB as requested.",
+    "timestamp": "2026-01-31T06:55:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-026",
+      "nomads-035"
+    ]
+  },
+  {
+    "id": "nomads-041",
+    "fact": "Nomads Ao Nang Beach property details (2026-01-31 06:55 UTC): Hostelworld rank #5 of 30 listings, Rating 9.6 Superb (highest rated), Price ฿1,098/night in THB (29.5% above competitor avg of ฿771), 2,977 reviews. Top-rated property in Ao Nang market.",
+    "timestamp": "2026-01-31T06:55:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-027"
+    ]
+  },
+  {
+    "id": "nomads-042",
+    "fact": "Base Ao Nang Beachfront property details (2026-01-31 06:55 UTC): Hostelworld rank #1 of 30 listings - BEST POSITION, Rating 9.4 Superb, Price ฿899/night in THB, 1,930 reviews. 'Crushing it' with highest visibility in search results.",
+    "timestamp": "2026-01-31T06:55:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-029"
+    ]
+  },
+  {
+    "id": "nomads-043",
+    "fact": "Daily monitoring schedule updated (2026-01-31 06:55 UTC): Cron job updated to 2am UTC (9am Thailand time) for daily Hostelworld price + ranking checks. Previous schedule was 1am UTC (8am Thailand). Results saved to data/hostelworld-prices.jsonl with Telegram summary.",
+    "timestamp": "2026-01-31T06:55:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-017"
+    ]
+  },
+  {
+    "id": "nomads-044",
+    "fact": "Noho Ops integration requested (2026-01-31 12:37 UTC): Trevor requested sub-agent to plan integration of Mews Poster and Mews Klaviyo projects into Noho Ops. Requirements: build as different route groups within hostel slug route, add nav route groups to sidebar, single login for all features. Need deep dive to identify existing features to avoid breaking anything.",
+    "timestamp": "2026-01-31T12:37:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-045",
+    "fact": "Noho Ops existing features (2026-01-31 12:37 UTC context): Noho Ops already uses Poster API and Convex, has by-hostel slug/config page structure. Integrates with MEWS PMS for booking and revenue management.",
+    "timestamp": "2026-01-31T12:37:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-046",
+    "fact": "Noho Ops production-ready (2026-01-31 12:48 UTC): Sub-agent analysis confirmed all MEWS integrations (Poster, Klaviyo, PMS) complete in unified codebase at commit 61b5a61. Includes Poster POS (shift sync, transactions), MEWS PMS (payments, webhooks, uploads), Guardforce (deposit matching), encrypted credentials, RBAC, audit logging. Ready for production deployment.",
+    "timestamp": "2026-01-31T12:48:00Z",
+    "status": "superseded",
+    "supersededBy": "nomads-047"
+  },
+  {
+    "id": "nomads-047",
+    "fact": "Noho Ops integration correction (2026-01-31 14:45 UTC): Trevor corrected that Noho Ops integration has NOT been done. The three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches in the same repo. Previous analysis claiming work was complete was incorrect. Integration still needs to be planned and executed.",
+    "timestamp": "2026-01-31T14:45:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-046"
+    ]
+  },
+  {
+    "id": "nomads-048",
+    "fact": "Pivoted to crypto trading bot (2026-01-31 14:48 UTC): Trevor decided to pivot from Polymarket trading bot to crypto trading bot due to geographic restrictions - Polymarket not available in Thailand. Will use Chainlink repos and DEX-based trading approach.",
+    "timestamp": "2026-01-31T14:48:00Z",
     "status": "active"
   }
 ]

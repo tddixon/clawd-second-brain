@@ -34,5 +34,23 @@
     "fact": "Agent script updated to use Clawd's API token for task detection and execution",
     "timestamp": "2026-01-30T16:30:00Z",
     "status": "active"
+  },
+  {
+    "id": "clawd-007",
+    "fact": "Created tmux mobile optimization skill at /home/desktop/clawd/skills/tmux/SKILL.md (2026-01-30 19:17 UTC)",
+    "timestamp": "2026-01-30T19:17:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawd-008",
+    "fact": "Applied mobile-optimized tmux configuration to ~/.tmux.conf at Trevor's request (2026-01-30 19:30 UTC). Enabled mouse support, prefix Ctrl+a, vim navigation, top status bar, auto-renumber, tmux-resurrect, tmux-continuum, tmux-yank plugins",
+    "timestamp": "2026-01-30T19:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawd-009",
+    "fact": "Added mobile scroll shortcuts to tmux config at Trevor's request (2026-01-30 19:52 UTC): Alt+u/d for half-page scroll, Alt+↑/↓ for line scroll, Shift+↑/↓ for line scroll",
+    "timestamp": "2026-01-30T19:52:00Z",
+    "status": "active"
   }
 ]

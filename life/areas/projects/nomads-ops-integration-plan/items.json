@@ -1,0 +1,57 @@
+[
+  {
+    "id": "nomads-ops-integration-plan-001",
+    "fact": "Integration plan created (2026-01-30 18:51 UTC): 4-phase roadmap for MEWS+Klaviyo+Poster sync into Ops Center",
+    "timestamp": "2026-01-30T18:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-002",
+    "fact": "Plan document location: /home/desktop/clawd/NOMADS-OPS-INTEGRATION-PLAN.md",
+    "timestamp": "2026-01-30T18:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-003",
+    "fact": "Phase 1: Infrastructure (Week 1-2): Create worktrees, shared utils, .env config",
+    "timestamp": "2026-01-30T18:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-004",
+    "fact": "Phase 2: MEWS+Klaviyo Sync (Week 3-4): Guest lifecycle email sync",
+    "timestamp": "2026-01-30T18:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-005",
+    "fact": "Phase 3: Poster+MEWS Sync (Week 5-6): Revenue/POS data sync",
+    "timestamp": "2026-01-30T18:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-006",
+    "fact": "Phase 4: Full Integration (Week 7-8): Combined ops dashboard, testing, rollout",
+    "timestamp": "2026-01-30T18:51:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-007",
+    "fact": "3 isolated worktrees created (2026-01-30 18:46 UTC): nomads-ops-sync-mews-klaviyo/, nomads-ops-sync-poster-mews/, nomads-ops-sync-full-integration/",
+    "timestamp": "2026-01-30T18:46:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-008",
+    "fact": "Plan saved only - NOT executed (2026-01-30 18:53 UTC): Trevor still finishing MEWS-Klaviyo sync development, wants to combine when done",
+    "timestamp": "2026-01-30T18:53:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-ops-integration-plan-009",
+    "fact": "Integration analysis correction (2026-01-31 14:45 UTC): Sub-agent analysis incorrectly claimed that Noho Ops integration was complete. Trevor clarified that three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches in same repo. Integration has NOT been done and still needs to be planned and executed.",
+    "timestamp": "2026-01-31T14:45:00Z",
+    "status": "active",
+    "supersedes": []
+  }
+]

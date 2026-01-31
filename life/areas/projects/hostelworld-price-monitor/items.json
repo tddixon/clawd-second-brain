@@ -1,0 +1,144 @@
+[
+  {
+    "id": "hostelworld-monitor-001",
+    "fact": "Hostelworld price monitoring project initiated (2026-01-31) - Monitor Nomads Ao Nang Beach and Base Ao Nang Beachfront prices on Hostelworld",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-002",
+    "fact": "Price discrepancy discovered (2026-01-31 05:45 UTC): Scraper reported THB 350, actual Hostelworld price confirmed as THB 1,125 for Nomads Ao Nang Beach (775 THB difference, 69% underreporting)",
+    "timestamp": "2026-01-31T05:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-003",
+    "fact": "Root cause identified (2026-01-31 05:44 UTC): Hostelworld uses JavaScript to dynamically load prices after page load. Simple scrapers cannot capture real-time pricing.",
+    "timestamp": "2026-01-31T05:44:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-004",
+    "fact": "Technical decision: Migrate from Puppeteer/Agent Browser to Playwright (2026-01-31 05:52 UTC). Playwright provides headless browser with full JavaScript rendering for accurate price capture.",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-005",
+    "fact": "Sub-agent fix-hostelworld-monitor deployed (2026-01-31 05:52 UTC) - Task: Rebuild price monitoring script at /home/desktop/clawd/scripts/hostelworld-price-monitor.js using Playwright headless browser",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-006",
+    "fact": "Sub-agent setup-hostelworld-cron deployed (2026-01-31 05:52 UTC) - Task: Configure daily cron at 6 AM Thailand time with Telegram notifications",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-007",
+    "fact": "Cron job requirements: Daily execution at 6 AM Thailand time, send Telegram report with Nomads and Base prices, compare with previous day's prices, store data in JSON log",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "superseded",
+    "supersededBy": "hostelworld-monitor-019"
+  },
+  {
+    "id": "hostelworld-monitor-008",
+    "fact": "Script requirements: Use Playwright headless browser, target today → tomorrow dates, extract prices from Hostelworld search results page, handle JavaScript rendering, retry logic (3 attempts), price change detection",
+    "timestamp": "2026-01-31T05:52:00Z",
+    "status": "superseded",
+    "supersededBy": "hostelworld-monitor-018"
+  },
+  {
+    "id": "hostelworld-monitor-009",
+    "fact": "Playwright script created and tested (2026-01-31 06:20 UTC): /home/desktop/clawd/scripts/hostelworld-price-monitor.cjs working correctly",
+    "timestamp": "2026-01-31T06:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-010",
+    "fact": "Property IDs discovered via Playwright browser automation (2026-01-31 06:15 UTC): Nomads Ao Nang Beach (id 316736, slug 'Nomads-Ao-Nang-Beach'), Base Ao Nang Beachfront (id 322541, slug 'Base-Ao-Nang-Beachfront-by-Nomads')",
+    "timestamp": "2026-01-31T06:15:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-011",
+    "fact": "Location IDs discovered (2026-01-31 06:15 UTC): Ao Nang district (type 'citydistricts', id 449, cityid 1124), Krabi city id 1124",
+    "timestamp": "2026-01-31T06:15:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-012",
+    "fact": "Competitor properties added to monitoring (2026-01-31 06:20 UTC): Balcony Party Hostel (id 272802), The Hangout Ao Nang (id 326955), iRest Ao Nang (id 100461), Whoopers Hostel (id 334981)",
+    "timestamp": "2026-01-31T06:20:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-013",
+    "fact": "Price snapshot captured (Aug 1, 2025): Nomads Ao Nang Beach $34.94, Base Ao Nang Beachfront $28.61, Whoopers $33.17, Balcony Party $24.82, iRest $24.82, The Hangout $19.09",
+    "timestamp": "2026-01-31T06:20:00Z",
+    "status": "superseded",
+    "supersededBy": "hostelworld-monitor-021"
+  },
+  {
+    "id": "hostelworld-monitor-014",
+    "fact": "Market analysis (Aug 1, 2025 snapshot): Nomads properties avg $31.77/night vs competitors avg $25.47/night. Nomads priced 24.7% above market average with highest ratings (9.4-9.6)",
+    "timestamp": "2026-01-31T06:20:00Z",
+    "status": "superseded",
+    "supersededBy": "hostelworld-monitor-022"
+  },
+  {
+    "id": "hostelworld-monitor-015",
+    "fact": "Cron setup task failed (2026-01-31 06:25 UTC): setup-hostelworld-cron sub-agent timed out due to model unavailability. Manual cron configuration available: 0 9 * * 1 cd /home/desktop/clawd && node scripts/hostelworld-price-monitor.cjs --json >> /home/desktop/clawd/data/hostelworld-prices.jsonl 2>&1",
+    "timestamp": "2026-01-31T06:25:00Z",
+    "status": "superseded",
+    "supersededBy": "hostelworld-monitor-019"
+  },
+  {
+    "id": "hostelworld-monitor-016",
+    "fact": "Proposed weekly monitoring schedule: Mondays 9am UTC, appending results to JSONL file for historical tracking",
+    "timestamp": "2026-01-31T06:25:00Z",
+    "status": "superseded",
+    "supersededBy": "hostelworld-monitor-019"
+  },
+  {
+    "id": "hostelworld-monitor-017",
+    "fact": "Feature request: Search ranking tracking (2026-01-31 06:36 UTC): Trevor requested tracking of Hostelworld search result positions (1st, 2nd, 3rd etc.) in addition to prices",
+    "timestamp": "2026-01-31T06:36:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-018",
+    "fact": "Script enhanced with ranking tracking (2026-01-31 06:45 UTC): Updated /home/desktop/clawd/scripts/hostelworld-price-monitor.cjs to scrape search results page and capture property positions. Adds 'rank' and 'totalListings' fields to output.",
+    "timestamp": "2026-01-31T06:45:00Z",
+    "status": "active",
+    "supersedes": ["hostelworld-monitor-008"]
+  },
+  {
+    "id": "hostelworld-monitor-019",
+    "fact": "Cron job configured for daily monitoring (2026-01-31 06:50 UTC): Updated existing 'hostelworld-krabi-monitor' cron job to run at 2am UTC (9am Thailand time). Runs Playwright script with --save flag, saves to data/hostelworld-prices.jsonl, sends Telegram summary.",
+    "timestamp": "2026-01-31T06:50:00Z",
+    "status": "active",
+    "supersedes": ["hostelworld-monitor-007", "hostelworld-monitor-015", "hostelworld-monitor-016"]
+  },
+  {
+    "id": "hostelworld-monitor-020",
+    "fact": "Ranking data captured (Aug 1, 2025): 30 total listings in Krabi/Ao Nang search results. Rankings: Base Beachfront #1 (฿899), Balcony Party #3 (฿780), Nomads Ao Nang Beach #5 (฿1,098), Whoopers #9 (฿1,043), The Hangout #14 (฿482), iRest #26 (฿780).",
+    "timestamp": "2026-01-31T06:55:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-021",
+    "fact": "THB price snapshot captured (Aug 1, 2025): Nomads Ao Nang Beach ฿1,098, Base Ao Nang Beachfront ฿899, Whoopers Hostel ฿1,043, Balcony Party ฿780, iRest ฿780, The Hangout ฿482. Prices displayed in THB as requested.",
+    "timestamp": "2026-01-31T06:55:00Z",
+    "status": "active",
+    "supersedes": ["hostelworld-monitor-013"]
+  },
+  {
+    "id": "hostelworld-monitor-022",
+    "fact": "Market analysis updated (Aug 1, 2025 THB prices): Nomads avg ฿999 vs competitors avg ฿771. Nomads priced 29.5% above market average with highest ratings (9.4-9.6). Both Nomads properties in top 5 search rankings.",
+    "timestamp": "2026-01-31T06:55:00Z",
+    "status": "active",
+    "supersedes": ["hostelworld-monitor-014"]
+  }
+]

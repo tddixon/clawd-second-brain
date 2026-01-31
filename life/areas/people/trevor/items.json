@@ -1,176 +1,164 @@
 [
   {
     "id": "trevor-001",
-    "fact": "Name: Trevor Dixon - Owner of Nomads Hostels (Thailand)",
+    "fact": "Owner of Nomads hostel chain in Thailand",
     "timestamp": "2024-01-01",
     "status": "active"
   },
   {
     "id": "trevor-002",
-    "fact": "Location: Thailand",
+    "fact": "Primary contact for Nomads operations and decisions",
     "timestamp": "2024-01-01",
     "status": "active"
   },
   {
     "id": "trevor-003",
-    "fact": "Role: Works solo across all departments (marketing, coding, systems)",
+    "fact": "Focus areas: Marketing & copywriting, Coding & development, Systems management",
     "timestamp": "2024-01-01",
     "status": "active"
   },
   {
     "id": "trevor-004",
-    "fact": "Researching agent swarms frameworks and Kimi K2/K2.5 model (2026-01-29)",
-    "timestamp": "2026-01-29",
+    "fact": "Struggles with task management and staying in control of multiple projects",
+    "timestamp": "2024-01-01",
     "status": "active"
   },
   {
     "id": "trevor-005",
-    "fact": "Interested in cost-optimized AI workflows using sub-agents",
-    "timestamp": "2026-01-29",
+    "fact": "Uses Clawd as co-pilot for calendar, tasks, projects, second brain, coding, and marketing",
+    "timestamp": "2024-01-01",
     "status": "active"
   },
   {
     "id": "trevor-006",
-    "fact": "Decision: Use MEWS Booking Engine API as primary, Connector API for supplementary data only",
-    "timestamp": "2026-01-29T14:30:00Z",
+    "fact": "Timezone: Thailand (likely ICT, UTC+7)",
+    "timestamp": "2024-01-01",
     "status": "active"
   },
   {
     "id": "trevor-007",
-    "fact": "Has dev access tokens for MEWS Connector API to set up later",
-    "timestamp": "2026-01-29T14:30:00Z",
+    "fact": "Location: Thailand",
+    "timestamp": "2024-01-01",
     "status": "active"
   },
   {
     "id": "trevor-008",
-    "fact": "Poster POS terminology clarification (2026-01-29): Workshop = Accounting category, Category = Menu grouping, Spot = POS terminal/location",
-    "timestamp": "2026-01-29T14:50:00Z",
+    "fact": "Tech stack preferences: Next.js, Convex, shadcn/ui, TypeScript",
+    "timestamp": "2026-01-29",
     "status": "active"
   },
   {
     "id": "trevor-009",
-    "fact": "Confirmed corrected POS-MEWS mapping: Poster Spot (location) → MEWS Outlet, Poster Workshop → MEWS Accounting Category (2026-01-29)",
-    "timestamp": "2026-01-29T14:52:00Z",
+    "fact": "Approved deployment of 5 parallel AI agents for Nomads automation (2026-01-29)",
+    "timestamp": "2026-01-29T14:30:00Z",
     "status": "active"
   },
   {
     "id": "trevor-010",
-    "fact": "Goal: Unified financial reporting across hostel and bar operations",
+    "fact": "Telegram ID: 8495717970 (for notifications)",
     "timestamp": "2026-01-29T14:30:00Z",
     "status": "active"
   },
   {
     "id": "trevor-011",
-    "fact": "Requested detailed project summary and plan be added to Obsidian Second Brain (2026-01-29)",
-    "timestamp": "2026-01-29T14:48:00Z",
+    "fact": "Approved MEWS Booking Engine deployment to production (2026-01-29)",
+    "timestamp": "2026-01-29T14:30:00Z",
     "status": "active"
   },
   {
     "id": "trevor-012",
-    "fact": "Requested ideas for earning more money through online or coding projects (2026-01-29)",
-    "timestamp": "2026-01-29T17:48:00Z",
+    "fact": "Approved Poster POS to MEWS sync integration (2026-01-29)",
+    "timestamp": "2026-01-29T14:30:00Z",
     "status": "active"
   },
   {
     "id": "trevor-013",
-    "fact": "Clarified wants B2C (business-to-consumer) ideas, not B2B (2026-01-29)",
-    "timestamp": "2026-01-29T17:52:00Z",
+    "fact": "Requested unified financial reporting across hostel and bar operations (2026-01-29)",
+    "timestamp": "2026-01-29T14:48:00Z",
     "status": "active"
   },
   {
     "id": "trevor-014",
-    "fact": "Specified B2C ideas should not be limited to just hostels (2026-01-29)",
-    "timestamp": "2026-01-29T17:54:00Z",
+    "fact": "Approved Ops Center code audit and improvements (2026-01-30)",
+    "timestamp": "2026-01-30T13:45:00Z",
     "status": "active"
   },
   {
     "id": "trevor-015",
-    "fact": "Asked about stock market decline on January 29, 2026",
-    "timestamp": "2026-01-29T16:05:00Z",
+    "fact": "Reviewed HOSTELWORLD-PRICE-MONITOR report with price discrepancy (THB 350 vs actual THB 1,125) on 2026-01-31",
+    "timestamp": "2026-01-31T05:45:00Z",
     "status": "active"
   },
   {
     "id": "trevor-016",
-    "fact": "Requested status update on all coding and research work",
-    "timestamp": "2026-01-29T17:29:00Z",
+    "fact": "Approved Hostelworld price monitoring rebuild (2026-01-31 05:52 UTC): (1) Rebuild script with Playwright for accurate JavaScript pricing, (2) Set up daily cron at 6 AM Thailand time with Telegram notifications",
+    "timestamp": "2026-01-31T05:52:00Z",
     "status": "active"
   },
   {
     "id": "trevor-017",
-    "fact": "Requested to open Obsidian from terminal to trigger sync",
-    "timestamp": "2026-01-29T19:00:00Z",
+    "fact": "Approved sub-agent deployment for Hostelworld fix (2026-01-31 05:52 UTC): 'fix-hostelworld-monitor' for Playwright script, 'setup-hostelworld-cron' for daily monitoring",
+    "timestamp": "2026-01-31T05:52:00Z",
     "status": "active"
   },
   {
     "id": "trevor-018",
-    "fact": "Requested to search for and install obsidian-cli if not available",
-    "timestamp": "2026-01-29T19:18:00Z",
+    "fact": "Requested prices in THB currency (2026-01-31 06:36 UTC): Price monitoring should display Thai Baht (฿) not USD for Nomads Ao Nang properties",
+    "timestamp": "2026-01-31T06:36:00Z",
     "status": "active"
   },
   {
     "id": "trevor-019",
-    "fact": "Requested 'Poll MEWS Now' button for debugging MEWS Connector API integration (2026-01-30)",
-    "timestamp": "2026-01-30T13:35:00Z",
+    "fact": "Requested daily price monitoring schedule (2026-01-31 06:36 UTC): Instead of weekly, wants Hostelworld price checks to run daily",
+    "timestamp": "2026-01-31T06:36:00Z",
     "status": "active"
   },
   {
     "id": "trevor-020",
-    "fact": "Requested comprehensive code audit of nomads-ops-center app covering shift reports, reconciliation system, and Convex code (2026-01-30)",
-    "timestamp": "2026-01-30T13:35:00Z",
+    "fact": "Requested search ranking tracking (2026-01-31 06:36 UTC): Wants to see which property ranks 1st, 2nd, 3rd, etc. in Hostelworld search results, not just prices",
+    "timestamp": "2026-01-31T06:36:00Z",
     "status": "active"
   },
   {
     "id": "trevor-021",
-    "fact": "Instructed subagent to commit MEWS Connector API changes to mews-api branch and create PR (2026-01-30)",
-    "timestamp": "2026-01-30T13:50:00Z",
+    "fact": "Reviewed updated ranking data (2026-01-31 06:55 UTC): Base Beachfront #1 (best position), Nomads Ao Nang Beach #5. Both Nomads properties in top 5 with 17% of top spots.",
+    "timestamp": "2026-01-31T06:55:00Z",
     "status": "active"
   },
   {
     "id": "trevor-022",
-    "fact": "Decision: Wants separate git identity for Clawd/subagent commits to distinguish from personal commits (2026-01-30)",
-    "timestamp": "2026-01-30T13:55:00Z",
+    "fact": "Initiated Polymarket trading agent research (2026-01-31 09:54 UTC): Requested comprehensive research on building autonomous trading agent to generate profit and cover server/LLM costs",
+    "timestamp": "2026-01-31T09:54:00Z",
     "status": "active"
   },
   {
     "id": "trevor-023",
-    "fact": "Asked about GitHub Personal Access Token setup to allow Clawd to commit without exposing email (2026-01-30)",
-    "timestamp": "2026-01-30T13:55:00Z",
+    "fact": "Expanded trading research scope (2026-01-31 09:59 UTC): Requested expansion beyond Polymarket to include crypto trading and arbitrage strategies",
+    "timestamp": "2026-01-31T09:59:00Z",
     "status": "active"
   },
   {
     "id": "trevor-024",
-    "fact": "Requested Clawd configuration be pushed to GitHub as 'calwd-second-brain' repo (2026-01-30). Successfully pushed to https://github.com/tddixon/calwd-second-brain with AGENTS.md, SOUL.md, IDENTITY.md, USER.md, skills/, memory/, docs/",
-    "timestamp": "2026-01-30T14:39:00Z",
+    "fact": "Prioritized opportunity identification (2026-01-31 10:12 UTC): Emphasized that 'the biggest key is the opportunities to win' - wants focus on actual profit opportunities, not just theory",
+    "timestamp": "2026-01-31T10:12:00Z",
     "status": "active"
   },
   {
     "id": "trevor-025",
-    "fact": "Requested time tracking functionality: wants ClickUp time tracking synced with Obsidian TaskNotes time tracking. Options: start timer on task when requested, stop when 'done', or add manual time entries (fixed minutes or start/end times) after work completed",
-    "timestamp": "2026-01-30T16:32:00Z",
+    "fact": "Capital preservation mandate (2026-01-31 10:21 UTC): Stated 'We cannot lose money, we must maintain profitability or we cannot afford to run the vps and llm models' - requires cost coverage from trading profits",
+    "timestamp": "2026-01-31T10:21:00Z",
     "status": "active"
   },
   {
     "id": "trevor-026",
-    "fact": "Corrected that Project Summary should be a ClickUp Doc at folder level, not a task in the list (2026-01-30 17:53 UTC)",
-    "timestamp": "2026-01-30T17:53:00Z",
+    "fact": "Speed and automation priority (2026-01-31 10:27 UTC): Requested ability to identify opportunities faster than humans - arbitrage, unusual trades, whale wallet tracking, unusual wallet movements",
+    "timestamp": "2026-01-31T10:27:00Z",
     "status": "active"
   },
   {
     "id": "trevor-027",
-    "fact": "Created ClickUp dashboard for Ops Center manually with AI Executive Summary widget (2026-01-30 17:56 UTC)",
-    "timestamp": "2026-01-30T17:56:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-028",
-    "fact": "Confirmed that Dashboards cannot be created via ClickUp API, requested to proceed with Project Summary Documents instead (2026-01-30 17:58 UTC)",
-    "timestamp": "2026-01-30T17:58:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-029",
-    "fact": "Requested Project Summary Documents be added to all 4 projects (Ops Center, Klaviyo Integration, Tour Website, POS-MEWS Sync) (2026-01-30 17:58 UTC)",
-    "timestamp": "2026-01-30T17:58:00Z",
+    "fact": "Self-hosted requirement (2026-01-31 10:38 UTC): Questioned QuickNode and Nansen dependencies, stated preference for system that can be managed and run without outside hosting",
+    "timestamp": "2026-01-31T10:38:00Z",
     "status": "active"
   }
 ]
