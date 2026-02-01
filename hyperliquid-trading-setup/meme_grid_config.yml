@@ -1,0 +1,244 @@
+# Hummingbot Grid Trading Strategy Configuration
+# HYPERLIQUID TESTNET ONLY
+
+# ============================================
+# STRATEGY IDENTIFIER
+# ============================================
+strategy: grid_trading
+strategy_name: meme_grid_v1
+
+# ============================================
+# EXCHANGE
+# ============================================
+exchange: hyperliquid_testnet
+testnet: true
+
+# ============================================
+# TRADING ASSETS
+# ============================================
+assets:
+  - PEPE
+  - WIF
+  - BONK
+
+# Additional meme coins to consider:
+# - SHIB
+# - DOGE
+# - FLOKI
+# - PEPE
+
+# ============================================
+# GRID PARAMETERS
+# ============================================
+
+# Number of grid levels (total buy + sell orders)
+grid_levels: 10
+
+# Price range percentage (0.05 = ±5% from current price)
+price_range: 0.05
+
+# Allocation per asset in USDC
+allocation_per_asset: 25
+
+# Total allocation (sum of all assets)
+total_allocation: 75
+
+# Grid spacing type: ARITHMETIC or GEOMETRIC
+grid_spacing: GEOMETRIC
+
+# ============================================
+# ORDER PARAMETERS
+# ============================================
+
+# Order type: LIMIT (recommended for grid)
+order_type: LIMIT
+
+# Minimum order size in USDC
+min_order_size: 5
+
+# Order expiration time (seconds, 0 = GTC)
+order_expiration: 86400
+
+# Allow partial fills
+allow_partial_fills: true
+
+# ============================================
+# LEVERAGE
+# ============================================
+
+# Leverage multiplier (1 = no leverage)
+leverage: 1
+
+# Use isolated margin (true) or cross margin (false)
+isolated_margin: true
+
+# ============================================
+# GRID BEHAVIOR
+# ============================================
+
+# How to handle grid when price moves out of range
+# Options: EXPAND, RESET, STOP, NOTHING
+out_of_range_action: RESET
+
+# Percentage to expand grid range if out of range (0.10 = 10%)
+expand_range_pct: 0.10
+
+# How often to refresh grid (minutes)
+grid_refresh_interval: 60
+
+# Auto-rebalance grid if price moves significantly
+auto_rebalance: true
+
+# Rebalance threshold (0.03 = 3% price move)
+rebalance_threshold: 0.03
+
+# ============================================
+# RISK MANAGEMENT
+# ============================================
+
+# Stop loss percentage (0.15 = 15%)
+stop_loss_pct: 0.15
+
+# Take profit percentage (0.10 = 10%)
+take_profit_pct: 0.10
+
+# Maximum drawdown before stopping (0.20 = 20%)
+max_drawdown_pct: 0.20
+
+# Maximum daily loss (USDC)
+max_daily_loss: 30
+
+# ============================================
+# POSITION MANAGEMENT
+# ============================================
+
+# Maximum positions per asset
+max_positions_per_asset: 5
+
+# Maximum total positions across all assets
+max_total_positions: 15
+
+# Position sizing: EQUAL or WEIGHTED
+position_sizing: EQUAL
+
+# ============================================
+# GRID PLACEMENT
+# ============================================
+
+# Place both buy and sell orders on initialization
+place_both_sides: true
+
+# Grid placement bias: NEUTRAL, LONG, SHORT
+grid_bias: NEUTRAL
+
+# Percentage bias (0.10 = 10% more orders on biased side)
+bias_pct: 0.10
+
+# ============================================
+# MONITORING & ALERTS
+# ============================================
+
+# Enable position monitoring
+enable_monitoring: true
+
+# Monitor interval (seconds)
+monitor_interval: 30
+
+# Alert on filled orders
+alert_on_fill: true
+
+# Alert on out-of-range price
+alert_on_out_of_range: true
+
+# Alert on stop loss trigger
+alert_on_stop_loss: true
+
+# ============================================
+# GRID OPTIMIZATION
+# ============================================
+
+# Enable grid auto-tuning
+enable_auto_tuning: false
+
+# Tuning interval (minutes)
+tuning_interval: 1440
+
+# Optimize based on: VOLUME, VOLATILITY, VOLUME_VOLATILITY
+optimization_metric: VOLUME_VOLATILITY
+
+# ============================================
+# PROFIT TRACKING
+# ============================================
+
+# Track realized P&L
+track_pnl: true
+
+# Track unrealized P&L
+track_unrealized_pnl: true
+
+# P&L update interval (seconds)
+pnl_update_interval: 60
+
+# ============================================
+# LOGGING
+# ============================================
+
+# Log level: DEBUG, INFO, WARNING, ERROR
+log_level: INFO
+
+# Log grid placement
+log_grid_placement: true
+
+# Log filled orders
+log_fills: true
+
+# Log grid refresh events
+log_grid_refresh: true
+
+# Log P&L updates
+log_pnl: true
+
+# ============================================
+# ADVANCED OPTIONS
+# ============================================
+
+# Dry run mode (simulates trades without execution)
+dry_run: false
+
+# Use trailing stop loss
+trailing_stop_loss: false
+
+# Trailing stop distance (0.05 = 5%)
+trailing_stop_distance: 0.05
+
+# Enable inventory management
+inventory_management: false
+
+# Target inventory delta (USDC)
+target_inventory_delta: 0
+
+# ============================================
+# TIME SETTINGS
+# ============================================
+
+# Trading hours (24/7 for crypto, but can restrict)
+# Format: HH:MM-HH:MM
+trading_hours: 00:00-23:59
+
+# Timezone (UTC)
+timezone: UTC
+
+# ============================================
+# SAFETY WARNINGS
+# ============================================
+
+# IMPORTANT:
+# - This config is for TESTNET ONLY
+# - No real money is at risk
+# - Trade sizes are conservative (25 USDC per asset)
+# - Stop losses are enabled (15%)
+# - Grid is wide (±5%) to avoid getting stopped out
+# - Monitor positions closely
+# - Meme coins are volatile - expect swings
+# - Paper trade until comfortable
+# - Start with 1-2 assets before expanding

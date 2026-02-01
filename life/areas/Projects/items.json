@@ -1,175 +1,28 @@
 {
   "items": [
     {
-      "id": "agent-swarm-1",
-      "entity": "agent-swarm",
-      "type": "status",
-      "content": "Spawned to build Agent Swarm orchestration system for Nomads hostel operations",
-      "timestamp": "2026-01-29T13:29:00Z",
-      "source": "conversation",
-      "status": "active"
-    },
-    {
-      "id": "command-center-1",
-      "entity": "command-center",
-      "type": "status",
-      "content": "Spawned to build Kanban dashboard for monitoring AI agent work and projects",
-      "timestamp": "2026-01-29T13:51:00Z",
-      "source": "conversation",
-      "status": "active"
-    },
-    {
-      "id": "mews-native-booking-1",
-      "entity": "mews-native-booking",
-      "type": "status",
-      "content": "Native MEWS booking experience being added to nomads-asia-tour-convex for inline room pricing and availability",
-      "timestamp": "2026-01-29T14:10:00Z",
-      "source": "conversation",
-      "status": "active"
-    },
-    {
-      "id": "klaviyo-enhancement-1",
-      "entity": "klaviyo-enhancement",
+      "id": "hostelworld-monitor-008",
+      "entity": "hostelworld-monitor",
       "type": "milestone",
-      "content": "Marketing automation enhancement completed with 12 new lifecycle events, guest analytics, and A/B testing framework",
-      "timestamp": "2026-01-29T13:49:00Z",
-      "source": "conversation",
-      "status": "completed"
+      "content": "Price monitoring rebuilt with Playwright, discovered 69% price underreporting (THB 350 vs THB 1,125)",
+      "timestamp": "2026-02-01T04:30:00Z",
+      "source": "weekly_synthesis"
     },
     {
-      "id": "revenue-optimizer-1",
-      "entity": "revenue-optimizer",
+      "id": "hostelworld-monitor-009",
+      "entity": "hostelworld-monitor",
       "type": "milestone",
-      "content": "Dynamic pricing engine completed with Thailand-specific event intelligence (Full Moon Party, Songkran, Loy Krathong)",
-      "timestamp": "2026-01-29T13:52:00Z",
-      "source": "conversation",
-      "status": "completed"
+      "content": "Daily cron scheduled to 6 AM Thailand time (superseded hostelworld-monitor-007)",
+      "timestamp": "2026-02-01T04:30:00Z",
+      "source": "weekly_synthesis"
     },
     {
-      "id": "guest-portal-1",
-      "entity": "guest-portal",
+      "id": "nomads-market-position-1",
+      "entity": "Nomads",
       "type": "milestone",
-      "content": "Mobile-first guest experience portal completed with QR check-in, digital guidebook, service requests, and community features",
-      "timestamp": "2026-01-29T13:54:00Z",
-      "source": "conversation",
-      "status": "completed"
-    },
-    {
-      "id": "ops-dashboard-1",
-      "entity": "ops-dashboard",
-      "type": "milestone",
-      "content": "Operations dashboard completed with multi-property overview, task management, inventory tracking, and staff scheduling",
-      "timestamp": "2026-01-29T13:58:00Z",
-      "source": "conversation",
-      "status": "completed"
-    },
-    {
-      "id": "review-manager-1",
-      "entity": "review-manager",
-      "type": "milestone",
-      "content": "Review manager completed with multi-platform aggregation, sentiment analysis, and AI response drafting",
-      "timestamp": "2026-01-29T13:56:00Z",
-      "source": "conversation",
-      "status": "completed"
-    },
-    {
-      "id": "mews-pos-sync-1",
-      "entity": "mews-pos-sync",
-      "type": "milestone",
-      "content": "Poster POS to MEWS outlet sync system completed with workshop→category and spot→outlet mapping",
-      "timestamp": "2026-01-29T13:56:00Z",
-      "source": "conversation",
-      "status": "completed"
-    },
-    {
-      "id": "fix-pos-mapping-1",
-      "entity": "fix-pos-mapping",
-      "type": "milestone",
-      "content": "Fixed Poster POS mapping: Spot (location) → MEWS Outlet, Workshop → MEWS Accounting Category",
-      "timestamp": "2026-01-29T15:19:00Z",
-      "source": "conversation",
-      "status": "completed"
-    },
-    {
-      "id": "nomads-ops-center-1",
-      "entity": "nomads-ops-center",
-      "type": "repository",
-      "content": "GitHub repo: https://github.com/tddixon/nomads-ops-center - Command center dashboard for Nomads operations",
-      "timestamp": "2026-01-30T17:00:00Z",
-      "source": "conversation",
-      "status": "active"
-    },
-    {
-      "id": "klaviyo-mews-integration-1",
-      "entity": "klaviyo-mews-integration",
-      "type": "repository",
-      "content": "GitHub repo: https://github.com/tddixon/klaviyo-mews-integration - MEWS to Klaviyo lifecycle email automation",
-      "timestamp": "2026-01-30T17:00:00Z",
-      "source": "conversation",
-      "status": "active"
-    },
-    {
-      "id": "nomads-asia-tour-convex-1",
-      "entity": "nomads-asia-tour-convex",
-      "type": "repository",
-      "content": "GitHub repo: https://github.com/tddixon/nomads-asia-tour-convex - Tour booking website with native MEWS booking",
-      "timestamp": "2026-01-30T17:00:00Z",
-      "source": "conversation",
-      "status": "active"
-    },
-    {
-      "id": "ops-center-clickup-1",
-      "entity": "ops-center",
-      "type": "clickup_project",
-      "content": "ClickUp list created (ID: 901710408191) for Ops Center development work",
-      "timestamp": "2026-01-30T17:04:00Z",
-      "source": "clickup_creation",
-      "status": "active"
-    },
-    {
-      "id": "klaviyo-integration-clickup-1",
-      "entity": "klaviyo-integration",
-      "type": "clickup_project",
-      "content": "ClickUp list created (ID: 901710408192) for Klaviyo Integration development work",
-      "timestamp": "2026-01-30T17:04:00Z",
-      "source": "clickup_creation",
-      "status": "active"
-    },
-    {
-      "id": "tour-website-clickup-1",
-      "entity": "tour-website",
-      "type": "clickup_project",
-      "content": "ClickUp list created (ID: 901710408193) for Tour Website development work",
-      "timestamp": "2026-01-30T17:04:00Z",
-      "source": "clickup_creation",
-      "status": "active"
-    },
-    {
-      "id": "pos-mews-sync-clickup-1",
-      "entity": "pos-mews-sync",
-      "type": "clickup_project",
-      "content": "ClickUp list created (ID: 901710408195) for POS-MEWS Sync development work",
-      "timestamp": "2026-01-30T17:04:00Z",
-      "source": "clickup_creation",
-      "status": "active"
-    },
-    {
-      "id": "mews-connector-pr-1",
-      "entity": "nomads-ops-center",
-      "type": "pull_request",
-      "content": "PR #8 pending review: MEWS Connector API implementation",
-      "timestamp": "2026-01-30T17:00:00Z",
-      "source": "conversation",
-      "status": "pending_review"
-    },
-    {
-      "id": "native-booking-pr-1",
-      "entity": "nomads-asia-tour-convex",
-      "type": "pull_request",
-      "content": "PR #32 pending review: Native MEWS Booking implementation",
-      "timestamp": "2026-01-30T17:00:00Z",
-      "source": "conversation",
-      "status": "pending_review"
+      "content": "Market position - Base Ao Nang #2, Nomads Ao Nang Beach #5 (top 5 of 30), 9.6★ highest rated",
+      "timestamp": "2026-02-01T04:30:00Z",
+      "source": "weekly_synthesis"
     }
   ]
 }

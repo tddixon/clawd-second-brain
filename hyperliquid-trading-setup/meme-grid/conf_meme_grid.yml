@@ -1,0 +1,41 @@
+# Meme Grid Trading Strategy Config
+# Place in: ~/hummingbot/meme-grid/conf/conf_meme_grid.yml
+
+template_version: 1
+strategy: pure_market_making
+
+# Exchange and market
+exchange: hyperliquid_testnet
+market: PEPE-USD
+
+# Grid configuration
+bid_spread: 0.02  # 2% below mid price
+ask_spread: 0.02  # 2% above mid price
+order_refresh_time: 30.0  # Refresh orders every 30 seconds
+
+# Order sizes
+order_amount: 25.0  # USDC per order
+min_order_size: 10.0
+max_order_size: 50.0
+
+# Risk management
+max_position_size: 100.0  # Max USDC position
+max_position_ratio: 0.5  # 50% of balance max
+
+# Take profit / Stop loss
+take_profit_enabled: true
+take_profit_price: 0.10  # 10% profit target
+stop_loss_enabled: true
+stop_loss_price: 0.05  # 5% stop loss
+
+# Inventory management
+inventory_target_base_pct: 50.0  # Target 50% base asset
+
+# Logging
+log_level: INFO
+
+# Additional meme assets to monitor (uncomment to use)
+# additional_markets:
+#   - WIF-USD
+#   - BONK-USD
+#   - FLOKI-USD

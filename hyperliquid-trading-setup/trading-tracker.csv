@@ -1,0 +1,39 @@
+Date/Time,Strategy,Asset/Pair,Action,Entry Price,Exit Price,Position Size (USDC),P&L (USDC),P&L (%),Fees (USDC),Notes/Learnings
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+,,,BUY,,,,,,,,
+,,,SELL,,,,,,,,
+
+# Summary Section
+# ============================================
+# Daily P&L:
+# Total Trades:
+# Win Rate (%):
+# Largest Win:
+# Largest Loss:
+# Average Trade:
+# Fees Paid:
+# Net P&L:
+
+# Instructions:
+# 1. Fill in trade details as they occur
+# 2. Use "funding" or "meme" for Strategy column
+# 3. Asset format: BTC-USDT, PEPE-USDC, etc.
+# 4. Action: BUY or SELL
+# 5. Prices should be in USDT/USDC
+# 6. P&L (%) = (Exit Price - Entry Price) / Entry Price * 100
+# 7. Update summary section daily

@@ -38,9 +38,16 @@
   },
   {
     "id": "balcony-party-hostel-007",
-    "fact": "Hostelworld ranking (2026-01-31 07:25 UTC): #3 of 30 properties in Ao Nang search. Price THB 780/night (Aug 1, 2025), Rating 7.9 Very Good (1,127 reviews). Positioned as budget-friendly party option.",
+    "fact": "Hostelworld ranking (2026-01-31 07:25 UTC): #9 of 30 properties in Ao Nang search. Price THB 780/night (Aug 1, 2025), Rating 7.9 Very Good (1,127 reviews). Positioned as budget-friendly party option.",
     "timestamp": "2026-01-31T07:25:00Z",
+    "status": "superseded",
+    "supersededBy": "balcony-party-hostel-008"
+  },
+  {
+    "id": "balcony-party-hostel-008",
+    "fact": "Hostelworld ranking (2026-02-01 02:01 UTC): #9 of 30 properties in Ao Nang search for Feb 2, 2026. Price ฿700/night (was ฿778, -10% discount). Rating 7.9 Very Good (1,127 reviews). Maintains position with aggressive discounting strategy.",
+    "timestamp": "2026-02-01T02:01:00Z",
     "status": "active",
-    "supersedes": ["balcony-party-hostel-004"]
+    "supersedes": ["balcony-party-hostel-007"]
   }
 ]

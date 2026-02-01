@@ -5,6 +5,9 @@
       "headers": {
         "CONTEXT7_API_KEY": "ctx7sk-adbf30ec-dabe-4a6f-83de-d6e03912b517"
       }
+    },
+    "playwright": {
+      "command": "npx @playwright/mcp@latest"
     }
   },
   "imports": []

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "clawdbot-security-audit-001",
+    "fact": "Clawdbot security audit tool attempted to be installed (2026-02-01 17:35 UTC): User requested 'clawdhub install Clawdbot Security Audit' and tried 'clawdhub install lxgicstudios/clawdbot-security' and 'npm install -g clawdbot-security-audit' - installation methods did not find the package on ClawdHub or npm",
+    "timestamp": "2026-02-01T17:40:00Z",
+    "status": "blocked"
+  }
+]

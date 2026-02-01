@@ -1,0 +1,179 @@
+# Hummingbot Funding Arbitrage Strategy Configuration
+# HYPERLIQUID TESTNET ONLY
+
+# ============================================
+# STRATEGY IDENTIFIER
+# ============================================
+strategy: funding_arbitrage
+strategy_name: funding_arb_v1
+
+# ============================================
+# EXCHANGES
+# ============================================
+exchanges:
+  - exchange: hyperliquid_testnet
+    enabled: true
+    testnet: true
+    # For comparison purposes
+  - exchange: binance_testnet
+    enabled: true
+    testnet: true
+
+# ============================================
+# TRADING ASSETS
+# ============================================
+assets:
+  - BTC
+  - ETH
+
+# Additional assets can be added:
+# - SOL
+# - DOGE
+# - LINK
+
+# ============================================
+# FUNDING RATE PARAMETERS
+# ============================================
+
+# Minimum funding rate difference to trigger trade (0.01 = 1%)
+min_funding_diff: 0.01
+
+# Check interval (seconds)
+check_interval: 60
+
+# Trade size per position (USDC)
+trade_size: 50
+
+# Maximum total position size across all assets (USDC)
+max_total_position: 200
+
+# Maximum position size per asset (USDC)
+max_position_per_asset: 100
+
+# ============================================
+# ORDER PARAMETERS
+# ============================================
+
+# Order type: MARKET or LIMIT
+order_type: MARKET
+
+# Slippage tolerance (0.005 = 0.5%)
+slippage_tolerance: 0.005
+
+# Order timeout (seconds)
+order_timeout: 30
+
+# ============================================
+# LEVERAGE
+# ============================================
+
+# Leverage multiplier (1 = no leverage)
+leverage: 1
+
+# Use isolated margin (true) or cross margin (false)
+isolated_margin: true
+
+# ============================================
+# RISK MANAGEMENT
+# ============================================
+
+# Stop loss percentage (0.05 = 5%)
+stop_loss_pct: 0.05
+
+# Take profit percentage (0.03 = 3%)
+take_profit_pct: 0.03
+
+# Maximum open positions at one time
+max_open_positions: 2
+
+# Maximum daily trades
+max_daily_trades: 20
+
+# Maximum loss per day (USDC)
+max_daily_loss: 50
+
+# ============================================
+# ENTRY CONDITIONS
+# ============================================
+
+# Minimum funding rate to consider entering (0.001 = 0.1%)
+min_funding_rate: 0.001
+
+# Confirmation time (wait this many seconds after trigger)
+confirmation_time: 10
+
+# Require price action confirmation
+require_price_confirmation: true
+
+# ============================================
+# EXIT CONDITIONS
+# ============================================
+
+# Exit when funding rate drops below this threshold
+exit_funding_threshold: 0.0005
+
+# Exit after this many seconds regardless
+max_position_time: 3600
+
+# Exit when P&L reaches target
+pnl_target_pct: 0.03
+
+# ============================================
+# MONITORING & ALERTS
+# ============================================
+
+# Enable position monitoring
+enable_monitoring: true
+
+# Monitor interval (seconds)
+monitor_interval: 30
+
+# Alert on failed orders
+alert_on_failure: true
+
+# Alert on large losses (USDC)
+large_loss_threshold: 20
+
+# ============================================
+# LOGGING
+# ============================================
+
+# Log level: DEBUG, INFO, WARNING, ERROR
+log_level: INFO
+
+# Log all order placements
+log_orders: true
+
+# Log funding rate checks
+log_funding_checks: true
+
+# Log P&L updates
+log_pnl: true
+
+# ============================================
+# ADVANCED OPTIONS
+# ============================================
+
+# Dry run mode (simulates trades without execution)
+dry_run: false
+
+# Use smart order routing
+smart_order_routing: false
+
+# Minimum time between same-direction trades (seconds)
+cooldown_period: 300
+
+# Enable automatic rebalancing
+auto_rebalance: false
+
+# ============================================
+# SAFETY WARNINGS
+# ============================================
+
+# IMPORTANT:
+# - This config is for TESTNET ONLY
+# - No real money is at risk
+# - Trade sizes are conservative (50 USDC)
+# - Stop losses are enabled
+# - Monitor P&L closely
+# - Paper trade until comfortable

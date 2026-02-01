@@ -82,14 +82,14 @@
   },
   {
     "id": "hostelworld-monitor-014",
-    "fact": "Market analysis (Aug 1, 2025 snapshot): Nomads properties avg $31.77/night vs competitors avg $25.47/night. Nomads priced 24.7% above market average with highest ratings (9.4-9.6)",
+    "fact": "Market analysis (Aug 1, 2025 snapshot): Nomads properties avg $31.77/night vs competitors avg $25.47/night. Nomads priced 24.7% above market average with highest ratings (9.4-9.6).",
     "timestamp": "2026-01-31T06:20:00Z",
     "status": "superseded",
     "supersededBy": "hostelworld-monitor-022"
   },
   {
     "id": "hostelworld-monitor-015",
-    "fact": "Cron setup task failed (2026-01-31 06:25 UTC): setup-hostelworld-cron sub-agent timed out due to model unavailability. Manual cron configuration available: 0 9 * * 1 cd /home/desktop/clawd && node scripts/hostelworld-price-monitor.cjs --json >> /home/desktop/clawd/data/hostelworld-prices.jsonl 2>&1",
+    "fact": "Cron setup task failed (2026-01-31 06:25 UTC): setup-hostelworld-cron sub-agent timed out due to model unavailability. Manual cron configuration available: 0 9 * * * 1 cd /home/desktop/clawd && node scripts/hostelworld-price-monitor.cjs --json >> /home/desktop/clawd/data/hostelworld-prices.jsonl 2>&1",
     "timestamp": "2026-01-31T06:25:00Z",
     "status": "superseded",
     "supersededBy": "hostelworld-monitor-019"
@@ -140,5 +140,17 @@
     "timestamp": "2026-01-31T06:55:00Z",
     "status": "active",
     "supersedes": ["hostelworld-monitor-014"]
+  },
+  {
+    "id": "hostelworld-monitor-023",
+    "fact": "Price monitoring run completed (2026-02-01 02:01 UTC): Daily monitoring for Feb 2, 2026 check-in. Data saved to data/hostelworld-prices.jsonl. Base Ao Nang maintaining #2 position with 10% discount. Nomads Ao Nang Beach not appearing in search results.",
+    "timestamp": "2026-02-01T02:01:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-024",
+    "fact": "Competitor pricing update (2026-02-01 02:01 UTC): Whoopers Hostel ฿802 (25% off from ฿1,069), Balcony Party ฿700 (10% off from ฿778), The Hangout ฿600 (10% off from ฿667). All competitors showing discount strategies.",
+    "timestamp": "2026-02-01T02:01:00Z",
+    "status": "active"
   }
 ]

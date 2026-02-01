@@ -1,5 +1,11 @@
 [
   {
+    "id": "microsoft-account-creation-001",
+    "fact": "Hotmail account creation started for Cameron Jones using Playwright MCP (2026-02-01 08:30 UTC)",
+    "timestamp": "2026-02-01T08:30:00Z",
+    "status": "in_progress"
+  },
+  {
     "id": "hostelworld-monitor-004",
     "fact": "Price monitoring script updated with search ranking feature (2026-01-31 06:37 UTC): Script now captures Hostelworld search position for all tracked properties",
     "timestamp": "2026-01-31T06:37:00Z",
@@ -49,13 +55,13 @@
   },
   {
     "id": "trading-system-research-002",
-    "fact": "Opportunities research completed (2026-01-31 10:17 UTC): Identified live actionable opportunities including APE funding rate arbitrage (104% annualized), Ethena USDe yield (15.2% APY), META earnings options (21.8% potential), and verified whale wallets (76-89% win rates)",
+    "fact": "Opportunities research completed (2026-01-31 10:17 UTC): Identified live actionable opportunities including APE funding rate arbitrage (104% annualized), Ethena USDe yield (15.2% APY), META earnings options (21.8% potential), and verified whale wallets (76.89% win rates)",
     "timestamp": "2026-01-31T10:17:00Z",
     "status": "paused"
   },
   {
     "id": "trading-system-research-003",
-    "fact": "Whale tracker design completed (2026-01-31 10:10 UTC): 8-15 second latency from whale trade to execution, ~$2,800/month operating cost (using QuickNode/Nansen), breakeven at 2-3% monthly return, projected $1,500-7,200/month PnL",
+    "fact": "Whale tracker design completed (2026-01-31 10:10 UTC): 8-15 second latency from whale trade to execution, ~$2,800/month operating cost (using QuickNode/Nansen), breakeven at 2.3% monthly return, projected $1,500.72/month PnL",
     "timestamp": "2026-01-31T10:10:00Z",
     "status": "paused"
   },
@@ -109,7 +115,7 @@
   },
   {
     "id": "trading-system-research-012",
-    "fact": "Alternative markets research completed (2026-01-31 10:29 UTC): Sports betting arbitrage (1-5% per bet), credit card/bank bonus arbitrage ($500-1,500 per opportunity), Kalshi prediction markets (US-regulated), forex statistical arbitrage (high barriers)",
+    "fact": "Alternative markets research completed (2026-01-31 10:29 UTC): Sports betting arbitrage (1.5% per bet), credit card/bank bonus arbitrage ($500-1,500 per opportunity), Kalshi prediction markets (US-regulated), forex statistical arbitrage (high barriers)",
     "timestamp": "2026-01-31T10:29:00Z",
     "status": "paused"
   },
@@ -127,7 +133,7 @@
   },
   {
     "id": "adventurists-brand-voice-002",
-    "fact": "Comprehensive brand voice guide created at /home/desktop/clawd/BRAND-VOICE-ADVENTURISTS.md documenting irreverent British humor, anti-marketing style, chaos-worshipping tone, word bank, writing patterns, and templates (2026-01-31 11:27 UTC)",
+    "fact": "Comprehensive brand voice guide created at /home/desktop/clawd/BRAND-VOICE-ADVENTURISTS.md documenting irreverent British humor, anti-marketing style, chaos-loving tone, word bank, writing patterns, and templates (2026-01-31 11:27 UTC)",
     "timestamp": "2026-01-31T11:27:00Z",
     "status": "completed"
   },
@@ -145,7 +151,7 @@
   },
   {
     "id": "nomads-social-002",
-    "fact": "Created thank you social media posts acknowledging hundreds of thousands of guests in 2025 and celebrating position as most popular hostels (2026-01-31 11:28 UTC)",
+    "fact": "Created thank you social media posts acknowledging hundreds of thousands of guests in 2025 and celebrating position as most popular hostel (2026-01-31 11:28 UTC)",
     "timestamp": "2026-01-31T11:28:00Z",
     "status": "completed"
   },
@@ -157,7 +163,7 @@
   },
   {
     "id": "polyclaw-dev-002",
-    "fact": "Claude Code session stuck at permission bypass prompt initially (2026-01-31 11:00-11:07 UTC). Required multiple attempts to send Enter key via tmux. Eventually resolved by killing and restarting session with --dangerously-skip-permissions flag",
+    "fact": "Claude Code session stuck at permission bypass prompt initially (2026-01-31 11:00:11:07 UTC). Required multiple attempts to send Enter key via tmux. Eventually resolved by killing and restarting session with --dangerously-skip-permissions flag",
     "timestamp": "2026-01-31T11:07:00Z",
     "status": "paused"
   },
@@ -169,7 +175,7 @@
   },
   {
     "id": "polyclaw-dev-004",
-    "fact": "Claude Code tasks being executed for Phase 1 (2026-01-31 11:07 UTC): Install Docker and Docker Compose (in progress), Create Python project structure with dependencies, Rewrite agent with async loop and DB integration, Slim down docker-compose for Phase 1, Test stack boots and agent runs",
+    "fact": "Claude Code tasks being executed for Phase 1 (2026-01-31 11:07 UTC): Install Docker and Docker Compose (in progress), Create Python project structure with dependencies, Rewrite agent with async loop and DB integration, Slim down docker-compose for Phase1, Test stack boots and agent runs",
     "timestamp": "2026-01-31T11:07:00Z",
     "status": "paused"
   },
@@ -181,7 +187,7 @@
   },
   {
     "id": "polyclaw-dev-006",
-    "fact": "Project documentation references: PRD at /home/desktop/clawd/PRD-POLYCLAW-TRADING.md, task list at /home/desktop/clawd/PROJECT-TASKS.md. Phase 1 goals: Install PolyClaw dependencies, set up database and monitoring stack with Docker Compose, create autonomous agent main loop, implement paper trading mode",
+    "fact": "Project documentation references: PRD at /home/desktop/clawd/POLYCLAW-TRADING.md, task list at /home/desktop/clawd/PROJECT-TASKS.md. Phase 1 goals: Install PolyClaw dependencies, set up database and monitoring stack with Docker Compose, create autonomous agent main loop, implement paper trading mode",
     "timestamp": "2026-01-31T11:27:00Z",
     "status": "paused"
   },
@@ -194,7 +200,7 @@
   },
   {
     "id": "noho-ops-integration-002",
-    "fact": "Integration plan completed with surprise discovery (2026-01-31 12:31 UTC): NOHO-OPS-INTEGRATION-PLAN.md (609 lines) reveals all three integration branches (nomads-ops-sync-full-integration, sync/poster-mews, sync/mews-klaviyo) already merged at commit 61b5a61. System is production-ready with Poster POS, MEWS PMS, Guardforce, encrypted credentials, role-based access, and audit logging",
+    "fact": "Integration plan completed with surprise discovery (2026-01-31 12:31 UTC): NOHO-OPS-INTEGRATION-PLAN.md (609 lines) reveals all three integration branches (nomads-ops-sync-full-integration, sync/poseter-mews, sync/mews-klaviyo) already merged at commit 61b5a61. System is production-ready with Poster POS, MEWS PMS, Guardforce, encrypted credentials, role-based access, and audit logging",
     "timestamp": "2026-01-31T12:31:00Z",
     "status": "completed"
   },
@@ -202,6 +208,153 @@
     "id": "clickup-projects-001",
     "fact": "Noho Ops project structure created in ClickUp (2026-01-31 12:40 UTC): New folder 'Noho Ops' with list 'Integration Workflow' and main task 'Integrate MEWS Poster + Klaviyo into Noho-Ops' added to Clawd Space (90173832949)",
     "timestamp": "2026-01-31T12:40:00Z",
+    "status": "active"
+  },
+  {
+    "id": "product-ideas-001",
+    "fact": "Product ideas brainstorming session initiated (2026-01-31 18:55 UTC): Trevor requested product ideas that can be built and sold online for MRR (Monthly Recurring Revenue) or one-time payments",
+    "timestamp": "2026-01-31T18:55:00Z",
+    "status": "active"
+  },
+  {
+    "id": "product-ideas-002",
+    "fact": "10 product ideas generated across 4 categories (2026-01-31 18:59 UTC): Hospitality SaaS (3 ideas), Developer Tools (2 ideas), Thailand/Digital Nomad Products (3 ideas), Workflow Automation (2 ideas)",
+    "timestamp": "2026-01-31T18:59:00Z",
+    "status": "active"
+  },
+  {
+    "id": "product-ideas-003",
+    "fact": "Top 3 product recommendations prioritized (2026-01-31 18:59 UTC): (1) POS-PMS Sync Service ($19.49/mo MRR) - already built, (2) Hostel Operations Dashboard ($29.99/mo MRR) - dogfood with Nomads first, (3) Next.js + Convex Starter Kit ($99.299 one-time) - passive income, builds dev reputation",
+    "timestamp": "2026-01-31T18:59:00Z",
+    "status": "active"
+  },
+  {
+    "id": "github-push-001",
+    "fact": "GitHub push completed for MEWS/Poster integration (2026-01-31 18:57 UTC): Pushed branches mews-api, sync/poseter-mews, sync/mews-klaviyo, sync/full-integration to nomads-ops-center repository on GitHub",
+    "timestamp": "2026-01-31T18:57:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-008",
+    "fact": "Price monitoring rebuilt with Playwright (2026-02-01 00:00 UTC): Discovered 69% price underreporting (reported THB 350 vs actual THB 1,125 for Nomads Ao Nang Beach). Previous Agent Browser implementation had pricing accuracy issues.",
+    "timestamp": "2026-02-01T00:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hostelworld-monitor-009",
+    "fact": "Daily cron job corrected (2026-02-01 00:00 UTC): Rescheduled to 11pm UTC (6am Thailand time) for morning price check. Previous schedule was incorrect. Now captures accurate THB pricing via Playwright.",
+    "timestamp": "2026-02-01T00:00:00Z",
+    "status": "active",
+    "supersedes": ["hostelworld-monitor-007"]
+  },
+  {
+    "id": "hyperliquid-trading-research-001",
+    "fact": "Comprehensive research sub-agent launched for building self-improving Hyperliquid trading agent (2026-02-01 13:11 UTC). Goal: Win trades, maximize profit, minimize loss, understand market patterns, time entries/exits, make informed automated decisions using news and alpha.",
+    "timestamp": "2026-02-01T13:11:00Z",
+    "status": "in_progress"
+  },
+  {
+    "id": "hyperliquid-trading-research-002",
+    "fact": "Researching 11 GitHub repos for patterns, strategies, and approaches: HammerGPT/Hyper-Alpha-Arena, hyperliquid-ai-trading-bot, molt-bot/openclaw-trading-assistant, rz0718/hyperliquid-monitor, NoFxAiOS/nofx, openclaw/skills (hyperliquid-trading), cryptole0/Hyperliquid-market-making-bot, chainstacklabs/hyperliquid-trading-bot, BankrBot/openclaw-skills, BankrBot (2026-02-01 13:11 UTC)",
+    "timestamp": "2026-02-01T13:11:00Z",
+    "status": "in_progress"
+  },
+  {
+    "id": "hyperliquid-trading-research-003",
+    "fact": "Research deliverables: Analyze trading strategies/patterns from each repo, identify Hyperliquid bot best practices, news/alpha sources for informed decisions, market timing strategies, risk management approaches, comprehensive agent architecture, data sources/APIs/tools needed, decision-making framework, self-improvement loop design (2026-02-01 13:11 UTC)",
+    "timestamp": "2026-02-01T13:11:00Z",
+    "status": "in_progress"
+  },
+  {
+    "id": "hyperliquid-trading-research-004",
+    "fact": "Sub-agent session 'hyperliquid-trading-research' spawned with GLM 4.7 model (cost-optimized), 30-minute timeout. Research in progress (2026-02-01 13:11 UTC)",
+    "timestamp": "2026-02-01T13:11:00Z",
+    "status": "in_progress"
+  },
+  {
+    "id": "hyperliquid-trading-research-005",
+    "fact": "User plans to fund trading wallet when research is complete (2026-02-01 13:11 UTC)",
+    "timestamp": "2026-02-01T13:11:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "hyperliquid-trading-research-006",
+    "fact": "Research completed with 45,000-word comprehensive strategy document (2026-02-01 ~13:34 UTC). Analyzed 10+ repositories including HammerGPT/Hyper-Alpha-Arena, hyperliquid-ai-trading-bot, molt-bot/openclaw-trading-assistant. Key findings: 4-model AI consensus (News, Technical, On-Chain, Risk), RAG memory for avoiding repeated mistakes, 1-2% position sizing limits, 10% drawdown shield, Trump Tracker for high-impact posts. Document location: /home/desktop/clawd/hyperliquid-trading-agent-strategy.md",
+    "timestamp": "2026-02-01T13:34:00Z",
+    "status": "completed",
+    "supersedes": ["hyperliquid-trading-research-004"]
+  },
+  {
+    "id": "hyperliquid-trading-research-007",
+    "fact": "Strategy evolved to focus on meme coin sniping and smaller cap coins (2026-02-01 ~13:54 UTC). User wants to capitalize on sniping and quick entries/exits to look for profit opportunities. Initial research findings showed grid trading and market making as best practices, but user pivoted toward higher-risk meme coin approach.",
+    "timestamp": "2026-02-01T13:54:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hyperliquid-trading-research-008",
+    "fact": "User reconsidered risk tolerance (2026-02-01 ~13:56 UTC). Questioned if meme sniping was too risky, asked for more affordable fee strategy than Bitcoin that's also safer. User thought Hyperliquid had no gas fees. Clarified that all perps on Hyperliquid have same trading fees (maker 0.01%, taker 0.035%) but no gas fees for perp trading.",
+    "timestamp": "2026-02-01T13:56:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hyperliquid-trading-research-009",
+    "fact": "Test budget established at $100 with goal of $5,000 (50x return) (2026-02-01 ~13:57 UTC). Presented realistic math: grid trading takes 15-20 years to 50x, funding arb takes 8-12 years, meme sniping offers 1 week to never timeline (lottery ticket), compounding at 10% monthly takes ~40 months. User needs to choose between yolo $100 on memes, use $100 to learn then scale, or add more capital.",
+    "timestamp": "2026-02-01T13:57:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hyperliquid-trading-research-010",
+    "fact": "Parallel testing approach decided (2026-02-01 ~14:00 UTC). User wants to paper trade both funding arbitrage and meme coin trading in two different tests simultaneously. Also expressed interest in copy trading Chainstack Labs Hyperliquid bot. Dual approach lets user compare strategy performance without risking real money.",
+    "timestamp": "2026-02-01T14:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "hyperliquid-trading-research-011",
+    "fact": "Infrastructure sub-agent launched 'hyperliquid-infrastructure-setup' (2026-02-01 ~14:02 UTC). Goal: Set up complete paper trading infrastructure with dual strategy testing. Deliverables: Docker setup script, Hummingbot configuration files for funding arb and meme grid strategies, tracking spreadsheet template, README with instructions, daily reporting script. Save location: /home/desktop/clawd/hyperliquid-trading-setup/",
+    "timestamp": "2026-02-01T14:02:00Z",
+    "status": "in_progress"
+  },
+  {
+    "id": "hyperliquid-trading-research-012",
+    "fact": "Learning-focused approach emphasized (2026-02-01 ~14:03 UTC). User stated 'I want whatever is best for you to learn' - giving Clawd autonomy to set up trading infrastructure that enables learning and continuous improvement. Clawd will track setup experience, trade performance, error patterns, and user experience to improve future guidance.",
+    "timestamp": "2026-02-01T14:03:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "hyperliquid-infrastructure-001",
+    "fact": "Infrastructure setup completed successfully (2026-02-01 14:42 UTC). 19+ files created at /home/desktop/clawd/hyperliquid-trading-setup/ (176KB total). Docker containers ready: hummingbot-funding-arb, hummingbot-meme-grid. Configuration files for funding arb (BTC/ETH/SOL, $50/trade) and meme grid (PEPE/WIF/BONK, $25/order). Tracking system, daily reporting script, complete documentation included. Trevor needs testnet wallet private key to begin paper trading.",
+    "timestamp": "2026-02-01T14:42:00Z",
+    "status": "completed",
+    "supersedes": ["hyperliquid-infrastructure-002"]
+  },
+  {
+    "id": "compound-engineering-001",
+    "fact": "Compound Engineering system set up and configured (2026-02-01 ~16:42 UTC): Automated knowledge graph system for continuous learning",
+    "timestamp": "2026-02-01T16:42:00Z",
+    "status": "active"
+  },
+  {
+    "id": "compound-engineering-002",
+    "fact": "Four cron jobs configured (2026-02-01 ~16:42 UTC): compound-hourly (every hour), compound-nightly (10:30 PM UTC), life-weekly-synthesis (Sundays 9 AM), life-fact-extraction (every 30 minutes)",
+    "timestamp": "2026-02-01T16:42:00Z",
+    "status": "active"
+  },
+  {
+    "id": "compound-engineering-003",
+    "fact": "Skill file installed (2026-02-01 ~16:42 UTC): /home/desktop/clawd/.clawdbot/skills/compound-engineering/SKILL.md and /home/desktop/clawd/.skills/compound-engineering/",
+    "timestamp": "2026-02-01T16:42:00Z",
+    "status": "active"
+  },
+  {
+    "id": "compound-engineering-004",
+    "fact": "HEARTBEAT.md updated (2026-02-01 ~16:42 UTC): Added compound engineering checkpoint loop with hourly, nightly, and weekly review instructions",
+    "timestamp": "2026-02-01T16:42:00Z",
+    "status": "active"
+  },
+  {
+    "id": "compound-engineering-005",
+    "fact": "Compound loop: Daily work → Hourly snapshots → Nightly review → Updated memory → Smarter tomorrow",
+    "timestamp": "2026-02-01T16:42:00Z",
     "status": "active"
   }
 ]

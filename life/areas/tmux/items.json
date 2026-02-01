@@ -39,6 +39,13 @@
     "id": "tmux-007",
     "fact": "Session 'polyclaw-dev' actively running (2026-01-31 11:07 UTC): Claude Code executing Phase 1 tasks for PolyClaw - installing Docker, creating Python project structure, building autonomous agent loop",
     "timestamp": "2026-01-31T11:07:00Z",
+    "status": "superseded",
+    "supersededBy": "tmux-008"
+  },
+  {
+    "id": "tmux-008",
+    "fact": "Session 'polyclaw-dev' stopped (2026-01-31 15:00 UTC): Trevor paused Polymarket bot development due to geographic restrictions (Polymarket not available in Thailand). tmux session killed. All research, PRD, task tracker, and ClickUp project preserved for future reference.",
+    "timestamp": "2026-01-31T15:00:00Z",
     "status": "active"
   }
 ]

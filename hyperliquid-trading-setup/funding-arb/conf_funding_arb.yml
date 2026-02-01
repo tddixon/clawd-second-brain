@@ -1,0 +1,35 @@
+# Funding Arbitrage Strategy Config
+# Place in: ~/hummingbot/funding-arb/conf/conf_funding_arb.yml
+
+template_version: 1
+strategy: spot_perpetual_arbitrage
+
+# Exchange configuration
+spot_connector: hyperliquid_testnet
+perp_connector: hyperliquid_testnet
+
+# Assets to monitor
+assets:
+  - BTC
+  - ETH
+  - SOL
+
+# Arbitrage parameters
+min_divergence: 0.5  # Minimum % difference to trigger
+min_convergence: 0.1  # Target % to close position
+max_funding_rate: 0.01  # Skip if funding > 1%
+
+# Order sizing
+order_amount: 50.0  # USDC per trade
+max_position_size: 100.0  # Max USDC total per asset
+
+# Risk management
+max_slippage: 0.005  # 0.5% max slippage
+max_retries: 3
+retry_delay: 5.0
+
+# Cooldown between trades
+cooldown: 300  # 5 minutes
+
+# Logging
+log_level: INFO

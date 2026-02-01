@@ -45,7 +45,7 @@ git push origin feature/mews-booking-engine
 
 ## Systems & Tools
 
-### 🧠 Life Knowledge Graph (NEW - 2026-01-29)
+### 🧠 Life Knowledge Graph (Active - Weekly Synthesis Sundays)
 
 **Purpose:** Self-maintaining, compounding knowledge graph that evolves automatically as Trevor's life changes.
 
@@ -131,6 +131,27 @@ The knowledge graph **complements** the Obsidian Second Brain:
 
 **Location:** `/home/desktop/clawd/life/`
 **Documentation:** `/home/desktop/clawd/life/README.md`
+
+#### Weekly Synthesis Report (2026-02-01)
+
+**This Week's Activity:**
+- **57 entities synthesized** (people, companies, projects, tasks)
+- **11 facts marked historical** (3+ months old)
+- **11 facts marked archived** (1+ year old)
+- **51 new summaries created**, **6 summaries updated**
+
+**Major Changes Detected:**
+1. **Hostelworld Price Monitoring** - Rebuilt with Playwright for accurate JavaScript rendering; daily cron at 6 AM Thailand time; prices now in THB
+2. **Trading Bot Pivot** - Polymarket paused due to geographic restrictions; pivoted to crypto/DEX-only approach
+3. **Hoscars Awards** - Nomads won Best Hostel Thailand and Australia; social media posts created
+4. **Noho Ops Integration** - Clarified that integration is NOT complete; separate repos need consolidation
+5. **MEWS Branches** - All integration branches pushed to GitHub (mews-api, sync/poster-mews, sync/mews-klaviyo, sync/full-integration)
+6. **Market Position** - Base Ao Nang Beachfront rank #2 of 30 listings; Nomads Ao Nang Beach rank #5 (both top 5)
+
+**Notable Relationships:**
+- Trevor ↔ Nomads: Heavy focus on automation, pricing, and integrations this week
+- Trading research: Multiple sub-agents working on crypto arbitrage and opportunity identification
+- Team: Mikey B (needs MEWS/Xero access), Charlie (photos), Ali (flight notification)
 
 ---
 
@@ -313,6 +334,33 @@ Works alongside Obsidian Second Brain:
 
 **This system now compounds forever** - every conversation adds signal, every week distills it.
 
+### 2026-02-01 - Compound Engineering Deployment Day
+
+**Major System Implemented:**
+- **Compound Engineering** fully deployed with automated learning system
+- Three-tier automation: Hourly snapshots (memory/YYYY-MM-DD.md) → Nightly review (learnings extraction) → Weekly synthesis (knowledge graph pruning)
+- Cron jobs operational: compound-hourly, compound-nightly, life-fact-extraction, life-weekly-synthesis
+
+**QMD Integration:**
+- Local markdown search engine (BM25 + vector + LLM re-ranking)
+- Collections: clawd (412 files), trading (22 files), memory (15 files)
+- User preference: **Proactive QMD use** when asking about past work or saved configurations
+
+**Tailscale Learning:**
+- Tailscale installed and connected (ubuntu-desktop.tail8c6e6b.ts.net, IP: 100.111.53.107)
+- Authentication: OAuth with Google (trevord.dixon@gmail.com), no SSH keys needed
+- Device certificates auto-renew for secure access
+- Remote access pattern: Tailscale IPs for SSH and service access
+
+**Pattern Recognized:**
+- User prefers minimal human intervention in maintenance tasks
+- Automated systems (compound engineering, cron) handle daily memory management effectively
+- HEARTBEAT_OK responses accepted for routine check-ins
+
+**Gotcha Noted:**
+- Package installation must verify existence first (clawdbot-security-audit not found on npm or ClawdHub)
+- Compound-engineering repo should be git submodule, not embedded directory
+
 ---
 
-*Last updated: 2026-01-29*
+*Last updated: 2026-02-01*

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "qmd-001",
+    "fact": "QMD (Quick Markdown) - Local search engine for markdown documents combining BM25 full-text search, vector semantic search, and LLM re-ranking",
+    "timestamp": "2026-02-01T16:09:00Z",
+    "status": "active"
+  },
+  {
+    "id": "qmd-002",
+    "fact": "Repository: https://github.com/tobi/qmd - Open source project by tobi",
+    "timestamp": "2026-02-01T16:09:00Z",
+    "status": "active"
+  },
+  {
+    "id": "qmd-003",
+    "fact": "Installation method: Bun global install via 'bun install -g https://github.com/tobi/qmd'",
+    "timestamp": "2026-02-01T16:09:00Z",
+    "status": "active"
+  },
+  {
+    "id": "qmd-004",
+    "fact": "Features: Collection management, keyword search, semantic search, hybrid search, document retrieval, MCP server support",
+    "timestamp": "2026-02-01T16:09:00Z",
+    "status": "active"
+  },
+  {
+    "id": "qmd-005",
+    "fact": "QMD skill for Clawdbot: https://github.com/levineam/qmd-skill - Enables AI agents to search markdown knowledge bases",
+    "timestamp": "2026-02-01T16:14:00Z",
+    "status": "active"
+  }
+]

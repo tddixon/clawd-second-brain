@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "the-adventurists-1",
+      "entity": "The Adventurists",
+      "fact_type": "brand_info",
+      "title": "Adventure Travel Company",
+      "description": "The Adventurists is an adventure travel company known for their irreverent, anti-marketing approach. They organize challenging, often ridiculous adventures like the Mongol Rally, Rickshaw Run, and Ice Run. Website: theadventurists.com",
+      "date": "2026-01-31",
+      "source": "brand_voice_analysis",
+      "supersedes": []
+    },
+    {
+      "id": "the-adventurists-2",
+      "entity": "The Adventurists",
+      "fact_type": "brand_voice_characteristic",
+      "title": "Irreverent and Cheeky Tone",
+      "description": "Brand voice is deliberately irreverent, cheeky, and anti-marketing. Uses British humor and dry wit. Celebrates chaos and suffering as integral parts of adventure. Swearing used strategically for authenticity.",
+      "date": "2026-01-31",
+      "source": "brand_voice_analysis",
+      "supersedes": []
+    },
+    {
+      "id": "the-adventurists-3",
+      "entity": "The Adventurists",
+      "fact_type": "brand_voice_characteristic",
+      "title": "Anti-Sell Approach",
+      "description": "Uses 'anti-sell' marketing - tells people why they shouldn't do their adventures instead of traditional promotional language. Positions challenges as terrifying, impossible, and likely to end in disaster to attract the right audience.",
+      "date": "2026-01-31",
+      "source": "brand_voice_analysis",
+      "supersedes": []
+    },
+    {
+      "id": "the-adventurists-4",
+      "entity": "The Adventurists",
+      "fact_type": "brand_voice_characteristic",
+      "title": "Hyperbolic Descriptions",
+      "description": "Uses extreme hyperbole to describe adventures - 'most ridiculous thing on the planet', 'greatest show on earth', 'absolutely bonkers'. Balances this with honest warnings about real dangers and difficulties.",
+      "date": "2026-01-31",
+      "source": "brand_voice_analysis",
+      "supersedes": []
+    },
+    {
+      "id": "the-adventurists-5",
+      "entity": "The Adventurists",
+      "fact_type": "brand_voice_characteristic",
+      "title": "Direct and Brutally Honest",
+      "description": "Brand voice is direct and brutally honest about what adventurers will face. No sugar-coating or euphemisms. Tells it like it is: you will suffer, things will break, you might cry. This authenticity builds trust with target audience.",
+      "date": "2026-01-31",
+      "source": "brand_voice_analysis",
+      "supersedes": []
+    },
+    {
+      "id": "the-adventurists-6",
+      "entity": "The Adventurists",
+      "fact_type": "brand_voice_characteristic",
+      "title": "Community and Tribes",
+      "description": "Positions participants as part of a tribe of adventurers who have 'done the thing'. Creates in-group language and references. Uses 'adventurists' as both company name and participant identity.",
+      "date": "2026-01-31",
+      "source": "brand_voice_analysis",
+      "supersedes": []
+    },
+    {
+      "id": "the-adventurists-7",
+      "entity": "The Adventurists",
+      "fact_type": "document_created",
+      "title": "Brand Voice Profile Document Created",
+      "description": "Comprehensive 9,700-word brand voice analysis document created at /home/desktop/clawd/BRAND-VOICE-ADVENTURISTS.md on 2026-01-31 12:30 UTC. Includes tone analysis, copy examples, and guidelines for writing in The Adventurists voice.",
+      "date": "2026-01-31",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "the-adventurists-8",
+      "entity": "The Adventurists",
+      "fact_type": "skill_integration",
+      "title": "Integrated into Copywriting Skill",
+      "description": "Brand voice profile added to the copywriting skill at /home/desktop/clawd/skills/marketing-skills/references/copywriting/SKILL.md on 2026-01-31. Enables rewriting any content in The Adventurists brand voice.",
+      "date": "2026-01-31",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

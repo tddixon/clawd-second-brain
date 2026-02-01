@@ -15,7 +15,7 @@
     },
     {
       "id": "noho-ops-integration-plan-003",
-      "fact": "Correction: Noho Ops integration has NOT been done (2026-01-31 14:45 UTC). Trevor corrected that the three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches pointing to same commit",
+      "fact": "Correction: Noho Ops integration has NOT been done (2026-01-31 14:45 UTC). Trevor corrected that to three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches pointing to same commit",
       "timestamp": "2026-01-31T14:45:00Z",
       "status": "active",
       "supersedes": ["noho-ops-integration-plan-002"]
@@ -52,9 +52,22 @@
     },
     {
       "id": "noho-ops-integration-plan-009",
-      "fact": "Implementation plan requested for ClickUp and Obsidian sync (2026-01-31 16:56 UTC): Trevor requested adding NOHO-OPS-INTEGRATION-PLAN-V2.md to both ClickUp tasks and Obsidian PKM project files. Sub-agent 'clickup-obsidian-sync' spawned to create proper task hierarchy in ClickUp and project documentation in Obsidian Second Brain.",
-      "timestamp": "2026-01-31T16:56:00Z",
-      "status": "in_progress"
+      "fact": "ClickUp & Obsidian sync completed (2026-01-31 17:00 UTC): Noho Ops / Klaviyo, Mews/Klaviyo, and Poster Sync implementation plans added to ClickUp with 5-week roadmap hierarchy and to Obsidian PKM with project files. All changes committed to vault.",
+      "timestamp": "2026-01-31T17:00:00Z",
+      "status": "completed",
+      "supersedes": ["noho-ops-integration-plan-009"]
+    },
+    {
+      "id": "noho-ops-integration-plan-010",
+      "fact": "Developer Guide created (2026-01-31 19:00 UTC): Comprehensive 19,000+ word guide at /home/desktop/clawd/NOHO-OPS-DEVELOPER-GUIDE.md covering complete repository architecture, worktree strategy, 5-week integration plan, technical architecture, git strategy, testing checklist, and quick reference commands.",
+      "timestamp": "2026-01-31T19:00:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "noho-ops-integration-plan-011",
+      "fact": "Worktree strategy clarified (2026-01-31 19:00 UTC): Recommended approach for Klaviyo development uses /home/desktop/clawd/nomads-ops-sync-mews-klaviyo worktree with feature/klaviyo-integration branch for isolation from mews-api main branch, allowing both versions to run simultaneously with safe experimentation.",
+      "timestamp": "2026-01-31T19:00:00Z",
+      "status": "completed"
     }
   ]
 }

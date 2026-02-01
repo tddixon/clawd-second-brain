@@ -199,6 +199,26 @@
       "date": "2026-01-31",
       "source": "github-research",
       "supersedes": []
+    },
+    {
+      "id": "the-adventurists-1",
+      "entity": "The Adventurists",
+      "fact_type": "company_info",
+      "title": "Adventure Travel Company",
+      "description": "UK-based adventure travel company known for irreverent anti-marketing approach. Organizes challenging adventures like Mongol Rally, Rickshaw Run, Ice Run. Website: theadventurists.com. Brand voice profile analyzed and added to copywriting skill for AI-generated content rewriting.",
+      "date": "2026-01-31",
+      "source": "brand_voice_analysis",
+      "supersedes": []
+    },
+    {
+      "id": "tailscale-1",
+      "entity": "Tailscale",
+      "fact_type": "service_info",
+      "title": "Secure Remote Access Platform",
+      "description": "Zero-config VPN service for secure remote access. Trevor uses Tailscale on ubuntu-desktop machine with IP 100.111.53.107. Version 1.92.5 installed. Tailnet: tail8c6e6b.ts.net. Uses Google OAuth authentication (trevord.dixon@gmail.com, User ID: 3449228659643261). Provides passwordless SSH access via Tailscale SSH feature.",
+      "date": "2026-02-01",
+      "source": "clawdbot",
+      "supersedes": []
     }
   ]
 }

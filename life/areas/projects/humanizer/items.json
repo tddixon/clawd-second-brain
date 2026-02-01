@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "humanizer-1",
+      "entity": "Humanizer Skill",
+      "fact_type": "skill_info",
+      "title": "AI Writing Humanizer",
+      "description": "Humanizer skill at /home/desktop/clawd/skills/humanizer/SKILL.md removes signs of AI-generated writing from text. Based on Wikipedia's comprehensive 'Signs of AI writing' guide. Detects and fixes patterns including inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, negative parallelisms, and excessive conjunctive phrases.",
+      "date": "2026-01-31",
+      "source": "skill_documentation",
+      "supersedes": []
+    },
+    {
+      "id": "humanizer-2",
+      "entity": "Humanizer Skill",
+      "fact_type": "usage",
+      "title": "Used for Hoscars Social Media Posts",
+      "description": "Humanizer skill used on 2026-01-31 14:45 UTC to remove AI-generated patterns from Instagram thank-you posts for Hoscars awards (Best Hostel Thailand + Australia). Humanized version eliminated stiff corporate language and made copy sound more natural.",
+      "date": "2026-01-31",
+      "source": "conversation",
+      "supersedes": []
+    },
+    {
+      "id": "humanizer-3",
+      "entity": "Humanizer Skill",
+      "fact_type": "usage",
+      "title": "Final Post Without 'Bad Beds' Comments",
+      "description": "After humanization, Trevor requested final version without 'bad beds' comments. Cleaned version focuses on community, guests from 80+ countries, and award achievement without mentioning accommodation quality issues.",
+      "date": "2026-01-31",
+      "source": "conversation",
+      "supersedes": []
+    }
+  ]
+}

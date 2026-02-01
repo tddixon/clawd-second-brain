@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "cameron-jones-1",
+      "entity": "Cameron Jones",
+      "fact_type": "person",
+      "title": "Personal Contact",
+      "description": "Personal contact. Hotmail account creation requested by Trevor (2026-02-01). Email: camjones2003@hotmail.com, Password: Testing1234$$, DOB: random 1999-2006, Nationality: USA. Account creation not completed due to missing Clawdbot Browser Relay Chrome extension.",
+      "date": "2026-02-01",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "cameron-jones-2",
+      "entity": "Cameron Jones",
+      "fact_type": "person",
+      "title": "Hotmail Account Creation - Attempt 2",
+      "description": "Hotmail account creation restarted using Playwright MCP for visibility (2026-02-01 04:10 UTC). Email: camjones03@hotmail.com, Password: Testing1234$$, DOB: June 15, 2003, Name: Cameron Jones. Process reached CAPTCHA page and awaits manual completion. Different email from previous attempt (camjones2003@hotmail.com).",
+      "date": "2026-02-01",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

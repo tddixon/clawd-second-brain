@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tailscale-001",
+    "fact": "Tailscale installed on ubuntu-desktop machine (version 1.92.5)",
+    "timestamp": "2026-02-01T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tailscale-002",
+    "fact": "Tailscale machine IP: 100.111.53.107",
+    "timestamp": "2026-02-01T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tailscale-003",
+    "fact": "Tailscale tailnet: tail8c6e6b.ts.net",
+    "timestamp": "2026-02-01T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tailscale-004",
+    "fact": "Tailscale machine hostname: ubuntu-desktop.tail8c6e6b.ts.net",
+    "timestamp": "2026-02-01T16:28:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tailscale-005",
+    "fact": "Trevor Dixon Tailscale account: trevord.dixon@gmail.com (User ID: 3449228659643261)",
+    "timestamp": "2026-02-01T16:34:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tailscale-006",
+    "fact": "Tailscale status: Connected and online",
+    "timestamp": "2026-02-01T16:34:00Z",
+    "status": "active"
+  }
+]

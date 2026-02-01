@@ -1,0 +1,20 @@
+[
+  {
+    "id": "hyperliquid-001",
+    "fact": "Crypto exchange with perpetual futures trading (2026-02-01 13:11 UTC). Supports testnet for paper trading. Trading fees: maker 0.01%, taker 0.035%. No gas fees for perp trading.",
+    "timestamp": "2026-02-01T13:11:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hyperliquid-002",
+    "fact": "Testnet faucet available at https://app.hyperliquid-testnet.xyz/drip for test USDC (2026-02-01 14:14 UTC)",
+    "timestamp": "2026-02-01T14:14:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hyperliquid-003",
+    "fact": "Chainstack Labs operates a public trading bot vault available for copy trading (2026-02-01 14:03 UTC)",
+    "timestamp": "2026-02-01T14:03:00Z",
+    "status": "active"
+  }
+]

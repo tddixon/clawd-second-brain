@@ -1,0 +1,10 @@
+Date,Time,Strategy,Bot,Asset/Pair,Entry Price,Exit Price,Size (USDC),P&L (%),P&L (USDC),Fees (USDC),Net P&L,Notes/Learnings
+2026-02-01,14:00,Funding Arb,funding-arb,BTC,45000,45100,50,0.22,0.11,0.02,0.09,First test trade - funding rate positive
+2026-02-01,14:05,Meme Grid,meme-grid,PEPE,0.000012,0.000013,25,8.33,2.08,0.05,2.03,Grid buy filled quickly
+2026-02-01,14:10,Funding Arb,funding-arb,ETH,3200,3195,50,-0.16,-0.08,0.02,-0.10,Funding flipped negative - closed early
+,,,,,,,,,,,,
+TIPS:,,,,,,,,,,,,
+1. Log every trade immediately,,,,,,,,,,,,
+2. Note WHY you entered/exited,,,,,,,,,,,,
+3. Track emotions - were you FOMOing?,,,,,,,,,,,,
+4. Review weekly for patterns,,,,,,,,,,,,

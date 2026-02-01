@@ -108,5 +108,255 @@
     "date": "2026-01-29T17:54:00Z",
     "source": "clawdbot",
     "supersedes": ["b2c-ideas-001"]
+  },
+  {
+    "id": "b2c-ideas-012",
+    "entity": "Product Ideas Brainstorming Request",
+    "fact_type": "request",
+    "title": "MRR + One-Time Payment Products Requested",
+    "description": "Trevor requested product ideas that can be built and sold online for MRR (Monthly Recurring Revenue) or one-time payments. This follows the earlier B2C direction but with specific monetization focus. Request time: 2026-01-31 18:55 UTC.",
+    "date": "2026-01-31T18:55:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-013",
+    "entity": "Product Ideas Generated",
+    "fact_type": "brainstorming_session",
+    "title": "10 Product Ideas Suggested Across 3 Categories",
+    "description": "Clawdbot suggested 10 product ideas organized into 3 categories based on Trevor's skills, assets, and Nomads ecosystem: Hospitality SaaS (3 ideas), Developer Tools (2 ideas), Thailand/Digital Nomad Products (3 ideas), and Workflow Automation (2 ideas). Session: 2026-01-31 18:59 UTC.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-014",
+    "entity": "Hostel Operations Dashboard",
+    "fact_type": "product_concept",
+    "title": "Hospitality SaaS Idea #1: Hostel Operations Dashboard",
+    "description": "Productize the dashboard already built for Nomads. Features: shift reconciliation, deposit tracking, integrations. Target: Independent hostels worldwide. Monetization: MRR $29-99/month. Edge: Built by a hostel owner who understands the business. Top recommendation #3.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-015",
+    "entity": "POS PMS Sync Service",
+    "fact_type": "product_concept",
+    "title": "Hospitality SaaS Idea #2: POS-PMS Sync Service",
+    "description": "Turn the Poster-MEWS sync into a SaaS. Support multiple POS systems (Toast, Square, Lightspeed). One-click integration, no-code setup. Target: Small hotels, hostels, restaurants. Monetization: MRR $19-49/month. Top recommendation #1 - already built, clear pain point, recurring revenue.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-016",
+    "entity": "Hostel Pricing Optimizer",
+    "fact_type": "product_concept",
+    "title": "Hospitality SaaS Idea #3: Hostel Pricing Optimizer",
+    "description": "Dynamic pricing based on local events (Songkran, Full Moon Party). Competitor price monitoring (Hostelworld, Booking.com). Automated price adjustments. Target: Hostels in event-driven destinations. Monetization: MRR $39-149/month.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-017",
+    "entity": "Convex Integration Templates",
+    "fact_type": "product_concept",
+    "title": "Developer Tool Idea #1: Convex Integration Templates",
+    "description": "Pre-built integration templates for common use cases: MEWS connector, Stripe subscriptions, auth flows. Target: Developers building on Convex. Monetization: One-time payment $49-199.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-018",
+    "entity": "Next.js Convex Starter Kit",
+    "fact_type": "product_concept",
+    "title": "Developer Tool Idea #2: Next.js + Convex Starter Kit",
+    "description": "Production-ready SaaS starter with auth, billing, admin. Similar to what was built for Nomads. Target: Indie hackers, solo developers. Monetization: One-time payment $99-299. Top recommendation #3 - passive income, builds reputation in dev community.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-019",
+    "entity": "Nomad Hostel Booking Engine",
+    "fact_type": "product_concept",
+    "title": "Thailand Product Idea #1: Nomad Hostel Booking Engine",
+    "description": "White-label booking system for hostels. Lower fees than Hostelworld (10% vs 15-20%). Target: SE Asia hostels first, expand globally. Monetization: MRR + commission.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-020",
+    "entity": "Thailand Event Calendar API",
+    "fact_type": "product_concept",
+    "title": "Thailand Product Idea #2: Thailand Event Calendar API",
+    "description": "Aggregated events (festivals, parties, conferences). API for hotels to auto-adjust pricing/marketing. Target: Revenue management systems. Monetization: MRR $29-79/month.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-021",
+    "entity": "Digital Nomad Community Platform",
+    "fact_type": "product_concept",
+    "title": "Thailand Product Idea #3: Digital Nomad Community Platform",
+    "description": "'Nomads Connect' - curated community for nomads. City guides, events, coworking spaces, housing. Target: Digital nomads in Thailand/SE Asia. Monetization: MRR $9-19/month.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-022",
+    "entity": "Klaviyo for Hostels",
+    "fact_type": "product_concept",
+    "title": "Workflow Automation Idea #1: Klaviyo for Hostels",
+    "description": "Pre-built email flows for hostels (welcome, review requests, upsells). Integration with MEWS, Cloudbeds, etc. Target: Hostels wanting better email marketing. Monetization: MRR $39-99/month.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-023",
+    "entity": "Small Hotel Accounting Bridge",
+    "fact_type": "product_concept",
+    "title": "Workflow Automation Idea #2: Small Hotel Accounting Bridge",
+    "description": "Connects PMS to QuickBooks/Xero automatically. Handles deposits, revenue recognition, taxes. Target: 10-50 room independent hotels. Monetization: MRR $25-59/month.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-024",
+    "entity": "Top Product Recommendations",
+    "fact_type": "prioritization",
+    "title": "Top 3 Product Recommendations Prioritized",
+    "description": "From 10 product ideas, top 3 were recommended: (1) POS-PMS Sync - already built, clear pain point, MRR $19-49/mo; (2) Hostel Operations Dashboard - dogfood with Nomads first, then expand, MRR $29-99/mo; (3) Convex Starter Kit - passive income, build dev reputation, one-time $99-299. Decision: 2026-01-31 18:59 UTC.",
+    "date": "2026-01-31T18:59:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-025",
+    "entity": "Expanded Product Ideas Set",
+    "fact_type": "brainstorming_expansion",
+    "title": "10 Additional Non-Hospitality Product Ideas",
+    "description": "After initial 10 hospitality-focused ideas, 10 additional non-hospitality product ideas were suggested for Trevor to consider outside Nomads ecosystem. These focus on developer tools, Thailand-specific products, and workflow automation. Session: 2026-01-31 19:30 UTC.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-026",
+    "entity": "AI Meeting Notes Aggregator",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #1: AI Meeting Notes Aggregator",
+    "description": "Aggregates and summarizes notes from Zoom, Google Meet, Teams. Extracts action items, decisions, and follow-ups. Integrates with calendars for context. Target: remote workers, PMs. Monetization: MRR $19-49/month.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-027",
+    "entity": "Personal AI Research Agent",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #2: Personal AI Research Agent",
+    "description": "Personal research assistant that learns your interests, proactively gathers information, and surfaces relevant insights. Connects to your docs, bookmarks, notes. Target: knowledge workers, researchers. Monetization: MRR $29-79/month.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-028",
+    "entity": "Funding Rate Arbitrage Scanner",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #3: Funding Rate Arbitrage Scanner",
+    "description": "Real-time scanner for funding rate arbitrage opportunities across exchanges. Alerts when profitable spread appears. Historical backtesting. Target: crypto traders. Monetization: MRR $99-299/month + affiliate commissions.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-029",
+    "entity": "Thailand Crypto Tax Calculator",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #4: Thailand Crypto Tax Calculator",
+    "description": "Calculates Thai crypto tax based on Revenue Department rules. Integrates with exchanges for transaction history. Generates tax reports. Target: Thai crypto investors. Monetization: One-time $49-149 + MRR $19/month for updates. Top recommended #1 for Thailand market.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-030",
+    "entity": "Convex Schema Visualizer",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #5: Convex Schema Visualizer",
+    "description": "Interactive visualization tool for Convex schemas. Shows relationships, indexes, and data flow. Helpful for understanding complex Convex apps. Target: Convex developers. Monetization: MRR $19-39/month.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-031",
+    "entity": "API Cost Monitor",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #6: API Cost Monitor",
+    "description": "Tracks and optimizes API usage costs across services (OpenAI, Stripe, etc.). Alerts on unusual spikes, suggests optimizations, predicts monthly spend. Target: startups, solo founders. Monetization: MRR $29-69/month. Top recommended #2.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-032",
+    "entity": "Programmatic SEO Generator",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #7: Programmatic SEO Generator",
+    "description": "Generates landing pages at scale from templates and data sources. Manages keyword research, content variation, and deployment. Target: SaaS marketers. Monetization: MRR $49-149/month.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-033",
+    "entity": "Thailand Visa Tracker",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #8: Thailand Visa Tracker",
+    "description": "Tracks visa status, deadlines, and extension requirements for expats in Thailand. Reminders for reporting dates. Resource hub for visa types. Target: expats, digital nomads. Monetization: MRR $9-19/month.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-034",
+    "entity": "Readwise to Obsidian Sync",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #9: Readwise → Obsidian Sync",
+    "description": "Syncs Readwise highlights to Obsidian with AI-generated connections to existing notes. Suggests Zettelkasten links. Target: PKM power users. Monetization: MRR $9-19/month.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-035",
+    "entity": "PDF Data Extractor",
+    "fact_type": "product_concept",
+    "title": "Non-Hospitality Idea #10: PDF Data Extractor",
+    "description": "Upload PDFs, extract structured data with AI. Invoices, receipts, contracts, forms. Export to CSV, JSON, or direct to systems. Target: small businesses, accountants. Monetization: MRR $39-99/month.",
+    "date": "2026-01-31T19:30:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "b2c-ideas-036",
+    "entity": "Top Non-Hospitality Recommendations",
+    "fact_type": "prioritization",
+    "title": "Top 3 Non-Hospitality Product Ideas Recommended",
+    "description": "From 10 additional non-hospitality ideas, top 3 were recommended: (1) Thailand Crypto Tax Calculator - regulatory moat, local knowledge, one-time + MRR; (2) Webhook Debugger - developer pain point, simple MVP (referenced but not detailed); (3) API Cost Monitor - founder pain, existing need, MRR $29-69/mo. Decision: 2026-01-31 19:35 UTC.",
+    "date": "2026-01-31T19:35:00Z",
+    "source": "clawdbot",
+    "supersedes": []
   }
 ]

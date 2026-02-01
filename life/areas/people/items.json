@@ -159,6 +159,16 @@
       "date": "2026-01-31T17:07:00Z",
       "source": "clawdbot",
       "supersedes": []
+    },
+    {
+      "id": "trevor-dixon-18",
+      "entity": "Trevor Dixon",
+      "fact_type": "request",
+      "title": "Attempted Clawdbot Security Audit Tool Installation",
+      "description": "Trevor attempted to install Clawdbot Security Audit tool on 2026-02-01 at 17:40 UTC. Tried multiple methods: 'clawdhub install Clawdbot Security Audit', 'clawdhub install lxgicstudios/clawdbot-security', and 'npm install -g clawdbot-security-audit'. Installation failed - package not found on ClawdHub or npm registry. Also searched for alternative security skill from lxgicstudios repositories.",
+      "date": "2026-02-01T17:40:00Z",
+      "source": "clawdbot",
+      "supersedes": []
     }
   ]
 }

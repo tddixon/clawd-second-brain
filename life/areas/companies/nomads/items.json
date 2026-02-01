@@ -3,19 +3,19 @@
     "id": "nomads-001",
     "fact": "Hostel chain in Thailand with 4+ properties",
     "timestamp": "2024-01-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nomads-002",
     "fact": "Owner: Trevor Dixon",
     "timestamp": "2024-01-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nomads-003",
     "fact": "Properties: Ao Nang, Bangkok, Koh Tao, Base Ao Nang",
     "timestamp": "2024-01-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nomads-004",
@@ -102,7 +102,8 @@
     "id": "nomads-017",
     "fact": "Daily Hostelworld price reports configured (2026-01-30). Cron job runs at 8am Thailand time (1am UTC), sends Telegram report with prices, rankings, ratings, and competitor context. No full app/storage needed - simple reports only.",
     "timestamp": "2026-01-30T06:52:00Z",
-    "status": "active"
+    "status": "superseded",
+    "supersededBy": "nomads-043"
   },
   {
     "id": "nomads-018",
@@ -246,11 +247,8 @@
     "id": "nomads-040",
     "fact": "Ao Nang Properties Market Position (2026-01-31 06:55 UTC): Base Ao Nang Beachfront rank #1 of 30 listings (฿899, 9.4★, 1,930 reviews) - top position in Krabi/Ao Nang search results. Nomads Ao Nang Beach rank #5 of 30 listings (฿1,098, 9.6★, 2,977 reviews). Both Nomads properties in top 5 (17% of top spots). Prices in THB as requested.",
     "timestamp": "2026-01-31T06:55:00Z",
-    "status": "active",
-    "supersedes": [
-      "nomads-026",
-      "nomads-035"
-    ]
+    "status": "superseded",
+    "supersededBy": "nomads-054"
   },
   {
     "id": "nomads-041",
@@ -265,10 +263,8 @@
     "id": "nomads-042",
     "fact": "Base Ao Nang Beachfront property details (2026-01-31 06:55 UTC): Hostelworld rank #1 of 30 listings - BEST POSITION, Rating 9.4 Superb, Price ฿899/night in THB, 1,930 reviews. 'Crushing it' with highest visibility in search results.",
     "timestamp": "2026-01-31T06:55:00Z",
-    "status": "active",
-    "supersedes": [
-      "nomads-029"
-    ]
+    "status": "superseded",
+    "supersededBy": "nomads-055"
   },
   {
     "id": "nomads-043",
@@ -300,7 +296,7 @@
   },
   {
     "id": "nomads-047",
-    "fact": "Noho Ops integration correction (2026-01-31 14:45 UTC): Trevor corrected that Noho Ops integration has NOT been done. The three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches in the same repo. Previous analysis claiming work was complete was incorrect. Integration still needs to be planned and executed.",
+    "fact": "Noho Ops integration correction (2026-01-31 14:45 UTC): Trevor corrected that Noho Ops integration has NOT been done. The three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches in the same repo. Integration still needs to be planned and executed.",
     "timestamp": "2026-01-31T14:45:00Z",
     "status": "active",
     "supersedes": [
@@ -318,5 +314,63 @@
     "fact": "MEWS/Poster integration branches pushed to GitHub (2026-01-31 17:50 UTC): All MEWS integration branches (mews-api, sync/poster-mews, sync/mews-klaviyo, sync/full-integration) successfully pushed to nomads-ops-center repository on GitHub. Repository: https://github.com/tddixon/nomads-ops-center",
     "timestamp": "2026-01-31T17:50:00Z",
     "status": "active"
+  },
+  {
+    "id": "nomads-050",
+    "fact": "GitHub push re-requested and completed (2026-01-31 18:57 UTC): User requested 'please push the mews poster projefct to github'. All branches (mews-api, sync/poster-mews, sync/mews-klaviyo, sync/full-integration) confirmed pushed to nomads-ops-center repository. Repository URL: https://github.com/tddixon/nomads-ops-center",
+    "timestamp": "2026-01-31T18:57:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-051",
+    "fact": "Product ideas brainstorming session (2026-01-31 18:59 UTC): Trevor requested product ideas for MRR and one-time payments. 10 ideas generated across Hospitality SaaS, Developer Tools, Thailand/Digital Nomad, and Workflow Automation. Top 3 recommendations: POS-PMS Sync Service, Hostel Operations Dashboard, Next.js + Convex Starter Kit.",
+    "timestamp": "2026-01-31T18:59:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-052",
+    "fact": "Hoscars Awards won (2026-01-31): Nomads won Best Hostel Thailand and Best Hostel Australia at Hoscars awards. Social media thank-you posts created for Instagram targeting 20-25 year olds. Posts emphasize community-built success with hundreds of thousands of guests from 80+ countries.",
+    "timestamp": "2026-01-31T14:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-053",
+    "fact": "Social media deliverables completed (2026-01-31): 5 initial Instagram post options created for Hoscars awards, followed by humanized version removing AI patterns, combined version with Trevor's preferred elements, and final version without 'bad beds' comments.",
+    "timestamp": "2026-01-31T14:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "nomads-054",
+    "fact": "Ao Nang Properties Market Position (2026-02-01 02:01 UTC): Base Ao Nang Beachfront rank #2 of 30 listings for Feb 2, 2026 check-in. Price ฿809/night (was ฿899, -10% off). Rating 9.4 Superb (1,932 reviews). Strong visibility with top positioning. Nomads Ao Nang Beach not appearing in search results despite highest rating (9.6 Superb, 2,977 reviews) - requires investigation.",
+    "timestamp": "2026-02-01T02:01:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-040"
+    ]
+  },
+  {
+    "id": "nomads-055",
+    "fact": "Base Ao Nang Beachfront property update (2026-02-01 02:01 UTC): Hostelworld rank #2 of 30 for Feb 2, 2026. Price ฿809 (10% discount from ฿899 original). Rating 9.4 Superb with 1,932 reviews. Maintained strong position with discounted pricing.",
+    "timestamp": "2026-02-01T02:01:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-042"
+    ]
+  },
+  {
+    "id": "nomads-056",
+    "fact": "Nomads Ao Nang Beach search visibility issue (2026-02-01 02:01 UTC): Property not appearing in Hostelworld search results for Feb 2, 2026 despite highest rating of 9.6 Superb (2,977 reviews). Price unavailable in search results. Potential causes: availability, listing status, or search algorithm issue - requires investigation.",
+    "timestamp": "2026-02-01T02:01:00Z",
+    "status": "superseded",
+    "supersededBy": "nomads-057"
+  },
+  {
+    "id": "nomads-057",
+    "fact": "Nomads Ao Nang Beach search visibility clarified (2026-02-01 04:22 UTC): Property not appearing in Hostelworld search results for Feb 2, 2026 is due to being sold out for that date. This is expected behavior - sold out listings are filtered from search results. No listing issue or suspension.",
+    "timestamp": "2026-02-01T04:22:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-056"
+    ]
   }
 ]

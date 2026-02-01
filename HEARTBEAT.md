@@ -13,6 +13,14 @@
 - After completing task = checkpoint
 - Context getting full = forced flush
 
+## Compound Engineering (Automated)
+
+- **Hourly (every hour)**: Brief snapshot appended to memory/YYYY-MM-DD.md
+- **Nightly (10:30 PM)**: Full review of day's sessions, extract learnings, update MEMORY.md
+- **Weekly (Sunday 9 AM)**: Knowledge graph synthesis, prune stale context
+
+The compound effect: Every day I get smarter from yesterday's work.
+
 ## Remember
 
 Context dies on restart. Memory files don't.

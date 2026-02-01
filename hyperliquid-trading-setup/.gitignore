@@ -1,0 +1,55 @@
+# Sensitive Data - NEVER COMMIT
+*.env
+.env
+**/.env
+*private_key*
+*secret*
+*apikey*
+
+# Docker Volumes (large, generated data)
+hummingbot-*/
+**/logs/
+**/data/
+**/conf/strategies/*.yml
+
+# Generated Reports
+daily-report-*.csv
+trades-*.csv
+trading-tracker-updated.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary Files
+*.tmp
+*.bak
+*.log
+*.pid
+
+# Secrets (just to be safe)
+secrets/
+credentials/
+*.pem
+*.key
+*.p12

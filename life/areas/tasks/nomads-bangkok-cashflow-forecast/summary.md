@@ -1,27 +1,35 @@
 # Nomads Bangkok Cashflow Forecast
 
-**Entity Type:** Task
-**Status:** Open
-**Priority:** High
-**Due:** 2026-01-28
-**Created:** 2026-01-28
+**Type:** tasks
+**Last Updated:** 2026-02-01
 
-## Summary
+## Current Context
 
-Create comprehensive cashflow forecast for Nomads Bangkok location. Marked as top priority for today.
+### General
 
-## Context
+- Status: Open (not yet started) (01/29/2026)
+- Priority set to HIGH - top priority for today (01/28/2026)
+- Added to daily plan 2026-01-28 as Must-Do #1 (01/28/2026)
 
-- Added to Second Brain on 2026-01-28
-- Linked to project: Nomads Bangkok Opening
-- In daily plan for 2026-01-28 as Must-Do #1
-- Estimated time: 60 minutes
+### Tasks
 
-## Location
+- Task created - Nomads Bangkok cashflow forecast (01/28/2026)
+- Due date: 2026-01-28 (today when created) (01/28/2026)
 
-- Task file: `/home/desktop/obsidian-second-brain/04-Tasks/nomads-bangkok-cashflow-forecast.md`
-- Daily plan: `/home/desktop/obsidian-second-brain/Daily Plans/2026-01-28.md`
+### Projects
+
+- Linked to project: Nomads Bangkok Opening (01/28/2026)
+
+## Recent Activity (Last 3 Months)
+
+- **01/29/2026:** Status: Open (not yet started)
+- **01/28/2026:** Task created - Nomads Bangkok cashflow forecast
+- **01/28/2026:** Priority set to HIGH - top priority for today
+- **01/28/2026:** Due date: 2026-01-28 (today when created)
+- **01/28/2026:** Added to daily plan 2026-01-28 as Must-Do #1
+- **01/28/2026:** Linked to project: Nomads Bangkok Opening
 
 ---
 
-*Last updated: 2026-01-29*
+**Fact Summary:** 6 recent, 0 older, 0 historical
+**Total Facts:** 6

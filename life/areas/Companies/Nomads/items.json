@@ -159,6 +159,14 @@
       "content": "Noho Ops integration analysis corrected (2026-01-31 15:30 UTC): Previous analysis was incorrect - Poster and MEWS already exist in main repo, Klaviyo integration missing. Worktrees were isolation environments, not separate repos. New 5-week plan created with focus on building Klaviyo as only new feature.",
       "timestamp": "2026-01-31T15:30:00Z",
       "source": "conversation"
+    },
+    {
+      "id": "nomads-21",
+      "entity": "Nomads",
+      "type": "market_data",
+      "content": "Market position strong (2026-02-01 00:00 UTC): Base Ao Nang #2 and Nomads Ao Nang Beach #5 on Hostelworld (both in top 5 of 30 listings). 9.6★ rating is highest in market.",
+      "timestamp": "2026-02-01T00:00:00Z",
+      "source": "weekly_synthesis"
     }
   ]
 }

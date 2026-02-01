@@ -1,0 +1,14 @@
+[
+  {
+    "id": "hummingbot-001",
+    "fact": "Open source crypto trading bot software with Docker image available (2026-02-01 14:14 UTC). Image: hummingbot/hummingbot:latest",
+    "timestamp": "2026-02-01T14:14:00Z",
+    "status": "active"
+  },
+  {
+    "id": "hummingbot-002",
+    "fact": "Used for Hyperliquid paper trading setup with dual strategy testing (funding arbitrage + meme grid) (2026-02-01 14:42 UTC)",
+    "timestamp": "2026-02-01T14:42:00Z",
+    "status": "active"
+  }
+]

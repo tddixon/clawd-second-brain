@@ -1,46 +1,52 @@
-# Klaviyo-MEWS Integration
+# Klaviyo Mews Integration
 
-**Entity Type:** Project
-**Status:** Active - Phase 2 Planning Complete
-**Start Date:** 2026-01-28
-**Repo:** `/home/desktop/klaviyo-mews-integration`
-**Framework:** Get Shit Done (GSD)
+**Type:** projects
+**Last Updated:** 2026-02-01
 
-## Summary
+## Current Context
 
-Self-hosted integration between MEWS (hostel PMS) and Klaviyo (email marketing) to replace expensive Zapier setup. Syncs guest reservation data to Klaviyo profiles for email flow triggers across multiple properties.
+### Tasks
 
-## Progress
+- Claude Code wingman session opened (2026-01-31 05:44 UTC): Session 'klaviyo-mews' launched via tmux for codebase review. Task: Review current state of codebase and identify what's complete vs pending for guest lifecycle email automation sync. Working directory: /home/desktop/klaviyo-mews-integration (01/31/2026)
+- Initial task created in ClickUp: Setup Klaviyo lifecycle events (12 event triggers configured) (01/30/2026)
+- Tasks created for Trevor (2026-01-30 18:20 UTC): 'Test all 12 lifecycle event triggers' (high priority), 'Design email templates for each trigger' (normal priority) (01/30/2026)
 
-**Phase 1: Foundation & Webhook Infrastructure** ✅ Completed
-- Schema with 4 tables (properties, webhookEvents, processedWebhooks, syncLogs)
-- HTTP webhook endpoint with auth + idempotent enqueue
-- Async processor + status tracking
-- 3 waves, all executed
+### Projects
 
-**Phase 2: MEWS API Integration** 📋 Planned
-- Wave 1: MEWS types, API client with rate limiting, reservation/customer fetch
-- Wave 2: Enhanced webhook processor with MEWS API calls
-- Ready to execute at 75% progress
+- ClickUp & Obsidian sync completed (2026-01-31 17:00 UTC): MEWS/Klaviyo integration project added to both ClickUp tasks and Obsidian PKM with proper project documentation. All changes committed to vault. (01/31/2026)
+- Worktree strategy clarified (2026-01-31 19:00 UTC): Recommended approach for Klaviyo development uses /home/desktop/clawd/nomads-ops-sync-mews-klaviyo worktree with feature/klaviyo-integration branch for isolation from mews-api main branch. Worktrees provide isolation, allow both versions to run simultaneously, enable safe experimentation, and support separate Claude Code sessions. (01/31/2026)
+- ClickUp project (List) created in Nomads space (2026-01-30 16:51 UTC), List ID: 901710408192 (01/30/2026)
+- Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview (MEWS to Klaviyo lifecycle email automation), Goal (automate guest communication), Completed Work (12 lifecycle events, predictive analytics, webhook handlers), Pending Work (test triggers, design templates, A/B testing, deploy), References, and Future Enhancement ideas (VIP automation, win-back campaigns, review requests) (01/30/2026)
+- Project Summary Doc recreated in ClickUp with create_page: false (2026-01-30 18:10 UTC). Doc ID: rg3vj-6397. Contains 5 pages: Executive Summary, Overview, What We Have Done, What Needs To Be Done, Ideas & Future. No Untitled page issue (01/30/2026)
 
-**Remaining Phases:**
-- Phase 3: Klaviyo Profile Sync
-- Phase 4: Events Tracking
-- Phase 5: Suppression & Scheduling
-- Phase 6: Admin Dashboard
+### Integrations
 
-## Tech Stack
+- Developer Guide reference (2026-01-31 19:00 UTC): NOHO-OPS-DEVELOPER-GUIDE.md created as comprehensive reference for Claude Code or any developer working on Klaviyo integration. Document explains complete repository architecture, worktree strategy, 5-week plan, technical architecture, git strategy, testing checklist, and quick reference commands. (01/31/2026)
+- GitHub repo: https://github.com/tddixon/klaviyo-mews-integration (01/30/2026)
+- Phase 2 planned - MEWS API Integration (2 waves, ready to execute) (01/29/2026)
 
-- **Backend:** Convex
-- **Dashboard:** Next.js
-- **Language:** TypeScript
+### General
 
-## Claude Code Session
+- Phase 1 completed - Foundation & webhook infrastructure (3 waves) (01/29/2026)
+- Running in Claude Code tmux session 'klaviyo-mews' (01/29/2026)
+- Using tmux for remote Claude Code session control (2026-01-29) (01/29/2026)
+- Get Shit Done (GSD) framework setup complete - 6 phases planned (01/28/2026)
+- Tech stack: Convex backend, Next.js dashboard, TypeScript (01/28/2026)
 
-- **Session:** `klaviyo-mews` (tmux)
-- **Model:** Opus 4.5
-- **Mode:** YOLO, balanced profile
+## Recent Activity (Last 3 Months)
+
+- **01/31/2026:** Claude Code wingman session opened (2026-01-31 05:44 UTC): Session 'klaviyo-mews' launched via tmux for codebase review. Task: Review current state of codebase and identify what's complete vs pending for guest lifecycle email automation sync. Working directory: /home/desktop/klaviyo-mews-integration
+- **01/31/2026:** ClickUp & Obsidian sync completed (2026-01-31 17:00 UTC): MEWS/Klaviyo integration project added to both ClickUp tasks and Obsidian PKM with proper project documentation. All changes committed to vault.
+- **01/31/2026:** Worktree strategy clarified (2026-01-31 19:00 UTC): Recommended approach for Klaviyo development uses /home/desktop/clawd/nomads-ops-sync-mews-klaviyo worktree with feature/klaviyo-integration branch for isolation from mews-api main branch. Worktrees provide isolation, allow both versions to run simultaneously, enable safe experimentation, and support separate Claude Code sessions.
+- **01/31/2026:** Developer Guide reference (2026-01-31 19:00 UTC): NOHO-OPS-DEVELOPER-GUIDE.md created as comprehensive reference for Claude Code or any developer working on Klaviyo integration. Document explains complete repository architecture, worktree strategy, 5-week plan, technical architecture, git strategy, testing checklist, and quick reference commands.
+- **01/30/2026:** ClickUp project (List) created in Nomads space (2026-01-30 16:51 UTC), List ID: 901710408192
+- **01/30/2026:** GitHub repo: https://github.com/tddixon/klaviyo-mews-integration
+- **01/30/2026:** Initial task created in ClickUp: Setup Klaviyo lifecycle events (12 event triggers configured)
+- **01/30/2026:** Project Summary Document content provided for manual Doc creation in ClickUp (2026-01-30 17:58 UTC). Includes Overview (MEWS to Klaviyo lifecycle email automation), Goal (automate guest communication), Completed Work (12 lifecycle events, predictive analytics, webhook handlers), Pending Work (test triggers, design templates, A/B testing, deploy), References, and Future Enhancement ideas (VIP automation, win-back campaigns, review requests)
+- **01/30/2026:** Project Summary Doc recreated in ClickUp with create_page: false (2026-01-30 18:10 UTC). Doc ID: rg3vj-6397. Contains 5 pages: Executive Summary, Overview, What We Have Done, What Needs To Be Done, Ideas & Future. No Untitled page issue
+- **01/30/2026:** Tasks created for Trevor (2026-01-30 18:20 UTC): 'Test all 12 lifecycle event triggers' (high priority), 'Design email templates for each trigger' (normal priority)
 
 ---
 
-*Last updated: 2026-01-29*
+**Fact Summary:** 20 recent, 0 older, 0 historical
+**Total Facts:** 20
