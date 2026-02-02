@@ -46,5 +46,23 @@
     "fact": "Project list reorganized in ClickUp (2026-01-30 18:30 UTC). Folder 'Tour Website' (ID: 90176175710) contains list 'Tour Website Tasks' (ID: 901710411151) and project summary doc. Previously folderless list deleted and recreated inside folder",
     "timestamp": "2026-01-30T18:30:00Z",
     "status": "active"
+  },
+  {
+    "id": "tour-website-009",
+    "fact": "Git branch checked out (2026-02-02 16:02 UTC): 'gsd-fix' branch (lowercase) checked out from nomads-asia-tour-convex repository. Branch was already up to date with latest remote changes.",
+    "timestamp": "2026-02-02T16:02:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tour-website-010",
+    "fact": "Image hosting migration research initiated (2026-02-02 16:32 UTC): Sub-agent spawned to research best free Cloudinary alternatives and design migration strategy. Research focuses on cost reduction (zero egress fees), blur loading preservation, and seamless migration without reuploading to Convex. Recommended solution: Cloudflare R2 with BlurHash for placeholders.",
+    "timestamp": "2026-02-02T16:32:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tour-website-011",
+    "fact": "Cloudinary to R2 migration PRD created (2026-02-02 ~16:55 UTC): Comprehensive PRD written at /home/desktop/PRD-Cloudinary-to-R2-Migration.md. Includes 7-phase migration plan (infrastructure, blur loading strategy, backend, frontend, data migration, testing), BlurHash recommendation for maintaining blur loading, and complete code examples. Estimated timeline: 6-7 hours.",
+    "timestamp": "2026-02-02T16:55:00Z",
+    "status": "active"
   }
 ]

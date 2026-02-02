@@ -1,0 +1,14 @@
+[
+  {
+    "id": "cloudflare-1",
+    "fact": "Recommended as best free Cloudinary alternative (2026-02-02 16:35 UTC): Research identified Cloudflare R2 with 10GB free storage and unlimited free egress bandwidth as optimal choice for image-heavy tour website. Key advantages: global CDN (300+ cities), S3-compatible API for bulk migration, zero bandwidth costs at scale ($0.015/GB storage only), Next.js native loader support.",
+    "timestamp": "2026-02-02T16:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "cloudflare-2",
+    "fact": "Blur loading compatibility (2026-02-02 16:35 UTC): Cloudflare Image Transformations via /cdn-cgi/image/ URL parameters provide resize, format conversion, and quality optimization. For blur placeholders, recommended BlurHash approach (30-byte strings stored in Convex) decoded via react-blurhash to replicate Cloudinary's automatic blur feature.",
+    "timestamp": "2026-02-02T16:35:00Z",
+    "status": "active"
+  }
+]

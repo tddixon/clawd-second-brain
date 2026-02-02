@@ -10,5 +10,54 @@
     "fact": "Daily plan includes session summary (2026-01-30): PKM code review, ClickUp reorg, Context7, integration plan, 6 daily tasks",
     "timestamp": "2026-01-30T18:59:00Z",
     "status": "active"
+  },
+  {
+    "id": "obsidian-003",
+    "fact": "OpenClaw plugin installed by Trevor (2026-02-02 18:00 UTC): Plugin installed at ~/obsidian-second-brain/.obsidian/plugins/openclaw/ for two-way sync with Clawdbot",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-004",
+    "fact": "OpenClaw plugin configuration (2026-02-02 18:00 UTC): Requires Gateway URL https://clawd-vps.tail8c6e6b.ts.net and sync token for authentication",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-005",
+    "fact": "BRAT plugin installer installed (2026-02-02 18:06 UTC): Beta plugin installer for Obsidian used to install OpenClaw plugin",
+    "timestamp": "2026-02-02T18:06:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-006",
+    "fact": "OpenClaw sync path configuration (2026-02-02 18:50 UTC): Remote path 'openclaw/secondbrain', Local path '.' (vault root)",
+    "timestamp": "2026-02-02T18:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-007",
+    "fact": "OpenClaw uses Gateway Token for authentication (2026-02-02 18:45 UTC): No separate Sync Token field - Gateway Token e072fde4da4f16b77f4982d9dd830e39940fee01d59c8668 used for both chat and sync",
+    "timestamp": "2026-02-02T18:45:00Z",
+    "status": "active",
+    "supersedes": ["obsidian-004"]
+  },
+  {
+    "id": "obsidian-008",
+    "fact": "OpenClaw files nested at openclaw/secondbrain/ (2026-02-02 18:30 UTC): Server stores 335 files at /home/desktop/openclaw/secondbrain/ not at root openclaw/ path",
+    "timestamp": "2026-02-02T18:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-009",
+    "fact": "OpenClaw sync issue unresolved (2026-02-02 18:50-20:30 UTC): User configured correct remote path 'openclaw/secondbrain' and local path '.', sync completes but files don't appear in Obsidian vault locally. Troubleshooting continued to identify if files are syncing to a subfolder",
+    "timestamp": "2026-02-02T20:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-010",
+    "fact": "OpenClaw sync server persistent (2026-02-02 20:30 UTC): Sync server process remains running on port 18790, 335 files confirmed at /home/desktop/openclaw/secondbrain/",
+    "timestamp": "2026-02-02T20:30:00Z",
+    "status": "active"
   }
 ]

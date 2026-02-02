@@ -219,6 +219,16 @@
       "date": "2026-02-01",
       "source": "clawdbot",
       "supersedes": []
+    },
+    {
+      "id": "brat-1",
+      "entity": "BRAT",
+      "fact_type": "plugin_info",
+      "title": "Obsidian Beta Plugin Installer",
+      "description": "Obsidian plugin for installing beta and community plugins directly from GitHub repositories. Plugin ID: obsidian42-brat. Installed by Trevor on 2026-02-02 at ~/obsidian-second-brain/.obsidian/plugins/obsidian42-brat/. Used to install OpenClaw plugin for two-way sync with Clawdbot.",
+      "date": "2026-02-02",
+      "source": "clawdbot",
+      "supersedes": []
     }
   ]
 }

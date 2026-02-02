@@ -1,0 +1,14 @@
+[
+  {
+    "id": "cloudinary-1",
+    "fact": "Current image hosting provider for nomads-tour-site (2026-02-02 16:32 UTC): Stores images in 'nomads-asia-tours' folder. Uses CldUploadWidget for uploads, CldImage component for display with automatic blur placeholders. Backend handled by convex/cloudinaryActions.ts with signed URLs, deletion, and metadata operations. Migration planned to Cloudflare R2 for cost reduction.",
+    "timestamp": "2026-02-02T16:32:00Z",
+    "status": "active"
+  },
+  {
+    "id": "cloudinary-2",
+    "fact": "Migration driver: Cost and bandwidth limitations (2026-02-02 16:35 UTC): Current Cloudinary pricing uses credit system (25 credits shared across storage, bandwidth, transformations). For image-heavy tour site targeting Asia travelers, bandwidth costs will scale significantly. Cloudflare R2 offers unlimited free egress vs Cloudinary's metered credits, making it more cost-effective at scale.",
+    "timestamp": "2026-02-02T16:35:00Z",
+    "status": "active"
+  }
+]

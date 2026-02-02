@@ -1,0 +1,14 @@
+[
+  {
+    "id": "brat-001",
+    "fact": "BRAT plugin installed in Obsidian by Trevor (2026-02-02 18:00 UTC): Beta plugin installer installed at ~/obsidian-second-brain/.obsidian/plugins/obsidian42-brat/",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "brat-002",
+    "fact": "Used to install OpenClaw plugin (2026-02-02 18:00 UTC): BRAT enabled Trevor to install the OpenClaw plugin for two-way sync with Clawdbot",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  }
+]

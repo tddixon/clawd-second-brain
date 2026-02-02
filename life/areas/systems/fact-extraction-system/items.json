@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fact-extraction-001",
+    "fact": "Fact extraction cron job 'life-fact-extraction' runs every 30 minutes to update knowledge graph from conversation history",
+    "timestamp": "2026-02-02T04:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-002",
+    "fact": "Fact extraction template located at /home/desktop/clawd/life/.skills/fact-extractor.md",
+    "timestamp": "2026-02-02T04:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-003",
+    "fact": "Cron job failed at 03:06 UTC on 2026-02-02 due to git path error - attempted to extract file using path 'areas/companies/nomads/items.json' instead of 'life/areas/companies/nomads/items.json'",
+    "timestamp": "2026-02-02T03:06:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-004",
+    "fact": "Git commit 4b34fead871630bee865cd28d30b59ca43d7edd6 referenced during failed extraction attempt",
+    "timestamp": "2026-02-02T03:06:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-005",
+    "fact": "Root cause identified: Fact extraction script missing 'life/' prefix in git path when extracting historical versions",
+    "timestamp": "2026-02-02T04:17:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-006",
+    "fact": "Incorrectly created directory /home/desktop/clawd/life/companies/ removed at 04:17 UTC on 2026-02-02",
+    "timestamp": "2026-02-02T04:17:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-007",
+    "fact": "Issue documented in /home/desktop/clawd/memory/2026-02-02.md with fix needed note",
+    "timestamp": "2026-02-02T04:18:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-008",
+    "fact": "Knowledge graph data integrity maintained - no data loss from cron failure",
+    "timestamp": "2026-02-02T04:17:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-009",
+    "fact": "Fix needed: Update fact extraction script to use correct git path with 'life/' prefix",
+    "timestamp": "2026-02-02T04:18:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-010",
+    "fact": "Fact extraction completed at 18:30 UTC on 2026-02-02: Extracted 13 facts from OpenClaw Obsidian Sync installation activity",
+    "timestamp": "2026-02-02T18:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-011",
+    "fact": "Knowledge graph entities updated: Trevor (8 facts), Obsidian (2 facts), BRAT (2 facts), obsidian-sync-investigation (4 facts), Tailscale (2 facts), Clawdbot (2 facts)",
+    "timestamp": "2026-02-02T18:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-012",
+    "fact": "Fact extraction completed at 19:00 UTC on 2026-02-02: Extracted 7 facts from Obsidian OpenClaw sync troubleshooting session",
+    "timestamp": "2026-02-02T19:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-013",
+    "fact": "Updated Trevor entity with 7 new facts about OpenClaw sync configuration issues and troubleshooting",
+    "timestamp": "2026-02-02T19:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-014",
+    "fact": "Updated obsidian-sync-investigation project with 5 new facts about Tailscale port changes, Gateway Token authentication, and sync path configuration",
+    "timestamp": "2026-02-02T19:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "fact-extraction-015",
+    "fact": "Knowledge graph now tracks OpenClaw sync evolution: initial setup → 403 error → Gateway Token switch → port 18790 → correct path 'openclaw/secondbrain'",
+    "timestamp": "2026-02-02T19:00:00Z",
+    "status": "active"
+  }
+]

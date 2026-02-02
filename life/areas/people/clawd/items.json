@@ -58,5 +58,11 @@
     "fact": "HEARTBEAT.md updated (2026-01-31 17:00 UTC): Checkpoint loop instructions updated per Trevor's request for improved memory management during cron runs.",
     "timestamp": "2026-01-31T17:00:00Z",
     "status": "active"
+  },
+  {
+    "id": "clawd-011",
+    "fact": "Resolved fact extraction cron job failure (2026-02-02 04:17 UTC): Investigated git path error, removed incorrectly created /home/desktop/clawd/life/companies/ directory, documented issue in memory file. Created new fact extraction system entity in knowledge graph.",
+    "timestamp": "2026-02-02T04:17:00Z",
+    "status": "active"
   }
 ]

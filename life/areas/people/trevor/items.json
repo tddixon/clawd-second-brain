@@ -1,344 +1,116 @@
 [
   {
-    "id": "trevor-001",
-    "fact": "Owner of Nomads hostel chain in Thailand",
-    "timestamp": "2024-01-01",
-    "status": "archived"
-  },
-  {
-    "id": "trevor-002",
-    "fact": "Primary contact for Nomads operations and decisions",
-    "timestamp": "2024-01-01",
-    "status": "archived"
-  },
-  {
-    "id": "trevor-003",
-    "fact": "Focus areas: Marketing & copywriting, Coding & development, Systems management",
-    "timestamp": "2024-01-01",
-    "status": "archived"
-  },
-  {
-    "id": "trevor-004",
-    "fact": "Struggles with task management and staying in control of multiple projects",
-    "timestamp": "2024-01-01",
-    "status": "archived"
-  },
-  {
-    "id": "trevor-005",
-    "fact": "Uses Clawd as co-pilot for calendar, tasks, projects, second brain, coding, and marketing",
-    "timestamp": "2024-01-01",
-    "status": "archived"
-  },
-  {
-    "id": "trevor-006",
-    "fact": "Timezone: Thailand (likely ICT, UTC+7)",
-    "timestamp": "2024-01-01",
-    "status": "archived"
-  },
-  {
-    "id": "trevor-007",
-    "fact": "Location: Thailand",
-    "timestamp": "2024-01-01",
-    "status": "archived"
-  },
-  {
-    "id": "trevor-008",
-    "fact": "Tech stack preferences: Next.js, Convex, shadcn/ui, TypeScript",
-    "timestamp": "2026-01-29",
+    "id": "trevor-059",
+    "fact": "Requested git branch checkout for tour website (2026-02-02 16:02 UTC): Asked to pull latest branch 'GSD-Fix' from nomads-tour-site-convex repository",
+    "timestamp": "2026-02-02T16:02:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-009",
-    "fact": "Approved deployment of 5 parallel AI agents for Nomads automation (2026-01-29)",
-    "timestamp": "2026-01-29T14:30:00Z",
+    "id": "trevor-060",
+    "fact": "Requested image CDN migration research (2026-02-02 16:32 UTC): Asked to research best free alternative to Cloudinary for images and find migration strategy for nomads-tour-site project without reuploading to Convex",
+    "timestamp": "2026-02-02T16:32:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-010",
-    "fact": "Telegram ID: 8495717970 (for notifications)",
-    "timestamp": "2026-01-29T14:30:00Z",
+    "id": "trevor-061",
+    "fact": "Requested PRD for Cloudinary migration (2026-02-02 ~16:55 UTC): Asked for comprehensive PRD explaining goal and step-by-step plan, specifically requesting to maintain blur loading feature of Cloudinary",
+    "timestamp": "2026-02-02T16:55:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-011",
-    "fact": "Approved MEWS Booking Engine deployment to production (2026-01-29)",
-    "timestamp": "2026-01-29T14:30:00Z",
+    "id": "trevor-062",
+    "fact": "Installed Obsidian OpenClaw plugin for two-way sync with Clawdbot (2026-02-02 18:00 UTC): Plugin installed at ~/obsidian-second-brain/.obsidian/plugins/openclaw/",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-012",
-    "fact": "Approved Poster POS to MEWS sync integration (2026-01-29)",
-    "timestamp": "2026-01-29T14:30:00Z",
+    "id": "trevor-063",
+    "fact": "Installed BRAT plugin (Beta plugin installer) in Obsidian (2026-02-02 18:00 UTC): Plugin installed at ~/obsidian-second-brain/.obsidian/plugins/obsidian42-brat/ to enable beta plugin installation",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-013",
-    "fact": "Requested unified financial reporting across hostel and bar operations (2026-01-31)",
-    "timestamp": "2026-01-31T14:48:00Z",
+    "id": "trevor-064",
+    "fact": "Generated secure sync token for OpenClaw authentication (2026-02-02 18:00 UTC): Token: 44d58250c0f4772f9ebea3caeb7e8f5bb2911272f7259cb0dd05208aaa42dfc3",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-014",
-    "fact": "Approved Ops Center code audit and improvements (2026-01-30)",
-    "timestamp": "2026-01-30T13:45:00Z",
+    "id": "trevor-065",
+    "fact": "Created sync server at localhost:18790 for OpenClaw sync (2026-02-02 18:00 UTC): Server provides two-way file synchronization between Clawdbot and Obsidian",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-015",
-    "fact": "Reviewed HOSTELWORLD-PRICE-MONITOR report with price discrepancy (THB 350 vs actual THB 1,125) on 2026-01-31",
-    "timestamp": "2026-01-31T05:45:00Z",
+    "id": "trevor-066",
+    "fact": "Configured Tailscale serve to expose OpenClaw sync endpoint (2026-02-02 18:00 UTC): Endpoint accessible at https://clawd-vps.tail8c6e6b.ts.net:18790 with tailnet-only security",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-016",
-    "fact": "Approved Hostelworld price monitoring rebuild (2026-01-31 05:52 UTC): (1) Rebuild script with Playwright for accurate JavaScript pricing, (2) Set up daily cron at 6 AM Thailand time with Telegram notifications",
-    "timestamp": "2026-01-31T05:52:00Z",
+    "id": "trevor-067",
+    "fact": "Created systemd service openclaw-sync.service for auto-start on boot (2026-02-02 18:00 UTC): Service ensures sync server starts automatically on system boot",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-017",
-    "fact": "Approved sub-agent deployment for Hostelworld fix (2026-01-31 05:52 UTC): 'fix-hostelworld-monitor' for Playwright script, 'setup-hostelworld-cron' for daily monitoring",
-    "timestamp": "2026-01-31T05:52:00Z",
+    "id": "trevor-068",
+    "fact": "Created sync directories for OpenClaw (2026-02-02 18:00 UTC): Created /home/desktop/clawd/notes/ and /home/desktop/clawd/memory/ for shared file storage",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-018",
-    "fact": "Requested prices in THB currency (2026-01-31 06:36 UTC): Price monitoring should display Thai Baht (฿) not USD for Nomads Ao Nang properties",
-    "timestamp": "2026-01-31T06:36:00Z",
+    "id": "trevor-069",
+    "fact": "Needs to enable BRAT and OpenClaw plugins in Obsidian (2026-02-02 18:00 UTC): Pending action to complete OpenClaw sync setup in Obsidian settings",
+    "timestamp": "2026-02-02T18:00:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-019",
-    "fact": "Requested daily price monitoring schedule (2026-01-31 06:36 UTC): Instead of weekly, wants Hostelworld price checks to run daily",
-    "timestamp": "2026-01-31T06:36:00Z",
+    "id": "trevor-070",
+    "fact": "Troubleshot OpenClaw sync path configuration (2026-02-02 18:42 UTC): Discovered vault files are at remote path 'openclaw/secondbrain' not just 'openclaw'",
+    "timestamp": "2026-02-02T18:42:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-020",
-    "fact": "Requested search ranking tracking (2026-01-31 06:36 UTC): Wants to see which property ranks 1st, 2nd, 3rd, etc. in Hostelworld search results, not just prices",
-    "timestamp": "2026-01-31T06:36:00Z",
+    "id": "trevor-071",
+    "fact": "Reported sync completing but no files appearing in Obsidian vault (2026-02-02 18:43 UTC): OpenClaw plugin shows sync complete but no files visible in vault root",
+    "timestamp": "2026-02-02T18:43:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-021",
-    "fact": "Reviewed updated ranking data (2026-01-31 06:55 UTC): Base Beachfront #1 (best position), Nomads Ao Nang Beach #5. Both Nomads properties in top 5 with 17% of top spots.",
-    "timestamp": "2026-01-31T06:55:00Z",
+    "id": "trevor-072",
+    "fact": "Requested Tailscale serve port change to 18790 (2026-02-02 18:47 UTC): Asked to change configuration from port 443 to explicit port 18790",
+    "timestamp": "2026-02-02T18:47:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-022",
-    "fact": "Initiated Polymarket trading agent research (2026-01-31 09:54 UTC): Requested comprehensive research on building autonomous trading agent to generate profit and cover server/LLM costs",
-    "timestamp": "2026-01-31T09:54:00Z",
+    "id": "trevor-073",
+    "fact": "Confirmed 403 error during sync attempt (2026-02-02 18:49 UTC): Reported 403 Forbidden error when trying to connect from MacBook",
+    "timestamp": "2026-02-02T18:49:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-023",
-    "fact": "Expanded trading research scope (2026-01-31 09:59 UTC): Requested expansion beyond Polymarket to include crypto trading and arbitrage strategies",
-    "timestamp": "2026-01-31T09:59:00Z",
+    "id": "trevor-074",
+    "fact": "Confirmed Obsidian OpenClaw plugin has no separate sync token field (2026-02-02 18:53 UTC): Plugin only shows Gateway URL and Gateway Token fields in settings",
+    "timestamp": "2026-02-02T18:53:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-024",
-    "fact": "Prioritized opportunity identification (2026-01-31 10:12 UTC): Emphasized that 'the biggest key is opportunities to win' - wants focus on actual profit opportunities, not just theory",
-    "timestamp": "2026-01-31T10:12:00Z",
+    "id": "trevor-075",
+    "fact": "Reported sync completing with no files added (2026-02-02 18:54 UTC): After configuring sync paths, OpenClaw shows complete but vault remains empty",
+    "timestamp": "2026-02-02T18:54:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-025",
-    "fact": "Capital preservation mandate (2026-01-31 10:21 UTC): Stated 'We cannot lose money, we must maintain profitability or we cannot afford to run vps and llm models' - requires cost coverage from trading profits",
-    "timestamp": "2026-01-31T10:21:00Z",
+    "id": "trevor-076",
+    "fact": "Confirmed remote path 'openclaw/secondbrain' already attempted (2026-02-02 18:55 UTC): Stated suggested remote path was already tried without success",
+    "timestamp": "2026-02-02T18:55:00Z",
     "status": "active"
   },
   {
-    "id": "trevor-026",
-    "fact": "Speed and automation priority (2026-01-31 10:27 UTC): Requested ability to identify opportunities faster than humans - arbitrage, unusual trades, whale wallet tracking, unusual wallet movements",
-    "timestamp": "2026-01-31T10:27:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-027",
-    "fact": "Self-hosted requirement (2026-01-31 10:38 UTC): Questioned QuickNode and Nansen dependencies, stated preference for system that can be managed and run without outside hosting",
-    "timestamp": "2026-01-31T10:38:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-028",
-    "fact": "Requested product ideas for MRR and one-time payments (2026-01-31 18:55 UTC): Asked for product ideas that can be built and sold online with monthly recurring revenue or one-time payment models. Requested outside hospitality focus.",
-    "timestamp": "2026-01-31T18:55:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-029",
-    "fact": "Requested Hoscars award social media posts (2026-01-31 14:45 UTC): Asked to write Instagram thank-you post for Hoscars awards - Best Hostel Thailand and Best Hostel Australia. Target audience: 20-25 year olds.",
-    "timestamp": "2026-01-31T14:45:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-030",
-    "fact": "Approved DEX-only crypto trading approach (2026-01-31 14:51 UTC): Stated preference for wallet + DEXs approach with no exchange dependencies or Thailand legal concerns since DEX trading is globally accessible.",
-    "timestamp": "2026-01-31T14:51:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-031",
-    "fact": "Requested Noho Ops integration correction (2026-01-31 14:45 UTC): Corrected that Noho Ops integration has NOT been done - three projects (MEWS Poster, MEWS Klaviyo, full integration) are separate repositories, not branches in same repo.",
-    "timestamp": "2026-01-31T14:45:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-032",
-    "fact": "Approved Polymarket trading bot pause (2026-01-31 15:00 UTC): Accepted decision to pause PolyClaw Trading development due to Polymarket not being available in Thailand. All research and planning preserved for future reference.",
-    "timestamp": "2026-01-31T15:00:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-033",
-    "fact": "Requested GitHub push for MEWS/Poster branches (2026-01-31 17:50 UTC): Asked to push all MEWS integration branches (mews-api, sync/poster-mews, sync/mews-klaviyo, sync/full-integration) to nomads-ops-center repository on GitHub.",
-    "timestamp": "2026-01-31T17:50:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-034",
-    "fact": "Asked about klaviyo-mews product status on GitHub (2026-01-31 19:03 UTC): Checked GitHub and noted klaviyo-mews integration didn't appear to be updated. Clarified that feature/marketing-automation-enhancement branch was pushed and user was likely looking at wrong branch (master vs feature branch).",
-    "timestamp": "2026-01-31T19:03:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-035",
-    "fact": "Asked about poster mews sync project GitHub status (2026-01-31 19:22 UTC): Wanted confirmation that poster mews sync was pushed to GitHub. Confirmed sync/poster-mews branch is pushed to nomads-ops-center repository with all MEWS integration branches available.",
-    "timestamp": "2026-01-31T19:22:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-036",
-    "fact": "Asked about repository merge order (2026-01-31 19:39 UTC): Questioned if mews-api should be merged first, then poster sync, then klaviyo-mews. Clarified that worktrees don't need merging - they're already at same commit as mews-api. Recommended strategy: work on mews-api (already has Poster+MEWS), build Klaviyo there, then merge to main.",
-    "timestamp": "2026-01-31T19:39:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-037",
-    "fact": "Asked about using worktree for Claude Code development (2026-01-31 19:47 UTC): Wanted to confirm that worktrees are right approach for Claude Code to work on project more. Confirmed worktree strategy is smart for Klaviyo development - provides isolation, allows running both versions simultaneously, safe experimentation, separate Claude Code sessions.",
-    "timestamp": "2026-01-31T19:47:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-038",
-    "fact": "Asked about poster sync project status (2026-01-31 19:55 UTC): Wanted clarification on poster sync project. Confirmed Poster POS → MEWS sync is COMPLETE and working in mews-api branch. The nomads-ops-sync-poster-mews worktree is obsolete - already merged to mews-api. No more work needed on Poster sync.",
-    "timestamp": "2026-01-31T19:55:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-039",
-    "fact": "Asked for explanation of poster sync workflow (2026-01-31 20:00 UTC): Wanted to understand what poster sync actually does. Confirmed: Poster POS shift sales (bar, food, merchandise) → mapped to MEWS accounting categories → posted as revenue items in MEWS → financial reports. Features: automatic shift sync, accounting mapping, revenue recognition, deposit reconciliation, per-hostel spot mappings.",
-    "timestamp": "2026-01-31T20:00:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-040",
-    "fact": "Requested comprehensive developer guide prompt (2026-01-31 20:12 UTC): Asked to write detailed prompt explaining project context, branches, worktrees, and how to utilize them. Wanted guide to be extremely detailed for Claude Code. Spawned sub-agent to create 10-section technical guide.",
-    "timestamp": "2026-01-31T20:12:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-041",
-    "fact": "Trading budget and goals established (2026-02-01 ~13:57 UTC): Test budget set at $100 with goal of reaching $5,000 (50x return). Acknowledged realistic timelines presented: grid trading takes 15-20 years, funding arb takes 8-12 years, meme sniping is high-risk lottery ticket. Needs to choose approach.",
-    "timestamp": "2026-02-01T13:57:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-042",
-    "fact": "Learning-focused approach to trading (2026-02-01 ~13:51 UTC): Emphasized 'We should be learning and improving from our learnings always. Always learning, always improving.' Wants testing approach that enables continuous learning from outcomes.",
-    "timestamp": "2026-02-01T13:51:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-043",
-    "fact": "Trading strategy exploration (2026-02-01 ~13:54-14:02 UTC): Initially interested in meme coin sniping for quick profits, reconsidered due to risk, asked about safer alternatives. Finally decided on parallel testing: paper trade both funding arbitrage AND meme coin strategies simultaneously. Also interested in copy trading Chainstack Labs Hyperliquid bot.",
-    "timestamp": "2026-02-01T14:00:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-044",
-    "fact": "Infrastructure setup delegation (2026-02-01 ~14:02 UTC): Requested Clawd to set up everything using sub-agents. Wants parallel testing infrastructure for funding arbitrage and meme coin strategies with comprehensive setup.",
-    "timestamp": "2026-02-01T14:02:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-045",
-    "fact": "Empowered Clawd learning autonomy (2026-02-01 ~14:03 UTC): Stated 'I want whatever is best for you to learn' - giving Clawd freedom to set up trading infrastructure that maximizes learning and continuous improvement. Trusted Clawd to determine best approach for knowledge acquisition.",
-    "timestamp": "2026-02-01T14:03:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-046",
-    "fact": "Requested Gemini API configuration (2026-02-01 16:02 UTC): Wants ability to use Google models in Clawdbot, not just CLI tool",
-    "timestamp": "2026-02-01T16:02:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-047",
-    "fact": "Asked about specifying Gemini models (2026-02-01 16:07 UTC): 'how can I specify which model to use from gemini?' - Wants to understand model selection options",
-    "timestamp": "2026-02-01T16:07:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-048",
-    "fact": "Requested Flash and Pro as switchable models (2026-02-01 16:11 UTC): Wants Gemini Flash and Pro available as model options to switch between",
-    "timestamp": "2026-02-01T16:11:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-049",
-    "fact": "Clarified model switch requirement (2026-02-01 16:12 UTC): 'no dont change, but please add flash and pro as a model I can switch to' - Wants additional options, not to replace current default model",
-    "timestamp": "2026-02-01T16:12:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-050",
-    "fact": "Requested QMD installation (2026-02-01 16:08 UTC): Asked to 'download, install and set up QMD https://github.com/tobi/qmd' - Local markdown search engine",
-    "timestamp": "2026-02-01T16:08:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-051",
-    "fact": "Requested QMD skill setup (2026-02-01 16:14 UTC): 'after please set up QMD skill https://github.com/levineam/qmd-skill/tree/main' - Wants integration with Clawdbot",
-    "timestamp": "2026-02-01T16:14:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-052",
-    "fact": "Asked if Tailscale is installed (2026-02-01 16:34 UTC): Checked system for Tailscale availability on ubuntu-desktop machine",
-    "timestamp": "2026-02-01T16:34:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-053",
-    "fact": "Learned Tailscale remote access methods (2026-02-01 16:42 UTC): Discovered how to SSH via Tailscale IP, enable Tailscale SSH for passwordless access, access services running on machine",
-    "timestamp": "2026-02-01T16:42:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-054",
-    "fact": "Has Tailscale account with trevord.dixon@gmail.com (2026-02-01 16:51 UTC): User ID 3449228659643261, authenticated via Google OAuth",
-    "timestamp": "2026-02-01T16:51:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-055",
-    "fact": "Asked 'how do I use it for remote access' (2026-02-01 16:49 UTC): Wanted to understand Tailscale remote access capabilities",
-    "timestamp": "2026-02-01T16:49:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-056",
-    "fact": "Asked 'what is tailscale auth? do i have a user' (2026-02-01 16:52 UTC): Wanted to understand Tailscale authentication system and user identity",
-    "timestamp": "2026-02-01T16:52:00Z",
-    "status": "active"
-  },
-  {
-    "id": "trevor-057",
-    "fact": "Attempted to install Clawdbot Security Audit tool (2026-02-01 17:35-17:40 UTC): Tried 'clawdhub install Clawdbot Security Audit', 'clawdhub install lxgicstudios/clawdbot-security', and 'npm install -g clawdbot-security-audit' - installation attempts did not find package on ClawdHub or npm registry",
-    "timestamp": "2026-02-01T17:40:00Z",
+    "id": "trevor-077",
+    "fact": "OpenClaw sync issue status (2026-02-02 19:05 UTC): Sync server operational with 335 files at /home/desktop/openclaw/secondbrain/, but files not appearing in Obsidian vault despite correct configuration",
+    "timestamp": "2026-02-02T19:05:00Z",
     "status": "active"
   }
 ]

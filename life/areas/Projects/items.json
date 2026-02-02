@@ -23,6 +23,14 @@
       "content": "Market position - Base Ao Nang #2, Nomads Ao Nang Beach #5 (top 5 of 30), 9.6★ highest rated",
       "timestamp": "2026-02-01T04:30:00Z",
       "source": "weekly_synthesis"
+    },
+    {
+      "id": "openclaw-sync-001",
+      "entity": "openclaw-sync",
+      "type": "milestone",
+      "content": "OpenClaw sync project started (2026-02-02): Server deployed on port 18790, 335 files synced to server, troubleshooting local vault sync",
+      "timestamp": "2026-02-02T20:30:00Z",
+      "source": "fact_extraction"
     }
   ]
 }

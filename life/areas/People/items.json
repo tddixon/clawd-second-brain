@@ -104,6 +104,22 @@
       "content": "Paper trading infrastructure ready for activation (2026-02-01 14:42 UTC). Setup includes: Docker containers, configuration files, tracking templates, daily reporting script, complete documentation. Trevor needs to provide testnet wallet private key and obtain test ETH/USDC from faucets to begin trading.",
       "timestamp": "2026-02-01T14:42:00Z",
       "source": "conversation"
+    },
+    {
+      "id": "trevor-15",
+      "entity": "Trevor",
+      "type": "resource_capture",
+      "content": "Saved Polymarket trading resource link for later reference (2026-02-02 13:25 UTC): https://www.clawhub.ai/kellyclaudeai/polymarket-trading. This follows pattern of saving relevant resources for research projects.",
+      "timestamp": "2026-02-02T13:25:00Z",
+      "source": "conversation"
+    },
+    {
+      "id": "trevor-16",
+      "entity": "Trevor",
+      "type": "interest",
+      "content": "Researching Polymarket trading agent (2026-02-02 13:25 UTC). Saved external resource from ClawHub (KellyClaudeAI) as reference material.",
+      "timestamp": "2026-02-02T13:25:00Z",
+      "source": "conversation"
     }
   ]
 }

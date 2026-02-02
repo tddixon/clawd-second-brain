@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "id": "obsidian-openclaw-sync-1",
+      "entity": "Obsidian OpenClaw",
+      "fact_type": "configuration",
+      "title": "Sync Server Port 18790",
+      "description": "OpenClaw sync server configured on dedicated port 18790. Accessed via Tailscale serve at https://clawd-vps.tail8c6e6b.ts.net:18790",
+      "date": "2026-02-02",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "obsidian-openclaw-sync-2",
+      "entity": "Obsidian OpenClaw",
+      "fact_type": "authentication",
+      "title": "Gateway Token for Sync",
+      "description": "OpenClaw sync uses same Gateway Token for authentication (not separate sync token): e072fde4da4f16b77f4982d9dd830e39940fee01d59c8668",
+      "date": "2026-02-02",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "obsidian-openclaw-sync-3",
+      "entity": "Obsidian OpenClaw",
+      "fact_type": "storage_location",
+      "title": "Server-Side Vault Location",
+      "description": "OpenClaw vault stored at /home/desktop/openclaw/secondbrain/ with 335 files",
+      "date": "2026-02-02",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "obsidian-openclaw-sync-4",
+      "entity": "Obsidian OpenClaw",
+      "fact_type": "configuration",
+      "title": "Correct Remote Path Configuration",
+      "description": "OpenClaw sync remote path must be 'openclaw/secondbrain' (not just 'openclaw'). Files are nested one level deeper. Local path: '.' (vault root)",
+      "date": "2026-02-02",
+      "source": "clawdbot",
+      "supersedes": []
+    },
+    {
+      "id": "tailscale-1",
+      "entity": "Tailscale",
+      "fact_type": "configuration",
+      "title": "OpenClaw Sync Exposure",
+      "description": "Tailscale serve configured to expose OpenClaw sync server: sudo tailscale serve --bg --https=18790 http://localhost:18790",
+      "date": "2026-02-02",
+      "source": "clawdbot",
+      "supersedes": []
+    }
+  ]
+}

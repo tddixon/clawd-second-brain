@@ -72,6 +72,10 @@
     "hybrid-memory": {
       "version": "1.0.1",
       "installedAt": 1769880440367
+    },
+    "obsidian-sync": {
+      "version": "1.0.0",
+      "installedAt": 1770055245711
     }
   }
 }

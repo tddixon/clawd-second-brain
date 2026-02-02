@@ -356,5 +356,53 @@
     "fact": "Compound loop: Daily work → Hourly snapshots → Nightly review → Updated memory → Smarter tomorrow",
     "timestamp": "2026-02-01T16:42:00Z",
     "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-001",
+    "fact": "OpenClaw plugin installed in Obsidian via BRAT beta plugin installer (2026-02-02 18:06 UTC)",
+    "timestamp": "2026-02-02T18:06:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-002",
+    "fact": "Sync server configured on port 18790 (2026-02-02 18:35 UTC): OpenClaw sync server running with Gateway Token authentication",
+    "timestamp": "2026-02-02T18:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-003",
+    "fact": "Tailscale serve configured for OpenClaw sync (2026-02-02 18:35 UTC): sudo tailscale serve --bg --https=18790 http://localhost:18790",
+    "timestamp": "2026-02-02T18:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-004",
+    "fact": "Vault moved to openclaw/secondbrain/ (2026-02-02 18:35 UTC): PKM vault relocated to /home/desktop/openclaw/secondbrain/ for sync",
+    "timestamp": "2026-02-02T18:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-005",
+    "fact": "335 files synced (2026-02-02 18:35 UTC): Server verified with 400+ files in secondbrain directory",
+    "timestamp": "2026-02-02T18:35:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-006",
+    "fact": "Correct remote path identified (2026-02-02 18:40 UTC): Remote path 'openclaw/secondbrain' (not just 'openclaw')",
+    "timestamp": "2026-02-02T18:40:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-007",
+    "fact": "Authentication unified (2026-02-02 18:45 UTC): Gateway Token e072fde4da4f16b77f4982d9dd830e39940fee01d59c8668 used for both chat and sync",
+    "timestamp": "2026-02-02T18:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "obsidian-openclaw-sync-008",
+    "fact": "Obsidian configuration: Remote path 'openclaw/secondbrain', Local path '.' (2026-02-02 18:50 UTC)",
+    "timestamp": "2026-02-02T18:50:00Z",
+    "status": "active"
   }
 ]

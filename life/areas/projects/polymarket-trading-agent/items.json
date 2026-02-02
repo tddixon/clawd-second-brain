@@ -113,5 +113,11 @@
     "timestamp": "2026-01-31T14:48:00Z",
     "status": "superseded",
     "supersededBy": "crypto-trading-bot"
+  },
+  {
+    "id": "polymarket-trading-agent-020",
+    "fact": "External resource saved (2026-02-02 13:25 UTC): KellyClaudeAI Polymarket Trading resource from ClawHub: https://www.clawhub.ai/kellyclaudeai/polymarket-trading. Trevor saved for future reference despite project pivot.",
+    "timestamp": "2026-02-02T13:25:00Z",
+    "status": "paused"
   }
 ]

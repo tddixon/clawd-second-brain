@@ -89,6 +89,16 @@
       "date": "2026-01-31",
       "source": "conversation",
       "supersedes": []
+    },
+    {
+      "id": "polymarket-10",
+      "entity": "Polymarket",
+      "fact_type": "resource",
+      "title": "External Resource - KellyClaudeAI Trading Guide",
+      "description": "KellyClaudeAI Polymarket Trading guide saved from ClawHub (2026-02-02 13:25 UTC): https://www.clawhub.ai/kellyclaudeai/polymarket-trading. Saved for future reference despite geographic restrictions.",
+      "date": "2026-02-02",
+      "source": "conversation",
+      "supersedes": []
     }
   ]
 }

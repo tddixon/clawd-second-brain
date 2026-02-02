@@ -1,0 +1,38 @@
+[
+  {
+    "id": "clawdbot-001",
+    "fact": "Current default model configuration (2026-02-02): Primary model is kimi-code/kimi-for-coding (Kimi Code) with 262k token context and 32,768 token max output",
+    "timestamp": "2026-02-02T16:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawdbot-002",
+    "fact": "Model fallback chain (2026-02-02): If primary fails, fallback order is: (1) anthropic/claude-opus-4-5 (opus), (2) zai/glm-4.7 (glm), (3) moonshot/kimi-k2-0905-preview (Kimi K2)",
+    "timestamp": "2026-02-02T16:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawdbot-003",
+    "fact": "Sub-agent model configuration (2026-02-02): Sub-agents use different fallback chain: (1) kimi-code/kimi-for-coding, (2) zai/glm-4.7, (3) anthropic/claude-sonnet-4-5 (sonnet)",
+    "timestamp": "2026-02-02T16:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawdbot-004",
+    "fact": "Model aliases available (2026-02-02): opus (Claude Opus 4.5), sonnet (Claude Sonnet 4.5), glm (GLM 4.7), Kimi K2 (Moonshot Kimi K2), Kimi Code (kimi-code/kimi-for-coding)",
+    "timestamp": "2026-02-02T16:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawdbot-005",
+    "fact": "obsidian-sync skill installed (2026-02-02 18:00 UTC): Skill created at /home/desktop/clawd/skills/obsidian-sync/ providing secure file sync server for OpenClaw plugin",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "clawdbot-006",
+    "fact": "obsidian-sync skill features (2026-02-02 18:00 UTC): Provides sync server on port 18790, token-based authentication, path traversal protection, and API endpoints for file operations",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  }
+]

@@ -14,7 +14,7 @@
     "entity": "Obsidian Sync",
     "fact_type": "technical_constraint",
     "title": "Obsidian Sync Requires GUI",
-    "description": "Obsidian Sync is a GUI-only feature requiring the desktop app to be running. No official headless sync CLI available for triggering sync without display.",
+    "description": "Obsidian Sync is a GUI-only feature requiring to desktop app to be running. No official headless sync CLI available for triggering sync without display.",
     "date": "2026-01-29T19:05:00Z",
     "source": "clawdbot",
     "supersedes": []
@@ -46,6 +46,96 @@
     "title": "Obsidian Second Brain Setup",
     "description": "Trevor uses Obsidian as Second Brain with GTD + PARA methodology. Vault path: /home/desktop/obsidian-second-brain. Using Obsidian Sync for cross-device synchronization.",
     "date": "2026-01-29",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-006",
+    "entity": "OpenClaw",
+    "fact_type": "solution",
+    "title": "OpenClaw Obsidian Sync Installed",
+    "description": "Trevor installed OpenClaw plugin for two-way sync between Obsidian and Clawdbot. Plugin provides chat sidebar, file actions, and secure sync with token authentication.",
+    "date": "2026-02-02T18:00:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-007",
+    "entity": "obsidian-sync",
+    "fact_type": "implementation",
+    "title": "Obsidian Sync Skill Created",
+    "description": "Created obsidian-sync skill at /home/desktop/clawd/skills/obsidian-sync/ with secure file sync server running on port 18790. Uses token-based auth and path traversal protection.",
+    "date": "2026-02-02T18:00:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-008",
+    "entity": "OpenClaw Security",
+    "fact_type": "security",
+    "title": "Tailscale Serve for Secure Sync",
+    "description": "Sync endpoint exposed via Tailscale serve (https://clawd-vps.tail8c6e6b.ts.net:18790) for tailnet-only access. All requests require Bearer token authentication.",
+    "date": "2026-02-02T18:00:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-009",
+    "entity": "Tailscale Serve",
+    "fact_type": "configuration",
+    "title": "Tailscale Serve Changed to Port 18790",
+    "description": "Changed Tailscale serve configuration from port 443 to port 18790 per Trevor's request. Command: sudo tailscale serve --bg --https=18790 http://localhost:18790",
+    "date": "2026-02-02T18:40:00Z",
+    "source": "clawdbot",
+    "supersedes": ["obsidian-sync-008"]
+  },
+  {
+    "id": "obsidian-sync-010",
+    "entity": "OpenClaw Authentication",
+    "fact_type": "configuration",
+    "title": "Sync Uses Gateway Token",
+    "description": "Changed sync server authentication to use same Gateway Token (e072fde4da4f16b77f4982d9dd830e39940fee01d59c8668) instead of separate sync token. Resolved 403 Forbidden error.",
+    "date": "2026-02-02T18:40:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-011",
+    "entity": "OpenClaw Sync Path",
+    "fact_type": "configuration",
+    "title": "Correct Sync Path Identified",
+    "description": "Identified correct remote sync path as 'openclaw/secondbrain' not just 'openclaw'. Files are nested one level deeper in the directory structure.",
+    "date": "2026-02-02T18:45:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-012",
+    "entity": "Obsidian Vault",
+    "fact_type": "status",
+    "title": "335 Vault Files Confirmed",
+    "description": "Confirmed 335 files in vault at /home/desktop/openclaw/secondbrain/ including 00-Dashboard.md, 01-Daily-Notes/, 02-Projects/, and more. Sync server verified working.",
+    "date": "2026-02-02T18:50:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-013",
+    "entity": "OpenClaw Sync",
+    "fact_type": "status",
+    "title": "Sync Server Fully Operational",
+    "description": "Sync server confirmed operational with Gateway Token authentication on port 18790. Server URL: https://clawd-vps.tail8c6e6b.ts.net:18790",
+    "date": "2026-02-02T18:55:00Z",
+    "source": "clawdbot",
+    "supersedes": []
+  },
+  {
+    "id": "obsidian-sync-014",
+    "entity": "OpenClaw Sync",
+    "fact_type": "issue",
+    "title": "Files Not Appearing Locally After Sync",
+    "description": "User reported sync completes successfully but files don't appear in Obsidian vault locally. Configuration verified correct: remote path 'openclaw/secondbrain', local path '.', authentication working. Server has 335 files. Issue unresolved - may be files syncing to subfolder.",
+    "date": "2026-02-02T19:05:00Z",
     "source": "clawdbot",
     "supersedes": []
   }

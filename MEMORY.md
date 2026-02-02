@@ -363,4 +363,34 @@ Works alongside Obsidian Second Brain:
 
 ---
 
-*Last updated: 2026-02-01*
+### 2026-02-02 - Obsidian OpenClaw Sync + User Patterns
+
+**Obsidian OpenClaw Sync Learning:**
+- Sync path structure is nested: `openclaw/secondbrain/` (not flat at `openclaw/`)
+- Server can be fully operational while client-side sync fails silently
+- Files existing server-side (335 files) ≠ appearing in client vault
+- Gateway token works for both chat and sync endpoints (same token)
+- Tailscale serve: HTTPS on port 443 proxies to localhost:18790
+
+**Communication Preferences Discovered:**
+- User prefers brief, direct responses
+- "I did already" = stop repeating suggestions, move to next step
+- Gets frustrated with repetitive questions
+- Screenshots preferred for UI troubleshooting
+- Multiple messages for copy-paste (requested "send in 2 messages")
+
+**Compound Engineering Status:**
+- Hourly snapshots: Working (4 today)
+- Fact extraction: Working (every 30 min)
+- Nightly review: Working (this task)
+- Weekly synthesis: Scheduled Sundays
+- **No changes needed** - systems operating as designed
+
+**Sync Troubleshooting Gotcha:**
+- Files can sync to wrong local folder (subfolder issue) without error
+- Always ask for vault structure screenshot when sync "completes but nothing appears"
+- Don't assume remote path = local path structure
+
+---
+
+*Last updated: 2026-02-02*

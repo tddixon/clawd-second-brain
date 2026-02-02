@@ -1,0 +1,44 @@
+[
+  {
+    "id": "openclaw-sync-001",
+    "fact": "OpenClaw sync project started (2026-02-02 18:00 UTC): Goal - Enable two-way sync between Obsidian vault and Clawdbot knowledge base",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "openclaw-sync-002",
+    "fact": "Sync server deployed (2026-02-02 18:00 UTC): Custom sync server running on port 18790 at /home/desktop/clawd/skills/obsidian-sync/scripts/sync-server.mjs",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "openclaw-sync-003",
+    "fact": "Tailscale serve configured (2026-02-02 18:00 UTC): Endpoint exposed at https://clawd-vps.tail8c6e6b.ts.net:18790 with tailnet-only security",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "openclaw-sync-004",
+    "fact": "Authentication configured (2026-02-02 18:45 UTC): Gateway Token e072fde4da4f16b77f4982d9dd830e39940fee01d59c8668 used for both chat and sync",
+    "timestamp": "2026-02-02T18:45:00Z",
+    "status": "active"
+  },
+  {
+    "id": "openclaw-sync-005",
+    "fact": "Server storage verified (2026-02-02 18:30 UTC): 335 files stored at /home/desktop/openclaw/secondbrain/ including 00-Dashboard.md, 01-Daily-Notes/, 02-Projects/",
+    "timestamp": "2026-02-02T18:30:00Z",
+    "status": "active"
+  },
+  {
+    "id": "openclaw-sync-006",
+    "fact": "Sync path configuration identified (2026-02-02 18:50 UTC): Remote path 'openclaw/secondbrain', Local path '.' (vault root)",
+    "timestamp": "2026-02-02T18:50:00Z",
+    "status": "active"
+  },
+  {
+    "id": "openclaw-sync-007",
+    "fact": "Sync issue in progress (2026-02-02 20:30 UTC): User configured correct sync path, sync completes but files don't appear in Obsidian vault. Troubleshooting local sync folder destination.",
+    "timestamp": "2026-02-02T20:30:00Z",
+    "status": "active"
+  }
+]

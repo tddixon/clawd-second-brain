@@ -34,5 +34,23 @@
     "fact": "Tailscale status: Connected and online",
     "timestamp": "2026-02-01T16:34:00Z",
     "status": "active"
+  },
+  {
+    "id": "tailscale-007",
+    "fact": "Tailscale serve configured to expose OpenClaw sync endpoint (2026-02-02 18:00 UTC): Endpoint accessible at https://clawd-vps.tail8c6e6b.ts.net:18790",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tailscale-008",
+    "fact": "Tailscale serve provides tailnet-only security for OpenClaw sync (2026-02-02 18:00 UTC): Only devices on the tailnet can access the sync endpoint",
+    "timestamp": "2026-02-02T18:00:00Z",
+    "status": "active"
+  },
+  {
+    "id": "tailscale-009",
+    "fact": "Tailscale serve command for OpenClaw sync (2026-02-02 18:47 UTC): sudo tailscale serve --bg --https=18790 http://localhost:18790",
+    "timestamp": "2026-02-02T18:47:00Z",
+    "status": "active"
   }
 ]
