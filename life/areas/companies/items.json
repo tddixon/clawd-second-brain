@@ -1,14 +1,14 @@
 {
   "items": [
     {
-      "id": "balcony-party-hostel-1",
+      "id": "balcony-party-hostel-2",
       "entity": "Balcony Party Hostel",
       "fact_type": "competitor_data",
-      "title": "Ao Nang Competitor Profile",
-      "description": "Balcony Party Hostel (18-40 age group) - Price: ฿780, Rating: 7.9 Very Good (1,127 reviews). Located 0.31 km from city center. Party atmosphere with breakfast included.",
-      "date": "2026-01-31",
+      "title": "Ao Nang Competitor Profile - Feb 2026",
+      "description": "Balcony Party Hostel (18-40 age group) - Price: ฿699.93 (was ฿777.70, 10% discount), Rating: 7.9 Very Good (1,127 reviews). Rank: #9 of 30. Party atmosphere with breakfast included.",
+      "date": "2026-02-02",
       "source": "hostelworld-monitor",
-      "supersedes": []
+      "supersedes": ["balcony-party-hostel-1"]
     },
     {
       "id": "i-rest-ao-nang-1",
@@ -21,24 +21,24 @@
       "supersedes": []
     },
     {
-      "id": "the-hangout-ao-nang-1",
+      "id": "the-hangout-ao-nang-2",
       "entity": "The Hangout Ao Nang",
       "fact_type": "competitor_data",
-      "title": "Ao Nang Lowest-Priced Competitor",
-      "description": "The Hangout Ao Nang - Price: ฿482, Rating: 8.7 Fabulous (244 reviews). Lowest priced competitor in tracked set. Pool party hostel with DJ events.",
-      "date": "2026-01-31",
+      "title": "Ao Nang Lowest-Priced Competitor - Feb 2026",
+      "description": "The Hangout Ao Nang - Price: ฿599.94 (was ฿666.60, 10% discount), Rating: 8.7 Fabulous (245 reviews). Rank: #13 of 30. Lowest priced competitor in tracked set. Pool party hostel with DJ events.",
+      "date": "2026-02-02",
       "source": "hostelworld-monitor",
-      "supersedes": []
+      "supersedes": ["the-hangout-ao-nang-1"]
     },
     {
-      "id": "whoopers-hostel-1",
+      "id": "whoopers-hostel-2",
       "entity": "Whoopers Hostel",
       "fact_type": "competitor_data",
-      "title": "Ao Nang Closest Competitor",
-      "description": "Whoopers Hostel - Price: ฿1,043, Rating: 9.2 Superb (90 reviews). Closest competitor to Nomads in price and rating. Beachfront location with boat tours.",
-      "date": "2026-01-31",
+      "title": "Ao Nang Closest Competitor - Feb 2026",
+      "description": "Whoopers Hostel - Price: ฿801.75 (was ฿1,069, 25% discount), Rating: 9.2 Superb (90 reviews). Rank: #5 of 30. Aggressively discounting to undercut Nomads. Beachfront location with boat tours.",
+      "date": "2026-02-02",
       "source": "hostelworld-monitor",
-      "supersedes": []
+      "supersedes": ["whoopers-hostel-1"]
     },
     {
       "id": "polymarket-1",

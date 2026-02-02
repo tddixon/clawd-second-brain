@@ -372,5 +372,23 @@
     "supersedes": [
       "nomads-056"
     ]
+  },
+  {
+    "id": "nomads-058",
+    "fact": "Base Ao Nang Beachfront property update (2026-02-02 02:00 UTC): Hostelworld rank #2 of 30 listings for Feb 2, 2026. Price ฿809.10 (was ฿899, -10% off). Rating 9.4 Superb with 1,932 reviews. Strong position maintained with competitive discount pricing.",
+    "timestamp": "2026-02-02T02:00:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-055"
+    ]
+  },
+  {
+    "id": "nomads-059",
+    "fact": "Nomads Ao Nang Beach status (2026-02-02 02:00 UTC): Property not appearing in Hostelworld search results for Feb 2, 2026. Rating 9.6 Superb (2,977 reviews) - highest rated property in Ao Nang. Dorm pricing not available - likely sold out or private room only.",
+    "timestamp": "2026-02-02T02:00:00Z",
+    "status": "active",
+    "supersedes": [
+      "nomads-057"
+    ]
   }
 ]
