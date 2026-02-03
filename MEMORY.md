@@ -393,4 +393,51 @@ Works alongside Obsidian Second Brain:
 
 ---
 
-*Last updated: 2026-02-02*
+### 2026-02-03 - Pragmatic Decision Patterns + Sync Systems
+
+**Cloudflare R2 Migration Learning:**
+- User re-engaged with Cloudinary to R2 migration project
+- Key discovery: Cloudflare R2 requires domain to be on Cloudflare for custom subdomain use
+- User chose pragmatic path: Use R2.dev development URL instead of setting up custom subdomain
+- This was smart decision — gets functionality working immediately without DNS changes or potential disruption
+- Pattern: User prioritizes working solutions over perfect branding initially; can always switch to custom domain later
+- Next step awaits: R2 credentials (Account ID, Access Key ID, Secret Access Key, Public URL)
+
+**Obsidian + GitHub Auto-Sync Confirmed:**
+- User requested automatic sync after creating daily plan
+- Discovered existing cron job already running every 10 minutes:
+  ```bash
+  */10 * * * * cd /home/desktop/obsidian-second-brain && git pull --quiet && git add -A && git commit -m "sync: $(date +%H:%M)" 2>/dev/null && git push 2>/dev/null
+  ```
+- Successfully pushed daily plan to GitHub repository: https://github.com/tddixon/obsidian-second-brain.git
+- System working as designed — no changes needed
+- Log location: `/home/desktop/obsidian-second-brain/logs/cron.log`
+
+**User Decision Pattern - Pragmatic Over Perfect:**
+- Faced with choice: DNS changes (custom subdomain) vs R2.dev URL (development)
+- User chose: R2.dev URL — faster path, zero risk, same functionality
+- This reflects broader pattern: User prefers efficiency over aesthetics initially
+- Can always refactor to custom domain once migration is complete and tested
+- Important pattern for future recommendations: Offer "good enough" solution first, perfect solution second
+
+**Daily Planning Workflow:**
+- User requested daily plan for Feb 4 with 9 Nomads-related tasks
+- Plan successfully created in Obsidian vault with GTD structure:
+  - Must-Do (Top 3): Pay AC quote, Pay kitchen supplier, Finish Bangkok cashflow
+  - Should-Do: Staff commission, Book flight, Update Hoscars, Update website, Follow up with Jack (Goki API)
+  - Quick Wins: Design signage for Bangkok
+- System functioning correctly with proper wikilink linking and source tags
+
+**Gotcha Avoided:**
+- Initial thought: Suggest Cloudflare nameserver change for custom subdomain
+- Correction: Offered both options, let user choose
+- Result: User chose faster path (R2.dev) — no DNS disruption, lower risk
+
+**Communication Preference Reinforced:**
+- User requests credentials/info in single message rather than broken steps
+- When Trevor said "use development url for now", I immediately pivoted to next phase (code prep)
+- This matches earlier pattern: "I did already" means move forward, don't repeat
+
+---
+
+*Last updated: 2026-02-03*
